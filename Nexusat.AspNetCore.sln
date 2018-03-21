@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexusat.AspNetCore.SampleRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nesxusat.AspNetCore", "Nesxusat.AspNetCore\Nesxusat.AspNetCore.csproj", "{4E1326B0-E474-434E-A020-93988AE013FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1EB0770-EDFB-4B19-B02D-E841E7CC921F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9883AC2C-9B30-44F3-898A-B9E143E799B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{A31BFC5B-C744-43B7-8FFF-E53FEB979155}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +30,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82BFADBC-6352-48F6-8D19-9F03F6BF7428} = {A31BFC5B-C744-43B7-8FFF-E53FEB979155}
+		{4E1326B0-E474-434E-A020-93988AE013FF} = {B1EB0770-EDFB-4B19-B02D-E841E7CC921F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5043BFE8-E5BD-4F1B-BC55-4F7A14164352}

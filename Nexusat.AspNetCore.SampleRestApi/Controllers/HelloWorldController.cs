@@ -4,11 +4,34 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
+using Nexusat.AspNetCore.SampleRestApi.Models.HelloWorld;
+
 namespace Nexusat.AspNetCore.SampleRestApi.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleController : Controller
+    public class HelloWorldController : Controller
     {
+        [HttpGet]
+        public Response Get([FromQuery] string name, [FromQuery] string surname)
+        {
+            return new Response
+            {
+                Greetings = string.Format("Hello {0} {1}", name, surname)
+            };
+        }
+
+        [HttpPost]
+        public Response Post([FromBody] Request request)
+        {
+            return Get(request.Name, request.Surname);
+        }
+
+
+
+
+
+
+#if DELETED
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -40,5 +63,6 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         public void Delete(int id)
         {
         }
+#endif
     }
 }
