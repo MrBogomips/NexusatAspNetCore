@@ -7,7 +7,11 @@ namespace Nesxusat.AspNetCore.Builders
 {
     public interface IApiEnumResponseBuilder<T>: IApiResponseBuilderBase
     {
-        ApiResponseBuilder SetData(IEnumerable<T> data);
+        IApiEnumResponseBuilder<T> SetHttpCode(int code);
+        IApiEnumResponseBuilder<T> SetStatusCodeSuccess(string code);
+        IApiEnumResponseBuilder<T> SetStatusCodeFailed(string code);
+        IApiEnumResponseBuilder<T> SetException(Exception exception);
+        IApiEnumResponseBuilder<T> SetData(IEnumerable<T> data);
         IApiEnumResponse<T> Build();
     }
 }

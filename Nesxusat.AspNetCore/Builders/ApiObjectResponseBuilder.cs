@@ -7,12 +7,33 @@ namespace Nesxusat.AspNetCore.Builders
 {
     internal class ApiObjectResponseBuilder<T> : ApiResponseBuilderBase, IApiObjectResponseBuilder<T>
     {
-        public ApiResponseBuilderBase SetData(T data)
+        public IApiObjectResponse<T> Build()
         {
             throw new NotImplementedException();
         }
 
-        public IApiObjectResponse<T> Build()
+        public IApiObjectResponseBuilder<T> SetData(T data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApiObjectResponseBuilder<T> SetHttpCode(int code)
+        {
+            InternalSetHttpCode(code);
+            return this;
+        }
+
+        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetException(Exception exception)
+        {
+            throw new NotImplementedException();
+        }
+
+        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetStatusCodeFailed(string code)
+        {
+            throw new NotImplementedException();
+        }
+
+        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetStatusCodeSuccess(string code)
         {
             throw new NotImplementedException();
         }

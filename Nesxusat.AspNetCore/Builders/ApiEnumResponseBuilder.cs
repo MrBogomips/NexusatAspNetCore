@@ -12,9 +12,11 @@ namespace Nesxusat.AspNetCore.Builders
             throw new NotImplementedException();
         }
 
-        public ApiResponseBuilderBase SetData(IEnumerable<T> data)
+        public IApiEnumResponseBuilder<T> SetData(IEnumerable<T> data)
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

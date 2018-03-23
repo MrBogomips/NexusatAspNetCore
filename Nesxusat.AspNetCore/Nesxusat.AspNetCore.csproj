@@ -7,7 +7,6 @@
   <ItemGroup>
     <Folder Include="Conifguration\" />
     <Folder Include="Infrastructure\Middleware\" />
-    <Folder Include="Builders\" />
   </ItemGroup>
 
   <ItemGroup>

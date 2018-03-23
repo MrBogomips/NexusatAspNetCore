@@ -7,6 +7,10 @@ namespace Nesxusat.AspNetCore.Builders
 {
     public interface IApiResponseBuilder: IApiResponseBuilderBase
     {
+        IApiResponseBuilder SetHttpCode(int code);
+        IApiResponseBuilder SetStatusCodeSuccess(string code);
+        IApiResponseBuilder SetStatusCodeFailed(string code);
+        IApiResponseBuilder SetException(Exception exception);
         IApiResponse Build();
     }
 }

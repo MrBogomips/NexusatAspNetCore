@@ -10,5 +10,6 @@ namespace Nesxusat.AspNetCore.Implementations
         public Status Status { get; set; }
         public ExceptionInfo Exception { get; set; }
         public ValidationErrorsInfo ValidationErrors { get; set; }
+        public RuntimeInfo Runtime { get; set; }
     }
 }

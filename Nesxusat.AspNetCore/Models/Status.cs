@@ -7,9 +7,9 @@ namespace Nesxusat.AspNetCore.Models
 {
     public sealed class Status
     {
-        int HttpCode { get; set; }
-        string Code { get; set; }
-        string Description { get; set; }
-        string UserDescription { get; set; }
+        public int HttpCode { get; set; }
+        public string Code { get; set; }
+        public string Description { get; set; }
+        public string UserDescription { get; set; }
     }
 }

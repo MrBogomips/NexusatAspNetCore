@@ -15,13 +15,17 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
-            var responseBuilder = new ApiObjectResponseBuilder<Response>();
+            var responseFactory = new ApiResponseBuilderFactory();
+            var responseBuilder = responseFactory.GetApiObjectResponseBuilder<Response>();
 
-
-            return new Response
-            {
-                Greetings = string.Format("Hello {0} {1}", name, surname)
-            };
+            return responseBuilder
+                .SetData(new Response
+                {
+                    Greetings = string.Format("Hello {0} {1}", name, surname)
+                })
+                .SetHttpCode(200)
+                .SetStatusCodeSuccess("Hello")
+                .Build();
         }
 
         [HttpPost]
