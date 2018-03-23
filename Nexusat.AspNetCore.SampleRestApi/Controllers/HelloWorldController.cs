@@ -31,7 +31,8 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpPost]
         public Response Post([FromBody] Request request)
         {
-            return Get(request.Name, request.Surname);
+            throw new NotImplementedException();
+            // return Get(request.Name, request.Surname);
         }
 
 

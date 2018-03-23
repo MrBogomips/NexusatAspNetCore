@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Nesxusat.AspNetCore.Builders
 {
-    public interface IApiResponseBuilderBase: ISingleInstanceBuilder
+    /// <summary>
+    /// Tag interface
+    /// </summary>
+    public interface IBuilder
     {
     }
 }
