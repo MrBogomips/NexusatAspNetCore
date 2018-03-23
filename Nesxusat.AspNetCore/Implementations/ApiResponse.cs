@@ -5,11 +5,10 @@ using System.Text;
 
 namespace Nesxusat.AspNetCore.Implementations
 {
-    internal class ApiResponse<T> : IApiObjectResponse<T> where T : class
+    internal class ApiResponse : IApiResponse
     {
-        public Status Status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public T Data { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ExceptionInfo Exception { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ValidationErrorsInfo ValidationErrors { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Status Status { get; set; }
+        public ExceptionInfo Exception { get; set; }
+        public ValidationErrorsInfo ValidationErrors { get; set; }
     }
 }

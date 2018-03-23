@@ -16,5 +16,5 @@ namespace Nesxusat.AspNetCore.Models
 
         public NavigationLinks Links { get; set; }
         public int? TotalCount { get; set; }
-    }
+       }
 }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using Nesxusat.AspNetCore.Builders;
+using Nesxusat.AspNetCore.Models;
 using Nexusat.AspNetCore.SampleRestApi.Models.HelloWorld;
 
 namespace Nexusat.AspNetCore.SampleRestApi.Controllers
@@ -12,8 +13,11 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
     public class HelloWorldController : Controller
     {
         [HttpGet]
-        public Response Get([FromQuery] string name, [FromQuery] string surname)
+        public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
+            var responseBuilder = new ApiObjectResponseBuilder<Response>();
+
+
             return new Response
             {
                 Greetings = string.Format("Hello {0} {1}", name, surname)
