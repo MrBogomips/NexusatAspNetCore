@@ -10,7 +10,7 @@ namespace Nesxusat.AspNetCore.Models
     /// <typeparam name="T"></typeparam>
     public interface IApiEnumResponse<T>: IApiResponse
     {
-        PaginationInfo Navigation { get; set; }
+        NavigationInfo Navigation { get; set; }
         IEnumerable<T> Data { get; set; }
     }
 }

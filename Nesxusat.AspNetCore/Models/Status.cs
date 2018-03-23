@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using static Nesxusat.AspNetCore.Models.ValidationErrorInfo;
 
 namespace Nesxusat.AspNetCore.Models
 {
