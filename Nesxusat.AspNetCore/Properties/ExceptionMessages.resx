@@ -123,4 +123,7 @@
   <data name="IApiResponseInternalNotImplemented" xml:space="preserve">
     <value>RUNTIME FATAL EXCEPTION: IApiResponseInternal was not implementd</value>
   </data>
+  <data name="SubCodeInvalidFormat" xml:space="preserve">
+    <value>Subcode must be a non blank or null string</value>
+  </data>
 </root>

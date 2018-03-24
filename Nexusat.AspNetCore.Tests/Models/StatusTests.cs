@@ -22,5 +22,20 @@ namespace Nexusat.AspNetCore.Tests.Models
             Assert.Equal(200, Status.Ko.HttpCode);
             Assert.Equal("KO", Status.Ko.Code);
         }
+        [Fact]
+        public void CommonStatusFactory()
+        {
+            var ok1 = Status.Ok;
+            var ok2 = Status.Ok;
+
+            Assert.Equal(ok1, ok2);
+            Assert.NotSame(ok1, ok2);
+
+            var ko1 = Status.Ko;
+            var ko2 = Status.Ko;
+
+            Assert.Equal(ko1, ko2);
+            Assert.NotSame(ko1, ko2);
+        }
     }
 }

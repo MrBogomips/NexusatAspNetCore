@@ -77,5 +77,14 @@ namespace Nexusat.AspNetCore.Properties {
                 return ResourceManager.GetString("IApiResponseInternalNotImplemented", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subcode must be a non blank or null string.
+        /// </summary>
+        internal static string SubCodeInvalidFormat {
+            get {
+                return ResourceManager.GetString("SubCodeInvalidFormat", resourceCulture);
+            }
+        }
     }
 }
