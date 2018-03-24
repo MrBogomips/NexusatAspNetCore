@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nexusat.AspNetCore\Nexusat.AspNetCore.csproj" />
+    <ProjectReference Include="..\Nesxusat.AspNetCore\Nesxusat.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>
