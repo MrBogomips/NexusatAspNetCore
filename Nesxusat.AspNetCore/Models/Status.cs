@@ -57,10 +57,16 @@ namespace Nexusat.AspNetCore.Models
         public string UserDescription { get; internal set; }
 
         #region Equals
-        public bool Equals(Status that) => that != null && Code == that.Code && Description == that.Description
-            ;
         public override bool Equals(object obj) => Equals(obj as Status);
-        public override int GetHashCode() => HttpCode ^ Description.GetHashCode();
+        public bool Equals(Status that) => 
+            that != null
+            && HttpCode == that.HttpCode
+            && Code == that.Code 
+            && Description == that.Description;
+        public override int GetHashCode() => 
+            HttpCode 
+            ^ Code.GetHashCode() 
+            ^ Description.GetHashCode();
         #endregion Equals
     }
 }
