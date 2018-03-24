@@ -27,7 +27,7 @@ namespace Nesxusat.AspNetCore.Builders
 
         protected void InternalSetHttpCode(int code)
         {
-            CheckBuildStateWhileBuilding();  // OPTIMIZABLE
+            CheckBuildStateWhileBuilding();  // TODO: OPTIMIZABLE
             Response.Status.HttpCode = code;
         }
 

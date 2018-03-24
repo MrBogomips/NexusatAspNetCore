@@ -31,37 +31,22 @@ namespace Nesxusat.AspNetCore.Builders
             return this;
         }
 
-        IApiObjectResponseBuilder<T> SetException(Exception exception)
+        public IApiObjectResponseBuilder<T> SetException(Exception exception)
         {
             InternalSetException(exception);
             return this;
         }
 
-        IApiObjectResponseBuilder<T> SetStatusCodeFailed(string code)
+        public IApiObjectResponseBuilder<T> SetStatusCodeFailed(string code)
         {
             InternalSetStatusCodeFailed(code);
             return this;
         }
 
-        IApiObjectResponseBuilder<T> SetStatusCodeSuccess(string code)
+        public IApiObjectResponseBuilder<T> SetStatusCodeSuccess(string code)
         {
             InternalSetStatusCodeSuccess(code);
             return this;
-        }
-
-        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetStatusCodeSuccess(string code)
-        {
-            throw new NotImplementedException();
-        }
-
-        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetStatusCodeFailed(string code)
-        {
-            throw new NotImplementedException();
-        }
-
-        IApiObjectResponseBuilder<T> IApiObjectResponseBuilder<T>.SetException(Exception exception)
-        {
-            throw new NotImplementedException();
         }
     }
 }

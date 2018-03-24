@@ -12,6 +12,12 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
     [Route("api/[controller]")]
     public class HelloWorldController : Controller
     {
+        /// <summary>
+        /// Returns a greeting 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="surname"></param>
+        /// <returns></returns>
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
@@ -23,6 +29,53 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 {
                     Greetings = string.Format("Hello {0} {1}", name, surname)
                 })
+                .SetHttpCode(200)
+                .SetStatusCodeSuccess("Hello")
+                .Build();
+        }
+
+        
+        [HttpGet("simpleGreeting")]
+        public IApiObjectResponse<string> GetSimpleGreeting([FromQuery] string name, [FromQuery] string surname)
+        {
+            var responseFactory = new ApiResponseBuilderFactory();
+            var responseBuilder = responseFactory.GetApiObjectResponseBuilder<string>();
+
+            return responseBuilder
+                .SetData(string.Format("Hello {0} {1}", name, surname))
+                .SetHttpCode(200)
+                .SetStatusCodeSuccess("Hello")
+                .Build();
+        }
+
+        
+        [HttpGet("objectGreeting")]
+        public IApiObjectResponse<object> GetObjectGreeting([FromQuery] string name, [FromQuery] string surname)
+        {
+            var responseFactory = new ApiResponseBuilderFactory();
+            var responseBuilder = responseFactory.GetApiObjectResponseBuilder<object>();
+
+            return responseBuilder
+                .SetData(new {
+                    Name = name, Surname = name
+                })
+                .SetHttpCode(200)
+                .SetStatusCodeSuccess("Hello")
+                .Build();
+        }
+
+
+        [HttpGet("manyGreetings")]
+        public IApiEnumResponse<Response> GetMany([FromQuery] string name, [FromQuery] string surname)
+        {
+            var responseFactory = new ApiResponseBuilderFactory();
+            var responseBuilder = responseFactory.GetApiEnumResponseBuilder<Response>();
+
+            return responseBuilder
+                .SetData(new[] {new Response
+                {
+                    Greetings = string.Format("Hello {0} {1}", name, surname)
+                }})
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
