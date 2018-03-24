@@ -41,10 +41,10 @@ namespace Nexusat.AspNetCore.Models
         };
         #endregion Common Statuses
 
-        public int HttpCode { get; set; }
-        public string Code { get; set; }
-        public string Description { get; set; }
-        public string UserDescription { get; set; }
+        public int HttpCode { get; internal set; }
+        public string Code { get; internal set; }
+        public string Description { get; internal set; }
+        public string UserDescription { get; internal set; }
 
         #region Equals
         public bool Equals(Status that) => that != null && Code == that.Code && Description == that.Code;

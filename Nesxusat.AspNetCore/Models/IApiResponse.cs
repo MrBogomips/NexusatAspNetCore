@@ -22,4 +22,6 @@ namespace Nexusat.AspNetCore.Models
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         RuntimeInfo Runtime { get; set; }
     }
+
+
 }
