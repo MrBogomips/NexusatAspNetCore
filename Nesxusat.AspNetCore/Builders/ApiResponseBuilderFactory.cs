@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Nexusat.AspNetCore.Builders
 {
-    public class ApiResponseBuilderFactory : IApiResponseBuilderFactory
+    internal class ApiResponseBuilderFactory : IApiResponseBuilderFactory
     {
         public IApiEnumResponseBuilder<T> GetApiEnumResponseBuilder<T>()
         {

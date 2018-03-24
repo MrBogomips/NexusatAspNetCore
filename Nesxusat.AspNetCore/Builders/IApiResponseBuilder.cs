@@ -8,6 +8,8 @@ namespace Nexusat.AspNetCore.Builders
     public interface IApiResponseBuilder: IApiResponseBuilderBase
     {
         IApiResponseBuilder SetHttpCode(int code);
+        IApiResponseBuilder SetStatusCodeSuccess();
+        IApiResponseBuilder SetStatusCodeFailed();
         IApiResponseBuilder SetStatusCodeSuccess(string code);
         IApiResponseBuilder SetStatusCodeFailed(string code);
         IApiResponseBuilder SetException(Exception exception);

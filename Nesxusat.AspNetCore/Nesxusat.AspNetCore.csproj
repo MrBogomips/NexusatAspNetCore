@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Conifguration\" />
     <Folder Include="Infrastructure\Middleware\" />
     <Folder Include="Extensions\" />
   </ItemGroup>

@@ -15,6 +15,9 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
+            throw new NotImplementedException();
+
+            /*
             var responseFactory = new ApiResponseBuilderFactory();
             var responseBuilder = responseFactory.GetApiObjectResponseBuilder<Response>();
 
@@ -26,6 +29,7 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
+                */
         }
 
         [HttpPost]

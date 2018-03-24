@@ -35,18 +35,28 @@ namespace Nexusat.AspNetCore.Builders
             Response.Status.HttpCode = code;
         }
 
-        protected void InternalSetStatusCodeSuccess(string code)
+        protected void InternalSetStatusCodeSuccess()
         {
             CheckBuildStateWhileBuilding();
-            // TODO: perform validation
-            Response.Status.Code = "OK_" + code ?? throw new ArgumentNullException(nameof(code));
+            Response.Status.SetSuccessCode();
         }
 
-        protected void InternalSetStatusCodeFailed(string code)
+        protected void InternalSetStatusCodeFailed()
         {
             CheckBuildStateWhileBuilding();
-            // TODO: perform validation
-            Response.Status.Code = "KO_" + code ?? throw new ArgumentNullException(nameof(code));
+            Response.Status.SetFailedCode();
+        }
+
+        protected void InternalSetStatusCodeSuccess(string subcode)
+        {
+            CheckBuildStateWhileBuilding();
+            Response.Status.SetSuccessCode(subcode);
+        }
+
+        protected void InternalSetStatusCodeFailed(string subcode)
+        {
+            CheckBuildStateWhileBuilding();
+            Response.Status.SetFailedCode(subcode);
         }
 
         protected void InternalSetException(Exception exception)

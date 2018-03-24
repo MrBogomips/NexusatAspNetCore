@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,6 +11,7 @@ namespace Nexusat.AspNetCore.Models
     /// <typeparam name="T"></typeparam>
     public interface IApiObjectResponse<T>: IApiResponse
     {
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         T Data { get; set; }
     }
 }

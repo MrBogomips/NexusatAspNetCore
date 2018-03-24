@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Nexusat.AspNetCore.Builders;
 using Nexusat.AspNetCore.Models;
+using Nexusat.AspNetCore.Mvc;
 using Nexusat.AspNetCore.SampleRestApi.Models.HelloWorld;
 
 namespace Nexusat.AspNetCore.SampleRestApi.Controllers
 {
     [Route("api/[controller]")]
-    public class HelloWorldController : Controller
+    public class HelloWorldController : ApiController
     {
         /// <summary>
         /// Returns a greeting 
@@ -21,9 +22,10 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
-            var responseFactory = new ApiResponseBuilderFactory();
-            var responseBuilder = responseFactory.GetApiObjectResponseBuilder<Response>();
+            return OkObjectResponse<Response>();
 
+           
+            /*
             return responseBuilder
                 .SetData(new Response
                 {
@@ -32,12 +34,15 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
+                */
         }
 
         
         [HttpGet("simpleGreeting")]
         public IApiObjectResponse<string> GetSimpleGreeting([FromQuery] string name, [FromQuery] string surname)
         {
+            throw new NotImplementedException();
+            /*
             var responseFactory = new ApiResponseBuilderFactory();
             var responseBuilder = responseFactory.GetApiObjectResponseBuilder<string>();
 
@@ -46,12 +51,15 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
+                */
         }
 
         
         [HttpGet("objectGreeting")]
         public IApiObjectResponse<object> GetObjectGreeting([FromQuery] string name, [FromQuery] string surname)
         {
+            throw new NotImplementedException();
+            /*
             var responseFactory = new ApiResponseBuilderFactory();
             var responseBuilder = responseFactory.GetApiObjectResponseBuilder<object>();
 
@@ -62,12 +70,16 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
+                */
         }
 
 
         [HttpGet("manyGreetings")]
         public IApiEnumResponse<Response> GetMany([FromQuery] string name, [FromQuery] string surname)
         {
+            throw new NotImplementedException();
+
+            /*
             var responseFactory = new ApiResponseBuilderFactory();
             var responseBuilder = responseFactory.GetApiEnumResponseBuilder<Response>();
 
@@ -79,6 +91,7 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
                 .SetHttpCode(200)
                 .SetStatusCodeSuccess("Hello")
                 .Build();
+                */
         }
 
         [HttpPost]

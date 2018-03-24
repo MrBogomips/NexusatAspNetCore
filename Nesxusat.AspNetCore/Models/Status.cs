@@ -12,15 +12,21 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     internal static class StatusCode
     {
+        public static readonly string DEFAULT_STATUS_CODE = "KO_DEFAULT";
+        public static readonly string OK = "OK";
+        public static readonly string KO = "KO";
+        private static readonly string OK_ = OK + "_";
+        private static readonly string KO_ = KO + "_";
+
         public static bool CheckValidCode(string code) =>
             code != null && (
-                code == "OK" ||
-                code == "KO" ||
-                code.StartsWith("OK_") ||
-                code.StartsWith("KO_")
+                code == OK ||
+                code == KO ||
+                code.StartsWith(OK_) ||
+                code.StartsWith(KO_)
             );
-        public static string GetStatusCodeSuccess(string subcode) => string.Format("OK_{0}", FormatSubCode(subcode));
-        public static string GetStatusCodeFailed(string subcode) => string.Format("OK_{0}", FormatSubCode(subcode));
+        public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", OK_, FormatSubCode(subcode));
+        public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", KO_, FormatSubCode(subcode));
 
         private static string FormatSubCode(string subcode)
         {
@@ -32,28 +38,39 @@ namespace Nexusat.AspNetCore.Models
 
     public sealed class Status
     {
-        #region Common Statuses
-        internal static Status Ok
-        {
-            get => new Status
-            {
-                HttpCode = 200,
-                Code = "OK"
-            };
-        }
-        public static Status Ko
-        {
-            get => new Status
-            {
-                HttpCode = 200,
-                Code = "KO"
-            };
-        }
-        #endregion Common Statuses
 
         public int HttpCode { get; internal set; }
-        public string Code { get; internal set; }
+
+        private string _Code = StatusCode.DEFAULT_STATUS_CODE;
+
+        public string Code { get => _Code; }
+
+        /// <summary>
+        /// Avoid this method in favor of
+        /// <list type="bullet">
+        ///     <item><see cref="SetSuccessCode"/> for success codes</item>
+        ///     <item><see cref="SetFailedCode"/> for success codes</item>
+        /// </list>
+        /// whenever possibile.
+        /// This method incur in performance overhead dued to validation logic.
+        /// </summary>
+        /// <param name="code"></param>
+        public void SetCode(string code)
+        {
+            if (StatusCode.CheckValidCode(code))
+            {
+                _Code = code.Trim().ToUpperInvariant() ;
+            }
+            else throw new ArgumentException(FormatSystemMessage(""), nameof(code));
+        }
+        public void SetSuccessCode() => _Code = StatusCode.OK;
+        public void SetFailedCode() => _Code = StatusCode.KO;
+        public void SetSuccessCode(string subcode) => _Code = StatusCode.GetStatusCodeSuccess(subcode);
+        public void SetFailedCode(string subcode) => _Code = StatusCode.GetStatusCodeFailed(subcode);
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; internal set; }
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string UserDescription { get; internal set; }
 
         #region Equals

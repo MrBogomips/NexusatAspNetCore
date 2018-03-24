@@ -8,20 +8,7 @@ namespace Nexusat.AspNetCore.Tests.Models
 {
     public class StatusTests
     {
-        [Fact]
-        public void StandardStatusOk()
-        {
-            Assert.NotNull(Status.Ok);
-            Assert.Equal(200, Status.Ok.HttpCode);
-            Assert.Equal("OK", Status.Ok.Code);
-        }
-        [Fact]
-        public void StandardStatusKo()
-        {
-            Assert.NotNull(Status.Ko);
-            Assert.Equal(200, Status.Ko.HttpCode);
-            Assert.Equal("KO", Status.Ko.Code);
-        }
+       
 
         [Theory]
         [InlineData(
@@ -41,17 +28,19 @@ namespace Nexusat.AspNetCore.Tests.Models
             var s1 = new Status
             {
                 HttpCode = httpCode1,
-                Code = statusCode1,
+                //Code = statusCode1,
                 Description = description1,
                 UserDescription = userDescription1
             };
             var s2 = new Status
             {
                 HttpCode = httpCode2,
-                Code = statusCode2,
+                //Code = statusCode2,
                 Description = description2,
                 UserDescription = userDescription2
             };
+            s1.SetCode(statusCode1);
+            s2.SetCode(statusCode2);
             Assert.Equal(s1, s2);
             Assert.NotSame(s1, s2);
         }
@@ -74,34 +63,21 @@ namespace Nexusat.AspNetCore.Tests.Models
             var s1 = new Status
             {
                 HttpCode = httpCode1,
-                Code = statusCode1,
                 Description = description1,
                 UserDescription = userDescription1
             };
             var s2 = new Status
             {
                 HttpCode = httpCode2,
-                Code = statusCode2,
+                //Code = statusCode2,
                 Description = description2,
                 UserDescription = userDescription2
             };
+            s1.SetCode(statusCode1);
+            s2.SetCode(statusCode2);
             Assert.NotEqual(s1, s2);
         }
 
-        [Fact]
-        public void CommonStatusFactory()
-        {
-            var ok1 = Status.Ok;
-            var ok2 = Status.Ok;
-
-            Assert.Equal(ok1, ok2);
-            Assert.NotSame(ok1, ok2);
-
-            var ko1 = Status.Ko;
-            var ko2 = Status.Ko;
-
-            Assert.Equal(ko1, ko2);
-            Assert.NotSame(ko1, ko2);
-        }
+        
     }
 }
