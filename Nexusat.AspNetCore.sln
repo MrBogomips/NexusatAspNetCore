@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nexusat.AspNetCore.SampleRestApi", "Nexusat.AspNetCore.SampleRestApi\Nexusat.AspNetCore.SampleRestApi.csproj", "{82BFADBC-6352-48F6-8D19-9F03F6BF7428}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nesxusat.AspNetCore", "Nesxusat.AspNetCore\Nesxusat.AspNetCore.csproj", "{4E1326B0-E474-434E-A020-93988AE013FF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1EB0770-EDFB-4B19-B02D-E841E7CC921F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9883AC2C-9B30-44F3-898A-B9E143E799B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{A31BFC5B-C744-43B7-8FFF-E53FEB979155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexusat.AspNetCore.Tests", "Nexusat.AspNetCore.Tests\Nexusat.AspNetCore.Tests.csproj", "{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nexusat.AspNetCore.Tests", "Nexusat.AspNetCore.Tests\Nexusat.AspNetCore.Tests.csproj", "{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nexusat.AspNetCore", "Nexusat.AspNetCore\Nexusat.AspNetCore.csproj", "{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +25,22 @@ Global
 		{82BFADBC-6352-48F6-8D19-9F03F6BF7428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82BFADBC-6352-48F6-8D19-9F03F6BF7428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82BFADBC-6352-48F6-8D19-9F03F6BF7428}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E1326B0-E474-434E-A020-93988AE013FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E1326B0-E474-434E-A020-93988AE013FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E1326B0-E474-434E-A020-93988AE013FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E1326B0-E474-434E-A020-93988AE013FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{82BFADBC-6352-48F6-8D19-9F03F6BF7428} = {A31BFC5B-C744-43B7-8FFF-E53FEB979155}
-		{4E1326B0-E474-434E-A020-93988AE013FF} = {B1EB0770-EDFB-4B19-B02D-E841E7CC921F}
 		{665F2EBD-84CF-4B86-A8A8-E8E9BFC4BC72} = {9883AC2C-9B30-44F3-898A-B9E143E799B8}
+		{8FAA6AC0-591F-4568-B6E4-7E9A2133CD7C} = {B1EB0770-EDFB-4B19-B02D-E841E7CC921F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5043BFE8-E5BD-4F1B-BC55-4F7A14164352}

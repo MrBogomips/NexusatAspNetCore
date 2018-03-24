@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nesxusat.AspNetCore\Nesxusat.AspNetCore.csproj" />
+    <ProjectReference Include="..\Nexusat.AspNetCore\Nexusat.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>
