@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Nexusat.AspNetCore.Implementations
 {
-    internal class ApiResponse : IApiResponse
+    internal class ApiResponse : IApiResponse, IApiResponseInternal
     {
         public Status Status { get; set; } = new Status();
         public ExceptionInfo Exception { get; set; }

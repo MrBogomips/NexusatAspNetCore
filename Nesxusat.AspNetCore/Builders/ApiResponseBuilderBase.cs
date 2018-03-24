@@ -10,10 +10,10 @@ namespace Nexusat.AspNetCore.Builders
 {
     internal abstract class ApiResponseBuilderBase //: IApiResponseBuilderBase
     {
-        protected readonly IApiResponse _response;
+        protected readonly IApiResponseInternal _response;
         private bool _isObjectBuilt = false;
 
-        private IApiResponse Response  => _response;
+        private IApiResponseInternal Response  => _response;
         public bool IsBuilderValid => !_isObjectBuilt;
 
         /// <summary>
@@ -22,7 +22,11 @@ namespace Nexusat.AspNetCore.Builders
         /// <param name="response">Subclasses must provided a concrete type compatible with the builder class</param>
         protected ApiResponseBuilderBase(IApiResponse response) 
         {
-            _response = response ?? throw new ArgumentNullException(nameof(response));
+            if (response == null) throw new ArgumentNullException(nameof(response));
+            _response = response as IApiResponseInternal 
+                ?? throw new ArgumentException(
+                    FormatSystemMessage(ExceptionMessages.IApiResponseInternalNotImplemented), 
+                    nameof(response));
         }
 
         protected void InternalSetHttpCode(int code)

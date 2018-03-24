@@ -39,7 +39,7 @@ namespace Nexusat.AspNetCore.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Nesxusat.AspNetCore.Properties.ExceptionMessages", typeof(ExceptionMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Nexusat.AspNetCore.Properties.ExceptionMessages", typeof(ExceptionMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,6 +66,15 @@ namespace Nexusat.AspNetCore.Properties {
         internal static string BuilderInvalidStateAlreadyUsed {
             get {
                 return ResourceManager.GetString("BuilderInvalidStateAlreadyUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RUNTIME FATAL EXCEPTION: IApiResponseInternal was not implementd.
+        /// </summary>
+        internal static string IApiResponseInternalNotImplemented {
+            get {
+                return ResourceManager.GetString("IApiResponseInternalNotImplemented", resourceCulture);
             }
         }
     }

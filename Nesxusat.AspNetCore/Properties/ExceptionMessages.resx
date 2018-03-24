@@ -120,4 +120,7 @@
   <data name="BuilderInvalidStateAlreadyUsed" xml:space="preserve">
     <value>The builder has been already used to generate an object.\nYou must instantiate a new one.</value>
   </data>
+  <data name="IApiResponseInternalNotImplemented" xml:space="preserve">
+    <value>RUNTIME FATAL EXCEPTION: IApiResponseInternal was not implementd</value>
+  </data>
 </root>

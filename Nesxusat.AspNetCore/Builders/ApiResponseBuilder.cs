@@ -8,7 +8,7 @@ namespace Nexusat.AspNetCore.Builders
 {
     internal class ApiResponseBuilder: ApiResponseBuilderBase, IApiResponseBuilder
     {
-        private IApiResponse Response { get => base._response; }
+        private IApiResponseInternal Response { get => base._response; }
 
         public ApiResponseBuilder() : base(new ApiResponse())
         {
@@ -18,7 +18,7 @@ namespace Nexusat.AspNetCore.Builders
         public IApiResponse Build()
         {
             CheckBuildStateForFinalBuild();
-            return Response;
+            return Response as IApiResponse;
         }
 
         public IApiResponseBuilder SetHttpCode(int code)

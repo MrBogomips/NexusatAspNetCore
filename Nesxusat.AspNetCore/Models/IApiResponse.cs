@@ -11,6 +11,20 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     public interface IApiResponse
     {
+        Status Status { get; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        ExceptionInfo Exception { get; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        ValidationErrorsInfo ValidationErrors { get; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        RuntimeInfo Runtime { get; }
+    }
+
+    internal interface IApiResponseInternal
+    {
         Status Status { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
@@ -22,6 +36,4 @@ namespace Nexusat.AspNetCore.Models
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         RuntimeInfo Runtime { get; set; }
     }
-
-
 }
