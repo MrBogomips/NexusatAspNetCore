@@ -1,9 +1,9 @@
-﻿using Nesxusat.AspNetCore.Models;
+﻿using Nexusat.AspNetCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Implementations
+namespace Nexusat.AspNetCore.Implementations
 {
     internal class ApiEnumResponse<T> : ApiResponse, IApiEnumResponse<T>
     {

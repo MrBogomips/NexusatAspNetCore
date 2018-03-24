@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Nesxusat.AspNetCore.Exceptions;
-using Nesxusat.AspNetCore.Models;
-using Nesxusat.AspNetCore.Properties;
-using static Nesxusat.AspNetCore.Utils.StringFormatter;
+using Nexusat.AspNetCore.Exceptions;
+using Nexusat.AspNetCore.Models;
+using Nexusat.AspNetCore.Properties;
+using static Nexusat.AspNetCore.Utils.StringFormatter;
 
-namespace Nesxusat.AspNetCore.Builders
+namespace Nexusat.AspNetCore.Builders
 {
     internal abstract class ApiResponseBuilderBase //: IApiResponseBuilderBase
     {

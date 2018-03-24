@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Nesxusat.AspNetCore.Implementations;
-using Nesxusat.AspNetCore.Models;
+using Nexusat.AspNetCore.Implementations;
+using Nexusat.AspNetCore.Models;
 
-namespace Nesxusat.AspNetCore.Builders
+namespace Nexusat.AspNetCore.Builders
 {
     internal class ApiEnumResponseBuilder<T> : ApiResponseBuilderBase, IApiEnumResponseBuilder<T>
     {

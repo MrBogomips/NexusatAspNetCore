@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Builders
+namespace Nexusat.AspNetCore.Builders
 {
     /// <summary>
     /// A builder that can produce only one object

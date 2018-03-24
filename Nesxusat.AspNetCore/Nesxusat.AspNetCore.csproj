@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource />
+    <AssemblyName>Nexusat.AspNetCore</AssemblyName>
+    <RootNamespace>Nexusat.AspNetCore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +16,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nesxusat.AspNetCore.Properties {
+namespace Nexusat.AspNetCore.Properties {
     using System;
     
     

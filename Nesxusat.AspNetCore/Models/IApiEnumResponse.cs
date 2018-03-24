@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Models
+namespace Nexusat.AspNetCore.Models
 {
     /// <summary>
     /// Represents a response with a list of objects

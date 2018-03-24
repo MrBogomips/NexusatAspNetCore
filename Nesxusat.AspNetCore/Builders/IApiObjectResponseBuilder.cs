@@ -1,9 +1,9 @@
-﻿using Nesxusat.AspNetCore.Models;
+﻿using Nexusat.AspNetCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Builders
+namespace Nexusat.AspNetCore.Builders
 {
     public interface IApiObjectResponseBuilder<T>: IApiResponseBuilderBase
     {

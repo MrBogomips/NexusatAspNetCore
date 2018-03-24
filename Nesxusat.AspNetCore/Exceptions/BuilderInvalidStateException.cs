@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Exceptions
+namespace Nexusat.AspNetCore.Exceptions
 {
     [Serializable]
     public class BuilderInvalidStateException : InvalidOperationException, IFrameworkException

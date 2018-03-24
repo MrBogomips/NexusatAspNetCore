@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Utils
+namespace Nexusat.AspNetCore.Utils
 {
 
     /// <summary>

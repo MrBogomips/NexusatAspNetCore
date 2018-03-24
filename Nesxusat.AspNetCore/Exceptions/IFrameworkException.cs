@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Exceptions
+namespace Nexusat.AspNetCore.Exceptions
 {
     /// <summary>
     /// Tag interface to intercept framework raised and/or custom exceptions

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nesxusat.AspNetCore.Models
+namespace Nexusat.AspNetCore.Models
 {
     internal static class StatusCode
     {
