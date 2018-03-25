@@ -12,6 +12,19 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     internal static class StatusCode
     {
+        /*
+         * ATTENTION!!!!! 
+         * 
+         * Initialization order for static fields matters!!!
+         * 
+         * Never declare a static field that depends on a field declared later on!
+         * Even with strings order matters!
+         */
+        public static readonly string OK = "OK";
+        public static readonly string KO = "KO";
+        private static readonly string OK_ = OK + "_";
+        private static readonly string KO_ = KO + "_";
+
         /// <summary>
         /// The default status code used in case of successful operations
         /// </summary>
@@ -20,15 +33,14 @@ namespace Nexusat.AspNetCore.Models
         /// The default status code used in case of failed operations
         /// </summary>
         public static readonly string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
+
+        
         /// <summary>
         /// The default status code used in case of ambigous operations not specifically configured by the user
         /// </summary>
         public static readonly string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
 
-        public static readonly string OK = "OK";
-        public static readonly string KO = "KO";
-        private static readonly string OK_ = OK + "_";
-        private static readonly string KO_ = KO + "_";
+
 
         public static bool CheckValidCode(string code) =>
             code != null && (
@@ -54,12 +66,18 @@ namespace Nexusat.AspNetCore.Models
 
     public sealed class Status
     {
-
         public int HttpCode { get; internal set; }
 
         private string _Code = StatusCode.DEFAULT_UNK_STATUS_CODE;
 
-        public string Code { get => _Code; }
+        public string Code {
+            get => _Code;
+            internal set {
+                _Code = value;
+            }
+        }
+
+        internal Status() { }
 
         /// <summary>
         /// Avoid this method in favor of

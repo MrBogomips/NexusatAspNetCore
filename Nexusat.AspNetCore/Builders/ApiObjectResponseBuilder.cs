@@ -49,15 +49,9 @@ namespace Nexusat.AspNetCore.Builders
             return this;
         }
 
-        public IApiObjectResponseBuilder<T> SetStatusCodeFailed(string code)
+        public IApiObjectResponseBuilder<T> SetStatusCode(string code)
         {
-            InternalSetStatusCodeFailed(code);
-            return this;
-        }
-
-        public IApiObjectResponseBuilder<T> SetStatusCodeSuccess(string code)
-        {
-            InternalSetStatusCodeSuccess(code);
+            InternalSetStatusCode(code);
             return this;
         }
     }

@@ -29,7 +29,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("KO_DEFAULT", statusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
         }
 
 

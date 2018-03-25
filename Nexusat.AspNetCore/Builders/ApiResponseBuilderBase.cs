@@ -35,6 +35,12 @@ namespace Nexusat.AspNetCore.Builders
             Response.Status.HttpCode = code;
         }
 
+        protected void InternalSetStatusCode(string code)
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Status.SetCode(code);
+        }
+
         protected void InternalSetStatusCodeSuccess()
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
@@ -45,18 +51,6 @@ namespace Nexusat.AspNetCore.Builders
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Status.SetFailedCode();
-        }
-
-        protected void InternalSetStatusCodeSuccess(string subcode)
-        {
-            SingleInstanceChecker.CheckBuildStateWhileBuilding();
-            Response.Status.SetSuccessCode(subcode);
-        }
-
-        protected void InternalSetStatusCodeFailed(string subcode)
-        {
-            SingleInstanceChecker.CheckBuildStateWhileBuilding();
-            Response.Status.SetFailedCode(subcode);
         }
 
         protected void InternalSetException(Exception exception)

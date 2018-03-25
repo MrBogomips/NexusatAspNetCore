@@ -27,6 +27,8 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
             services.AddNexusatAspNetCore(c =>
                 {
                     c.EnableRuntimeProfilation();
+                    c.SetDefaultOkStatus("OK_TEST_DEFAULT");
+                    c.SetDefaultKoStatus("KO_TEST_DEDFAULT");
                 });
         }
 
