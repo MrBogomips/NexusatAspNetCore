@@ -79,6 +79,15 @@ namespace Nexusat.AspNetCore.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status code syntax is not valid.\n.
+        /// </summary>
+        internal static string StatusCodeInvalid {
+            get {
+                return ResourceManager.GetString("StatusCodeInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Subcode must be a non blank or null string.
         /// </summary>
         internal static string SubCodeInvalidFormat {

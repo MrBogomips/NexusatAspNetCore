@@ -12,7 +12,19 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     internal static class StatusCode
     {
-        public static readonly string DEFAULT_STATUS_CODE = "KO_DEFAULT";
+        /// <summary>
+        /// The default status code used in case of successful operations
+        /// </summary>
+        public static readonly string DEFAULT_OK_STATUS_CODE = OK + "_DEFAULT";
+        /// <summary>
+        /// The default status code used in case of failed operations
+        /// </summary>
+        public static readonly string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
+        /// <summary>
+        /// The default status code used in case of ambigous operations not specifically configured by the user
+        /// </summary>
+        public static readonly string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
+
         public static readonly string OK = "OK";
         public static readonly string KO = "KO";
         private static readonly string OK_ = OK + "_";
@@ -25,6 +37,10 @@ namespace Nexusat.AspNetCore.Models
                 code.StartsWith(OK_) ||
                 code.StartsWith(KO_)
             );
+        public static void CheckValidCodeOrThrow(string code)
+	    {
+            if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid), nameof(code));
+        }
         public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", OK_, FormatSubCode(subcode));
         public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", KO_, FormatSubCode(subcode));
 
@@ -41,7 +57,7 @@ namespace Nexusat.AspNetCore.Models
 
         public int HttpCode { get; internal set; }
 
-        private string _Code = StatusCode.DEFAULT_STATUS_CODE;
+        private string _Code = StatusCode.DEFAULT_UNK_STATUS_CODE;
 
         public string Code { get => _Code; }
 

@@ -8,13 +8,13 @@ using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Builders
 {
-    internal abstract class ApiResponseBuilderBase //: IApiResponseBuilderBase
+    internal abstract class ApiResponseBuilderBase: IApiResponseBuilderBase
     {
         protected readonly IApiResponseInternal _response;
-        private bool _isObjectBuilt = false;
-
         private IApiResponseInternal Response  => _response;
-        public bool IsBuilderValid => !_isObjectBuilt;
+
+        public bool IsBuilderValid => SingleInstanceChecker.IsBuilderValid;
+        protected readonly BuilderSingleInstanceChecker SingleInstanceChecker = new BuilderSingleInstanceChecker();
 
         /// <summary>
         /// 
@@ -31,37 +31,37 @@ namespace Nexusat.AspNetCore.Builders
 
         protected void InternalSetHttpCode(int code)
         {
-            CheckBuildStateWhileBuilding();  // TODO: OPTIMIZABLE
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();  // TODO: OPTIMIZABLE
             Response.Status.HttpCode = code;
         }
 
         protected void InternalSetStatusCodeSuccess()
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Status.SetSuccessCode();
         }
 
         protected void InternalSetStatusCodeFailed()
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Status.SetFailedCode();
         }
 
         protected void InternalSetStatusCodeSuccess(string subcode)
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Status.SetSuccessCode(subcode);
         }
 
         protected void InternalSetStatusCodeFailed(string subcode)
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Status.SetFailedCode(subcode);
         }
 
         protected void InternalSetException(Exception exception)
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             if (exception == null)
             {
                 throw new ArgumentNullException(nameof(exception));
@@ -69,22 +69,6 @@ namespace Nexusat.AspNetCore.Builders
             Response.Exception = ExceptionInfo.GetFromException(exception);
         }
 
-        /// <summary>
-        /// Check if an object was already built.
-        /// In case of misuses throw an exception
-        /// </summary>
-        protected void CheckBuildStateWhileBuilding()
-        {
-            if (_isObjectBuilt)
-            {
-                throw new BuilderInvalidStateException(FormatSystemMessage(ExceptionMessages.BuilderInvalidStateAlreadyUsed));
-            }
-        }
-
-        protected void CheckBuildStateForFinalBuild()
-        {
-            CheckBuildStateWhileBuilding();
-            _isObjectBuilt = true;
-        }
+        
     }
 }

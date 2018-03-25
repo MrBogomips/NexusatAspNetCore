@@ -15,13 +15,13 @@ namespace Nexusat.AspNetCore.Builders
 
         public IApiEnumResponse<T> Build()
         {
-            CheckBuildStateForFinalBuild();
+            SingleInstanceChecker.CheckBuildStateForFinalBuild();
             return Response;
         }
 
         public IApiEnumResponseBuilder<T> SetData(IEnumerable<T> data)
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Data = data;
             return this;
         }

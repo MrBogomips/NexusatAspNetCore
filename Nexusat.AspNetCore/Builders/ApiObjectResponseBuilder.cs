@@ -14,13 +14,13 @@ namespace Nexusat.AspNetCore.Builders
 
         public IApiObjectResponse<T> Build()
         {
-            CheckBuildStateForFinalBuild();
+            SingleInstanceChecker.CheckBuildStateForFinalBuild();
             return Response;
         }
 
         public IApiObjectResponseBuilder<T> SetData(T data)
         {
-            CheckBuildStateWhileBuilding();
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
             Response.Data = data;
             return this;
         }

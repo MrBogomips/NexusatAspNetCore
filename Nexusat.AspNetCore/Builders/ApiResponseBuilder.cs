@@ -17,7 +17,7 @@ namespace Nexusat.AspNetCore.Builders
 
         public IApiResponse Build()
         {
-            CheckBuildStateForFinalBuild();
+            SingleInstanceChecker.CheckBuildStateForFinalBuild();
             return Response as IApiResponse;
         }
 
