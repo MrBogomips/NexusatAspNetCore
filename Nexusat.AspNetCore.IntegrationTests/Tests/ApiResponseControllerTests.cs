@@ -31,8 +31,5 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
             Assert.Equal("OK_TEST_DEFAULT", statusCode);
         }
-
-
-
     }
 }
