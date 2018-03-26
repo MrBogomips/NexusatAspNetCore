@@ -42,11 +42,15 @@ namespace Nexusat.AspNetCore.Mvc
             }
         }
 
-        private void SetHttpStatusCode(int httpCode, IApiResponseBuilder responseBuilder)
-        {
-            HttpContext.Response.StatusCode = httpCode;
-            responseBuilder.SetHttpCode(httpCode);
+        #region General purpose Response builder methods
+        protected IApiResponse ApiResponse(Action<IApiResponseBuilder> setupResponseAction) {
+            IApiResponseBuilder builder = ResponseBuilderFactory.GetApiResponseBuilder();
+            setupResponseAction(builder);
+            IApiResponse response = builder.GetResponse();
+            HttpContext.Response.StatusCode = response.Status.HttpCode;
+            return response;
         }
+        #endregion General purpose Response builder methods
 
         /// <summary>
         /// Produce a generic API Response without a payload
@@ -77,6 +81,7 @@ namespace Nexusat.AspNetCore.Mvc
                 .SetHttpCode(httpCode)
                 .GetResponse();
         }
+
         protected IApiEnumResponse<T> EnumResponse<T>(int httpCode)
         {
             HttpContext.Response.StatusCode = httpCode;

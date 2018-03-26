@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Newtonsoft.Json.Linq;
+using Nexusat.AspNetCore.IntegrationTests.Models;
 using Nexusat.AspNetCore.IntegrationTestsFakeService;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,18 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
                 .UseStartup<Startup>());
 
             Client = Server.CreateClient();
+        }
+
+        protected static Status ExtractStatus(JObject json)
+        {
+            return
+                new Status
+                {
+                    HttpCode = json.SelectToken("status.httpCode").Value<int>(),
+                    Code = json.SelectToken("status.code").Value<string>(),
+                    Description = json.SelectToken("status.description").Value<string>(),
+                    UserDescription = json.SelectToken("status.userDescription").Value<string>()
+                };
         }
 
         protected async static Task<string> ReadAsStringAsync(HttpContent content)

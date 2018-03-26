@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
+using Nexusat.AspNetCore.IntegrationTests.Models;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -31,5 +32,33 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
             Assert.Equal("OK_TEST_DEFAULT", statusCode);
         }
+
+
+
+        [Fact]
+        public async void ApiResponse299CustomResponse()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/299CustomRespone");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+           
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 299,
+                Code = "OK_299_CUSTOM",
+                Description = "Description",
+                UserDescription = "UserDescription"
+            };
+
+            // Assert
+            Assert.Equal("299", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+        }
+
+       
     }
 }

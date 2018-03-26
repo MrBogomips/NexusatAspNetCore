@@ -15,5 +15,14 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
     {
         [HttpGet("200")]
         public IApiResponse Get200() => OkResponse();
+
+        [HttpGet("299CustomRespone")]
+        public IApiResponse Get299CustomResponse() => ApiResponse(r =>
+        {
+            r.SetHttpCode(299);
+            r.SetStatusCode("OK_299_CUSTOM");
+            r.SetDescription("Description");
+            r.SetUserDescription("UserDescription");
+        });
     }
 }
