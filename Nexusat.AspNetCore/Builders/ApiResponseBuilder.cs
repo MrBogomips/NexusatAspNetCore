@@ -50,5 +50,17 @@ namespace Nexusat.AspNetCore.Builders
             InternalSetStatusCode(code);
             return this;
         }
+
+        public IApiResponseBuilder SetDescription(string description)
+        {
+            InternalSetDescription(description);
+            return this;
+        }
+
+        public IApiResponseBuilder SetUserDescription(string userDescription)
+        {
+            InternalSetUserDescription(userDescription);
+            return this;
+        }
     }
 }

@@ -25,13 +25,15 @@ namespace Nexusat.AspNetCore.Mvc
         protected ModelStateDictionary ModelState { get => ControllerContext.ModelState; }
         protected RouteData RoutedData { get => ControllerContext.RouteData; }
 
-        protected IApiResponseBuilderFactory ResponseBuilderFactory {
+        protected IApiResponseBuilderFactory ResponseBuilderFactory
+        {
             get => HttpContext.RequestServices.GetService(typeof(IApiResponseBuilderFactory)) as IApiResponseBuilderFactory;
         }
 
         protected internal NexusatAspNetCoreOptions FrameworkOptions
         {
-            get {
+            get
+            {
                 var options = HttpContext
                     .RequestServices
                     .GetService(typeof(IOptions<NexusatAspNetCoreOptions>))
@@ -46,6 +48,12 @@ namespace Nexusat.AspNetCore.Mvc
             responseBuilder.SetHttpCode(httpCode);
         }
 
+        /// <summary>
+        /// Produce a generic API Response without a payload
+        /// </summary>
+        /// <returns>The response.</returns>
+        /// <param name="httpCode">Http code.</param>
+        /// <param name="statusCode">Status code.</param>
         protected IApiResponse Response(int httpCode, string statusCode)
         {
             HttpContext.Response.StatusCode = httpCode;
@@ -55,6 +63,12 @@ namespace Nexusat.AspNetCore.Mvc
                 .SetStatusCode(statusCode)
                 .Build();
         }
+        /// <summary>
+        /// Produce a generic API Response without a payload
+        /// </summary>
+        /// <returns>The response.</returns>
+        /// <param name="httpCode">Http code.</param>
+        /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
         protected IApiObjectResponse<T> ObjectResponse<T>(int httpCode)
         {
             HttpContext.Response.StatusCode = httpCode;
@@ -72,11 +86,14 @@ namespace Nexusat.AspNetCore.Mvc
                 .Build();
         }
 
-        protected IApiResponse OkResponse() 
-            => Response(Status200OK, FrameworkOptions.DefaultOkStatusCode);
 
+        #region Response Helper Methods
+        // Ok 200
+        protected IApiResponse OkResponse() => Response(Status200OK, FrameworkOptions.DefaultOkStatusCode);
         protected IApiObjectResponse<T> OkObjectResponse<T>() => ObjectResponse<T>(Status200OK);
         protected IApiEnumResponse<T> OkEnumResponse<T>() => EnumResponse<T>(Status200OK);
+
+        #endregion Response Helper Methods
 
     }
 }

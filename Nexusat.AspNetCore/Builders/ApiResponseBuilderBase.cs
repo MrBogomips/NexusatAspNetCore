@@ -53,6 +53,18 @@ namespace Nexusat.AspNetCore.Builders
             Response.Status.SetFailedCode();
         }
 
+        protected void InternalSetDescription(string description) 
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Status.Description = description;
+        }
+
+        protected void InternalSetUserDescription(string description)
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Status.UserDescription = description;
+        }
+
         protected void InternalSetException(Exception exception)
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
