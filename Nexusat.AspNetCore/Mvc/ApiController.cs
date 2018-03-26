@@ -52,15 +52,6 @@ namespace Nexusat.AspNetCore.Mvc
         }
         #endregion General purpose Response builder methods
 
-
-
-
-
-
-
-
-
-
         /// <summary>
         /// Produce a generic API Response without a payload
         /// </summary>
