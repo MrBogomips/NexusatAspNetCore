@@ -15,6 +15,6 @@ namespace Nexusat.AspNetCore.Builders
         IApiEnumResponseBuilder<T> SetUserDescription(string userDescription);
         IApiEnumResponseBuilder<T> SetException(Exception exception);
         IApiEnumResponseBuilder<T> SetData(IEnumerable<T> data);
-        IApiEnumResponse<T> Build();
+        IApiEnumResponse<T> GetResponse();
     }
 }

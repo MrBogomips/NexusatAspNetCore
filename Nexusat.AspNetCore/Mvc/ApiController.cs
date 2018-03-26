@@ -61,7 +61,7 @@ namespace Nexusat.AspNetCore.Mvc
                 .GetApiResponseBuilder()
                 .SetHttpCode(httpCode)
                 .SetStatusCode(statusCode)
-                .Build();
+                .GetResponse();
         }
         /// <summary>
         /// Produce a generic API Response without a payload
@@ -75,7 +75,7 @@ namespace Nexusat.AspNetCore.Mvc
             return ResponseBuilderFactory
                 .GetApiObjectResponseBuilder<T>()
                 .SetHttpCode(httpCode)
-                .Build();
+                .GetResponse();
         }
         protected IApiEnumResponse<T> EnumResponse<T>(int httpCode)
         {
@@ -83,7 +83,7 @@ namespace Nexusat.AspNetCore.Mvc
             return ResponseBuilderFactory
                 .GetApiEnumResponseBuilder<T>()
                 .SetHttpCode(httpCode)
-                .Build();
+                .GetResponse();
         }
 
 
