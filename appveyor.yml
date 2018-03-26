@@ -1,0 +1,23 @@
+version: 1.0.0.{build}-{branch}
+image: Visual Studio 2017
+before_build:
+- ps: dotnet restore
+build:
+  verbosity: minimal
+artifacts:
+- path: Nexusat.AspNetCore\bin\Debug\netcoreapp2.0\Nexusat.AspNetCore.dll
+  name: Nexusat.AspNetCore.dll
+notifications:
+- provider: Email
+  to:
+  - giovanni.costagliola@nexusat.it
+  subject: AspNetCore Build
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
+- provider: Webhook
+  url: https://webhooks.gitter.im/e/b3b4f6812ad48cbe4b93
+  method: POST
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
