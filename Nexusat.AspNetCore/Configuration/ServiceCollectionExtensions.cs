@@ -6,25 +6,24 @@ using System.Text;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class NexusatAspNetCoreServiceCollectionExtensions
+    public static class NexusatAspNetCoreMvcBuilderExtensions
     {
-        public static IServiceCollection AddNexusatAspNetCore(this IServiceCollection services, Action<NexusatAspNetCoreOptionsBuilder> setupAction)
+        /// <summary>
+        /// Adds the nexusat ASP net core to the MVC pipeline.
+        /// </summary>
+        /// <returns>The MVC builder</returns>
+        /// <param name="mvcBuilder">Mvc builder.</param>
+        /// <param name="setupAction">Setup action.</param>
+        public static IMvcBuilder AddNexusatAspNetCore(this IMvcBuilder mvcBuilder, Action<NexusatAspNetCoreOptionsBuilder> setupAction = null)
         {
-            
+            var builder = new NexusatAspNetCoreSystemBuilder(mvcBuilder, setupAction);
 
-            // Add framework services
-            services.AddSingleton<IApiResponseBuilderFactory>(_ => new ApiResponseBuilderFactory());
+            builder
+                .AddSystemService()
+                .AddFrameworkServices();
 
-            // Add framework configuration IOptions
-            services.Configure<NexusatAspNetCoreOptions>(options => {
-                // Build Frameowrk configuration options
-                var setupBuilder = new NexusatAspNetCoreOptionsBuilder(options);
-                setupAction(setupBuilder);
-            });
-
-            return services;
+            return mvcBuilder;
         }
-
     }
    
     
