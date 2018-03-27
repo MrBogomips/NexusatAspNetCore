@@ -2,6 +2,7 @@
 using Nexusat.AspNetCore.IntegrationTests.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -59,6 +60,60 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(expectedStatus, actualStatus);
         }
 
+        [Fact]
+        public async void ApiResponse299CustomStringResponse()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/299CustomStringRespone");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var actualData = ExtractObjectData<string>(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 299,
+                Code = "OK_299_CUSTOM",
+                Description = "Description",
+                UserDescription = "UserDescription"
+            };
+
+            // Assert
+            Assert.Equal("299", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("Hello World!", actualData);
+        }
+
+        [Fact]
+        public async void ApiResponse299CustomEnumStringResponse()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/299CustomEnumStringRespone");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var actualData = ExtractEnumData<string>(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 299,
+                Code = "OK_299_CUSTOM",
+                Description = "Description",
+                UserDescription = "UserDescription"
+            };
+
+            // Assert
+            Assert.Equal("299", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+
+            // Check enum equality by mutual inclusion
+            var expectedData = new List<string> { "Hello", "World" };
+            Assert.Equal(expectedData, actualData);
+        }
        
     }
 }

@@ -40,6 +40,10 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
                 };
         }
 
+        protected static T ExtractObjectData<T>(JObject json) => json.SelectToken("data").Value<T>();
+        protected static IEnumerable<T> ExtractEnumData<T>(JObject json) => json.SelectToken("data").Values<T>();
+
+
         protected async static Task<string> ReadAsStringAsync(HttpContent content)
             => await content.ReadAsStringAsync();
 

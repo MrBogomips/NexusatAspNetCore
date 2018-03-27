@@ -30,7 +30,7 @@ namespace Nexusat.AspNetCore.Mvc
             get => HttpContext.RequestServices.GetService(typeof(IApiResponseBuilderFactory)) as IApiResponseBuilderFactory;
         }
 
-        protected internal NexusatAspNetCoreOptions FrameworkOptions
+        protected NexusatAspNetCoreOptions FrameworkOptions
         {
             get
             {
@@ -50,6 +50,26 @@ namespace Nexusat.AspNetCore.Mvc
             HttpContext.Response.StatusCode = response.Status.HttpCode;
             return response;
         }
+
+        protected IApiObjectResponse<T> ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>> setupResponseAction)
+        {
+            IApiObjectResponseBuilder<T> builder = ResponseBuilderFactory.GetApiObjectResponseBuilder<T>();
+            setupResponseAction(builder);
+            IApiObjectResponse<T> response = builder.GetResponse();
+            HttpContext.Response.StatusCode = response.Status.HttpCode;
+            return response;
+        }
+
+        protected IApiEnumResponse<T> ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>> setupResponseAction)
+        {
+            IApiEnumResponseBuilder<T> builder = ResponseBuilderFactory.GetApiEnumResponseBuilder<T>();
+            setupResponseAction(builder);
+            IApiEnumResponse<T> response = builder.GetResponse();
+            HttpContext.Response.StatusCode = response.Status.HttpCode;
+            return response;
+        }
+
+
         #endregion General purpose Response builder methods
 
         /// <summary>

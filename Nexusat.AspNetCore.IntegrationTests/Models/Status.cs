@@ -14,11 +14,11 @@ namespace Nexusat.AspNetCore.IntegrationTests.Models
 		}
 
         public bool Equals(Status that) {
-            return 
-                that != null && 
+            return
+                that != null &&
                 this.HttpCode == that.HttpCode &&
-                this.Code == that.Code && 
-                this.Description == that.Description && 
+                this.Code == that.Code &&
+                this.Description == that.Description &&
                 this.UserDescription == that.UserDescription;
         }
 

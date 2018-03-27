@@ -7,8 +7,8 @@ namespace Nexusat.AspNetCore.Configuration
 {
     public class NexusatAspNetCoreOptions
     {
-        public string DefaultOkStatusCode { get; set; } = StatusCode.DEFAULT_OK_STATUS_CODE;
-        public string DefaultKoStatusCode { get; set; } = StatusCode.DEFAULT_KO_STATUS_CODE;
-        public bool IsRuntimeProfilationEnabled { get; set; } = false;
+        public string DefaultOkStatusCode { get; internal set; } = StatusCode.DEFAULT_OK_STATUS_CODE;
+        public string DefaultKoStatusCode { get; internal set; } = StatusCode.DEFAULT_KO_STATUS_CODE;
+        public bool IsRuntimeProfilationEnabled { get; internal set; } = false;
     }
 }
