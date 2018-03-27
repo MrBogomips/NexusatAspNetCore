@@ -95,7 +95,7 @@ namespace Nexusat.AspNetCore.Models
             {
                 _Code = code.Trim().ToUpperInvariant() ;
             }
-            else throw new ArgumentException(FormatSystemMessage(""), nameof(code));
+            else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
         }
         public void SetSuccessCode() => _Code = StatusCode.OK;
         public void SetFailedCode() => _Code = StatusCode.KO;
