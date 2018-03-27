@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc;
 
@@ -55,5 +56,19 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
             r.SetUserDescription("UserDescription");
             r.SetData(new [] {"Hello", "World"});
         });
+
+        [HttpGet("200OkResponseWithException")]
+        public IApiResponse Get200OkResponseWithException()
+        {
+            var response = OkResponse();
+
+            try {
+                throw new Exception("Fake exception");
+            } catch (Exception ex) {
+                response.SetException(ex);
+            }
+
+            return response;
+        }
     }
 }

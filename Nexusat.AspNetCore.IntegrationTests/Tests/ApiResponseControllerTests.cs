@@ -114,6 +114,34 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedData = new List<string> { "Hello", "World" };
             Assert.Equal(expectedData, actualData);
         }
+
+        [Fact]
+        public async void ApiResponse200OkResponseWithException()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/200OkResponseWithException");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var actualException = ExtractExceptionInfo(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 200,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("System.Exception", actualException.Type);
+            Assert.Equal("Fake exception", actualException.Message);
+            Assert.NotEmpty(actualException.StackTrace);
+        }
        
     }
 }
