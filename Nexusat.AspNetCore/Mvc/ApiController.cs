@@ -28,7 +28,7 @@ namespace Nexusat.AspNetCore.Mvc
             get => HttpContext.RequestServices.GetService(typeof(IApiResponseBuilderFactory)) as IApiResponseBuilderFactory;
         }
 
-        protected internal NexusatAspNetCoreOptions FrameworkOptions
+        protected NexusatAspNetCoreOptions FrameworkOptions
         {
             get
             {
@@ -41,7 +41,7 @@ namespace Nexusat.AspNetCore.Mvc
         }
 
         #region General purpose Response builder methods
-        protected internal IApiResponse ApiResponse(Action<IApiResponseBuilder> setupResponseAction) {
+        protected IApiResponse ApiResponse(Action<IApiResponseBuilder> setupResponseAction) {
             IApiResponseBuilder builder = ResponseBuilderFactory.GetApiResponseBuilder();
             setupResponseAction(builder);
             IApiResponse response = builder.GetResponse();
@@ -49,7 +49,7 @@ namespace Nexusat.AspNetCore.Mvc
             return response;
         }
 
-        protected internal IApiObjectResponse<T> ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>> setupResponseAction)
+        protected IApiObjectResponse<T> ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>> setupResponseAction)
         {
             IApiObjectResponseBuilder<T> builder = ResponseBuilderFactory.GetApiObjectResponseBuilder<T>();
             setupResponseAction(builder);
@@ -58,7 +58,7 @@ namespace Nexusat.AspNetCore.Mvc
             return response;
         }
 
-        protected internal IApiEnumResponse<T> ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>> setupResponseAction)
+        protected IApiEnumResponse<T> ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>> setupResponseAction)
         {
             IApiEnumResponseBuilder<T> builder = ResponseBuilderFactory.GetApiEnumResponseBuilder<T>();
             setupResponseAction(builder);
