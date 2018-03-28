@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Net.Http.Headers;
+using Newtonsoft.Json.Linq;
 using Nexusat.AspNetCore.IntegrationTests.Models;
 using System;
 using System.Collections.Generic;
@@ -144,13 +145,14 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         }
 
 
-
+        #region Ok (HTTP 200) Helper Methods flavours
         [Fact]
         public async void Api200OkResponseWithoutPayload() {
             // Act
             var response = await Client.GetAsync("/ApiResponse/200OkResponseWithoutPayload");
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
 
             Output.WriteLine(json.ToString());
 
@@ -164,7 +166,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             };
 
             // Assert
-            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(HttpStatusCode.OK /* 200 */, httpCode);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Null(json.SelectToken("data"));
         }
@@ -176,6 +178,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var response = await Client.GetAsync("/ApiResponse/200OkResponseWithObject");
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
 
             Output.WriteLine(json.ToString());
 
@@ -189,7 +192,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             };
 
             // Assert
-            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(HttpStatusCode.OK /* 200 */, httpCode);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("Ciccio", json.SelectToken("data").Value<string>());
         }
@@ -201,6 +204,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var response = await Client.GetAsync("/ApiResponse/200OkResponseWithManyObjects");
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
 
             Output.WriteLine(json.ToString());
 
@@ -214,13 +218,100 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             };
 
             // Assert
-            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(HttpStatusCode.OK /* 200 */, httpCode);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal(new[] { "Ciccio", "buffo" }, json.SelectToken("data").Values<string>());
         }
-
+        #endregion Ok (HTTP 200) Helper Methods flavours
 
        
+        #region Accpepted (HTTP 202) Helper Methods flavours
+
+        [Fact]
+        public async void ApiGetAcceptedResponseWithoutPayload()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/202OkResponseWithoutPayload");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+            var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 202,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            //Assert
+            Assert.Equal(HttpStatusCode.Accepted, httpCode);
+            Assert.Equal("some_uri", location);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Null(json.SelectToken("data"));
+        }
+
+        [Fact]
+        public async void ApiGetAcceptedResponseWithObject()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/202OkResponseWithObject");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+            var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 202,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            //Assert
+            Assert.Equal(HttpStatusCode.Accepted, httpCode);
+            Assert.Equal("some_uri", location);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("payload", json.SelectToken("data").Value<string>());
+        }
+
+        [Fact]
+        public async void ApiGetAcceptedResponseWithManyObjects()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/202OkResponseWithManyObjects");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+            var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 202,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            //Assert
+            Assert.Equal(HttpStatusCode.Accepted, httpCode);
+            Assert.Equal("some_uri", location);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal(new[] { "pay", "load" }, json.SelectToken("data").Values<string>());
+        }
+        #endregion Accpepted (HTTP 202) Helper Methods flavours
+        
        
     }
 }
