@@ -142,6 +142,85 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal("Fake exception", actualException.Message);
             Assert.NotEmpty(actualException.StackTrace);
         }
+
+
+
+        [Fact]
+        public async void Api200OkResponseWithoutPayload() {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/200OkResponseWithoutPayload");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 200,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Null(json.SelectToken("data"));
+        }
+
+        [Fact]
+        public async void Api200OkResponseWithObject()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/200OkResponseWithObject");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 200,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("Ciccio", json.SelectToken("data").Value<string>());
+        }
+
+        [Fact]
+        public async void Api200OkResponseWithManyObjects()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/200OkResponseWithManyObjects");
+            response.EnsureSuccessStatusCode();
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 200,
+                Code = "OK_TEST_DEFAULT",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal(new[] { "Ciccio", "buffo" }, json.SelectToken("data").Values<string>());
+        }
+
+
+       
        
     }
 }

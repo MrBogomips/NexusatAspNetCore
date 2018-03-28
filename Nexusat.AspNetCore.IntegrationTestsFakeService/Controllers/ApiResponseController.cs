@@ -14,7 +14,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// </summary>
         /// <returns>The get200.</returns>
         [HttpGet("200")]
-        public IApiResponse Get200() => OkResponse();
+        public IApiResponse Get200() => Ok();
 
         /// <summary>
         /// A custom response without a data payload
@@ -54,21 +54,33 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
             r.SetStatusCode("OK_299_CUSTOM");
             r.SetDescription("Description");
             r.SetUserDescription("UserDescription");
-            r.SetData(new [] {"Hello", "World"});
+            r.SetData(new[] { "Hello", "World" });
         });
 
         [HttpGet("200OkResponseWithException")]
         public IApiResponse Get200OkResponseWithException()
         {
-            var response = OkResponse();
+            var response = Ok();
 
-            try {
+            try
+            {
                 throw new Exception("Fake exception");
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 response.SetException(ex);
             }
 
             return response;
         }
+
+        #region Ok Helper Methods falvours
+        [HttpGet("200OkResponseWithoutPayload")]
+        public IApiResponse GetOkResponseWithourPayload() => Ok();
+        [HttpGet("200OkResponseWithObject")]
+        public IApiObjectResponse<string> GetOkResponseWithObject() => OkObject(data: "Ciccio");
+        [HttpGet("200OkResponseWithManyObjects")]
+        public IApiEnumResponse<string> GetOkResponseWithManyObjects() => OkEnum(data: new [] { "Ciccio", "buffo" });
+        #endregion Ok Helper Methods falvours
     }
 }
