@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:52,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{index:0,modul:0,page:0,search:0},titles:["Welcome to Nexusat AspNet Core REST Api \u00b5-Framework\u2019s documentation!"],titleterms:{api:0,aspnet:0,core:0,document:0,framework:0,indic:0,nexusat:0,rest:0,tabl:0,welcom:0}})

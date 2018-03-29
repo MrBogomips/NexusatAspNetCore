@@ -1,0 +1,9 @@
+<ListOfTaskListEntry>
+  <TaskListEntry file="" description="StatusCode Abstraction:" />
+  <TaskListEntry file="" description="Pagination" priority="High" />
+  <TaskListEntry file="" description="Global Exception Handling" priority="High" />
+  <TaskListEntry file="" description="Request Model Validation" priority="High" />
+  <TaskListEntry file="" description="Meta Extensions: add a &quot;meta&quot; block on the Response message to pass «out of bound» data" priority="Low" />
+  <TaskListEntry file="" description="StatusCode Checking Cache: status code validation must be cached" />
+  <TaskListEntry file="" description="Mvc Api Controller: Response builder methods" />
+</ListOfTaskListEntry>
