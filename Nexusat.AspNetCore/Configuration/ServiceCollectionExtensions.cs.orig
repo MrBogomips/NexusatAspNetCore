@@ -19,9 +19,15 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             var builder = new NexusatAspNetCoreSystemBuilder(mvcBuilder, setupAction);
 
+<<<<<<< HEAD
+            // Add framework services
+            services.AddSingleton<IApiResponseBuilderFactory>(_ => new ApiResponseBuilderFactory());
+            services.AddSingleton<ApiResponseExecutor>();
+=======
             builder
                 .AddSystemService()
                 .AddFrameworkServices();
+>>>>>>> feature/Mvc_Helper_Methods
 
             return mvcBuilder;
         }

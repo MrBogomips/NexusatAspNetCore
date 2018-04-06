@@ -10,9 +10,18 @@ namespace Nexusat.AspNetCore.Builders
     {
         private IApiObjectResponse<T> Response => _response as IApiObjectResponse<T>;
 
-        public ApiObjectResponseBuilder() : base(new ApiObjectResponse<T>()) { }
+        public ApiObjectResponseBuilder() : this(new ApiObjectResponse<T>()) { }
+        public ApiObjectResponseBuilder(IApiObjectResponse<T> obj) : base(obj)
+        {
+            if (obj == null)
+            {
+                throw new ArgumentNullException(nameof(obj));
+            }
+        }
 
-        public IApiObjectResponse<T> Build()
+
+
+        public IApiObjectResponse<T> GetResponse()
         {
             SingleInstanceChecker.CheckBuildStateForFinalBuild();
             return Response;
@@ -52,6 +61,18 @@ namespace Nexusat.AspNetCore.Builders
         public IApiObjectResponseBuilder<T> SetStatusCode(string code)
         {
             InternalSetStatusCode(code);
+            return this;
+        }
+
+        public IApiObjectResponseBuilder<T> SetDescription(string description)
+        {
+            InternalSetDescription(description);
+            return this;
+        }
+
+        public IApiObjectResponseBuilder<T> SetUserDescription(string userDescription)
+        {
+            InternalSetUserDescription(userDescription);
             return this;
         }
     }

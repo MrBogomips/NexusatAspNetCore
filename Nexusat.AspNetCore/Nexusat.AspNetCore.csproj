@@ -11,6 +11,8 @@
   <ItemGroup>
     <Folder Include="Infrastructure\Middleware\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Mvc\Formatters\" />
+    <Folder Include="Mvc\Formatters\Internals\" />
   </ItemGroup>
 
   <ItemGroup>

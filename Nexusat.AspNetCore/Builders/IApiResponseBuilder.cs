@@ -11,7 +11,9 @@ namespace Nexusat.AspNetCore.Builders
         IApiResponseBuilder SetStatusCode(string code);
         IApiResponseBuilder SetStatusCodeSuccess();
         IApiResponseBuilder SetStatusCodeFailed();
+        IApiResponseBuilder SetDescription(string description);
+        IApiResponseBuilder SetUserDescription(string userDescription);
         IApiResponseBuilder SetException(Exception exception);
-        IApiResponse Build();
+        IApiResponse GetResponse();
     }
 }
