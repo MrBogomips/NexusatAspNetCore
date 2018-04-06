@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Nexusat.AspNetCore.IntegrationTests.Models
 {
-    public class Status
+    public class Status: IEquatable<Status>
     {
         public int HttpCode { get; set; }
         public string Code { get; set; }

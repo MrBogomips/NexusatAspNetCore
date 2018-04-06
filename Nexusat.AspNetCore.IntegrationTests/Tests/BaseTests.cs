@@ -35,8 +35,18 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
                 {
                     HttpCode = json.SelectToken("status.httpCode").Value<int>(),
                     Code = json.SelectToken("status.code").Value<string>(),
-                    Description = json.SelectToken("status.description").Value<string>(),
-                    UserDescription = json.SelectToken("status.userDescription").Value<string>()
+                    Description = json.SelectToken("status.description")?.Value<string>(),
+                    UserDescription = json.SelectToken("status.userDescription")?.Value<string>()
+                };
+        }
+
+        protected static ExceptionInfo ExtractExceptionInfo(JObject json)
+        {
+            return
+                new ExceptionInfo {
+                    Type = json.SelectToken("exception.type").Value<string>(),
+                    Message = json.SelectToken("exception.message").Value<string>(),
+                    StackTrace = json.SelectToken("exception.stackTrace")?.Values<string>()
                 };
         }
 
