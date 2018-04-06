@@ -46,6 +46,8 @@ namespace Nexusat.AspNetCore.SampleRestApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseResponseCompression();
+
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

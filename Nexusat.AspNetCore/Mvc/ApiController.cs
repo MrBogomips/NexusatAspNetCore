@@ -45,7 +45,6 @@ namespace Nexusat.AspNetCore.Mvc
             IApiResponseBuilder builder = ResponseBuilderFactory.GetApiResponseBuilder();
             setupResponseAction(builder);
             IApiResponse response = builder.GetResponse();
-            HttpContext.Response.StatusCode = response.Status.HttpCode;
             return response;
         }
 
@@ -54,7 +53,6 @@ namespace Nexusat.AspNetCore.Mvc
             IApiObjectResponseBuilder<T> builder = ResponseBuilderFactory.GetApiObjectResponseBuilder<T>();
             setupResponseAction(builder);
             IApiObjectResponse<T> response = builder.GetResponse();
-            HttpContext.Response.StatusCode = response.Status.HttpCode;
             return response;
         }
 
@@ -63,7 +61,6 @@ namespace Nexusat.AspNetCore.Mvc
             IApiEnumResponseBuilder<T> builder = ResponseBuilderFactory.GetApiEnumResponseBuilder<T>();
             setupResponseAction(builder);
             IApiEnumResponse<T> response = builder.GetResponse();
-            HttpContext.Response.StatusCode = response.Status.HttpCode;
             return response;
         }
         #endregion General purpose Response builder methods
