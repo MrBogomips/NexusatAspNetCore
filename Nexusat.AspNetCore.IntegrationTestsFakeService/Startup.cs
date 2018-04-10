@@ -41,6 +41,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseNexusatAspNetCoreExceptionHandling();
             app.UseMvc();
             app.UseNexusatAspNetCore();
         }
