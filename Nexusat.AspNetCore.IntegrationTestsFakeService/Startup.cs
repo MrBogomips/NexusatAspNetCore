@@ -42,6 +42,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
             }
 
             app.UseMvc();
+            app.UseNexusatAspNetCore();
         }
     }
 }

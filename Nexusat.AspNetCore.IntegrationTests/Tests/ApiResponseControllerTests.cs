@@ -311,7 +311,38 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(new[] { "pay", "load" }, json.SelectToken("data").Values<string>());
         }
         #endregion Accpepted (HTTP 202) Helper Methods flavours
-        
+
+        #region Middleware Global Exception Handling
+        /// <summary>
+        /// Requesting a route not found will generate a standard 404 response
+        /// </summary>
+        [Fact]
+        public async void ApiNotFoundGlobalHandling()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/SomeVeryUnlikeEndPoint");
+            //response.EnsureSuccessStatusCode();
+            //Output.WriteLine(await response.Content.ReadAsStringAsync());
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+            //var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 404,
+                Code = "KO_NOT_FOUND",
+                Description = null,
+                UserDescription = null
+            };
+
+            //Assert
+            Assert.Equal(HttpStatusCode.NotFound, httpCode);
+            Assert.Equal(expectedStatus, actualStatus);
+        }
+        #endregion Middleware Global Exception Handling
        
     }
 }

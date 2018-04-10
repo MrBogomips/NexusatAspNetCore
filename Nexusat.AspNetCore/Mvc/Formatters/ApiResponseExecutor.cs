@@ -2,6 +2,7 @@
 using System.Buffers;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.Extensions.Logging;
@@ -98,8 +99,15 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
                 throw new ArgumentNullException(nameof(result));
             }
 
-            var response = context.HttpContext.Response;
+            var httpContext = context.HttpContext;
 
+            RenderResponse(httpContext, result);
+
+            return Task.CompletedTask;
+        }
+
+        public void RenderResponse(HttpContext httpContext, IApiResponse result) {
+            var response = httpContext.Response;
 
             Internals.ResponseContentTypeHelper.ResolveContentTypeAndEncoding(
                 response.ContentType,
@@ -126,8 +134,6 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
                     jsonSerializer.Serialize(jsonWriter, result);
                 }
             }
-
-            return Task.CompletedTask;
         }
     }
 }
