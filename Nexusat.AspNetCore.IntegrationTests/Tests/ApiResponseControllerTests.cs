@@ -137,13 +137,37 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             };
 
             // Assert
-            //Assert.Equal("OK", response.StatusCode.ToString()); // HTTP200
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("System.Exception", actualException.Type);
             Assert.Equal("Fake exception", actualException.Message);
             Assert.NotEmpty(actualException.StackTrace);
         }
 
+        [Fact]
+        public async void ApiResponse500KoUnhandledException()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/500KoUnhandledException");
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var actualException = ExtractExceptionInfo(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 500,
+                Code = "KO_UNHANDLED_EXCEPTION",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("System.DivideByZeroException", actualException.Type);
+            Assert.Equal("Attempted to divide by zero.", actualException.Message);
+            Assert.NotEmpty(actualException.StackTrace);
+        }
 
         #region Ok (HTTP 200) Helper Methods flavours
         [Fact]

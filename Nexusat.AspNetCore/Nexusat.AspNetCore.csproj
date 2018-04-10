@@ -13,6 +13,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="Mvc\Formatters\" />
     <Folder Include="Mvc\Formatters\Internals\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
 
   <ItemGroup>
