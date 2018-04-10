@@ -26,6 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Configuration\NexusatAspNetCoreMvcBuilderExtensions %28copy%29.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Properties\ExceptionMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

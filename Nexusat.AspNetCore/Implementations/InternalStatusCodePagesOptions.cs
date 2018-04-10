@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters;
 
 namespace Nexusat.AspNetCore.Implementations
@@ -15,12 +16,21 @@ namespace Nexusat.AspNetCore.Implementations
         {
             HandleAsync = (ctx) =>
             {
-                if (ctx.HttpContext.Response.StatusCode == 404)
+                var services = ctx.HttpContext.RequestServices;
+                var executor = services.GetRequiredService<ApiResponseExecutor>();
+
+                var httpStatusCode = ctx.HttpContext.Response.StatusCode;
+                ApiResponse response = null; 
+                if ( httpStatusCode == 404)
                 {
-                    var services = ctx.HttpContext.RequestServices;
-                    var executor = services.GetRequiredService<ApiResponseExecutor>();
-                    executor.RenderResponse(ctx.HttpContext, new NotFoundResponse());
+                    response = new NotFoundResponse();
+                } else {
+                    response = new ApiResponse();
+                    response.Status.HttpCode = httpStatusCode;
+                    response.Status.Code = string.Format("{0}_{1}_UNMANAGED", StatusCode.KO, httpStatusCode);
                 }
+
+                executor.RenderResponse(ctx.HttpContext, response);
 
                 return Task.FromResult(0);
             };
