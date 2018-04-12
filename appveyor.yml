@@ -1,9 +1,10 @@
 version: 0.0.0.{build}-{branch}
 image: Visual Studio 2017
+configuration: Release
 before_build:
 - ps: dotnet restore
 build:
-  verbosity: minimal
+  verbosity: detailed
 artifacts:
 - path: Nexusat.AspNetCore\bin\Debug\netcoreapp2.0\Nexusat.AspNetCore.dll
   name: Nexusat.AspNetCore.dll
