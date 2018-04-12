@@ -8,27 +8,30 @@ using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Builders
 {
-    internal abstract class ApiResponseBuilderBase: IApiResponseBuilderBase
+    internal abstract class ApiResponseBuilderBase : IApiResponseBuilderBase
     {
         protected readonly IApiResponseInternal _response;
-        private IApiResponseInternal Response  => _response;
+        private IApiResponseInternal Response => _response;
 
         public bool IsBuilderValid => SingleInstanceChecker.IsBuilderValid;
         protected readonly BuilderSingleInstanceChecker SingleInstanceChecker = new BuilderSingleInstanceChecker();
 
+        #region Constructors
         /// <summary>
         /// 
         /// </summary>
         /// <param name="response">Subclasses must provided a concrete type compatible with the builder class</param>
-        protected ApiResponseBuilderBase(IApiResponse response) 
+        protected ApiResponseBuilderBase(IApiResponse response)
         {
             if (response == null) throw new ArgumentNullException(nameof(response));
-            _response = response as IApiResponseInternal 
+            _response = response as IApiResponseInternal
                 ?? throw new ArgumentException(
-                    FormatSystemMessage(ExceptionMessages.IApiResponseInternalNotImplemented), 
+                    FormatSystemMessage(ExceptionMessages.IApiResponseInternalNotImplemented),
                     nameof(response));
         }
+        #endregion Constructors
 
+        #region Internal Helper Methods
         protected void InternalSetHttpCode(int code)
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();  // TODO: OPTIMIZABLE
@@ -53,6 +56,18 @@ namespace Nexusat.AspNetCore.Builders
             Response.Status.SetFailedCode();
         }
 
+        protected void InternalSetDescription(string description)
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Status.Description = description;
+        }
+
+        protected void InternalSetUserDescription(string description)
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Status.UserDescription = description;
+        }
+
         protected void InternalSetException(Exception exception)
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
@@ -62,7 +77,7 @@ namespace Nexusat.AspNetCore.Builders
             }
             Response.Exception = ExceptionInfo.GetFromException(exception);
         }
+        #endregion Internal Helper Methods
 
-        
     }
 }

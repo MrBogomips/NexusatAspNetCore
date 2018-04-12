@@ -23,8 +23,9 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-            services.AddNexusatAspNetCore(c =>
+            services
+                .AddMvc()
+                .AddNexusatAspNetCore(c =>
                 {
                     c.EnableRuntimeProfilation();
                     c.SetDefaultOkStatus("OK_TEST_DEFAULT");
@@ -40,7 +41,9 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseNexusatAspNetCoreExceptionHandling();
             app.UseMvc();
+            app.UseNexusatAspNetCore();
         }
     }
 }

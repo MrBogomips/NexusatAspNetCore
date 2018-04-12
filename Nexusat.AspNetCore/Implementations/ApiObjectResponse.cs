@@ -8,5 +8,8 @@ namespace Nexusat.AspNetCore.Implementations
     internal class ApiObjectResponse<T> : ApiResponse, IApiObjectResponse<T>
     {
         public T Data { get; set; }
+
+        public ApiObjectResponse() {}
+        public ApiObjectResponse(T obj) { Data = obj; }
     }
 }
