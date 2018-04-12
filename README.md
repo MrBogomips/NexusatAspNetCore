@@ -4,4 +4,3 @@
 [![codecov](https://codecov.io/gh/MrBogomips/NexusatAspNetCore/branch/master/graph/badge.svg)](https://codecov.io/gh/MrBogomips/NexusatAspNetCore)
 
 # WORK IN PROGRESS…
-

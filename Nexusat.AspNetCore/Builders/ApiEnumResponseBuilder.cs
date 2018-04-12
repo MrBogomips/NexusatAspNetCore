@@ -11,16 +11,9 @@ namespace Nexusat.AspNetCore.Builders
 
         private IApiEnumResponse<T> Response => _response as IApiEnumResponse<T>;
 
-        public ApiEnumResponseBuilder(): this(new ApiEnumResponse<T>()) { }
-        public ApiEnumResponseBuilder(IApiEnumResponse<T> obj): base(obj) 
-        {
-            if (obj == null)
-            {
-                throw new ArgumentNullException(nameof(obj));
-            }
-        }
+        public ApiEnumResponseBuilder(): base(new ApiEnumResponse<T>()) { }
 
-        public IApiEnumResponse<T> GetResponse()
+        public IApiEnumResponse<T> Build()
         {
             SingleInstanceChecker.CheckBuildStateForFinalBuild();
             return Response;
@@ -62,17 +55,6 @@ namespace Nexusat.AspNetCore.Builders
             InternalSetStatusCode(code);
             return this;
         }
-
-        public IApiEnumResponseBuilder<T> SetDescription(string description)
-        {
-            InternalSetDescription(description);
-            return this;
-        }
-
-        public IApiEnumResponseBuilder<T> SetUserDescription(string userDescription)
-        {
-            InternalSetUserDescription(userDescription);
-            return this;
-        }
+        
     }
 }

@@ -12,13 +12,11 @@ namespace Nexusat.AspNetCore.Models
         public IEnumerable<string> StackTrace { get; set; }
         public static ExceptionInfo GetFromException(Exception exception)
         {
-            if (null == exception) throw new ArgumentNullException(nameof(exception));
-
             return new ExceptionInfo
             {
                 Type = exception.GetType().FullName,
                 Message = exception.Message,
-                StackTrace = exception.StackTrace?
+                StackTrace = exception.StackTrace
                     .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(s => s.TrimStart())
             };

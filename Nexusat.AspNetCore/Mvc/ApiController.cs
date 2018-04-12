@@ -11,10 +11,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+using static Microsoft.AspNetCore.Http.StatusCodes;
+
 namespace Nexusat.AspNetCore.Mvc
 {
     [Controller]
-    public abstract partial class ApiController
+    public abstract class ApiController
     {
         [ControllerContext]
         public ControllerContext ControllerContext { get; set; }
@@ -23,15 +25,13 @@ namespace Nexusat.AspNetCore.Mvc
         protected ModelStateDictionary ModelState { get => ControllerContext.ModelState; }
         protected RouteData RoutedData { get => ControllerContext.RouteData; }
 
-        protected IApiResponseBuilderFactory ResponseBuilderFactory
-        {
+        protected IApiResponseBuilderFactory ResponseBuilderFactory {
             get => HttpContext.RequestServices.GetService(typeof(IApiResponseBuilderFactory)) as IApiResponseBuilderFactory;
         }
 
-        protected NexusatAspNetCoreOptions FrameworkOptions
+        protected internal NexusatAspNetCoreOptions FrameworkOptions
         {
-            get
-            {
+            get {
                 var options = HttpContext
                     .RequestServices
                     .GetService(typeof(IOptions<NexusatAspNetCoreOptions>))
@@ -40,33 +40,43 @@ namespace Nexusat.AspNetCore.Mvc
             }
         }
 
-        #region General purpose Response builder methods
-        protected IApiResponse ApiResponse(Action<IApiResponseBuilder> setupResponseAction) {
-            IApiResponseBuilder builder = ResponseBuilderFactory.GetApiResponseBuilder();
-            setupResponseAction(builder);
-            IApiResponse response = builder.GetResponse();
-            return response;
-        }
-
-        protected IApiObjectResponse<T> ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>> setupResponseAction)
+        private void SetHttpStatusCode(int httpCode, IApiResponseBuilder responseBuilder)
         {
-            IApiObjectResponseBuilder<T> builder = ResponseBuilderFactory.GetApiObjectResponseBuilder<T>();
-            setupResponseAction(builder);
-            IApiObjectResponse<T> response = builder.GetResponse();
-            return response;
+            HttpContext.Response.StatusCode = httpCode;
+            responseBuilder.SetHttpCode(httpCode);
         }
 
-        protected IApiEnumResponse<T> ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>> setupResponseAction)
+        protected IApiResponse Response(int httpCode, string statusCode)
         {
-            IApiEnumResponseBuilder<T> builder = ResponseBuilderFactory.GetApiEnumResponseBuilder<T>();
-            setupResponseAction(builder);
-            IApiEnumResponse<T> response = builder.GetResponse();
-            return response;
+            HttpContext.Response.StatusCode = httpCode;
+            return ResponseBuilderFactory
+                .GetApiResponseBuilder()
+                .SetHttpCode(httpCode)
+                .SetStatusCode(statusCode)
+                .Build();
         }
-        #endregion General purpose Response builder methods
+        protected IApiObjectResponse<T> ObjectResponse<T>(int httpCode)
+        {
+            HttpContext.Response.StatusCode = httpCode;
+            return ResponseBuilderFactory
+                .GetApiObjectResponseBuilder<T>()
+                .SetHttpCode(httpCode)
+                .Build();
+        }
+        protected IApiEnumResponse<T> EnumResponse<T>(int httpCode)
+        {
+            HttpContext.Response.StatusCode = httpCode;
+            return ResponseBuilderFactory
+                .GetApiEnumResponseBuilder<T>()
+                .SetHttpCode(httpCode)
+                .Build();
+        }
 
+        protected IApiResponse OkResponse() 
+            => Response(Status200OK, FrameworkOptions.DefaultOkStatusCode);
 
-
+        protected IApiObjectResponse<T> OkObjectResponse<T>() => ObjectResponse<T>(Status200OK);
+        protected IApiEnumResponse<T> OkEnumResponse<T>() => EnumResponse<T>(Status200OK);
 
     }
 }

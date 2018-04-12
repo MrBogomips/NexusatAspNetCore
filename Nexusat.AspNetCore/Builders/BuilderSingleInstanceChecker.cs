@@ -30,7 +30,7 @@ namespace Nexusat.AspNetCore.Builders
 
         public void CheckBuildStateForFinalBuild()
         {
-            //CheckBuildStateWhileBuilding();
+            CheckBuildStateWhileBuilding();
             _isObjectBuilt = true;
         }
     }

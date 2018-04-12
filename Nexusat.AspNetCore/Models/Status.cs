@@ -33,14 +33,7 @@ namespace Nexusat.AspNetCore.Models
         /// The default status code used in case of failed operations
         /// </summary>
         public static readonly string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
-        /// <summary>
-        /// The NotFound status code.
-        /// </summary>
-        public static readonly string NOT_FOUND_STATUS_CODE = KO + "_NOT_FOUND";
-        /// <summary>
-        /// The unhandled exception status code.
-        /// </summary>
-        public static readonly string UNHANDLED_EXCEPTION_STATUS_CODE = KO + "_UNHANDLED_EXCEPTION";
+
         
         /// <summary>
         /// The default status code used in case of ambigous operations not specifically configured by the user
@@ -102,7 +95,7 @@ namespace Nexusat.AspNetCore.Models
             {
                 _Code = code.Trim().ToUpperInvariant() ;
             }
-            else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
+            else throw new ArgumentException(FormatSystemMessage(""), nameof(code));
         }
         public void SetSuccessCode() => _Code = StatusCode.OK;
         public void SetFailedCode() => _Code = StatusCode.KO;

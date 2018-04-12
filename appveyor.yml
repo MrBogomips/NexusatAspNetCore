@@ -1,4 +1,4 @@
-version: 0.0.0.{build}-{branch}
+version: 1.0.0.{build}-{branch}
 image: Visual Studio 2017
 before_build:
 - ps: dotnet restore
@@ -21,9 +21,3 @@ notifications:
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
-- provider: Slack
-  incoming_webhook: https://hooks.slack.com/services/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
-  on_build_success: true
-  on_build_failure: true
-  on_build_status_changed: true
-

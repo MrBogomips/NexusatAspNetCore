@@ -25,12 +25,12 @@ namespace Nexusat.AspNetCore.SampleRestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddMvc()
+                .AddMvc();
+            services
                 .AddNexusatAspNetCore(c =>
                 {
                     c.EnableRuntimeProfilation();
-                });
-            services
+                })
                 .AddSwaggerGen(c =>
                 {
                     c.SwaggerDoc("v1", new Info { Title = "Sample REST API", Version = "v1" });
@@ -45,8 +45,6 @@ namespace Nexusat.AspNetCore.SampleRestApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseResponseCompression();
 
             app.UseMvc();
             app.UseSwagger();
