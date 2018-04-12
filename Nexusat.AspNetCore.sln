@@ -19,6 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexusat.AspNetCore.Integrat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexusat.AspNetCore.IntegrationTestsFakeService", "Nexusat.AspNetCore.IntegrationTestsFakeService\Nexusat.AspNetCore.IntegrationTestsFakeService.csproj", "{A49E875C-47F2-4E11-9F6B-8094DD9419E1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D121FB27-8E5E-4907-8E2A-A153801B6A91}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

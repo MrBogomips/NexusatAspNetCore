@@ -9,5 +9,8 @@ namespace Nexusat.AspNetCore.Implementations
     {
         public IEnumerable<T> Data { get; set; }
         public NavigationInfo Navigation { get; set; }
+
+        public ApiEnumResponse() { }
+        public ApiEnumResponse(IEnumerable<T> obj) { Data = obj; }
     }
 }
