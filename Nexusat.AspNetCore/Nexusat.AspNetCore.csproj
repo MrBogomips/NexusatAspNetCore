@@ -8,6 +8,7 @@
     <RootNamespace>Nexusat.AspNetCore</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <ItemGroup>
     <Folder Include="Infrastructure\Middleware\" />
     <Folder Include="Extensions\" />

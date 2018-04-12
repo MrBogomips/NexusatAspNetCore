@@ -8,7 +8,7 @@ namespace Nexusat.AspNetCore.Implementations
     internal class ApiEnumResponse<T> : ApiResponse, IApiEnumResponse<T>
     {
         public IEnumerable<T> Data { get; set; }
-        public NavigationInfo Navigation { get; set; }
+        public PaginationInfo Navigation { get; set; }
 
         public ApiEnumResponse() { }
         public ApiEnumResponse(IEnumerable<T> obj) { Data = obj; }

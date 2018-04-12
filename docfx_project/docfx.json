@@ -60,7 +60,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "custom_template"
+      "nexus_template"
     ],
     "postProcessors": [],
     "noLangKeyword": false,

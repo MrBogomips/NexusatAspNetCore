@@ -12,7 +12,7 @@ namespace Nexusat.AspNetCore.Models
     public interface IApiEnumResponse<T>: IApiResponse
     {
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        NavigationInfo Navigation { get; set; }
+        PaginationInfo Navigation { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         IEnumerable<T> Data { get; set; }
