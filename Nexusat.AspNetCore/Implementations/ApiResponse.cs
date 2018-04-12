@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Nexusat.AspNetCore.Implementations
 {
+    /// <summary>
+    /// Basic API response without any payload
+    /// </summary>
     internal class ApiResponse : ActionResult, IApiResponse, IApiResponseInternal
     {
         public Status Status { get; set; } = new Status();

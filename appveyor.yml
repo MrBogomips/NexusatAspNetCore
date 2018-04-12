@@ -1,4 +1,4 @@
-version: 1.0.0.{build}-{branch}
+version: 0.0.0.{build}-{branch}
 image: Visual Studio 2017
 before_build:
 - ps: dotnet restore

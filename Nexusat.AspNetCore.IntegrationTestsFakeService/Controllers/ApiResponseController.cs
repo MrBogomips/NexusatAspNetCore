@@ -74,6 +74,19 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
             return response;
         }
 
+        [HttpGet("500KoUnhandledException")]
+        public IApiResponse Get500KoUnhandledException()
+        {
+            var response = Ok();
+
+            var num = 1;
+            var den = 0;
+            var res = num / den;
+
+            return response;
+        }
+
+
         #region Ok (HTTP 200) Helper Methods flavours
         [HttpGet("200OkResponseWithoutPayload")]
         public IApiResponse GetOkResponseWithourPayload() => Ok();
