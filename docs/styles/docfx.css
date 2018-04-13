@@ -47,7 +47,14 @@ h6 mark {
     content: '↳';
     margin-right: 5px;
 }
-
+.level0.summary {
+    font-size: 18px;
+    border: 1px dotted #CCC;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background: #fbffd8
+}
 .inheritance .level0 {
     margin-left: 0em;
 }
@@ -186,12 +193,18 @@ header .navbar {
 }
 
 .inheritance h5, .inheritedMembers h5{
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-weight:bold;
+  background:#F5F5F5;
 }
+.inheritedMembers > div {
+    padding-left: 10px;
+    padding-right: 10px
 
-article h1, article h2, article h3, article h4{
-  margin-top: 25px;
+}
+article h1, article h2, article h3, article h4 {
+    margin-top: 25px
+
 }
 
 article h4{

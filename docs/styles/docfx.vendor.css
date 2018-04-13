@@ -1442,7 +1442,7 @@ hr {
 }
 
 .h5, h5 {
-    font-size: 14px
+    font-size: 16px
 }
 
 .h6, h6 {
@@ -3977,7 +3977,9 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     display: block;
     position: relative
 }
-
+.level2 li {
+    line-height:1.6;
+}
 .input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child) {
     border-radius: 0
 }
@@ -4698,7 +4700,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-inverse {
     background-color: #DDD;
-    border-color: #080808
+    border-color: #fe7d19
 }
 
     .navbar-inverse .navbar-brand {
@@ -4809,8 +4811,9 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
     .breadcrumb > li + li:before {
         padding: 0 5px;
-        color: #ccc;
-        content: "/\00a0"
+        color: #fe7d19;
+        content: "/\00a0";
+        font-weight: bold
     }
 
     .breadcrumb > .active {
