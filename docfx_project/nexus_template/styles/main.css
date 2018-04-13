@@ -1,10 +1,10 @@
 /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */
 /* Colors */
 button, a, .btn-primary {
-  color: #47A7A0;
+  color: #222;
 }
 .btn-primary:hover, .btn-primary:focus, button:hover, button:focus, a:hover, a:focus, .toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus, .toc .nav > li > a:hover, .toc .nav > li > a:focus {
-  color: #6E8B60;
+    color: #fe7d19
 }
 .btn-primary.disable, .btn-primary.disable:hover, a.disable, a.disable:hover{
   color: #90ABB9;
@@ -32,7 +32,8 @@ button, a, .btn-primary {
     background: #A27865;
 }
 .toc .nav > li.active > a, .affix ul > li.active > a, .affix ul > li.active > a:before {
-  color: #6E8B60
+  color: #222;
+  font-weight:bold;
 }
 .btn-primary {
     background: #385361;
