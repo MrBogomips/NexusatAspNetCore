@@ -4357,7 +4357,9 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     }
 
     .navbar-brand > img {
-        display: block
+        display: block;
+        max-height: 50px;
+        padding: 5px;
     }
 
 @media (min-width:768px) {
@@ -4709,7 +4711,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
         .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
             color: #fff;
-            background-color: transparent
+            background-color: #fff
         }
 
     .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
