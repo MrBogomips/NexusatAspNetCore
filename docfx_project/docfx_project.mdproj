@@ -12,7 +12,7 @@
       <CustomCommands>
         <Command>
           <type>AfterBuild</type>
-          <command>docfx build</command>
+          <command>docfx</command>
           <workingdir>${ProjectDir}</workingdir>
         </Command>
       </CustomCommands>

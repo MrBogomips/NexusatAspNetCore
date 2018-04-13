@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IApiEnumResponse&lt;T&gt;
+    <title>Class PaginationInfo
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IApiEnumResponse&lt;T&gt;
+    <meta name="title" content="Class PaginationInfo
    ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -68,62 +68,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1">
+            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Models.PaginationInfo">
   
   
-  <h1 id="Nexusat_AspNetCore_Models_IApiEnumResponse_1" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1" class="text-break">Interface IApiEnumResponse&lt;T&gt;
+  <h1 id="Nexusat_AspNetCore_Models_PaginationInfo" data-uid="Nexusat.AspNetCore.Models.PaginationInfo" class="text-break">Class PaginationInfo
   </h1>
-  <div class="markdown level0 summary"><p>Represents a response with a list of objects</p>
+  <div class="markdown level0 summary"><p>Pagination info.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PaginationInfo</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Status">IApiResponse.Status</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Exception">IApiResponse.Exception</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_ValidationErrors">IApiResponse.ValidationErrors</a>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime">IApiResponse.Runtime</a>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Models.html">Nexusat.AspNetCore.Models</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
-  <h5 id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_syntax">Syntax</h5>
+  <h5 id="Nexusat_AspNetCore_Models_PaginationInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IApiEnumResponse&lt;T&gt; : IApiResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PaginationInfo</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_Data_" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1.Data*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_Data" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1.Data">Data</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Nexusat_AspNetCore_Models_PaginationInfo_ItemsCount_" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_PaginationInfo_ItemsCount" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount">ItemsCount</h4>
+  <div class="markdown level1 summary"><p>Represents the number of items found.
+The <pre><code>null</code></pre> value stands for unknown.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-IEnumerable&lt;T&gt; Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int? ItemsCount { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,21 +135,21 @@ IEnumerable&lt;T&gt; Data { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The items count.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation_" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation" data-uid="Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation">Navigation</h4>
+  <a id="Nexusat_AspNetCore_Models_PaginationInfo_Links_" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.Links*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_PaginationInfo_Links" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.Links">Links</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-PaginationInfo Navigation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PaginationInfo.PaginationLinks Links { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,18 +161,66 @@ PaginationInfo Navigation { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.PaginationInfo.html">PaginationInfo</a></td>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html">PaginationInfo.PaginationLinks</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException_Nexusat_AspNetCore_Models_IApiResponse_System_Exception_">ApiResponseExtensions.SetException(IApiResponse, Exception)</a>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_PaginationInfo_PagesCount_" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.PagesCount*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_PaginationInfo_PagesCount" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.PagesCount">PagesCount</h4>
+  <div class="markdown level1 summary"><p>Represents the number of pages expected.
+The <pre><code>null</code></pre> value stands for unknown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? PagesCount { get; set; }</code></pre>
   </div>
-  <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiEnumResponse___0__System_Exception_">ApiResponseExtensions.SetException&lt;T&gt;(IApiEnumResponse&lt;T&gt;, Exception)</a>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The pages count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_PaginationInfo_PageSize_" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.PageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_PaginationInfo_PageSize" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"><p>Represents the maximum number of items per page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PageSize { get; set; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The size of the page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 <div id="disqus_thread"></div>
                 <script>
                 (function() { // DON'T EDIT BELOW THIS LINE
