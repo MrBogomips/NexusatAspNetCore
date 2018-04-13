@@ -4812,7 +4812,10 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
     .breadcrumb > li + li:before {
-        padding: 0 5px;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 5px;
         color: #fe7d19;
         content: "/\00a0";
         font-weight: bold

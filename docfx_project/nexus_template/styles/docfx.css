@@ -48,12 +48,14 @@ h6 mark {
     margin-right: 5px;
 }
 .level0.summary {
-    font-size: 16px;
+    font-size: 18px;
+    padding-top: 10px
+    /*
+    background: #fbffd8;
     border: 1px dotted #CCC;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
-    background: #fbffd8
+    */
 }
 .inheritance .level0 {
     margin-left: 0em;
