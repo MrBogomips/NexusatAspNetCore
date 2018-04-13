@@ -1019,96 +1019,122 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
   nameWithType: IApiResponse.ValidationErrors
-- uid: Nexusat.AspNetCore.Models.NavigationInfo
-  name: NavigationInfo
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.html
-  commentId: T:Nexusat.AspNetCore.Models.NavigationInfo
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo
-  nameWithType: NavigationInfo
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.Links
+- uid: Nexusat.AspNetCore.Models.PaginationInfo
+  name: PaginationInfo
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html
+  commentId: T:Nexusat.AspNetCore.Models.PaginationInfo
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo
+  nameWithType: PaginationInfo
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount
+  name: ItemsCount
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_ItemsCount
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount
+  nameWithType: PaginationInfo.ItemsCount
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount*
+  name: ItemsCount
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_ItemsCount_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.ItemsCount
+  nameWithType: PaginationInfo.ItemsCount
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.Links
   name: Links
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.html#Nexusat_AspNetCore_Models_NavigationInfo_Links
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.Links
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.Links
-  nameWithType: NavigationInfo.Links
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.Links*
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_Links
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.Links
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.Links
+  nameWithType: PaginationInfo.Links
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.Links*
   name: Links
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.html#Nexusat_AspNetCore_Models_NavigationInfo_Links_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.Links
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_Links_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.Links
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.Links
-  nameWithType: NavigationInfo.Links
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks
-  name: NavigationInfo.NavigationLinks
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html
-  commentId: T:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks
-  nameWithType: NavigationInfo.NavigationLinks
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.Links
+  nameWithType: PaginationInfo.Links
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PagesCount
+  name: PagesCount
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_PagesCount
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PagesCount
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PagesCount
+  nameWithType: PaginationInfo.PagesCount
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PagesCount*
+  name: PagesCount
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_PagesCount_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PagesCount
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PagesCount
+  nameWithType: PaginationInfo.PagesCount
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PageSize
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_PageSize
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PageSize
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PageSize
+  nameWithType: PaginationInfo.PageSize
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PageSize*
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_PageSize_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PageSize
+  nameWithType: PaginationInfo.PageSize
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
+  name: PaginationInfo.PaginationLinks
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html
+  commentId: T:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
+  nameWithType: PaginationInfo.PaginationLinks
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
   name: First
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_First
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First
-  nameWithType: NavigationInfo.NavigationLinks.First
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First*
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_First
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
+  nameWithType: PaginationInfo.PaginationLinks.First
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First*
   name: First
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_First_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_First_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.First
-  nameWithType: NavigationInfo.NavigationLinks.First
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
+  nameWithType: PaginationInfo.PaginationLinks.First
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last
   name: Last
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Last
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last
-  nameWithType: NavigationInfo.NavigationLinks.Last
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last*
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Last
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last
+  nameWithType: PaginationInfo.PaginationLinks.Last
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last*
   name: Last
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Last_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Last_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Last
-  nameWithType: NavigationInfo.NavigationLinks.Last
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Last
+  nameWithType: PaginationInfo.PaginationLinks.Last
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next
   name: Next
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Next
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next
-  nameWithType: NavigationInfo.NavigationLinks.Next
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next*
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Next
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next
+  nameWithType: PaginationInfo.PaginationLinks.Next
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next*
   name: Next
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Next_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Next_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Next
-  nameWithType: NavigationInfo.NavigationLinks.Next
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Next
+  nameWithType: PaginationInfo.PaginationLinks.Next
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous
   name: Previous
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Previous
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous
-  nameWithType: NavigationInfo.NavigationLinks.Previous
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous*
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Previous
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous
+  nameWithType: PaginationInfo.PaginationLinks.Previous
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous*
   name: Previous
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.html#Nexusat_AspNetCore_Models_NavigationInfo_NavigationLinks_Previous_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Previous_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.NavigationLinks.Previous
-  nameWithType: NavigationInfo.NavigationLinks.Previous
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.TotalCount
-  name: TotalCount
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.html#Nexusat_AspNetCore_Models_NavigationInfo_TotalCount
-  commentId: P:Nexusat.AspNetCore.Models.NavigationInfo.TotalCount
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.TotalCount
-  nameWithType: NavigationInfo.TotalCount
-- uid: Nexusat.AspNetCore.Models.NavigationInfo.TotalCount*
-  name: TotalCount
-  href: api/Nexusat.AspNetCore.Models.NavigationInfo.html#Nexusat_AspNetCore_Models_NavigationInfo_TotalCount_
-  commentId: Overload:Nexusat.AspNetCore.Models.NavigationInfo.TotalCount
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.NavigationInfo.TotalCount
-  nameWithType: NavigationInfo.TotalCount
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Previous
+  nameWithType: PaginationInfo.PaginationLinks.Previous
 - uid: Nexusat.AspNetCore.Models.RuntimeInfo
   name: RuntimeInfo
   href: api/Nexusat.AspNetCore.Models.RuntimeInfo.html
