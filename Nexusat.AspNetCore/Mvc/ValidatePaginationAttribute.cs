@@ -9,6 +9,7 @@ using Nexusat.AspNetCore.Exceptions;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Mvc {
+    
     public class ValidatePaginationAttribute: ActionFilterAttribute
     {
         public ValidatePaginationAttribute()

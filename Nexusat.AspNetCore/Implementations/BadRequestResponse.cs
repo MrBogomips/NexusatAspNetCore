@@ -12,7 +12,7 @@ namespace Nexusat.AspNetCore.Implementations
     {
         public BadRequestResponse(string description = null, string userDescription = null)
         {
-            Status.HttpCode = (int)HttpStatusCode.NotFound;
+            Status.HttpCode = (int)HttpStatusCode.BadRequest;
             Status.Code = StatusCode.BAD_REQUEST_STATUS_CODE;
             Status.Description = description;
             Status.UserDescription = userDescription;

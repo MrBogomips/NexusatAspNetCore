@@ -86,13 +86,6 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
             return response;
         }
 
-        #region Pagination
-        [HttpGet("PaginationGetCursor")]
-        public IApiResponse GetPaginationCursor(/*[FromServices] Pagination page*/) {
-            throw new NotImplementedException();
-        }
-        #endregion Pagination
-
 
         #region Ok (HTTP 200) Helper Methods flavours
         [HttpGet("200OkResponseWithoutPayload")]
