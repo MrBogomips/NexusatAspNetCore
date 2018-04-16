@@ -277,7 +277,6 @@
     <None Include="api\toc.yml" />
     <None Include="articles\intro.md" />
     <None Include="articles\toc.yml" />
-    <None Include="nexus_template\.DS_Store" />
     <None Include="nexus_template\index.html.tmpl" />
     <None Include="nexus_template\layout\_master.tmpl" />
     <None Include="nexus_template\partials\affix.tmpl.partial" />
