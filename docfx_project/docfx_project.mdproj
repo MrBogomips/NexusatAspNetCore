@@ -283,5 +283,10 @@
     <None Include="nexus_template\partials\affix.tmpl.partial" />
     <None Include="nexus_template\partials\scripts.tmpl.partial" />
     <None Include="nexus_template\styles\main.css" />
+    <None Include="nexus_template\partials\logo.tmpl.partial" />
+    <None Include="nexus_template\partials\navbar.tmpl.partial" />
+    <None Include="nexus_template\styles\docfx.vendor.css" />
+    <None Include="nexus_template\partials\head.tmpl.partial" />
+    <None Include="nexus_template\styles\docfx.css" />
   </ItemGroup>
 </Project>
