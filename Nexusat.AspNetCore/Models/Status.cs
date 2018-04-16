@@ -2,6 +2,7 @@
 using Nexusat.AspNetCore.Properties;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 
@@ -38,6 +39,10 @@ namespace Nexusat.AspNetCore.Models
         /// </summary>
         public static readonly string NOT_FOUND_STATUS_CODE = KO + "_NOT_FOUND";
         /// <summary>
+        /// The BadRequest status code.
+        /// </summary>
+        public static readonly string BAD_REQUEST_STATUS_CODE = KO + "_BAD_REQUEST";
+        /// <summary>
         /// The unhandled exception status code.
         /// </summary>
         public static readonly string UNHANDLED_EXCEPTION_STATUS_CODE = KO + "_UNHANDLED_EXCEPTION";
@@ -47,19 +52,39 @@ namespace Nexusat.AspNetCore.Models
         /// </summary>
         public static readonly string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
 
-
-
+        public static bool CheckOkValidCode(string code) =>
+            code != null && (
+                code == OK ||
+                code.StartsWith(OK_, StringComparison.InvariantCulture)
+            );
+        public static bool CheckKoValidCode(string code) =>
+            code != null && (
+                code == KO ||
+                code.StartsWith(KO_, StringComparison.InvariantCulture)
+            );
         public static bool CheckValidCode(string code) =>
             code != null && (
                 code == OK ||
                 code == KO ||
-                code.StartsWith(OK_) ||
-                code.StartsWith(KO_)
+                code.StartsWith(OK_, StringComparison.InvariantCulture) ||
+                code.StartsWith(KO_, StringComparison.InvariantCulture)
             );
         public static void CheckValidCodeOrThrow(string code)
 	    {
             if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid), nameof(code));
         }
+
+        public static void CheckValidOkCodeOrThrow(string code)
+        {
+            if (!CheckOkValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusOkCodeInvalid), nameof(code));
+        }
+
+        public static void CheckValidKoCodeOrThrow(string code) 
+        {
+            if (!CheckKoValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusKoCodeInvalid), nameof(code));
+        }
+
+
         public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", OK_, FormatSubCode(subcode));
         public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", KO_, FormatSubCode(subcode));
 

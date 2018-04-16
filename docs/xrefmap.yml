@@ -590,6 +590,48 @@ references:
   commentId: N:Nexusat.AspNetCore.Configuration
   fullName: Nexusat.AspNetCore.Configuration
   nameWithType: Nexusat.AspNetCore.Configuration
+- uid: Nexusat.AspNetCore.Configuration.Defaults
+  name: Defaults
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html
+  commentId: T:Nexusat.AspNetCore.Configuration.Defaults
+  fullName: Nexusat.AspNetCore.Configuration.Defaults
+  nameWithType: Defaults
+- uid: Nexusat.AspNetCore.Configuration.Defaults.IsRuntimeProfilationEnabled
+  name: IsRuntimeProfilationEnabled
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_IsRuntimeProfilationEnabled
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.IsRuntimeProfilationEnabled
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.IsRuntimeProfilationEnabled
+  nameWithType: Defaults.IsRuntimeProfilationEnabled
+- uid: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultBadRequestOnPageSizeOverflow
+  name: PaginationDefaultBadRequestOnPageSizeOverflow
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_PaginationDefaultBadRequestOnPageSizeOverflow
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultBadRequestOnPageSizeOverflow
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultBadRequestOnPageSizeOverflow
+  nameWithType: Defaults.PaginationDefaultBadRequestOnPageSizeOverflow
+- uid: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultMaxPageSize
+  name: PaginationDefaultMaxPageSize
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_PaginationDefaultMaxPageSize
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultMaxPageSize
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultMaxPageSize
+  nameWithType: Defaults.PaginationDefaultMaxPageSize
+- uid: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultPageSize
+  name: PaginationDefaultPageSize
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_PaginationDefaultPageSize
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultPageSize
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.PaginationDefaultPageSize
+  nameWithType: Defaults.PaginationDefaultPageSize
+- uid: Nexusat.AspNetCore.Configuration.Defaults.PaginationPageIndexName
+  name: PaginationPageIndexName
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_PaginationPageIndexName
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.PaginationPageIndexName
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.PaginationPageIndexName
+  nameWithType: Defaults.PaginationPageIndexName
+- uid: Nexusat.AspNetCore.Configuration.Defaults.PaginationPageSizeName
+  name: PaginationPageSizeName
+  href: api/Nexusat.AspNetCore.Configuration.Defaults.html#Nexusat_AspNetCore_Configuration_Defaults_PaginationPageSizeName
+  commentId: F:Nexusat.AspNetCore.Configuration.Defaults.PaginationPageSizeName
+  fullName: Nexusat.AspNetCore.Configuration.Defaults.PaginationPageSizeName
+  nameWithType: Defaults.PaginationPageSizeName
 - uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions
   name: NexusatAspNetCoreOptions
   href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html
@@ -648,6 +690,71 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.IsRuntimeProfilationEnabled
   nameWithType: NexusatAspNetCoreOptions.IsRuntimeProfilationEnabled
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+  name: PaginationDefaultBadRequestOnPageSizeOverflow
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultBadRequestOnPageSizeOverflow
+  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow*
+  name: PaginationDefaultBadRequestOnPageSizeOverflow
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultBadRequestOnPageSizeOverflow_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+  name: PaginationDefaultMaxPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultMaxPageSize
+  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize*
+  name: PaginationDefaultMaxPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultMaxPageSize_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize
+  name: PaginationDefaultPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultPageSize
+  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize*
+  name: PaginationDefaultPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultPageSize_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize
+  nameWithType: NexusatAspNetCoreOptions.PaginationDefaultPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName
+  name: PaginationPageIndexName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageIndexName
+  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName
+  nameWithType: NexusatAspNetCoreOptions.PaginationPageIndexName
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName*
+  name: PaginationPageIndexName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageIndexName_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName
+  nameWithType: NexusatAspNetCoreOptions.PaginationPageIndexName
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName
+  name: PaginationPageSizeName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageSizeName
+  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName
+  nameWithType: NexusatAspNetCoreOptions.PaginationPageSizeName
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName*
+  name: PaginationPageSizeName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageSizeName_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName
+  nameWithType: NexusatAspNetCoreOptions.PaginationPageSizeName
 - uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder
   name: NexusatAspNetCoreOptionsBuilder
   href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html
@@ -719,6 +826,71 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode
   nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow(System.Boolean)
+  name: SetPaginationDefaultBadRequestOnPageSizeOverflow(Boolean)
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultBadRequestOnPageSizeOverflow_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow(System.Boolean)
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow(System.Boolean)
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow(Boolean)
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow*
+  name: SetPaginationDefaultBadRequestOnPageSizeOverflow
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultBadRequestOnPageSizeOverflow_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize(System.Int32)
+  name: SetPaginationDefaultMaxPageSize(Int32)
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultMaxPageSize_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize(System.Int32)
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize(System.Int32)
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize(Int32)
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize*
+  name: SetPaginationDefaultMaxPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultMaxPageSize_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize(System.Int32)
+  name: SetPaginationDefaultPageSize(Int32)
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultPageSize_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize(System.Int32)
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize(System.Int32)
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize(Int32)
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize*
+  name: SetPaginationDefaultPageSize
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultPageSize_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName(System.String)
+  name: SetPaginationPageIndexName(String)
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageIndexName_System_String_
+  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName(System.String)
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName(System.String)
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName(String)
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName*
+  name: SetPaginationPageIndexName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageIndexName_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName(System.String)
+  name: SetPaginationPageSizeName(String)
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageSizeName_System_String_
+  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName(System.String)
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName(System.String)
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName(String)
+- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName*
+  name: SetPaginationPageSizeName
+  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageSizeName_
+  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName
+  nameWithType: NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName
 - uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreSystem
   name: NexusatAspNetCoreSystem
   href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreSystem.html
@@ -744,6 +916,132 @@ references:
   commentId: N:Nexusat.AspNetCore.Exceptions
   fullName: Nexusat.AspNetCore.Exceptions
   nameWithType: Nexusat.AspNetCore.Exceptions
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException
+  name: ApiResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html
+  commentId: T:Nexusat.AspNetCore.Exceptions.ApiResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException
+  nameWithType: ApiResponseException
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor
+  name: ApiResponseException()
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException__ctor
+  commentId: M:Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.ApiResponseException()
+  nameWithType: ApiResponseException.ApiResponseException()
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Int32,System.String)
+  name: ApiResponseException(Int32, String)
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException__ctor_System_Int32_System_String_
+  commentId: M:Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Int32,System.String)
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.ApiResponseException(System.Int32, System.String)
+  nameWithType: ApiResponseException.ApiResponseException(Int32, String)
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Int32,System.String,System.Exception)
+  name: ApiResponseException(Int32, String, Exception)
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException__ctor_System_Int32_System_String_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Int32,System.String,System.Exception)
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.ApiResponseException(System.Int32, System.String, System.Exception)
+  nameWithType: ApiResponseException.ApiResponseException(Int32, String, Exception)
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ApiResponseException(SerializationInfo, StreamingContext)
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.ApiResponseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ApiResponseException.ApiResponseException(SerializationInfo, StreamingContext)
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor*
+  name: ApiResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.ApiResponseException
+  nameWithType: ApiResponseException.ApiResponseException
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
+  name: Description
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_Description
+  commentId: P:Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
+  nameWithType: ApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description*
+  name: Description
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_Description_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
+  nameWithType: ApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
+  name: HttpCode
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HttpCode
+  commentId: P:Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
+  nameWithType: ApiResponseException.HttpCode
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode*
+  name: HttpCode
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HttpCode_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
+  nameWithType: ApiResponseException.HttpCode
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode
+  name: StatusCode
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_StatusCode
+  commentId: P:Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode
+  nameWithType: ApiResponseException.StatusCode
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode*
+  name: StatusCode
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_StatusCode_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.StatusCode
+  nameWithType: ApiResponseException.StatusCode
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
+  name: UserDescription
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_UserDescription
+  commentId: P:Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
+  nameWithType: ApiResponseException.UserDescription
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription*
+  name: UserDescription
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_UserDescription_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
+  nameWithType: ApiResponseException.UserDescription
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException
+  name: BadRequestResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html
+  commentId: T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException
+  nameWithType: BadRequestResponseException
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
+  name: BadRequestResponseException()
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor
+  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException()
+  nameWithType: BadRequestResponseException.BadRequestResponseException()
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.Exception)
+  name: BadRequestResponseException(Exception)
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.Exception)
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.Exception)
+  nameWithType: BadRequestResponseException.BadRequestResponseException(Exception)
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String)
+  name: BadRequestResponseException(String)
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_String_
+  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String)
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.String)
+  nameWithType: BadRequestResponseException.BadRequestResponseException(String)
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String,System.Exception)
+  name: BadRequestResponseException(String, Exception)
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_String_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String,System.Exception)
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.String, System.Exception)
+  nameWithType: BadRequestResponseException.BadRequestResponseException(String, Exception)
+- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor*
+  name: BadRequestResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException
+  nameWithType: BadRequestResponseException.BadRequestResponseException
 - uid: Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException
   name: BuilderInvalidStateException
   href: api/Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException.html
@@ -1818,6 +2116,77 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.Formatters.Internals.ResponseContentTypeHelper.ResolveContentTypeAndEncoding
   nameWithType: ResponseContentTypeHelper.ResolveContentTypeAndEncoding
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute
+  name: ValidatePaginationAttribute
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html
+  commentId: T:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute
+  nameWithType: ValidatePaginationAttribute
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor
+  name: ValidatePaginationAttribute()
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute__ctor
+  commentId: M:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ValidatePaginationAttribute()
+  nameWithType: ValidatePaginationAttribute.ValidatePaginationAttribute()
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor*
+  name: ValidatePaginationAttribute
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ValidatePaginationAttribute
+  nameWithType: ValidatePaginationAttribute.ValidatePaginationAttribute
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable
+  name: IsReusable
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_IsReusable
+  commentId: P:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable
+  nameWithType: ValidatePaginationAttribute.IsReusable
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable*
+  name: IsReusable
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_IsReusable_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable
+  nameWithType: ValidatePaginationAttribute.IsReusable
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize
+  name: MaxPageSize
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_MaxPageSize
+  commentId: P:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize
+  nameWithType: ValidatePaginationAttribute.MaxPageSize
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize*
+  name: MaxPageSize
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_MaxPageSize_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize
+  nameWithType: ValidatePaginationAttribute.MaxPageSize
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  name: OnActionExecuting(ActionExecutingContext)
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_
+  commentId: M:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  nameWithType: ValidatePaginationAttribute.OnActionExecuting(ActionExecutingContext)
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting*
+  name: OnActionExecuting
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_OnActionExecuting_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting
+  nameWithType: ValidatePaginationAttribute.OnActionExecuting
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+  name: ReturnBadRequestOnOutOfRange
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_ReturnBadRequestOnOutOfRange
+  commentId: P:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+  nameWithType: ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+- uid: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange*
+  name: ReturnBadRequestOnOutOfRange
+  href: api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html#Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_ReturnBadRequestOnOutOfRange_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+  nameWithType: ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
 - uid: Nexusat.AspNetCore.Utils
   name: Nexusat.AspNetCore.Utils
   href: api/Nexusat.AspNetCore.Utils.html

@@ -12,7 +12,7 @@ using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
-    public abstract class BaseTests
+    public abstract class BaseTests<TSetup> where TSetup: class
     {
         protected TestServer Server { get; }
         protected HttpClient Client { get; }
@@ -23,7 +23,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Output = outputHelper;
             Server = new TestServer(
                 new WebHostBuilder()
-                .UseStartup<Startup>());
+                .UseStartup<TSetup>());
 
             Client = Server.CreateClient();
         }

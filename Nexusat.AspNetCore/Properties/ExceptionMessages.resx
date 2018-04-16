@@ -127,6 +127,14 @@
     <value>Status code "{0}" syntax is not valid.\n</value>
     <comment>StatusCode</comment>
   </data>
+  <data name="StatusOkCodeInvalid" xml:space="preserve">
+    <value>Status code "{0}" syntax is not a valid success code.\n</value>
+    <comment>StatusCode</comment>
+  </data>
+    <data name="StatusKoCodeInvalid" xml:space="preserve">
+    <value>Status code "{0}" syntax is not a valid failure code.\n</value>
+    <comment>StatusCode</comment>
+  </data>
   <data name="SubCodeInvalidFormat" xml:space="preserve">
     <value>Subcode must be a non blank or null string</value>
     <comment>StatusCode</comment>

@@ -13,7 +13,7 @@ using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
-    public class HelloWorldTest: BaseTests
+    public class HelloWorldTest: BaseTests<StartupConfigurationOne>
     {
 
         public HelloWorldTest(ITestOutputHelper output
