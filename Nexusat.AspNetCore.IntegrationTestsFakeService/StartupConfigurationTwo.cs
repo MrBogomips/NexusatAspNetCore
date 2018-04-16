@@ -28,14 +28,9 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                 .AddNexusatAspNetCore(c =>
                 {
                     c.EnableRuntimeProfilation();
-                    c.SetDefaultOkStatus("OK_TEST_DEFAULT");
-                    c.SetDefaultKoStatus("KO_TEST_DEDFAULT");
 
-                    c.SetPaginationPageSizeName("p_sz");
-                    c.SetPaginationPageIndexName("p_ix");
-                    c.SetPaginationDefaultPageSize(6);
-                    c.SetPaginationDefaultMaxPageSize(66);
-                    c.SetPaginationDefaultBadRequestOnPageSizeOverflow(true);
+                    c.SetPaginationDefaultMaxPageSize(0); // Allow Infinity page size
+                    c.SetPaginationDefaultBadRequestOnPageSizeOverflow(false); 
                 });
         }
 

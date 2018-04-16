@@ -84,8 +84,8 @@ namespace Nexusat.AspNetCore.Mvc {
 
                 if (maxPageSize > 0 && p_size.HasValue && p_size.Value > maxPageSize)
                 {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_INDEX");
-                    ex.Description = FormatSystemMessage("Page Size {0} is greather than {1} allowed", p_size.Value, maxPageSize);
+                    var ex = new BadRequestResponseException("KO_BAD_PAGE_SIZE");
+                    ex.Description = FormatSystemMessage("Page Size {0} is greather than the maximum allowed ({1})", p_size.Value, maxPageSize);
                     throw ex;
                 }
             }

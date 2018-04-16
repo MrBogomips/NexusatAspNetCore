@@ -14,9 +14,9 @@ using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
-    public class PaginationControllerTests : BaseTests<StartupConfigurationOne>
+    public class PaginationControllerConfigTwoTests : BaseTests<StartupConfigurationTwo>
     {
-        public PaginationControllerTests(ITestOutputHelper output
+        public PaginationControllerConfigTwoTests(ITestOutputHelper output
             ) : base(output) { }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_DEFAULT", statusCode);
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckSimpleValidationWithIntegers()
         {
             // Act
-            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?p_sz=10&p_ix=1");
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=10&pageIndex=1");
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
 
@@ -56,7 +56,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_DEFAULT", statusCode);
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckSimpleValidationWithIndalidPageIndex()
         {
             // Act
-            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?p_sz=10&p_ix=ciccio");
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=10&pageIndex=ciccio");
             var json = await ReadAsJObjectAsync(response.Content);
 
             Output.WriteLine(json.ToString());
@@ -85,7 +85,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckSimpleValidationWithIndalidPageSize()
         {
             // Act
-            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?p_sz=ciccio&p_ix=1");
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=ciccio&pageIndex=1");
             var json = await ReadAsJObjectAsync(response.Content);
 
             Output.WriteLine(json.ToString());
@@ -104,7 +104,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckSimpleValidationWithPageIndexLeq0()
         {
             // Act
-            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?p_sz=10&p_ix=0");
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=10&pageIndex=0");
             var json = await ReadAsJObjectAsync(response.Content);
 
             Output.WriteLine(json.ToString());
@@ -123,7 +123,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckSimpleValidationWithPageSizeLessThan0()
         {
             // Act
-            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?p_sz=ciccio&p_ix=1");
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=ciccio&pageIndex=1");
             var json = await ReadAsJObjectAsync(response.Content);
 
             Output.WriteLine(json.ToString());
@@ -133,6 +133,27 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             // Assert
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode); // HTTP400
             Assert.Equal("KO_BAD_PAGE_SIZE", statusCode);
+        }
+
+        /// <summary>
+        /// A page size greather than of MaxPageSize finite value is not accepted.
+        /// In this configuration the MaxPageSize is 0 that means infinity, 
+        /// therefore we don't expect a BAD REQUEST reponse.
+        /// </summary>
+        [Fact]
+        public async void CheckSimpleValidationPageSizeOutOfRange()
+        {
+            // Act
+            var response = await Client.GetAsync("/Pagination/CheckSimpleValidation?pageSize=1000&pageIndex=1");
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
+            Assert.Equal("OK_DEFAULT", statusCode);
         }
     }
 }
