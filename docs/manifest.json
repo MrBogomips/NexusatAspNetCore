@@ -137,6 +137,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Configuration.Defaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Configuration.Defaults.html",
+          "hash": "FxPcvwjujgs5VnCo+xpVbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.yml",
       "output": {
         ".html": {
@@ -177,7 +189,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Configuration.html",
-          "hash": "k4uubcmmczMGQl24CpPq3w=="
+          "hash": "wiSygONMtqDdbzqy/bWNXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Exceptions.ApiResponseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html",
+          "hash": "Afw2QCJNEOXQMgZT3VUDdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html",
+          "hash": "K1Ql3UPBofEPAkaf3mQMTg=="
         }
       },
       "is_incremental": true,
@@ -213,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Exceptions.html",
-          "hash": "giENPvRuTSLaXx+nP5cVmw=="
+          "hash": "y5BRRtEB0DWVfKZqHyVrOw=="
         }
       },
       "is_incremental": true,
@@ -449,11 +485,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html",
+          "hash": "WzQtLumoHDoZYk0r993Nsg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Mvc.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.html",
-          "hash": "1qqyFCPn3EcJools9JN4Tw=="
+          "hash": "i2R8to7WUYjF5DmkDthLMQ=="
         }
       },
       "is_incremental": true,
@@ -501,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RbtiqcZ+lXb0yuyxj91ZTA=="
+          "hash": "QUQmoD2gX1VfrVLxMSU08w=="
         }
       },
       "is_incremental": false,

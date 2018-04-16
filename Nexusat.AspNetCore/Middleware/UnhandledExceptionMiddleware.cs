@@ -4,8 +4,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Implementations;
 using Nexusat.AspNetCore.Mvc.Formatters;
+using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Middleware
 {
@@ -39,7 +41,24 @@ namespace Nexusat.AspNetCore.Middleware
             {
                 var services = context.RequestServices;
                 var executor = services.GetRequiredService<ApiResponseExecutor>();
-                var response = new UnhandledExceptionResponse(exception);
+                ApiResponse response = null;
+                if (exception is IFrameworkException)
+                {
+                    switch (exception)
+                    {
+                        case BadRequestResponseException br:
+                            response = BadRequestResponse.GetFromException(br);
+                            break;
+                        default: // just in case of something missed
+                            logger.LogWarning(FormatSystemMessage("An internal exception {0}({1}) wasn't handled", exception.GetType().FullName, exception.Message));
+                            response = new UnhandledExceptionResponse(exception);
+                            break;
+                    }
+                } else {
+                    response = new UnhandledExceptionResponse(exception);
+                }
+
+
                 executor.RenderResponse(context, response);
             } else {
                 logger.LogCritical("Response already started. Unable to generate a response");

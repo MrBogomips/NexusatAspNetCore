@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Compile Remove="Configuration\NexusatAspNetCoreMvcBuilderExtensions %28copy%29.cs" />
+    <Compile Remove="Extensions\QueryCollectionExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\ExceptionMessages.Designer.cs">
