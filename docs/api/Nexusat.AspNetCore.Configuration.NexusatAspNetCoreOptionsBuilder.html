@@ -247,6 +247,152 @@ This is the class by which client code configures the system.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultBadRequestOnPageSizeOverflow_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultBadRequestOnPageSizeOverflow_System_Boolean_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageSizeOverflow(System.Boolean)">SetPaginationDefaultBadRequestOnPageSizeOverflow(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the pagination default bad request on page size overflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaginationDefaultBadRequestOnPageSizeOverflow(bool blockRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">blockRequest</span></td>
+        <td><p>If set to <code>true</code> block request generating a 404 bad request response, otherwise will assume the maximum page allowed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultMaxPageSize_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultMaxPageSize_System_Int32_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultMaxPageSize(System.Int32)">SetPaginationDefaultMaxPageSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the size of the pagination default max page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaginationDefaultMaxPageSize(int defaultMaxPageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultMaxPageSize</span></td>
+        <td><p>Default max page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultPageSize_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultPageSize_System_Int32_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultPageSize(System.Int32)">SetPaginationDefaultPageSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the size of the pagination default page. This value is used in case of a missing size
+on the querystring and a missing upper bound on the controller&apos;s request method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaginationDefaultPageSize(int defaultPageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultPageSize</span></td>
+        <td><p>Default page size. Use <pre><code>0 (zero)</code></pre> to mean no-pagination (fetch all)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageIndexName_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageIndexName_System_String_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageIndexName(System.String)">SetPaginationPageIndexName(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the name of the pagination page index parameter used to parse the request&apos;s querystring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaginationPageIndexName(string pageIndexName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pageIndexName</span></td>
+        <td><p>Page index name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageSizeName_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationPageSizeName_System_String_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationPageSizeName(System.String)">SetPaginationPageSizeName(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the name of the pagination page size parameter used to parse the request&apos;s querystring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaginationPageSizeName(string pageSizeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pageSizeName</span></td>
+        <td><p>Page size name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Nexusat.AspNetCore.Builders.IBuilder.html">IBuilder</a>

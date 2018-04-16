@@ -232,6 +232,144 @@ We suggest, for defensive approach, to use a «KO» code for this case.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultBadRequestOnPageSizeOverflow_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultBadRequestOnPageSizeOverflow" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultBadRequestOnPageSizeOverflow">PaginationDefaultBadRequestOnPageSizeOverflow</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this
+<a class="xref" href="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html">NexusatAspNetCoreOptions</a> pagination default bad request on
+invalid request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PaginationDefaultBadRequestOnPageSizeOverflow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> will block an page request too large generating a Bad Request response; otherwise, <code>false</code> will
+    imply the maximum value allowed for the request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultMaxPageSize_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultMaxPageSize" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultMaxPageSize">PaginationDefaultMaxPageSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the pagination default max page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PaginationDefaultMaxPageSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The size of the pagination default max page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultPageSize_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationDefaultPageSize" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationDefaultPageSize">PaginationDefaultPageSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the pagination default page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PaginationDefaultPageSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The size of the pagination default page. Default is <pre><code>10</code></pre></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageIndexName_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageIndexName" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageIndexName">PaginationPageIndexName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the pagination page index used to parse the request querystring</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PaginationPageIndexName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the pagination page index. Default is <pre><code>pageIndex</code></pre></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageSizeName_" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName*"></a>
+  <h4 id="Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_PaginationPageSizeName" data-uid="Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.PaginationPageSizeName">PaginationPageSizeName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the pagination page size used to parse the request querystring</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PaginationPageSizeName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the pagination page size. Default is <pre><code>pageSize</code></pre></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 <div id="disqus_thread"></div>
                 <script>
                 (function() { // DON'T EDIT BELOW THIS LINE
