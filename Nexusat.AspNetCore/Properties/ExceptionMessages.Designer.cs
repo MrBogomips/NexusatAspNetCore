@@ -65,6 +65,18 @@ namespace Nexusat.AspNetCore.Properties {
             }
         }
         
+        internal static string StatusOkCodeInvalid {
+            get {
+                return ResourceManager.GetString("StatusOkCodeInvalid", resourceCulture);
+            }
+        }
+        
+        internal static string StatusKoCodeInvalid {
+            get {
+                return ResourceManager.GetString("StatusKoCodeInvalid", resourceCulture);
+            }
+        }
+        
         internal static string SubCodeInvalidFormat {
             get {
                 return ResourceManager.GetString("SubCodeInvalidFormat", resourceCulture);

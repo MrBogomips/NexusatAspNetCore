@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Nexusat.AspNetCore.IntegrationTestsFakeService
 {
-    public class Startup
+    public class StartupConfigurationOne
     {
-        public Startup(IConfiguration configuration)
+        public StartupConfigurationOne(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -30,6 +30,12 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                     c.EnableRuntimeProfilation();
                     c.SetDefaultOkStatus("OK_TEST_DEFAULT");
                     c.SetDefaultKoStatus("KO_TEST_DEDFAULT");
+
+                    c.SetPaginationPageSizeName("p_sz");
+                    c.SetPaginationPageIndexName("p_ix");
+                    c.SetPaginationDefaultPageSize(6);
+                    c.SetPaginationDefaultMaxPageSize(66);
+                    c.SetPaginationDefaultBadRequestOnPageSizeOverflow(true);
                 });
         }
 

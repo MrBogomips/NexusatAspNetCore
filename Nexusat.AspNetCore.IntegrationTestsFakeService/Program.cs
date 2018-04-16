@@ -19,7 +19,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
+                .UseStartup<StartupConfigurationOne>()
                 .Build();
     }
 }

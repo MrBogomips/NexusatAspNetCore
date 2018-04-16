@@ -22,6 +22,7 @@ namespace Nexusat.AspNetCore.Configuration
                 // Build Frameowrk configuration options
                 var setupBuilder = new NexusatAspNetCoreOptionsBuilder(options);
                 setupAction(setupBuilder);
+                setupBuilder.ValidateOptions(); // possibly throws an exception
             });
         }
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using Nexusat.AspNetCore.IntegrationTests.Models;
+using Nexusat.AspNetCore.IntegrationTestsFakeService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
-    public class ApiResponseControllerTests : BaseTests
+    public class ApiResponseControllerTests : BaseTests<StartupConfigurationOne>
     {
         public ApiResponseControllerTests(ITestOutputHelper output
             ) : base(output) { }
