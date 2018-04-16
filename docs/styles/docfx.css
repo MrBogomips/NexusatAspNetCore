@@ -278,6 +278,10 @@ article section {
 #autocollapse .navbar-brand {
   margin-left: 0;
 }
+#autocollapse .navbar-brand svg {
+    height:50px;
+
+}
 .collapse.in,
 .collapsing {
   text-align: center;
