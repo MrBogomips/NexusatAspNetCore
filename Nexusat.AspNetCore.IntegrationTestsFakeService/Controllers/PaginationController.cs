@@ -10,12 +10,26 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
     [Route("Pagination")]
     public class PaginationController : ApiController
     {
-        List<string> Data = new List<string>(new[] { "one", "two", "three"});
+        List<string> Data = new List<string>(new[] { "one", "two", "three" });
 
         [ValidatePagination]
         [HttpGet("CheckSimpleValidation")]
-        public IApiEnumResponse<string> GetPaginationCheckLimits() {
+        public IApiEnumResponse<string> GetPaginationCheckLimits()
+        {
             return OkEnum(Data);
         }
+
+        /// <summary>
+        /// This method is just for the sake of testing.
+        /// In practice it doesn't make sense to use pagination on an <see cref="IApiObjectResponse{T}"/>
+        /// action method.
+        /// </summary>
+        /// <returns>The pagination cursor.</returns>
+        [ValidatePagination]
+        [HttpGet("CheckPaginationCursor")]
+        public IApiObjectResponse<PaginationCursor> GetPaginationCursor()
+            => OkObject(CurrentPage);
+
+
     }
 }
