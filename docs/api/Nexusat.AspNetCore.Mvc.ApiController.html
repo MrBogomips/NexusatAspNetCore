@@ -74,7 +74,7 @@
   
   <h1 id="Nexusat_AspNetCore_Mvc_ApiController" data-uid="Nexusat.AspNetCore.Mvc.ApiController" class="text-break">Class ApiController
   </h1>
-  <div class="markdown level0 summary"><p>API controller base extensions.</p>
+  <div class="markdown level0 summary"><p>The base class from which any API controller should derive from.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -138,6 +138,34 @@ public ControllerContext ControllerContext { get; set; }</code></pre>
       <tr>
         <td><span class="xref">Microsoft.AspNetCore.Mvc.ControllerContext</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Mvc_ApiController_CurrentPage_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.CurrentPage*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_CurrentPage" data-uid="Nexusat.AspNetCore.Mvc.ApiController.CurrentPage">CurrentPage</h4>
+  <div class="markdown level1 summary"><p>Gets the current page or throws an <span class="xref">System.InvalidOperationException</span>
+if you missed to decorate your actio method with <a class="xref" href="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.html">ValidatePaginationAttribute</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PaginationCursor CurrentPage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.PaginationCursor.html">PaginationCursor</a></td>
+        <td><p>The current page.</p>
+</td>
       </tr>
     </tbody>
   </table>

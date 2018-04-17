@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Primitives;
 using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Exceptions;
+using Nexusat.AspNetCore.Models;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Mvc {
@@ -84,11 +85,14 @@ namespace Nexusat.AspNetCore.Mvc {
 
                 if (maxPageSize > 0 && p_size.HasValue && p_size.Value > maxPageSize)
                 {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_SIZE");
+                    var ex = new BadRequestResponseException("KO_PAGE_SIZE_OUT_OF_RANGE");
                     ex.Description = FormatSystemMessage("Page Size {0} is greather than the maximum allowed ({1})", p_size.Value, maxPageSize);
                     throw ex;
                 }
             }
+
+            // Set Pagination Cursor for the current request
+            context.HttpContext.Items[InternalConstants.PaginationCursorKey] = new PaginationCursor(p_index, p_size);
         }
     }
 }

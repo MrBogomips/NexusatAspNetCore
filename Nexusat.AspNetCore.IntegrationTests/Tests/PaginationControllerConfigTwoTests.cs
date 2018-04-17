@@ -14,7 +14,7 @@ using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
-    public class PaginationControllerConfigTwoTests : BaseTests<StartupConfigurationTwo>
+    public class PaginationControllerConfigTwoTests : PaginationBaseTests<StartupConfigurationTwo>
     {
         public PaginationControllerConfigTwoTests(ITestOutputHelper output
             ) : base(output) { }
@@ -154,6 +154,32 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
             Assert.Equal("OK_DEFAULT", statusCode);
+        }
+
+        [Theory]
+        [InlineData(1, 10)]
+        [InlineData(2, 22)]
+        public async void CheckPaginationCursorFetch(int pageIndex, int pageSize) {
+            // Act
+            var url = string.Format("/Pagination/CheckPaginationCursor?pageSize={0}&pageIndex={1}", pageSize, pageIndex);
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationCursor = new PaginationCursor
+            {
+                PageIndex = pageIndex,
+                PageSize = pageSize,
+                IsPageSizeBounded = true,
+                IsPageSizeUnbounded = false
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
+            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
     }
 }

@@ -1317,6 +1317,64 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
   nameWithType: IApiResponse.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.PaginationCursor
+  name: PaginationCursor
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html
+  commentId: T:Nexusat.AspNetCore.Models.PaginationCursor
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor
+  nameWithType: PaginationCursor
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded
+  name: IsPageSizeBounded
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeBounded
+  commentId: P:Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded
+  nameWithType: PaginationCursor.IsPageSizeBounded
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded*
+  name: IsPageSizeBounded
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeBounded_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded
+  nameWithType: PaginationCursor.IsPageSizeBounded
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded
+  name: IsPageSizeUnbounded
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeUnbounded
+  commentId: P:Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded
+  nameWithType: PaginationCursor.IsPageSizeUnbounded
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded*
+  name: IsPageSizeUnbounded
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeUnbounded_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded
+  nameWithType: PaginationCursor.IsPageSizeUnbounded
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.PageIndex
+  name: PageIndex
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_PageIndex
+  commentId: P:Nexusat.AspNetCore.Models.PaginationCursor.PageIndex
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PageIndex
+  nameWithType: PaginationCursor.PageIndex
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.PageIndex*
+  name: PageIndex
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_PageIndex_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.PageIndex
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PageIndex
+  nameWithType: PaginationCursor.PageIndex
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.PageSize
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_PageSize
+  commentId: P:Nexusat.AspNetCore.Models.PaginationCursor.PageSize
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PageSize
+  nameWithType: PaginationCursor.PageSize
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.PageSize*
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_PageSize_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.PageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PageSize
+  nameWithType: PaginationCursor.PageSize
 - uid: Nexusat.AspNetCore.Models.PaginationInfo
   name: PaginationInfo
   href: api/Nexusat.AspNetCore.Models.PaginationInfo.html
@@ -1741,6 +1799,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ControllerContext
   nameWithType: ApiController.ControllerContext
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
+  name: CurrentPage
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CurrentPage
+  commentId: P:Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
+  nameWithType: ApiController.CurrentPage
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage*
+  name: CurrentPage
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CurrentPage_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
+  nameWithType: ApiController.CurrentPage
 - uid: Nexusat.AspNetCore.Mvc.ApiController.FrameworkOptions
   name: FrameworkOptions
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_FrameworkOptions
