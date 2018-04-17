@@ -30,6 +30,22 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         public IApiObjectResponse<PaginationCursor> GetPaginationCursor()
             => OkObject(CurrentPage);
 
+        /// <summary>
+        /// Overrides Application defaults
+        /// </summary>
+        /// <returns>The pagination cursor overrides.</returns>
+        [ValidatePagination(DefaultPageSize = 7, MaxPageSize = 77)]
+        [HttpGet("CheckPaginationCursorOverrides")]
+        public IApiObjectResponse<PaginationCursor> GetPaginationCursorOverrides()
+            => OkObject(CurrentPage);
 
+        /// <summary>
+        /// Missing the validation attribute on the action method will
+        /// prevent accessing to the <see cref="ApiController.CurrentPage"/> page.
+        /// </summary>
+        /// <returns>The pagination cursor missing validation.</returns>
+        [HttpGet("GetPaginationCursorMissingValidation")]
+        public IApiObjectResponse<PaginationCursor> GetPaginationCursorMissingValidation()
+            => OkObject(CurrentPage);
     }
 }
