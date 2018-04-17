@@ -23,14 +23,14 @@ namespace Nexusat.AspNetCore.Mvc {
         /// If missing the application wide setting will be used.
         /// </summary>
         /// <value>The size of the max page. Use <code>0 (zero)</code> to mean any value.</value>
-        public int? MaxPageSize { get; set; } = null;
+        public int MaxPageSize { get; set; } = -1;
 
         /// <summary>
         /// Gets or sets the default size of the page.
         /// If missing the application wide setting will be used.
         /// </summary>
         /// <value>The default size of the page.</value>
-        public int? DefaultPageSize { get; set; } = null;
+        public int DefaultPageSize { get; set; } = -1;
 
         /// <summary>
         /// Gets or sets the return bad request on out of range.
@@ -92,7 +92,7 @@ namespace Nexusat.AspNetCore.Mvc {
             // Evaluate if blocking a pagesize outofrange exception
             if (ReturnBadRequestOnOutOfRange ?? options.PaginationDefaultBadRequestOnPageSizeOutOfRange)
             {
-                var maxPageSize = MaxPageSize ?? options.PaginationDefaultMaxPageSize;
+                var maxPageSize = MaxPageSize != -1 ? MaxPageSize : options.PaginationDefaultMaxPageSize;
                 logger.LogDebug("MaxPageSize allowed: {0}", maxPageSize);
 
                 if (maxPageSize > 0 && p_size.HasValue && p_size.Value > maxPageSize)
@@ -104,7 +104,7 @@ namespace Nexusat.AspNetCore.Mvc {
             }
 
             int actual_p_index = p_index ?? 1;
-            int actual_p_size = p_size ?? DefaultPageSize ?? options.PaginationDefaultPageSize;
+            int actual_p_size = p_size ?? (DefaultPageSize != -1 ? DefaultPageSize : options.PaginationDefaultPageSize);
             logger.LogDebug("Actual page cursor: Index({0}), Size({1})", actual_p_size, actual_p_size);
 
             // Set Pagination Cursor for the current request

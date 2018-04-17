@@ -242,5 +242,97 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal("OK_TEST_DEFAULT", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
+
+        /// <summary>
+        /// Checks the pagination cursor overrides.
+        /// </summary>
+        [Fact]
+        public async void CheckPaginationCursorOverrides()
+        {
+            // Act
+            var url = string.Format("/Pagination/CheckPaginationCursorOverrides");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationCursor = new PaginationCursor
+            {
+                PageIndex = 1,
+                PageSize = 7, // custom page size for ther action method
+                IsPageSizeBounded = true,
+                IsPageSizeUnbounded = false
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
+        }
+
+        /// <summary>
+        /// Checks the pagination cursor overrides.
+        /// </summary>
+        [Fact]
+        public async void CheckPaginationCursorPageSizeOverrides77OK()
+        {
+            // Act
+            var url = string.Format("/Pagination/CheckPaginationCursorOverrides?p_sz=77");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationCursor = new PaginationCursor
+            {
+                PageIndex = 1,
+                PageSize = 77, // custom page size for ther action method
+                IsPageSizeBounded = true,
+                IsPageSizeUnbounded = false
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
+        }
+
+        /// <summary>
+        /// Checks the pagination cursor overrides.
+        /// </summary>
+        [Fact]
+        public async void CheckPaginationCursorPageSizeOverrides78KO()
+        {
+            // Act
+            var url = string.Format("/Pagination/CheckPaginationCursorOverrides?p_sz=78");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.Equal("KO_PAGE_SIZE_OUT_OF_RANGE", statusCode);
+        }
+
+        [Fact]
+        public async void CheckPaginationCursorMissingValidationAttribute() 
+        {
+            // Act
+            var url = string.Format("/Pagination/GetPaginationCursorMissingValidation?p_ix=1&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
+        }
     }
 }
