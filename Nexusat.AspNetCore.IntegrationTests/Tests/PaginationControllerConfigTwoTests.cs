@@ -181,5 +181,36 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal("OK_DEFAULT", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
+
+        /// <summary>
+        /// A request without a page index and page size will be interpreted as pageIndex == 1
+        /// and will return app page_size default.
+        /// </summary>
+        /// <param name="pageIndex">Page index.</param>
+        /// <param name="pageSize">Page size.</param>
+        [Fact]
+        public async void CheckPaginationMissingPageCursor()
+        {
+            // Act
+            var url = string.Format("/Pagination/CheckPaginationCursor");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationCursor = new PaginationCursor
+            {
+                PageIndex = 1,
+                PageSize = 0, // default page size for setupTwo
+                IsPageSizeBounded = false,
+                IsPageSizeUnbounded = true
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
+        }
     }
 }
