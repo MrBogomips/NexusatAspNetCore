@@ -161,7 +161,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         public async void CheckPaginationCursorFetch(int pageIndex, int pageSize)
         {
             // Act
-            var url = string.Format("/Pagination/CheckPaginationCursor?pageSize={0}&pageIndex={1}", pageSize, pageIndex);
+            var url = string.Format("/Pagination/CheckPaginationCursor?p_sz={0}&p_ix={1}", pageSize, pageIndex);
             var response = await Client.GetAsync(url);
             var json = await ReadAsJObjectAsync(response.Content);
 
@@ -178,7 +178,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
     }
