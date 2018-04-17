@@ -7,7 +7,6 @@ build:
   verbosity: normal
   publish_nuget: true
   publish_nuget_symbols: true
-  publish_nuget_references: true
 artifacts:
 - path: Nexusat.AspNetCore\bin\Debug\netcoreapp2.0\Nexusat.AspNetCore.dll
   name: Nexusat.AspNetCore.dll
