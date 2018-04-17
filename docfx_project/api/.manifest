@@ -12,6 +12,8 @@
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetDescription(System.String)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetException(System.Exception)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetHttpCode(System.Int32)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
+  "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
+  "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode(System.String)": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeFailed": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",
   "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeSuccess": "Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.yml",

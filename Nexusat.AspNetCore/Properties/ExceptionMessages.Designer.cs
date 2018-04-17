@@ -88,5 +88,11 @@ namespace Nexusat.AspNetCore.Properties {
                 return ResourceManager.GetString("InvalidStatePaginationCursor", resourceCulture);
             }
         }
+        
+        internal static string InvalidItemsCount {
+            get {
+                return ResourceManager.GetString("InvalidItemsCount", resourceCulture);
+            }
+        }
     }
 }

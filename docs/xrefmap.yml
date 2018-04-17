@@ -162,6 +162,31 @@ references:
   fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetHttpCode
   nameWithType: IApiEnumResponseBuilder<T>.SetHttpCode
   nameWithType.vb: IApiEnumResponseBuilder(Of T).SetHttpCode
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
+  name: SetPaginationCursor(PaginationCursor, Boolean)
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Boolean)
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Boolean)
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
+  name: SetPaginationCursor(PaginationCursor, Int32)
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Int32)
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Int32)
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor*
+  name: SetPaginationCursor
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_
+  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor
 - uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode(System.String)
   name: SetStatusCode(String)
   href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCode_System_String_

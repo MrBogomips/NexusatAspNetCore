@@ -147,4 +147,8 @@
     <value>Unable to fetch pagination info from the current request. Recall to decorate your action with "ValidatePaginationAttribute".</value>
     <comment>Raised by APIController</comment>
   </data>
+  <data name="InvalidItemsCount" xml:space="preserve">
+    <value>Items count cannot be negative.</value>
+  <comment>Raised by ApiEnumResponseBuilder</comment>
+  </data>
 </root>
