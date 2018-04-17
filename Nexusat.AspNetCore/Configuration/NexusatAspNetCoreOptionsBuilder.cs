@@ -103,8 +103,8 @@ namespace Nexusat.AspNetCore.Configuration
         /// Sets the pagination default bad request on page size overflow.
         /// </summary>
         /// <param name="blockRequest">If set to <c>true</c> block request generating a 404 bad request response, otherwise will assume the maximum page allowed.</param>
-        public void SetPaginationDefaultBadRequestOnPageSizeOverflow(bool blockRequest) {
-            Options.PaginationDefaultBadRequestOnPageSizeOverflow = blockRequest;
+        public void SetPaginationDefaultBadRequestOnPageOutOfRange(bool blockRequest) {
+            Options.PaginationDefaultBadRequestOnPageSizeOutOfRange = blockRequest;
         }
 
         /// <summary>

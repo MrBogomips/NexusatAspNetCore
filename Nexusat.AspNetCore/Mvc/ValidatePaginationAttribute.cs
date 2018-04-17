@@ -18,13 +18,23 @@ namespace Nexusat.AspNetCore.Mvc {
         }
 
         /// <summary>
-        /// Gets or sets the size of the max page.
+        /// Gets or sets the max size allowed for a page.
+        /// Set to 0 to allow any value.
+        /// If missing the application wide setting will be used.
         /// </summary>
-        /// <value>The size of the max page. Use <code>0 (zero)</code> to mean infinity.</value>
+        /// <value>The size of the max page. Use <code>0 (zero)</code> to mean any value.</value>
         public int? MaxPageSize { get; set; } = null;
 
         /// <summary>
+        /// Gets or sets the default size of the page.
+        /// If missing the application wide setting will be used.
+        /// </summary>
+        /// <value>The default size of the page.</value>
+        public int? DefaultPageSize { get; set; } = null;
+
+        /// <summary>
         /// Gets or sets the return bad request on out of range.
+        /// If missing the application wide setting will be used.
         /// </summary>
         /// <value><code>true</code> will produce a BadRequest response in case of violation of the limits</value>
         public bool? ReturnBadRequestOnOutOfRange { get; set; } = null;
@@ -79,9 +89,11 @@ namespace Nexusat.AspNetCore.Mvc {
 
             ParsePageCursor(options, context.HttpContext.Request.Query, out p_size, out p_index);
 
-            if (ReturnBadRequestOnOutOfRange ?? options.PaginationDefaultBadRequestOnPageSizeOverflow)
+            // Evaluate if blocking a pagesize outofrange exception
+            if (ReturnBadRequestOnOutOfRange ?? options.PaginationDefaultBadRequestOnPageSizeOutOfRange)
             {
                 var maxPageSize = MaxPageSize ?? options.PaginationDefaultMaxPageSize;
+                logger.LogDebug("MaxPageSize allowed: {0}", maxPageSize);
 
                 if (maxPageSize > 0 && p_size.HasValue && p_size.Value > maxPageSize)
                 {
@@ -91,8 +103,12 @@ namespace Nexusat.AspNetCore.Mvc {
                 }
             }
 
+            int actual_p_index = p_index ?? 1;
+            int actual_p_size = p_size ?? DefaultPageSize ?? options.PaginationDefaultPageSize;
+            logger.LogDebug("Actual page cursor: Index({0}), Size({1})", actual_p_size, actual_p_size);
+
             // Set Pagination Cursor for the current request
-            context.HttpContext.Items[InternalConstants.PaginationCursorKey] = new PaginationCursor(p_index, p_size);
+            context.HttpContext.Items[InternalConstants.PaginationCursorKey] = new PaginationCursor(actual_p_index, actual_p_size);
         }
     }
 }
