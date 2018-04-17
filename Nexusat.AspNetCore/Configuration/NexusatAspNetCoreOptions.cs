@@ -74,6 +74,6 @@ namespace Nexusat.AspNetCore.Configuration
         /// </summary>
         /// <value><c>true</c> will block an page request too large generating a Bad Request response; otherwise, <c>false</c> will
         /// imply the maximum value allowed for the request</value>
-        public bool PaginationDefaultBadRequestOnPageSizeOverflow { get; internal set; } = Defaults.PaginationDefaultBadRequestOnPageSizeOverflow;
+        public bool PaginationDefaultBadRequestOnPageSizeOutOfRange { get; internal set; } = Defaults.PaginationDefaultBadRequestOnPageSizeOverflow;
     }
 }

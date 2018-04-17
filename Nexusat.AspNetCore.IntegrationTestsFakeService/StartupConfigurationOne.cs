@@ -35,7 +35,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                     c.SetPaginationPageIndexName("p_ix");
                     c.SetPaginationDefaultPageSize(6);
                     c.SetPaginationDefaultMaxPageSize(66);
-                    c.SetPaginationDefaultBadRequestOnPageSizeOverflow(true);
+                    c.SetPaginationDefaultBadRequestOnPageOutOfRange(true);
                 });
         }
 

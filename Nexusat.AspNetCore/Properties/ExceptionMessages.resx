@@ -143,4 +143,8 @@
     <value>Subcode must be a non blank or null string</value>
     <comment>StatusCode</comment>
   </data>
+  <data name="InvalidStatePaginationCursor" xml:space="preserve">
+    <value>Unable to fetch pagination info from the current request. Recall to decorate your action with "ValidatePaginationAttribute".</value>
+    <comment>Raised by APIController</comment>
+  </data>
 </root>

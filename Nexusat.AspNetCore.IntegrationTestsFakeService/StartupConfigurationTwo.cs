@@ -28,9 +28,9 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
                 .AddNexusatAspNetCore(c =>
                 {
                     c.EnableRuntimeProfilation();
-
-                    c.SetPaginationDefaultMaxPageSize(0); // Allow Infinity page size
-                    c.SetPaginationDefaultBadRequestOnPageSizeOverflow(false); 
+                c.SetPaginationDefaultPageSize(0); // Default Page size is unbounded (the client will get all data)
+                c.SetPaginationDefaultMaxPageSize(0); // Default MaxPage size is unbounded (the client can require any page size)
+                    c.SetPaginationDefaultBadRequestOnPageOutOfRange(false); 
                 });
         }
 

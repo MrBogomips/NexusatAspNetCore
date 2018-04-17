@@ -82,5 +82,11 @@ namespace Nexusat.AspNetCore.Properties {
                 return ResourceManager.GetString("SubCodeInvalidFormat", resourceCulture);
             }
         }
+        
+        internal static string InvalidStatePaginationCursor {
+            get {
+                return ResourceManager.GetString("InvalidStatePaginationCursor", resourceCulture);
+            }
+        }
     }
 }

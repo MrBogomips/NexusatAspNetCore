@@ -6,13 +6,18 @@ using Microsoft.Extensions.Options;
 using Nexusat.AspNetCore.Builders;
 using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
+using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Nexusat.AspNetCore.Properties;
 
 namespace Nexusat.AspNetCore.Mvc
 {
+    /// <summary>
+    /// The base class from which any API controller should derive from.
+    /// </summary>
     [Controller]
     public abstract partial class ApiController
     {
@@ -22,6 +27,17 @@ namespace Nexusat.AspNetCore.Mvc
         protected HttpContext HttpContext { get => ControllerContext.HttpContext; }
         protected ModelStateDictionary ModelState { get => ControllerContext.ModelState; }
         protected RouteData RoutedData { get => ControllerContext.RouteData; }
+        /// <summary>
+        /// Gets the current page or throws an <see cref="InvalidOperationException"/>
+        /// if you missed to decorate your actio method with <see cref=" ValidatePaginationAttribute"/>.
+        /// </summary>
+        /// <value>The current page.</value>
+        protected PaginationCursor CurrentPage
+        {
+            get =>
+            HttpContext.Items[InternalConstants.PaginationCursorKey] as PaginationCursor 
+                       ?? throw new InvalidOperationException(FormatSystemMessage(ExceptionMessages.InvalidStatePaginationCursor));
+        }
 
         protected IApiResponseBuilderFactory ResponseBuilderFactory
         {
