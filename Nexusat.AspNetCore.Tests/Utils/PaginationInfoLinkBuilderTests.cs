@@ -45,6 +45,7 @@ namespace Nexusat.AspNetCore.Tests.Utils
         [InlineData("/segmnet?ciccio=buffo&pageSize=10&pageIndex=10", 6, 66)]
         [InlineData("/segmnet?pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
         [InlineData("/segmnet?buffo=ciccio&pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
+        [InlineData("/segmnet?buffo=ciccio&pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
         public void TestUrlLinks(string originalLink, int pageIndex, int pageSize) {
             // Setup
             var linkBuilder = new PaginationInfoLinkBuilder(originalLink, pageIndexKeyName, pageSizeKeyName, pageSize);
@@ -68,7 +69,7 @@ namespace Nexusat.AspNetCore.Tests.Utils
         }
 
         private bool CheckPageIndex(string url, int pageIndex) {
-            Output.WriteLine("Checking PageIndex {0}  Presence in '{1}'", pageIndex, url);
+            Output.WriteLine("Checking PageIndex {0} Presence in '{1}'", pageIndex, url);
 
             // Url Must Contains the page
             Assert.Matches(RegexPageIndex, url);
@@ -81,7 +82,7 @@ namespace Nexusat.AspNetCore.Tests.Utils
         }
 
         private bool CheckPageSize(string url, int pageSize) {
-            Output.WriteLine("Checking PageSize {0}  Presence in '{1}'", pageSize, url);
+            Output.WriteLine("Checking PageSize {0} Presence in '{1}'", pageSize, url);
 
             // Url Must Contains the page
             Assert.Matches(RegexPageSize,url);

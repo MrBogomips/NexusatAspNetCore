@@ -227,7 +227,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         {
             // Act
             var response = await Client.GetAsync("/ApiResponse/200OkResponseWithManyObjects");
-            response.EnsureSuccessStatusCode();
+            //response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
             var httpCode = response.StatusCode;
 

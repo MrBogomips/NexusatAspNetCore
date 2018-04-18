@@ -103,6 +103,7 @@ namespace Nexusat.AspNetCore.Builders
             }
             Response.Navigation = new PaginationInfo
             {
+                PaginationCursor = current,
                 ItemsCount = itemsCount
             };
             return this;

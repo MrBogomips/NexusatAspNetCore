@@ -412,13 +412,13 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)">AcceptedEnum&lt;T&gt;(IEnumerable&lt;T&gt;, String, String, String)</h4>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)">AcceptedEnum&lt;T&gt;(Boolean, IEnumerable&lt;T&gt;, String, String, String)</h4>
   <div class="markdown level1 summary"><p>Produce an HTTP 202 response</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, string uri = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(bool hasNextPage, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, string uri = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -430,6 +430,12 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hasNextPage</span></td>
+        <td><p>There&apos;s another page.</p>
+</td>
+      </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">data</span></td>
@@ -491,13 +497,13 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)">AcceptedEnum&lt;T&gt;(IEnumerable&lt;T&gt;, String, String, Uri)</h4>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)">AcceptedEnum&lt;T&gt;(Boolean, IEnumerable&lt;T&gt;, String, String, Uri)</h4>
   <div class="markdown level1 summary"><p>Produce an HTTP 202 response</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, Uri uri = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(bool hasNextPage, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, Uri uri = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -509,6 +515,182 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hasNextPage</span></td>
+        <td><p>There&apos;s another page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
+        <td><p>User description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
+        <td><p>The enum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The 1st type parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)">AcceptedEnum&lt;T&gt;(Int32, IEnumerable&lt;T&gt;, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce an HTTP 202 response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(int itemsCount, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, string uri = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsCount</span></td>
+        <td><p>The count of items found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
+        <td><p>User description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
+        <td><p>The enum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The 1st type parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)">AcceptedEnum&lt;T&gt;(Int32, IEnumerable&lt;T&gt;, String, String, Uri)</h4>
+  <div class="markdown level1 summary"><p>Produce an HTTP 202 response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; AcceptedEnum&lt;T&gt;(int itemsCount, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null, Uri uri = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsCount</span></td>
+        <td><p>The items count found.</p>
+</td>
+      </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">data</span></td>
@@ -935,13 +1117,13 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_OkEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.OkEnum*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">OkEnum&lt;T&gt;(IEnumerable&lt;T&gt;, String, String)</h4>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">OkEnum&lt;T&gt;(Boolean, IEnumerable&lt;T&gt;, String, String)</h4>
   <div class="markdown level1 summary"><p>Produce an HTTP 200 response</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; OkEnum&lt;T&gt;(IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; OkEnum&lt;T&gt;(bool hasNextPage, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -953,6 +1135,91 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hasNextPage</span></td>
+        <td><p>There&apos;s another page</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
+        <td><p>User description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
+        <td><p>The enum response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The 1st type parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Mvc_ApiController_OkEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.OkEnum*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">OkEnum&lt;T&gt;(Int32, IEnumerable&lt;T&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce an HTTP 200 response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; OkEnum&lt;T&gt;(int itemsCount, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsCount</span></td>
+        <td><p>The count of items found.</p>
+</td>
+      </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">data</span></td>
@@ -1142,13 +1409,13 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ResponseEnum&lt;T&gt;(Int32, String, IEnumerable&lt;T&gt;, String, String)</h4>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ResponseEnum&lt;T&gt;(Int32, Boolean, String, IEnumerable&lt;T&gt;, String, String)</h4>
   <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ResponseEnum&lt;T&gt;(int httpCode, string statusCode = null, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ResponseEnum&lt;T&gt;(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1164,6 +1431,99 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">httpCode</span></td>
         <td><p>Http code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hasNextPage</span></td>
+        <td><p>There&apos;s another page</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
+        <td><p>The response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The payload type expected by the method&apos;s signature</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ResponseEnum&lt;T&gt;(Int32, Int32, String, IEnumerable&lt;T&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ResponseEnum&lt;T&gt;(int httpCode, int itemsCount, string statusCode = null, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">httpCode</span></td>
+        <td><p>Http code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsCount</span></td>
+        <td><p>Number of items found</p>
 </td>
       </tr>
       <tr>
