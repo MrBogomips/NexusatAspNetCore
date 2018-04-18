@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
+using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters.Internals;
 
@@ -118,6 +119,15 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
             response.ContentType = resolvedContentType;
 
             response.StatusCode = result.Status.HttpCode;
+
+            if (result is IApiEnumResponse) // build Navigation Links
+            {
+                var _result = result as IApiEnumResponse;
+                NexusatAspNetCoreOptions options = 
+                    (httpContext.RequestServices.GetService(typeof(IOptions<NexusatAspNetCoreOptions>)) as IOptions<NexusatAspNetCoreOptions>).Value;
+
+                _result.Navigation?.SetLinks(options, httpContext);
+            }
 
             var serializerSettings = Options.SerializerSettings;
 

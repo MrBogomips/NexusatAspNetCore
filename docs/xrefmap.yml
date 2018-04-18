@@ -1215,6 +1215,25 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ExceptionInfo.Type
   nameWithType: ExceptionInfo.Type
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse
+  name: IApiEnumResponse
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiEnumResponse
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse
+  nameWithType: IApiEnumResponse
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html#Nexusat_AspNetCore_Models_IApiEnumResponse_Navigation
+  commentId: P:Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  nameWithType: IApiEnumResponse.Navigation
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation*
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html#Nexusat_AspNetCore_Models_IApiEnumResponse_Navigation_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  nameWithType: IApiEnumResponse.Navigation
 - uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1
   name: IApiEnumResponse<T>
   href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html
@@ -1241,23 +1260,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Data
   nameWithType: IApiEnumResponse<T>.Data
   nameWithType.vb: IApiEnumResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  name: Navigation
-  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html#Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation
-  commentId: P:Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse<T>.Navigation
-  fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Navigation
-  nameWithType: IApiEnumResponse<T>.Navigation
-  nameWithType.vb: IApiEnumResponse(Of T).Navigation
-- uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation*
-  name: Navigation
-  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html#Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse<T>.Navigation
-  fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Navigation
-  nameWithType: IApiEnumResponse<T>.Navigation
-  nameWithType.vb: IApiEnumResponse(Of T).Navigation
 - uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1
   name: IApiObjectResponse<T>
   href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html
@@ -1348,6 +1350,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.PaginationCursor
   fullName: Nexusat.AspNetCore.Models.PaginationCursor
   nameWithType: PaginationCursor
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.#ctor(System.Int32,System.Int32)
+  name: PaginationCursor(Int32, Int32)
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor__ctor_System_Int32_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Models.PaginationCursor.#ctor(System.Int32,System.Int32)
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PaginationCursor(System.Int32, System.Int32)
+  nameWithType: PaginationCursor.PaginationCursor(Int32, Int32)
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.#ctor*
+  name: PaginationCursor
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PaginationCursor
+  nameWithType: PaginationCursor.PaginationCursor
 - uid: Nexusat.AspNetCore.Models.PaginationCursor.Equals(Nexusat.AspNetCore.Models.PaginationCursor)
   name: Equals(PaginationCursor)
   href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_Equals_Nexusat_AspNetCore_Models_PaginationCursor_
@@ -2334,6 +2349,116 @@ references:
   commentId: N:Nexusat.AspNetCore.Utils
   fullName: Nexusat.AspNetCore.Utils
   nameWithType: Nexusat.AspNetCore.Utils
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  name: PaginationInfoLinkBuilder
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html
+  commentId: T:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  nameWithType: PaginationInfoLinkBuilder
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor(System.String,System.String,System.String,System.Int32)
+  name: PaginationInfoLinkBuilder(String, String, String, Int32)
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_System_String_System_String_System_String_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor(System.String,System.String,System.String,System.Int32)
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PaginationInfoLinkBuilder(System.String, System.String, System.String, System.Int32)
+  nameWithType: PaginationInfoLinkBuilder.PaginationInfoLinkBuilder(String, String, String, Int32)
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor*
+  name: PaginationInfoLinkBuilder
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PaginationInfoLinkBuilder
+  nameWithType: PaginationInfoLinkBuilder.PaginationInfoLinkBuilder
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  name: GetLink(Int32)
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  nameWithType: PaginationInfoLinkBuilder.GetLink(Int32)
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink*
+  name: GetLink
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink
+  nameWithType: PaginationInfoLinkBuilder.GetLink
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  name: OriginalUrl
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  nameWithType: PaginationInfoLinkBuilder.OriginalUrl
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl*
+  name: OriginalUrl
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  nameWithType: PaginationInfoLinkBuilder.OriginalUrl
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  name: PageIndexKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageIndexKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName*
+  name: PageIndexKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageIndexKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  nameWithType: PaginationInfoLinkBuilder.PageSize
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize*
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  nameWithType: PaginationInfoLinkBuilder.PageSize
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  name: PageSizeKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageSizeKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName*
+  name: PageSizeKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageSizeKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  name: UrlPathPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  nameWithType: PaginationInfoLinkBuilder.UrlPathPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart*
+  name: UrlPathPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  nameWithType: PaginationInfoLinkBuilder.UrlPathPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  name: UrlQueryPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  nameWithType: PaginationInfoLinkBuilder.UrlQueryPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart*
+  name: UrlQueryPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  nameWithType: PaginationInfoLinkBuilder.UrlQueryPart
 - uid: Nexusat.AspNetCore.Utils.StringFormatter
   name: StringFormatter
   href: api/Nexusat.AspNetCore.Utils.StringFormatter.html

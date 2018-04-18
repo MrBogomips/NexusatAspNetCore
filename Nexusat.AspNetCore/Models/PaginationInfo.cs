@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
 using Newtonsoft.Json;
 using Nexusat.AspNetCore.Configuration;
+using Nexusat.AspNetCore.Utils;
 
 namespace Nexusat.AspNetCore.Models
 {
@@ -14,12 +17,17 @@ namespace Nexusat.AspNetCore.Models
     {
         public sealed class PaginationLinks
         {
-            public string First { get; private set; }
-            public string Next { get; private set; }
-            public string Previous { get; private set; }
-            public string Last { get; private set; }
+            public string First { get; internal set; }
+            public string Next { get; internal set; }
+            public string Previous { get; internal set; }
+            public string Last { get; internal set; }
         }
 
+        /// <summary>
+        /// Pagination links are generated only in case of PageSize bounded requests
+        /// </summary>
+        /// <value>The links.</value>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public PaginationLinks Links { get; internal set; }
         /// <summary>
         /// Represents the number of items found.
@@ -49,8 +57,55 @@ namespace Nexusat.AspNetCore.Models
         /// </summary>
         /// <param name="options">Application Global settings.</param>
         /// <param name="httpContext">The Http Context of the request</param>
-        internal void SetLinks(NexusatAspNetCoreOptions options, HttpContext httpContext) {
-            throw new NotImplementedException();
+        internal void SetLinks(NexusatAspNetCoreOptions options, HttpContext context) {
+            string requestUrl = context.Request.GetEncodedPathAndQuery();
+
+            // Only one of the following condition can hold
+            /// <see cref="Builders.ApiEnumResponseBuilder{T}"/>
+            Debug.Assert(ItemsCount.HasValue ^ HasNextPage);
+
+            if (PaginationCursor.IsPageSizeBounded) // If unbounded links are not generated
+            { 
+                var linkBuilder = new PaginationInfoLinkBuilder(
+                        context.Request.GetEncodedPathAndQuery(),
+                        options.PaginationPageIndexName,
+                        options.PaginationPageSizeName,
+                        PaginationCursor.PageSize
+                    );
+
+                if (ItemsCount.HasValue)
+                { // calculate links and pageCount
+                    int pageCount =
+                        (ItemsCount.Value + PaginationCursor.PageSize - 1) / PaginationCursor.PageSize;
+
+                    if (pageCount > PaginationCursor.PageIndex) {
+
+                        // TODO 
+                        if (PaginationCursor.PageIndex > 2)
+                        {
+                            Links.Previous = linkBuilder.GetLink(PaginationCursor.PageIndex - 1);
+                        }
+                        if (PaginationCursor.PageIndex > 0) {
+                            Links.Previous = linkBuilder.GetLink(PaginationCursor.PageIndex - 1);
+                        }
+
+                        Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
+
+                    } 
+
+
+                    
+                } 
+                else if (HasNextPage) // implies hasn't itemsCount
+                { // calculate links except the "last"
+                    
+                }
+            } else { // Unbounded requests have only 1 page of data
+                PagesCount = 1;
+            }
+
+
+            context.Request.GetDisplayUrl();
         }
-       }
+    }
 }

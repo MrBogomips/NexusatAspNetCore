@@ -145,11 +145,13 @@ The <pre><code>null</code></pre> value stands for unknown.</p>
   
   <a id="Nexusat_AspNetCore_Models_PaginationInfo_Links_" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.Links*"></a>
   <h4 id="Nexusat_AspNetCore_Models_PaginationInfo_Links" data-uid="Nexusat.AspNetCore.Models.PaginationInfo.Links">Links</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Pagination links are generated only in case of PageSize bounded requests</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PaginationInfo.PaginationLinks Links { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+public PaginationInfo.PaginationLinks Links { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,7 +164,8 @@ The <pre><code>null</code></pre> value stands for unknown.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html">PaginationInfo.PaginationLinks</a></td>
-        <td></td>
+        <td><p>The links.</p>
+</td>
       </tr>
     </tbody>
   </table>

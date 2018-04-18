@@ -23,5 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Builders\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 </Project>

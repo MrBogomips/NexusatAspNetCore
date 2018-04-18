@@ -12,7 +12,7 @@
           "hash": "9iOCqqKcmkDz0cFZS4M9+g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "2DYFKPXMZRubvIGIzk2zEQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "roCrDv4Ikc7Rdcbv2OsYwg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "uqwdpOSTcPv6A8In+wbiyQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "EUHWxbgTr5uazF87Ld4niQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "KZa2SR070lNS2RB72MZyrw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "7iadMcQtju37CqFg3WKh9Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "z2dFQip/+9LdNV5qBRBk4Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "6NvYsq7SmfY4ed0O22OTpQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "GgtEDu1fqZI2Bufo1yQ/Yw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "XfURraO++UZKFf+goe2opw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "FxPcvwjujgs5VnCo+xpVbw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "zebfakB2a5M6jgg0CL58cA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -168,7 +168,7 @@
           "hash": "Xkt4CeCXz570YMftrsnUtQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -180,7 +180,7 @@
           "hash": "Mqxce2EbBQIA8UYM+6zlag=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "wiSygONMtqDdbzqy/bWNXg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,7 +204,7 @@
           "hash": "Afw2QCJNEOXQMgZT3VUDdQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -216,7 +216,7 @@
           "hash": "K1Ql3UPBofEPAkaf3mQMTg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +228,7 @@
           "hash": "kbMzPE8Slj+6mAfbwZ0mTA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +240,7 @@
           "hash": "aFq3YdTTmTps8ntdNEycgQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,7 +252,7 @@
           "hash": "y5BRRtEB0DWVfKZqHyVrOw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -264,7 +264,7 @@
           "hash": "1FU49vRTjwv88kfgoCYU7g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -276,7 +276,7 @@
           "hash": "RrvzNQsruJy8ydMw8yg/Jg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +288,7 @@
           "hash": "xm9peYkKHpXEFOcYcxlwVQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +297,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html",
-          "hash": "BYmAO47JeNn1B4+lfitZzA=="
+          "hash": "dg/B+brk0AUbMiiUYgp7tw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.IApiEnumResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.IApiEnumResponse.html",
+          "hash": "mJOKtwsUN9Iunj4MK/pyOQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -312,7 +324,7 @@
           "hash": "vqR7oOPd/XqKSBnJcrHqcQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -324,7 +336,7 @@
           "hash": "2Zbzj0MBaBocozA/bz0xbg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.PaginationCursor.html",
-          "hash": "Q77SMeN9nnrn1K6Hm38ukg=="
+          "hash": "6dryNJ6Es6O/jgajlqC7NQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -348,7 +360,7 @@
           "hash": "R/hzEESvhVleTZX5hOl0VA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.PaginationInfo.html",
-          "hash": "SWrPTHwLP5s17+FOMd0q+Q=="
+          "hash": "0KooKeeUOw1wJjaSSL+wlw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -372,7 +384,7 @@
           "hash": "8RvgCGGBtN+ndCFsIpUX4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -384,7 +396,7 @@
           "hash": "tUVj+PSIxMhLyu+PWwdCwQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -396,7 +408,7 @@
           "hash": "cto64+szoZhb7dhAn7tHsg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "4m5d97OiuYbS/Lo4hZEYrQ=="
+          "hash": "ahiS4dwLXkhlWke5mR2Mog=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -420,7 +432,7 @@
           "hash": "O4OoOOjp1cfQRxZ6sP3qqQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,7 +444,7 @@
           "hash": "QPXEtyLHAnvPRkPIYPvLJw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,7 +456,7 @@
           "hash": "X0MYb7cdEwJveFOONyLwzQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -456,7 +468,7 @@
           "hash": "5pVIRgcFyrE/cK2o3sTGpQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,7 +480,7 @@
           "hash": "GR4qJZVDi97F5SlM+BYy4A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -480,7 +492,7 @@
           "hash": "ICBlx3/NhoWjEUfnZnoIqg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -492,7 +504,7 @@
           "hash": "dVEP3SIeA1VN9wtPUlHTuw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -504,7 +516,7 @@
           "hash": "2utKPqEUtXekjxVs0RSjfg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -514,6 +526,18 @@
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.html",
           "hash": "Sk12okWKflW6eMenFajvwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html",
+          "hash": "aJBKZA8WXhtzpuymW0rS1w=="
         }
       },
       "is_incremental": false,
@@ -528,7 +552,7 @@
           "hash": "Sd/O52mxsjWVbiAHdaWZkQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -537,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Utils.html",
-          "hash": "0WYylwGX9JxZLftWY/ik8g=="
+          "hash": "6Xy1CDEpr+AwmbTRpf3X8g=="
         }
       },
       "is_incremental": false,
@@ -552,7 +576,7 @@
           "hash": "Qo3cyoGHvu3d8DW9wIp1fQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -561,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ct95ovq6RSvnBj2bWUi/0w=="
+          "hash": "RMklSPNqVoJBIOGdAZlc5w=="
         }
       },
       "is_incremental": false,
@@ -576,7 +600,7 @@
           "hash": "/kaTKDcRoCMh6VYxcNwvow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -600,7 +624,7 @@
           "hash": "Ub4v8SjHM2ZPSbVEMmw3Zw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
