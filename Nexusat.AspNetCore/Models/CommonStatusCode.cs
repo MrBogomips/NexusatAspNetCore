@@ -41,5 +41,9 @@ namespace Nexusat.AspNetCore.Models
         /// The default status code used in case of ambigous operations not specifically configured by the user
         /// </summary>
         public const string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
+        /// <summary>
+        /// This status code should never be served to the client
+        /// </summary>
+        internal const string OK_INTERNAL_PIZZA = OK + "_INTERNAL_PIZZA";
     }
 }

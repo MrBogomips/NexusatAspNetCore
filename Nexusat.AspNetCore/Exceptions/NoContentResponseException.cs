@@ -11,7 +11,7 @@ namespace Nexusat.AspNetCore.Exceptions
     public class NoContentResponseException: ApiResponseException
     {
         private const int httpCode = (int)HttpStatusCode.NoContent;
-        private const string statusCode = ""; //Models.StatusCode.BAD_REQUEST_STATUS_CODE;
+        private const string statusCode = CommonStatusCodes.OK_INTERNAL_PIZZA;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.

@@ -335,6 +335,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
         }
 
+        #region Pagination over a Bounded Response (PageSize > 0)
         [Fact]
         public async void CheckGetNumbersPaginatedFirstPage()
         {
@@ -420,5 +421,23 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(10, paginationInfo.PagesCount);
             Assert.Equal(10, paginationInfo.PageSize);
         }
+
+        /// <summary>
+        /// Requesting a page over the last one should produce 
+        /// a NoContent response
+        /// </summary>
+        [Fact]
+        public async void CheckGetNumbersPaginatedOverLastPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbersPaginated?p_ix=11&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var body = await response.Content.ReadAsStringAsync();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+            Assert.Empty(body); // no body expected
+        }
+        #endregion Pagination over a Bounded Response (PageSize > 0)
     }
 }
