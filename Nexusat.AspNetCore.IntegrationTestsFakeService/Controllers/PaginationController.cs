@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc;
 
@@ -47,5 +49,20 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("GetPaginationCursorMissingValidation")]
         public IApiObjectResponse<PaginationCursor> GetPaginationCursorMissingValidation()
             => OkObject(CurrentPage);
+
+        [ValidatePagination]
+        [HttpGet("GetNumbersPaginated")]
+        public IApiEnumResponse<int> GetNumbersPaginated() {
+            var itemsCount = 100;
+
+            if (CurrentPage.PageSize * CurrentPage.PageIndex > itemsCount)
+            {
+                throw new NoContentResponseException();
+            }
+
+            var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
+
+            return OkEnum(itemsCount, items);
+        }
     }
 }

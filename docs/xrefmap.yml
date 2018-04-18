@@ -1110,6 +1110,31 @@ references:
   commentId: T:Nexusat.AspNetCore.Exceptions.IFrameworkException
   fullName: Nexusat.AspNetCore.Exceptions.IFrameworkException
   nameWithType: IFrameworkException
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  name: NoContentResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html
+  commentId: T:Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  nameWithType: NoContentResponseException
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  name: NoContentResponseException()
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor
+  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException()
+  nameWithType: NoContentResponseException.NoContentResponseException()
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
+  name: NoContentResponseException(Exception)
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException(System.Exception)
+  nameWithType: NoContentResponseException.NoContentResponseException(Exception)
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor*
+  name: NoContentResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException
+  nameWithType: NoContentResponseException.NoContentResponseException
 - uid: Nexusat.AspNetCore.Middleware
   name: Nexusat.AspNetCore.Middleware
   href: api/Nexusat.AspNetCore.Middleware.html
@@ -1157,6 +1182,60 @@ references:
   commentId: N:Nexusat.AspNetCore.Models
   fullName: Nexusat.AspNetCore.Models
   nameWithType: Nexusat.AspNetCore.Models
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes
+  name: CommonStatusCodes
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html
+  commentId: T:Nexusat.AspNetCore.Models.CommonStatusCodes
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes
+  nameWithType: CommonStatusCodes
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  name: BAD_REQUEST_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_BAD_REQUEST_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  nameWithType: CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  name: DEFAULT_KO_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_KO_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  name: DEFAULT_OK_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_OK_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  name: DEFAULT_UNK_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_UNK_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  name: KO
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_KO
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  nameWithType: CommonStatusCodes.KO
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  name: NOT_FOUND_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_NOT_FOUND_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  nameWithType: CommonStatusCodes.NOT_FOUND_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  name: OK
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_OK
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  nameWithType: CommonStatusCodes.OK
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  name: UNHANDLED_EXCEPTION_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNHANDLED_EXCEPTION_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
 - uid: Nexusat.AspNetCore.Models.ExceptionInfo
   name: ExceptionInfo
   href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html
@@ -1967,6 +2046,22 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Ok
   nameWithType: ApiController.Ok
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum*
+  name: OkEmptyEnum
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
+  nameWithType: ApiController.OkEmptyEnum
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
+  name: OkEmptyEnum<T>()
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum__1
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
+  name.vb: OkEmptyEnum(Of T)()
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum<T>()
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum(Of T)()
+  nameWithType: ApiController.OkEmptyEnum<T>()
+  nameWithType.vb: ApiController.OkEmptyEnum(Of T)()
 - uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum*
   name: OkEnum
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum_

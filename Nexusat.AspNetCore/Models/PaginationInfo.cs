@@ -97,15 +97,11 @@ namespace Nexusat.AspNetCore.Models
                         (ItemsCount.Value + PaginationCursor.PageSize - 1) / PaginationCursor.PageSize;
                     PagesCount = pageCount;
                     if (pageCount > PaginationCursor.PageIndex) {
-                        
                         // Next
-                        if (pageCount > PaginationCursor.PageIndex)
-                        {
-                            Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
-                        }
-                        // Last
-                        Links.Last = linkBuilder.GetLink(pageCount);
+                        Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
                     } 
+                    // Last
+                    Links.Last = linkBuilder.GetLink(pageCount);
                 } 
                 else if (HasNextPage) // implies hasn't itemsCount
                 { // calculate links except the "last"
