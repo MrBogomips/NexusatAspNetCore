@@ -17,9 +17,15 @@ namespace Nexusat.AspNetCore.Models
     {
         public sealed class PaginationLinks
         {
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
             public string First { get; internal set; }
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+            public string Current { get; internal set; }
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
             public string Next { get; internal set; }
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
             public string Previous { get; internal set; }
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
             public string Last { get; internal set; }
         }
 
@@ -64,46 +70,50 @@ namespace Nexusat.AspNetCore.Models
             /// <see cref="Builders.ApiEnumResponseBuilder{T}"/>
             Debug.Assert(ItemsCount.HasValue ^ HasNextPage);
 
+            PageSize = PaginationCursor.PageSize;
+
             if (PaginationCursor.IsPageSizeBounded) // If unbounded links are not generated
-            { 
+            {
+                Links = new PaginationLinks();
                 var linkBuilder = new PaginationInfoLinkBuilder(
                         context.Request.GetEncodedPathAndQuery(),
                         options.PaginationPageIndexName,
                         options.PaginationPageSizeName,
                         PaginationCursor.PageSize
                     );
+                // First
+                Links.First = linkBuilder.GetLink(1);
+                // Current
+                Links.Current = linkBuilder.GetLink(PaginationCursor.PageIndex);
+                // Previous
+                if (PaginationCursor.PageIndex > 1)
+                {
+                    Links.Previous = linkBuilder.GetLink(PaginationCursor.PageIndex - 1);
+                }
 
                 if (ItemsCount.HasValue)
                 { // calculate links and pageCount
                     int pageCount =
                         (ItemsCount.Value + PaginationCursor.PageSize - 1) / PaginationCursor.PageSize;
-
+                    PagesCount = pageCount;
                     if (pageCount > PaginationCursor.PageIndex) {
-
-                        // TODO 
-                        if (PaginationCursor.PageIndex > 2)
+                        
+                        // Next
+                        if (pageCount > PaginationCursor.PageIndex)
                         {
-                            Links.Previous = linkBuilder.GetLink(PaginationCursor.PageIndex - 1);
+                            Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
                         }
-                        if (PaginationCursor.PageIndex > 0) {
-                            Links.Previous = linkBuilder.GetLink(PaginationCursor.PageIndex - 1);
-                        }
-
-                        Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
-
+                        // Last
+                        Links.Last = linkBuilder.GetLink(pageCount);
                     } 
-
-
-                    
                 } 
                 else if (HasNextPage) // implies hasn't itemsCount
                 { // calculate links except the "last"
-                    
+                    Links.Next = linkBuilder.GetLink(PaginationCursor.PageIndex + 1);
                 }
             } else { // Unbounded requests have only 1 page of data
                 PagesCount = 1;
             }
-
 
             context.Request.GetDisplayUrl();
         }

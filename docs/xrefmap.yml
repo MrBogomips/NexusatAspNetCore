@@ -1511,6 +1511,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
   fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
   nameWithType: PaginationInfo.PaginationLinks
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  name: Current
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Current
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  nameWithType: PaginationInfo.PaginationLinks.Current
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current*
+  name: Current
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Current_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  nameWithType: PaginationInfo.PaginationLinks.Current
 - uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
   name: First
   href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_First
@@ -1767,24 +1780,42 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum
   nameWithType: ApiController.AcceptedEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
-  name: AcceptedEnum<T>(IEnumerable<T>, String, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
-  name.vb: AcceptedEnum(Of T)(IEnumerable(Of T), String, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
-  nameWithType: ApiController.AcceptedEnum<T>(IEnumerable<T>, String, String, String)
-  nameWithType.vb: ApiController.AcceptedEnum(Of T)(IEnumerable(Of T), String, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
-  name: AcceptedEnum<T>(IEnumerable<T>, String, String, Uri)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
-  name.vb: AcceptedEnum(Of T)(IEnumerable(Of T), String, String, Uri)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
-  nameWithType: ApiController.AcceptedEnum<T>(IEnumerable<T>, String, String, Uri)
-  nameWithType.vb: ApiController.AcceptedEnum(Of T)(IEnumerable(Of T), String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name: AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name.vb: AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiController.AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name: AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name.vb: AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
+  nameWithType: ApiController.AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, Uri)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name: AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name.vb: AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiController.AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name: AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name.vb: AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
+  nameWithType: ApiController.AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, Uri)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, Uri)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject*
   name: AcceptedObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedObject_
@@ -1943,15 +1974,24 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum
   nameWithType: ApiController.OkEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name: OkEnum<T>(IEnumerable<T>, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name.vb: OkEnum(Of T)(IEnumerable(Of T), String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
-  nameWithType: ApiController.OkEnum<T>(IEnumerable<T>, String, String)
-  nameWithType.vb: ApiController.OkEnum(Of T)(IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: OkEnum<T>(Boolean, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: OkEnum(Of T)(Boolean, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.OkEnum<T>(Boolean, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.OkEnum(Of T)(Boolean, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: OkEnum<T>(Int32, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: OkEnum(Of T)(Int32, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.OkEnum<T>(Int32, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.OkEnum(Of T)(Int32, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.OkObject*
   name: OkObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkObject_
@@ -2001,15 +2041,24 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum
   nameWithType: ApiController.ResponseEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name: ResponseEnum<T>(Int32, String, IEnumerable<T>, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name.vb: ResponseEnum(Of T)(Int32, String, IEnumerable(Of T), String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
-  nameWithType: ApiController.ResponseEnum<T>(Int32, String, IEnumerable<T>, String, String)
-  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, String, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: ResponseEnum(Of T)(Int32, Int32, String, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.Int32, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Int32, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Int32, String, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject*
   name: ResponseObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseObject_

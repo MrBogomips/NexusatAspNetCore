@@ -16,7 +16,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("CheckSimpleValidation")]
         public IApiEnumResponse<string> GetPaginationCheckLimits()
         {
-            return OkEnum(Data);
+            return OkEnum(Data.Count, Data);
         }
 
         /// <summary>

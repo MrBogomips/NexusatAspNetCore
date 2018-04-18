@@ -48,6 +48,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// </summary>
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomEnumStringRespone")]
+        [ValidatePagination]
         public IApiEnumResponse<string> Get299CustomEnumStringResponse() => ApiEnumResponse<string>(r =>
         {
             r.SetHttpCode(299);
@@ -93,7 +94,8 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("200OkResponseWithObject")]
         public IApiObjectResponse<string> GetOkResponseWithObject() => OkObject(data: "Ciccio");
         [HttpGet("200OkResponseWithManyObjects")]
-        public IApiEnumResponse<string> GetOkResponseWithManyObjects() => OkEnum(data: new[] { "Ciccio", "buffo" });
+        [ValidatePagination]
+        public IApiEnumResponse<string> GetOkResponseWithManyObjects() => OkEnum(2, data: new[] { "Ciccio", "buffo" });
         #endregion Ok Helper Methods falvours
 
         #region Accpepted (HTTP 202) Helper Methods flavours
@@ -102,7 +104,8 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("202OkResponseWithObject")]
         public IApiObjectResponse<string> GetAcceptedResponseWithObject() => AcceptedObject(data: "payload", uri: "some_uri");
         [HttpGet("202OkResponseWithManyObjects")]
-        public IApiEnumResponse<string> GetAcceptedResponseWithManyObject() => AcceptedEnum(data: new[] { "pay", "load" }, uri: "some_uri");
+        [ValidatePagination]
+        public IApiEnumResponse<string> GetAcceptedResponseWithManyObject() => AcceptedEnum(2, data: new[] { "pay", "load" }, uri: "some_uri");
         #endregion Accpepted (HTTP 202) Helper Methods flavours
     }
 }
