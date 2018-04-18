@@ -147,4 +147,25 @@
     <value>Unable to fetch pagination info from the current request. Recall to decorate your action with "ValidatePaginationAttribute".</value>
     <comment>Raised by APIController</comment>
   </data>
+  <data name="InvalidItemsCount" xml:space="preserve">
+    <value>Items count cannot be negative.</value>
+    <comment>Raised by ApiEnumResponseBuilder</comment>
+  </data>
+  <data name="PaginationIndexMustBePositive" xml:space="preserve">
+    <value>Page index must be a positive integer.</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>
+  <data name="PaginationSizeMustBeNonNegative" xml:space="preserve">
+    <value>Page size must be a non-negstive integer.</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>
+  <data name="PaginationIndexMustEqualsOneInCaseOfPageSizeZero" xml:space="preserve">
+    <value>Page index must be 1 in case of Page size 0 (meaning all)</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>  
+  <data name="InvalidUriTooManyQuestionMarks" xml:space="preserve">
+    <value>The uri {0} has too many '?'.</value>
+    <comment>PaginationInfoLinkBuilder</comment>
+  </data>    
+    
 </root>
