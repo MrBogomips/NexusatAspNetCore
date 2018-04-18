@@ -334,5 +334,110 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             // Assert
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
         }
+
+        #region Pagination over a Bounded Response (PageSize > 0)
+        [Fact]
+        public async void CheckGetNumbersPaginatedFirstPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbersPaginated?p_ix=1&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            // PageSize bounded response
+            // 1st page has all links except the prev
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.Null(paginationInfo.Links.Previous);
+            Assert.NotNull(paginationInfo.Links.Next);
+            Assert.NotNull(paginationInfo.Links.Last);
+            Assert.Equal(100, paginationInfo.ItemsCount);
+            Assert.Equal(10, paginationInfo.PagesCount);
+            Assert.Equal(10, paginationInfo.PageSize);
+        }
+        [Fact]
+        public async void CheckGetNumbersPaginatedSecondPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbersPaginated?p_ix=2&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            // PageSize bounded response
+            // 2nd page has all links (inner page)
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.NotNull(paginationInfo.Links.Previous);
+            Assert.NotNull(paginationInfo.Links.Next);
+            Assert.NotNull(paginationInfo.Links.Last);
+            Assert.Equal(100, paginationInfo.ItemsCount);
+            Assert.Equal(10, paginationInfo.PagesCount);
+            Assert.Equal(10, paginationInfo.PageSize);
+        }
+
+        [Fact]
+        public async void CheckGetNumbersPaginatedLastPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbersPaginated?p_ix=10&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            // PageSize bounded response
+            // Last page has all links except the last one
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.NotNull(paginationInfo.Links.Previous);
+            Assert.Null(paginationInfo.Links.Next);
+            Assert.NotNull(paginationInfo.Links.Last);
+            Assert.Equal(100, paginationInfo.ItemsCount);
+            Assert.Equal(10, paginationInfo.PagesCount);
+            Assert.Equal(10, paginationInfo.PageSize);
+        }
+
+        /// <summary>
+        /// Requesting a page over the last one should produce 
+        /// a NoContent response
+        /// </summary>
+        [Fact]
+        public async void CheckGetNumbersPaginatedOverLastPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbersPaginated?p_ix=11&p_sz=10");
+            var response = await Client.GetAsync(url);
+            var body = await response.Content.ReadAsStringAsync();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+            Assert.Empty(body); // no body expected
+        }
+        #endregion Pagination over a Bounded Response (PageSize > 0)
     }
 }

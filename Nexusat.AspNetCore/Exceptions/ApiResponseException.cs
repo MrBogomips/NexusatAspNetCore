@@ -42,15 +42,18 @@ namespace Nexusat.AspNetCore.Exceptions
             if (statusCode == null) throw new ArgumentNullException(nameof(statusCode));
             switch (httpCode / 100)
             {
+                case 1:
+                case 2:
+                case 3:
                 case 4:
                 case 5:
                 case 6:
                     break; // OK
                 default:
-                    throw new ArgumentException("Invalid httpCode: must me a 4xx, 5xx or 6xx");
+                    throw new ArgumentException("Invalid httpCode: " + httpCode);
             }
             HttpCode = httpCode;
-            Models.StatusCode.CheckValidKoCodeOrThrow(statusCode);
+            Models.StatusCode.CheckValidCodeOrThrow(statusCode);
             StatusCode = statusCode;
         }
         private static string HelperBuildMessage(int httpCode, string subcode)

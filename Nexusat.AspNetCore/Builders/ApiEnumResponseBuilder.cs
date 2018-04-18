@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Nexusat.AspNetCore.Implementations;
 using Nexusat.AspNetCore.Models;
+using Nexusat.AspNetCore.Properties;
+using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Builders
 {
@@ -72,6 +74,38 @@ namespace Nexusat.AspNetCore.Builders
         public IApiEnumResponseBuilder<T> SetUserDescription(string userDescription)
         {
             InternalSetUserDescription(userDescription);
+            return this;
+        }
+
+        public IApiEnumResponseBuilder<T> SetPaginationCursor(PaginationCursor current, bool hasNextPage)
+        {
+            if (current == null)
+            {
+                throw new ArgumentNullException(nameof(current));
+            }
+            Response.Navigation = new PaginationInfo
+            {
+                PaginationCursor = current,
+                HasNextPage = hasNextPage
+            };
+            return this;
+        }
+
+        public IApiEnumResponseBuilder<T> SetPaginationCursor(PaginationCursor current, int itemsCount)
+        {
+            if (current == null)
+            {
+                throw new ArgumentNullException(nameof(current));
+            }
+            if (itemsCount < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(itemsCount), FormatSystemMessage(ExceptionMessages.InvalidItemsCount));
+            }
+            Response.Navigation = new PaginationInfo
+            {
+                PaginationCursor = current,
+                ItemsCount = itemsCount
+            };
             return this;
         }
     }

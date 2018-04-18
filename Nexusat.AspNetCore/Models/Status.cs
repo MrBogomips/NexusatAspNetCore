@@ -13,61 +13,23 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     internal static class StatusCode
     {
-        /*
-         * ATTENTION!!!!! 
-         * 
-         * Initialization order for static fields matters!!!
-         * 
-         * Never declare a static field that depends on a field declared later on!
-         * Even with strings order matters!
-         */
-        public static readonly string OK = "OK";
-        public static readonly string KO = "KO";
-        private static readonly string OK_ = OK + "_";
-        private static readonly string KO_ = KO + "_";
-
-        /// <summary>
-        /// The default status code used in case of successful operations
-        /// </summary>
-        public static readonly string DEFAULT_OK_STATUS_CODE = OK + "_DEFAULT";
-        /// <summary>
-        /// The default status code used in case of failed operations
-        /// </summary>
-        public static readonly string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
-        /// <summary>
-        /// The NotFound status code.
-        /// </summary>
-        public static readonly string NOT_FOUND_STATUS_CODE = KO + "_NOT_FOUND";
-        /// <summary>
-        /// The BadRequest status code.
-        /// </summary>
-        public static readonly string BAD_REQUEST_STATUS_CODE = KO + "_BAD_REQUEST";
-        /// <summary>
-        /// The unhandled exception status code.
-        /// </summary>
-        public static readonly string UNHANDLED_EXCEPTION_STATUS_CODE = KO + "_UNHANDLED_EXCEPTION";
-        
-        /// <summary>
-        /// The default status code used in case of ambigous operations not specifically configured by the user
-        /// </summary>
-        public static readonly string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
 
         public static bool CheckOkValidCode(string code) =>
             code != null && (
-                code == OK ||
-                code.StartsWith(OK_, StringComparison.InvariantCulture)
+                code == CommonStatusCodes.OK ||
+            code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture)
             );
         public static bool CheckKoValidCode(string code) =>
             code != null && (
-                code == KO ||
-                code.StartsWith(KO_, StringComparison.InvariantCulture)
+            code == CommonStatusCodes.KO ||
+            code.StartsWith(CommonStatusCodes.KO_, StringComparison.InvariantCulture)
             );
         public static bool CheckValidCode(string code) =>
             code != null && (
-                code == OK ||
-                code == KO ||
-                code.StartsWith(OK_, StringComparison.InvariantCulture) ||
-                code.StartsWith(KO_, StringComparison.InvariantCulture)
+            code == CommonStatusCodes.OK ||
+            code == CommonStatusCodes.KO ||
+            code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture) ||
+            code.StartsWith(CommonStatusCodes.KO_, StringComparison.InvariantCulture)
             );
         public static void CheckValidCodeOrThrow(string code)
 	    {
@@ -85,8 +47,8 @@ namespace Nexusat.AspNetCore.Models
         }
 
 
-        public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", OK_, FormatSubCode(subcode));
-        public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", KO_, FormatSubCode(subcode));
+        public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", CommonStatusCodes.OK_, FormatSubCode(subcode));
+        public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", CommonStatusCodes.KO_, FormatSubCode(subcode));
 
         private static string FormatSubCode(string subcode)
         {
@@ -100,7 +62,7 @@ namespace Nexusat.AspNetCore.Models
     {
         public int HttpCode { get; internal set; }
 
-        private string _Code = StatusCode.DEFAULT_UNK_STATUS_CODE;
+        private string _Code = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
 
         public string Code {
             get => _Code;
@@ -129,8 +91,8 @@ namespace Nexusat.AspNetCore.Models
             }
             else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
         }
-        public void SetSuccessCode() => _Code = StatusCode.OK;
-        public void SetFailedCode() => _Code = StatusCode.KO;
+        public void SetSuccessCode() => _Code = CommonStatusCodes.OK;
+        public void SetFailedCode() => _Code = CommonStatusCodes.KO;
         public void SetSuccessCode(string subcode) => _Code = StatusCode.GetStatusCodeSuccess(subcode);
         public void SetFailedCode(string subcode) => _Code = StatusCode.GetStatusCodeFailed(subcode);
 
@@ -139,7 +101,7 @@ namespace Nexusat.AspNetCore.Models
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string UserDescription { get; internal set; }
 
-        #region Equals
+#region Equals
         public override bool Equals(object obj) => Equals(obj as Status);
         public bool Equals(Status that) => 
             that != null
@@ -148,8 +110,8 @@ namespace Nexusat.AspNetCore.Models
             && Description == that.Description;
         public override int GetHashCode() => 
             HttpCode 
-            ^ Code.GetHashCode() 
+            ^ Code.GetHashCode() << 16
             ^ Description.GetHashCode();
-        #endregion Equals
+#endregion Equals
     }
 }

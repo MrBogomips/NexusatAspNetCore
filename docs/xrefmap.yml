@@ -162,6 +162,31 @@ references:
   fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetHttpCode
   nameWithType: IApiEnumResponseBuilder<T>.SetHttpCode
   nameWithType.vb: IApiEnumResponseBuilder(Of T).SetHttpCode
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
+  name: SetPaginationCursor(PaginationCursor, Boolean)
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Boolean)
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Boolean)
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
+  name: SetPaginationCursor(PaginationCursor, Int32)
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Int32)
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Int32)
+- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor*
+  name: SetPaginationCursor
+  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_
+  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor
+  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor
+  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor
 - uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode(System.String)
   name: SetStatusCode(String)
   href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCode_System_String_
@@ -1085,6 +1110,31 @@ references:
   commentId: T:Nexusat.AspNetCore.Exceptions.IFrameworkException
   fullName: Nexusat.AspNetCore.Exceptions.IFrameworkException
   nameWithType: IFrameworkException
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  name: NoContentResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html
+  commentId: T:Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException
+  nameWithType: NoContentResponseException
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  name: NoContentResponseException()
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor
+  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException()
+  nameWithType: NoContentResponseException.NoContentResponseException()
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
+  name: NoContentResponseException(Exception)
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException(System.Exception)
+  nameWithType: NoContentResponseException.NoContentResponseException(Exception)
+- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor*
+  name: NoContentResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException
+  nameWithType: NoContentResponseException.NoContentResponseException
 - uid: Nexusat.AspNetCore.Middleware
   name: Nexusat.AspNetCore.Middleware
   href: api/Nexusat.AspNetCore.Middleware.html
@@ -1132,6 +1182,60 @@ references:
   commentId: N:Nexusat.AspNetCore.Models
   fullName: Nexusat.AspNetCore.Models
   nameWithType: Nexusat.AspNetCore.Models
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes
+  name: CommonStatusCodes
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html
+  commentId: T:Nexusat.AspNetCore.Models.CommonStatusCodes
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes
+  nameWithType: CommonStatusCodes
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  name: BAD_REQUEST_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_BAD_REQUEST_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+  nameWithType: CommonStatusCodes.BAD_REQUEST_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  name: DEFAULT_KO_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_KO_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_KO_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  name: DEFAULT_OK_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_OK_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_OK_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  name: DEFAULT_UNK_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_UNK_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+  nameWithType: CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  name: KO
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_KO
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
+  nameWithType: CommonStatusCodes.KO
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  name: NOT_FOUND_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_NOT_FOUND_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
+  nameWithType: CommonStatusCodes.NOT_FOUND_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  name: OK
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_OK
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
+  nameWithType: CommonStatusCodes.OK
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  name: UNHANDLED_EXCEPTION_STATUS_CODE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNHANDLED_EXCEPTION_STATUS_CODE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+  nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
 - uid: Nexusat.AspNetCore.Models.ExceptionInfo
   name: ExceptionInfo
   href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html
@@ -1190,6 +1294,25 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ExceptionInfo.Type
   nameWithType: ExceptionInfo.Type
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse
+  name: IApiEnumResponse
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiEnumResponse
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse
+  nameWithType: IApiEnumResponse
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html#Nexusat_AspNetCore_Models_IApiEnumResponse_Navigation
+  commentId: P:Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  nameWithType: IApiEnumResponse.Navigation
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation*
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse.html#Nexusat_AspNetCore_Models_IApiEnumResponse_Navigation_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse.Navigation
+  nameWithType: IApiEnumResponse.Navigation
 - uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1
   name: IApiEnumResponse<T>
   href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html
@@ -1216,23 +1339,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Data
   nameWithType: IApiEnumResponse<T>.Data
   nameWithType.vb: IApiEnumResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  name: Navigation
-  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html#Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation
-  commentId: P:Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse<T>.Navigation
-  fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Navigation
-  nameWithType: IApiEnumResponse<T>.Navigation
-  nameWithType.vb: IApiEnumResponse(Of T).Navigation
-- uid: Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation*
-  name: Navigation
-  href: api/Nexusat.AspNetCore.Models.IApiEnumResponse-1.html#Nexusat_AspNetCore_Models_IApiEnumResponse_1_Navigation_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiEnumResponse`1.Navigation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiEnumResponse<T>.Navigation
-  fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Navigation
-  nameWithType: IApiEnumResponse<T>.Navigation
-  nameWithType.vb: IApiEnumResponse(Of T).Navigation
 - uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1
   name: IApiObjectResponse<T>
   href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html
@@ -1323,6 +1429,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.PaginationCursor
   fullName: Nexusat.AspNetCore.Models.PaginationCursor
   nameWithType: PaginationCursor
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.#ctor(System.Int32,System.Int32)
+  name: PaginationCursor(Int32, Int32)
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor__ctor_System_Int32_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Models.PaginationCursor.#ctor(System.Int32,System.Int32)
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PaginationCursor(System.Int32, System.Int32)
+  nameWithType: PaginationCursor.PaginationCursor(Int32, Int32)
+- uid: Nexusat.AspNetCore.Models.PaginationCursor.#ctor*
+  name: PaginationCursor
+  href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationCursor.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationCursor.PaginationCursor
+  nameWithType: PaginationCursor.PaginationCursor
 - uid: Nexusat.AspNetCore.Models.PaginationCursor.Equals(Nexusat.AspNetCore.Models.PaginationCursor)
   name: Equals(PaginationCursor)
   href: api/Nexusat.AspNetCore.Models.PaginationCursor.html#Nexusat_AspNetCore_Models_PaginationCursor_Equals_Nexusat_AspNetCore_Models_PaginationCursor_
@@ -1471,6 +1590,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
   fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks
   nameWithType: PaginationInfo.PaginationLinks
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  name: Current
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Current
+  commentId: P:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  nameWithType: PaginationInfo.PaginationLinks.Current
+- uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current*
+  name: Current
+  href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_Current_
+  commentId: Overload:Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.Current
+  nameWithType: PaginationInfo.PaginationLinks.Current
 - uid: Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.First
   name: First
   href: api/Nexusat.AspNetCore.Models.PaginationInfo.PaginationLinks.html#Nexusat_AspNetCore_Models_PaginationInfo_PaginationLinks_First
@@ -1727,24 +1859,42 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum
   nameWithType: ApiController.AcceptedEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
-  name: AcceptedEnum<T>(IEnumerable<T>, String, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
-  name.vb: AcceptedEnum(Of T)(IEnumerable(Of T), String, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
-  nameWithType: ApiController.AcceptedEnum<T>(IEnumerable<T>, String, String, String)
-  nameWithType.vb: ApiController.AcceptedEnum(Of T)(IEnumerable(Of T), String, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
-  name: AcceptedEnum<T>(IEnumerable<T>, String, String, Uri)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
-  name.vb: AcceptedEnum(Of T)(IEnumerable(Of T), String, String, Uri)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
-  nameWithType: ApiController.AcceptedEnum<T>(IEnumerable<T>, String, String, Uri)
-  nameWithType.vb: ApiController.AcceptedEnum(Of T)(IEnumerable(Of T), String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name: AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name.vb: AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiController.AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name: AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name.vb: AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
+  nameWithType: ApiController.AcceptedEnum<T>(Boolean, IEnumerable<T>, String, String, Uri)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Boolean, IEnumerable(Of T), String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name: AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String)
+  name.vb: AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiController.AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name: AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Uri)
+  name.vb: AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.Uri)
+  nameWithType: ApiController.AcceptedEnum<T>(Int32, IEnumerable<T>, String, String, Uri)
+  nameWithType.vb: ApiController.AcceptedEnum(Of T)(Int32, IEnumerable(Of T), String, String, Uri)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject*
   name: AcceptedObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedObject_
@@ -1896,6 +2046,22 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Ok
   nameWithType: ApiController.Ok
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum*
+  name: OkEmptyEnum
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
+  nameWithType: ApiController.OkEmptyEnum
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
+  name: OkEmptyEnum<T>()
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum__1
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
+  name.vb: OkEmptyEnum(Of T)()
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum<T>()
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum(Of T)()
+  nameWithType: ApiController.OkEmptyEnum<T>()
+  nameWithType.vb: ApiController.OkEmptyEnum(Of T)()
 - uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum*
   name: OkEnum
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum_
@@ -1903,15 +2069,24 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum
   nameWithType: ApiController.OkEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name: OkEnum<T>(IEnumerable<T>, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name.vb: OkEnum(Of T)(IEnumerable(Of T), String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
-  nameWithType: ApiController.OkEnum<T>(IEnumerable<T>, String, String)
-  nameWithType.vb: ApiController.OkEnum(Of T)(IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: OkEnum<T>(Boolean, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Boolean_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Boolean,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: OkEnum(Of T)(Boolean, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.OkEnum<T>(Boolean, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.OkEnum(Of T)(Boolean, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: OkEnum<T>(Int32, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum__1_System_Int32_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEnum``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: OkEnum(Of T)(Int32, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEnum<T>(System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEnum(Of T)(System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.OkEnum<T>(Int32, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.OkEnum(Of T)(Int32, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.OkObject*
   name: OkObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkObject_
@@ -1961,15 +2136,24 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum
   nameWithType: ApiController.ResponseEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name: ResponseEnum<T>(Int32, String, IEnumerable<T>, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name.vb: ResponseEnum(Of T)(Int32, String, IEnumerable(Of T), String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
-  nameWithType: ApiController.ResponseEnum<T>(Int32, String, IEnumerable<T>, String, String)
-  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, String, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: ResponseEnum(Of T)(Int32, Int32, String, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.Int32, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Int32, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Int32, String, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject*
   name: ResponseObject
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseObject_
@@ -2309,6 +2493,116 @@ references:
   commentId: N:Nexusat.AspNetCore.Utils
   fullName: Nexusat.AspNetCore.Utils
   nameWithType: Nexusat.AspNetCore.Utils
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  name: PaginationInfoLinkBuilder
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html
+  commentId: T:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder
+  nameWithType: PaginationInfoLinkBuilder
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor(System.String,System.String,System.String,System.Int32)
+  name: PaginationInfoLinkBuilder(String, String, String, Int32)
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_System_String_System_String_System_String_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor(System.String,System.String,System.String,System.Int32)
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PaginationInfoLinkBuilder(System.String, System.String, System.String, System.Int32)
+  nameWithType: PaginationInfoLinkBuilder.PaginationInfoLinkBuilder(String, String, String, Int32)
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor*
+  name: PaginationInfoLinkBuilder
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PaginationInfoLinkBuilder
+  nameWithType: PaginationInfoLinkBuilder.PaginationInfoLinkBuilder
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  name: GetLink(Int32)
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_System_Int32_
+  commentId: M:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)
+  nameWithType: PaginationInfoLinkBuilder.GetLink(Int32)
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink*
+  name: GetLink
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink
+  nameWithType: PaginationInfoLinkBuilder.GetLink
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  name: OriginalUrl
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  nameWithType: PaginationInfoLinkBuilder.OriginalUrl
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl*
+  name: OriginalUrl
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl
+  nameWithType: PaginationInfoLinkBuilder.OriginalUrl
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  name: PageIndexKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageIndexKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName*
+  name: PageIndexKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageIndexKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  nameWithType: PaginationInfoLinkBuilder.PageSize
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize*
+  name: PageSize
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize
+  nameWithType: PaginationInfoLinkBuilder.PageSize
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  name: PageSizeKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageSizeKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName*
+  name: PageSizeKeyName
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName
+  nameWithType: PaginationInfoLinkBuilder.PageSizeKeyName
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  name: UrlPathPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  nameWithType: PaginationInfoLinkBuilder.UrlPathPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart*
+  name: UrlPathPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart
+  nameWithType: PaginationInfoLinkBuilder.UrlPathPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  name: UrlQueryPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart
+  commentId: P:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  nameWithType: PaginationInfoLinkBuilder.UrlQueryPart
+- uid: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart*
+  name: UrlQueryPart
+  href: api/Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html#Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart_
+  commentId: Overload:Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart
+  nameWithType: PaginationInfoLinkBuilder.UrlQueryPart
 - uid: Nexusat.AspNetCore.Utils.StringFormatter
   name: StringFormatter
   href: api/Nexusat.AspNetCore.Utils.StringFormatter.html

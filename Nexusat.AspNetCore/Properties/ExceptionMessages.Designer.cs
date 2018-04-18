@@ -88,5 +88,35 @@ namespace Nexusat.AspNetCore.Properties {
                 return ResourceManager.GetString("InvalidStatePaginationCursor", resourceCulture);
             }
         }
+        
+        internal static string InvalidItemsCount {
+            get {
+                return ResourceManager.GetString("InvalidItemsCount", resourceCulture);
+            }
+        }
+        
+        internal static string PaginationIndexMustBePositive {
+            get {
+                return ResourceManager.GetString("PaginationIndexMustBePositive", resourceCulture);
+            }
+        }
+        
+        internal static string PaginationSizeMustBeNonNegative {
+            get {
+                return ResourceManager.GetString("PaginationSizeMustBeNonNegative", resourceCulture);
+            }
+        }
+        
+        internal static string PaginationIndexMustEqualsOneInCaseOfPageSizeZero {
+            get {
+                return ResourceManager.GetString("PaginationIndexMustEqualsOneInCaseOfPageSizeZero", resourceCulture);
+            }
+        }
+        
+        internal static string InvalidUriTooManyQuestionMarks {
+            get {
+                return ResourceManager.GetString("InvalidUriTooManyQuestionMarks", resourceCulture);
+            }
+        }
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
+using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters.Internals;
 
@@ -108,6 +109,7 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
 
         public void RenderResponse(HttpContext httpContext, IApiResponse result) {
             var response = httpContext.Response;
+            IApiResponseInternal internalResult = result as IApiResponseInternal;
 
             Internals.ResponseContentTypeHelper.ResolveContentTypeAndEncoding(
                 response.ContentType,
@@ -119,19 +121,31 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
 
             response.StatusCode = result.Status.HttpCode;
 
+            if (result is IApiEnumResponse) // build Navigation Links
+            {
+                var _result = result as IApiEnumResponse;
+                NexusatAspNetCoreOptions options = 
+                    (httpContext.RequestServices.GetService(typeof(IOptions<NexusatAspNetCoreOptions>)) as IOptions<NexusatAspNetCoreOptions>).Value;
+
+                _result.Navigation?.SetLinks(options, httpContext);
+            }
+
             var serializerSettings = Options.SerializerSettings;
 
             //Logger.JsonResultExecuting(result.Value);
-            using (var writer = WriterFactory.CreateWriter(response.Body, resolvedContentTypeEncoding))
+            if (internalResult.HasBody)
             {
-                using (var jsonWriter = new JsonTextWriter(writer))
+                using (var writer = WriterFactory.CreateWriter(response.Body, resolvedContentTypeEncoding))
                 {
-                    jsonWriter.ArrayPool = _charPool;
-                    jsonWriter.CloseOutput = false;
-                    jsonWriter.AutoCompleteOnClose = false;
+                    using (var jsonWriter = new JsonTextWriter(writer))
+                    {
+                        jsonWriter.ArrayPool = _charPool;
+                        jsonWriter.CloseOutput = false;
+                        jsonWriter.AutoCompleteOnClose = false;
 
-                    var jsonSerializer = JsonSerializer.Create(serializerSettings);
-                    jsonSerializer.Serialize(jsonWriter, result);
+                        var jsonSerializer = JsonSerializer.Create(serializerSettings);
+                        jsonSerializer.Serialize(jsonWriter, result);
+                    }
                 }
             }
         }

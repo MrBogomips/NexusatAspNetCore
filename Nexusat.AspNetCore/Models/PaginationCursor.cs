@@ -32,14 +32,18 @@ namespace Nexusat.AspNetCore.Models
         /// <value><c>true</c> if is page size unbounded; otherwise, <c>false</c>.</value>
         public bool IsPageSizeUnbounded { get => PageSize == 0; }
 
-        internal PaginationCursor(int pageIndex, int pageSize) {
+        public PaginationCursor(int pageIndex, int pageSize) {
             if (pageIndex < 1)
             {
-                throw new ArgumentOutOfRangeException(nameof(pageIndex), "Page index must be a positive integer");
+                throw new ArgumentOutOfRangeException(nameof(pageIndex), FormatSystemMessage(ExceptionMessages.PaginationIndexMustBePositive));
             }
             if (pageSize < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(pageSize), "Page size must be a non-negstive integer");
+                throw new ArgumentOutOfRangeException(nameof(pageSize), FormatSystemMessage(ExceptionMessages.PaginationSizeMustBeNonNegative));
+            }
+            if (pageSize == 0 && pageIndex > 1)
+            {
+                throw new ArgumentException(FormatSystemMessage(ExceptionMessages.PaginationIndexMustEqualsOneInCaseOfPageSizeZero));
             }
             PageIndex = pageIndex;
             PageSize = pageSize;

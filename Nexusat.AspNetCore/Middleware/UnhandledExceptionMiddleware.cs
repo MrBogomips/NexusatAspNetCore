@@ -49,6 +49,9 @@ namespace Nexusat.AspNetCore.Middleware
                         case BadRequestResponseException br:
                             response = BadRequestResponse.GetFromException(br);
                             break;
+                        case NoContentResponseException nr:
+                            response = new NoContentResponse();
+                            break;
                         default: // just in case of something missed
                             logger.LogWarning(FormatSystemMessage("An internal exception {0}({1}) wasn't handled", exception.GetType().FullName, exception.Message));
                             response = new UnhandledExceptionResponse(exception);

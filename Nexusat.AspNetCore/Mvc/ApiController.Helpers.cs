@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Net.Http.Headers;
+using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 
@@ -48,15 +49,34 @@ namespace Nexusat.AspNetCore.Mvc
         /// </summary>
         /// <returns>The response.</returns>
         /// <param name="httpCode">Http code.</param>
+        /// <param name="itemsCount">Number of items found</param>
         /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
+        protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, int itemsCount, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
         => ApiEnumResponse<T>(r =>
         {
             r.SetHttpCode(httpCode)
              .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
              .SetDescription(description)
              .SetUserDescription(userDescription)
-             .SetData(data);
+             .SetData(data)
+             .SetPaginationCursor(CurrentPage, itemsCount);
+        });
+        /// <summary>
+        /// Produce a generic API Response with, optionally, a payload
+        /// </summary>
+        /// <returns>The response.</returns>
+        /// <param name="httpCode">Http code.</param>
+        /// <param name="hasNextPage">There's another page</param>
+        /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
+        protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
+        => ApiEnumResponse<T>(r =>
+        {
+            r.SetHttpCode(httpCode)
+             .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
+             .SetDescription(description)
+             .SetUserDescription(userDescription)
+             .SetData(data)
+             .SetPaginationCursor(CurrentPage, hasNextPage);
         });
         #endregion Generic Response Helper Methods
 
@@ -91,18 +111,37 @@ namespace Nexusat.AspNetCore.Mvc
         /// Produce an HTTP 200 response
         /// </summary>
         /// <returns>The enum response.</returns>
+        /// <param name="itemsCount">The count of items found.</param>
         /// <param name="data">Data.</param>
         /// <param name="description">Description.</param>
         /// <param name="userDescription">User description.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> OkEnum<T>(IEnumerable<T> data = null, string description = null, string userDescription = null)
+        protected IApiEnumResponse<T> OkEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null)
         => ResponseEnum(Status200OK,
+                        itemsCount,
+                        FrameworkOptions.DefaultOkStatusCode,
+                           data: data,
+                             description: description,
+                             userDescription: userDescription
+                            );
+        /// <summary>
+        /// Produce an HTTP 200 response
+        /// </summary>
+        /// <returns>The enum response.</returns>
+        /// <param name="hasNextPage">There's another page</param>
+        /// <param name="data">Data.</param>
+        /// <param name="description">Description.</param>
+        /// <param name="userDescription">User description.</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
+        protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
+        => ResponseEnum(Status200OK,
+                        hasNextPage,
                            FrameworkOptions.DefaultOkStatusCode,
                            data: data,
                              description: description,
                              userDescription: userDescription
                             );
-
+        protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
         #endregion OkResponse (HTTP 200) Helper Methods
 
         #region AcceptedResponse (HTTP 202) Helper Methods
@@ -164,16 +203,17 @@ namespace Nexusat.AspNetCore.Mvc
         /// Produce an HTTP 202 response
         /// </summary>
         /// <returns>The enum.</returns>
+        /// <param name="itemsCount">The count of items found.</param>
         /// <param name="data">Data.</param>
         /// <param name="description">Description.</param>
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(IEnumerable<T> data = null, string description = null, string userDescription = null, string uri = null)
+        protected IApiEnumResponse<T> AcceptedEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null, string uri = null)
         {
             if (uri != null)
                 HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ResponseEnum<T>(Status202Accepted,
+            return ResponseEnum<T>(Status202Accepted, itemsCount,
                     FrameworkOptions.DefaultOkStatusCode,
                     description: description,
                     userDescription: userDescription,
@@ -183,13 +223,47 @@ namespace Nexusat.AspNetCore.Mvc
         /// Produce an HTTP 202 response
         /// </summary>
         /// <returns>The enum.</returns>
+        /// <param name="hasNextPage">There's another page.</param>
         /// <param name="data">Data.</param>
         /// <param name="description">Description.</param>
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
-        => AcceptedEnum(data, description, userDescription, uri.ToString());
+        protected IApiEnumResponse<T> AcceptedEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null, string uri = null)
+        {
+            if (uri != null)
+                HttpContext.Response.Headers[HeaderNames.Location] = uri;
+            return ResponseEnum<T>(Status202Accepted, hasNextPage,
+                    FrameworkOptions.DefaultOkStatusCode,
+                    description: description,
+                    userDescription: userDescription,
+                    data: data);
+        }
+        /// <summary>
+        /// Produce an HTTP 202 response
+        /// </summary>
+        /// <returns>The enum.</returns>
+        /// <param name="itemsCount">The items count found.</param>
+        /// <param name="data">Data.</param>
+        /// <param name="description">Description.</param>
+        /// <param name="userDescription">User description.</param>
+        /// <param name="uri">URI.</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
+        protected IApiEnumResponse<T> AcceptedEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
+        => AcceptedEnum(itemsCount, data, description, userDescription, uri.ToString());
+
+        /// <summary>
+        /// Produce an HTTP 202 response
+        /// </summary>
+        /// <returns>The enum.</returns>
+        /// <param name="hasNextPage">There's another page.</param>
+        /// <param name="data">Data.</param>
+        /// <param name="description">Description.</param>
+        /// <param name="userDescription">User description.</param>
+        /// <param name="uri">URI.</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
+        protected IApiEnumResponse<T> AcceptedEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
+        => AcceptedEnum(hasNextPage, data, description, userDescription, uri.ToString());
         #endregion AcceptedResponse (HTTP 202) Helper Methods
 
 #if TO_BE_IMPLEMENTED

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PaginationCursor
+    <title>Class PaginationInfoLinkBuilder
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PaginationCursor
+    <meta name="title" content="Class PaginationInfoLinkBuilder
    ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -69,27 +69,29 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Models.PaginationCursor">
+            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder">
   
   
-  <h1 id="Nexusat_AspNetCore_Models_PaginationCursor" data-uid="Nexusat.AspNetCore.Models.PaginationCursor" class="text-break">Class PaginationCursor
+  <h1 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder" class="text-break">Class PaginationInfoLinkBuilder
   </h1>
-  <div class="markdown level0 summary"><p>Represents the pagination cursor of the current request</p>
+  <div class="markdown level0 summary"><p>Utility class to build links for the <a class="xref" href="Nexusat.AspNetCore.Models.PaginationInfo.html#Nexusat_AspNetCore_Models_PaginationInfo_Links">Links</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PaginationCursor</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Models.PaginationCursor.html">PaginationCursor</a>&gt;</div>
+    <div class="level1"><span class="xref">PaginationInfoLinkBuilder</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
       <span class="xref">System.Object.GetType()</span>
@@ -104,23 +106,24 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Models.html">Nexusat.AspNetCore.Models</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Utils.html">Nexusat.AspNetCore.Utils</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
-  <h5 id="Nexusat_AspNetCore_Models_PaginationCursor_syntax">Syntax</h5>
+  <h5 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PaginationCursor : IEquatable&lt;PaginationCursor&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PaginationInfoLinkBuilder</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor__ctor_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.#ctor*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor__ctor_System_Int32_System_Int32_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.#ctor(System.Int32,System.Int32)">PaginationCursor(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder__ctor_System_String_System_String_System_String_System_Int32_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.#ctor(System.String,System.String,System.String,System.Int32)">PaginationInfoLinkBuilder(String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.html">PaginationInfoLinkBuilder</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PaginationCursor(int pageIndex, int pageSize)</code></pre>
+    <pre><code class="lang-csharp hljs">public PaginationInfoLinkBuilder(string originalUrl, string pageIndexKeyName, string pageSizeKeyName, int pageSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,14 +136,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">pageIndex</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">originalUrl</span></td>
+        <td><p>Original URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pageIndexKeyName</span></td>
+        <td><p>Page index key name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pageSizeKeyName</span></td>
+        <td><p>Page size key name.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">pageSize</span></td>
-        <td></td>
+        <td><p>Page size.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,15 +165,14 @@
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeBounded_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeBounded" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeBounded">IsPageSizeBounded</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this <span class="xref">Nexusat.AspNetCore.Models.PaginationCurson</span> 
-is page size bounded.</p>
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_OriginalUrl" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.OriginalUrl">OriginalUrl</h4>
+  <div class="markdown level1 summary"><p>The original url</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPageSizeBounded { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string OriginalUrl { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -168,23 +184,21 @@ is page size bounded.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if is page size bounded; otherwise, <code>false</code>.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeUnbounded_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_IsPageSizeUnbounded" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.IsPageSizeUnbounded">IsPageSizeUnbounded</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this <span class="xref">Nexusat.AspNetCore.Models.PaginationCurson</span>
-is page size unbounded.</p>
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageIndexKeyName" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageIndexKeyName">PageIndexKeyName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the page index key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPageSizeUnbounded { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string PageIndexKeyName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,44 +210,17 @@ is page size unbounded.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if is page size unbounded; otherwise, <code>false</code>.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the page index key.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_PageIndex_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.PageIndex*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_PageIndex" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.PageIndex">PageIndex</h4>
-  <div class="markdown level1 summary"><p>The page required.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PageIndex { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The index of the page.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_PageSize_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.PageSize*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_PageSize" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.PageSize">PageSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the size of the page.</p>
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSize" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"><p>Gets the size of the page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -256,17 +243,99 @@ is page size unbounded.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_PageSizeKeyName" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.PageSizeKeyName">PageSizeKeyName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the page size key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PageSizeKeyName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the page size key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlPathPart" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlPathPart">UrlPathPart</h4>
+  <div class="markdown level1 summary"><p>Gets the URL path part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UrlPathPart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The URL path part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_UrlQueryPart" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.UrlQueryPart">UrlQueryPart</h4>
+  <div class="markdown level1 summary"><p>Gets the URL query part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UrlQueryPart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The URL query part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_Equals_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.Equals*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_Equals_Nexusat_AspNetCore_Models_PaginationCursor_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.Equals(Nexusat.AspNetCore.Models.PaginationCursor)">Equals(PaginationCursor)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink*"></a>
+  <h4 id="Nexusat_AspNetCore_Utils_PaginationInfoLinkBuilder_GetLink_System_Int32_" data-uid="Nexusat.AspNetCore.Utils.PaginationInfoLinkBuilder.GetLink(System.Int32)">GetLink(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the link to the specific page</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(PaginationCursor other)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetLink(int pageIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -274,107 +343,34 @@ is page size unbounded.</p>
       <tr>
         <th>Type</th>
         <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.PaginationCursor.html">PaginationCursor</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_Equals_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.Equals*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_Equals_System_Object_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_PaginationCursor_GetHashCode_" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.GetHashCode*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_PaginationCursor_GetHashCode" data-uid="Nexusat.AspNetCore.Models.PaginationCursor.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>A Page index</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IEquatable&lt;T&gt;</span>
-  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The link.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 <div id="disqus_thread"></div>
                 <script>
                 (function() { // DON'T EDIT BELOW THIS LINE
