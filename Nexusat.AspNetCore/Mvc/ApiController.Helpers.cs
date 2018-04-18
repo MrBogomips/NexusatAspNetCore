@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Net.Http.Headers;
+using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 
@@ -140,7 +141,7 @@ namespace Nexusat.AspNetCore.Mvc
                              description: description,
                              userDescription: userDescription
                             );
-
+        protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
         #endregion OkResponse (HTTP 200) Helper Methods
 
         #region AcceptedResponse (HTTP 202) Helper Methods

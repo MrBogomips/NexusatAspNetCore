@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html",
-          "hash": "Afw2QCJNEOXQMgZT3VUDdQ=="
+          "hash": "V0kUpDZClUIR+ZcTvnCRlw=="
         }
       },
       "is_incremental": true,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException.html",
-          "hash": "kbMzPE8Slj+6mAfbwZ0mTA=="
+          "hash": "u8ZUEr2JwQwYSrcVlcCSOw=="
         }
       },
       "is_incremental": true,
@@ -245,11 +245,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html",
+          "hash": "Pz46c8q2FcTgLEhsQXA5uw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Exceptions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Exceptions.html",
-          "hash": "y5BRRtEB0DWVfKZqHyVrOw=="
+          "hash": "pjHE+awJaIGxnDyhWxlv/w=="
         }
       },
       "is_incremental": true,
@@ -281,6 +293,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.CommonStatusCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.CommonStatusCodes.html",
+          "hash": "jROjvUgJIIgmB4vAf9qniA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Models.ExceptionInfo.yml",
       "output": {
         ".html": {
@@ -300,7 +324,7 @@
           "hash": "dg/B+brk0AUbMiiUYgp7tw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -312,7 +336,7 @@
           "hash": "mJOKtwsUN9Iunj4MK/pyOQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -360,7 +384,7 @@
           "hash": "b+mo4KtWgnzS8b+mx3iwwQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -372,7 +396,7 @@
           "hash": "0KooKeeUOw1wJjaSSL+wlw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "ahiS4dwLXkhlWke5mR2Mog=="
+          "hash": "UoAQXFijEItcB6D8SpPpJQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.ApiController.html",
-          "hash": "8fEBCXFez/8DSDJ/vGf4kA=="
+          "hash": "npc7ZrAQssJZhcKtQIwzEA=="
         }
       },
       "is_incremental": true,
@@ -540,7 +564,7 @@
           "hash": "aJBKZA8WXhtzpuymW0rS1w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -564,7 +588,7 @@
           "hash": "6Xy1CDEpr+AwmbTRpf3X8g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -585,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RMklSPNqVoJBIOGdAZlc5w=="
+          "hash": "u/pzHw/4vezA560HCR8Y7w=="
         }
       },
       "is_incremental": false,
@@ -652,11 +676,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }

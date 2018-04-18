@@ -109,6 +109,7 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
 
         public void RenderResponse(HttpContext httpContext, IApiResponse result) {
             var response = httpContext.Response;
+            IApiResponseInternal internalResult = result as IApiResponseInternal;
 
             Internals.ResponseContentTypeHelper.ResolveContentTypeAndEncoding(
                 response.ContentType,
@@ -132,16 +133,19 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
             var serializerSettings = Options.SerializerSettings;
 
             //Logger.JsonResultExecuting(result.Value);
-            using (var writer = WriterFactory.CreateWriter(response.Body, resolvedContentTypeEncoding))
+            if (internalResult.HasBody)
             {
-                using (var jsonWriter = new JsonTextWriter(writer))
+                using (var writer = WriterFactory.CreateWriter(response.Body, resolvedContentTypeEncoding))
                 {
-                    jsonWriter.ArrayPool = _charPool;
-                    jsonWriter.CloseOutput = false;
-                    jsonWriter.AutoCompleteOnClose = false;
+                    using (var jsonWriter = new JsonTextWriter(writer))
+                    {
+                        jsonWriter.ArrayPool = _charPool;
+                        jsonWriter.CloseOutput = false;
+                        jsonWriter.AutoCompleteOnClose = false;
 
-                    var jsonSerializer = JsonSerializer.Create(serializerSettings);
-                    jsonSerializer.Serialize(jsonWriter, result);
+                        var jsonSerializer = JsonSerializer.Create(serializerSettings);
+                        jsonSerializer.Serialize(jsonWriter, result);
+                    }
                 }
             }
         }

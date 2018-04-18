@@ -13,7 +13,7 @@ namespace Nexusat.AspNetCore.Implementations
                 throw new ArgumentNullException(nameof(exception));
             }
             Status.HttpCode = (int)HttpStatusCode.InternalServerError;
-            Status.Code = StatusCode.UNHANDLED_EXCEPTION_STATUS_CODE;
+            Status.Code = CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE;
             this.Exception = ExceptionInfo.GetFromException(exception);
         }
     }

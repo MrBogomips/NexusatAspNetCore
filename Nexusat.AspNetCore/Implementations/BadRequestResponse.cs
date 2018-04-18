@@ -13,12 +13,16 @@ namespace Nexusat.AspNetCore.Implementations
         public BadRequestResponse(string description = null, string userDescription = null)
         {
             Status.HttpCode = (int)HttpStatusCode.BadRequest;
-            Status.Code = StatusCode.BAD_REQUEST_STATUS_CODE;
+            Status.Code = CommonStatusCodes.BAD_REQUEST_STATUS_CODE;
             Status.Description = description;
             Status.UserDescription = userDescription;
         }
-
-        internal static BadRequestResponse GetFromException(BadRequestResponseException exception) {
+        /// <summary>
+        /// Gets a <see cref="BadRequestResponse"/> from an exception.
+        /// </summary>
+        /// <returns>The from exception.</returns>
+        /// <param name="exception">The exception that will be encapsulated</param>
+        public static BadRequestResponse GetFromException(BadRequestResponseException exception) {
             var response = new BadRequestResponse(exception.Description, exception.UserDescription);
             response.Status.Code = exception.StatusCode;
             if (exception.InnerException != null)
