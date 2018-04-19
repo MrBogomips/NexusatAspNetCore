@@ -55,12 +55,28 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         public IApiEnumResponse<int> GetNumbersPaginated() {
             var itemsCount = 100;
 
-            if (CurrentPage.PageSize * CurrentPage.PageIndex > itemsCount)
+            if (CurrentPage.PageSize * (CurrentPage.PageIndex -1) >= itemsCount)
             {
                 throw new NoContentResponseException();
             }
 
             var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
+
+            return OkEnum(itemsCount, items);
+        }
+
+        [ValidatePagination(DefaultPageSize = 100)]
+        [HttpGet("GetFewerItemsThanPageSize")]
+        public IApiEnumResponse<int> GetFewerItemsThanPageSize()
+        {
+            var itemsCount = 3;
+
+            if (CurrentPage.PageSize * (CurrentPage.PageIndex-1) >= itemsCount)
+            {
+                throw new NoContentResponseException();
+            }
+
+            var items = Enumerable.Range(0, itemsCount).ToList();
 
             return OkEnum(itemsCount, items);
         }
