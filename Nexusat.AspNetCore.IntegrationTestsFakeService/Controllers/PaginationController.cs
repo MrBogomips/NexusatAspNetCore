@@ -80,5 +80,14 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
             return OkEnum(itemsCount, items);
         }
+
+        [ValidatePagination]
+        [HttpGet("GetNumbers")]
+        public IApiEnumResponse<int> GetNumbers()
+        {
+            var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
+
+            return OkEnum(true, items);
+        }
     }
 }
