@@ -33,7 +33,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Output.WriteLine(json.ToString());
 
             var statusCode = json.SelectToken("status.code").Value<string>();
-            
+
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
             Assert.Equal("OK_TEST_DEFAULT", statusCode);
@@ -238,7 +238,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             };
 
             // Assert
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode); 
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.Equal("OK_TEST_DEFAULT", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
@@ -320,7 +320,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
         }
 
         [Fact]
-        public async void CheckPaginationCursorMissingValidationAttribute() 
+        public async void CheckPaginationCursorMissingValidationAttribute()
         {
             // Act
             var url = string.Format("/Pagination/GetPaginationCursorMissingValidation?p_ix=1&p_sz=10");
@@ -334,7 +334,9 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             // Assert
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
         }
-
+        /// <summary>
+        /// First page is missing of the prev link
+        /// </summary>
         #region Pagination over a Bounded Response (PageSize > 0)
         [Fact]
         public async void CheckGetNumbersPaginatedFirstPage()
@@ -364,6 +366,9 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(10, paginationInfo.PagesCount);
             Assert.Equal(10, paginationInfo.PageSize);
         }
+        /// <summary>
+        /// Internal pages are provided with all the links
+        /// </summary>
         [Fact]
         public async void CheckGetNumbersPaginatedSecondPage()
         {
@@ -393,6 +398,9 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(10, paginationInfo.PageSize);
         }
 
+        /// <summary>
+        /// The last page is missing of the next link
+        /// </summary>
         [Fact]
         public async void CheckGetNumbersPaginatedLastPage()
         {
@@ -438,6 +446,102 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
             Assert.Empty(body); // no body expected
         }
+
+        /// <summary>
+        /// If the items found are fewer than the page size
+        /// then prev and next links are missing
+        /// </summary>
+        [Fact]
+        public async void GetFewerItemsThanPageSize()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetFewerItemsThanPageSize");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.Null(paginationInfo.Links.Previous);
+            Assert.Null(paginationInfo.Links.Next);
+            Assert.NotNull(paginationInfo.Links.Last);
+            Assert.Equal(3, paginationInfo.ItemsCount);
+            Assert.Equal(1, paginationInfo.PagesCount);
+            Assert.Equal(100, paginationInfo.PageSize);  // Get the default from the action method
+        }
         #endregion Pagination over a Bounded Response (PageSize > 0)
+
+        #region Pagination over an Unbounded Response (ItemsCount not defined)
+
+        /// <summary>
+        /// The first page of un unbounded result set
+        /// is missing of prev and last links
+        /// </summary>
+        [Fact]
+        public async void GetNumbersFirstPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbers");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.Null(paginationInfo.Links.Previous);
+            Assert.NotNull(paginationInfo.Links.Next);
+            Assert.Null(paginationInfo.Links.Last);
+            Assert.Null(paginationInfo.ItemsCount);
+            Assert.Null(paginationInfo.PagesCount);
+            Assert.Equal(6, paginationInfo.PageSize);  // Get the default from the action method
+        }
+
+        /// <summary>
+        /// The internal page of an unbounded result
+        /// is missing of the last link only
+        /// </summary>
+        [Fact]
+        public async void GetNumbersInternalPage()
+        {
+            // Act
+            var url = string.Format("/Pagination/GetNumbers?p_ix=666");
+            var response = await Client.GetAsync(url);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var statusCode = json.SelectToken("status.code").Value<string>();
+            var paginationInfo = ExtractPaginationInfo(json);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+
+            Assert.NotNull(paginationInfo.Links.First);
+            Assert.NotNull(paginationInfo.Links.Current);
+            Assert.NotNull(paginationInfo.Links.Previous);
+            Assert.NotNull(paginationInfo.Links.Next);
+            Assert.Null(paginationInfo.Links.Last);
+            Assert.Null(paginationInfo.ItemsCount);
+            Assert.Null(paginationInfo.PagesCount);
+            Assert.Equal(6, paginationInfo.PageSize);  // Get the default from the action method
+        }
+        #endregion Pagination over an Unbounded Response (ItemsCount not defined)
     }
 }

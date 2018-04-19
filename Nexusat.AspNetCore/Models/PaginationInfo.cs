@@ -40,12 +40,14 @@ namespace Nexusat.AspNetCore.Models
         /// The <code>null</code> value stands for unknown.
         /// </summary>
         /// <value>The items count.</value>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public int? ItemsCount { get; internal set; }
         /// <summary>
         /// Represents the number of pages expected.
         /// The <code>null</code> value stands for unknown.
         /// </summary>
         /// <value>The pages count.</value>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public int? PagesCount { get; internal set; }
         /// <summary>
         /// Represents the maximum number of items per page.
