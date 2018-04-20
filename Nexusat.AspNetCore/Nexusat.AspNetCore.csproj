@@ -6,6 +6,16 @@
     <Win32Resource />
     <AssemblyName>Nexusat.AspNetCore</AssemblyName>
     <RootNamespace>Nexusat.AspNetCore</RootNamespace>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Nexusat.AspNetCore.RESTApi.Fx</PackageId>
+    <PackageVersion>0.0.0.1</PackageVersion>
+    <Authors>Giovanni Costagliola</Authors>
+    <PackageProjectUrl>https://github.com/MrBogomips/NexusatAspNetCore</PackageProjectUrl>
+    <Summary>A framework for fast development of consistent REST APIs </Summary>
+    <PackageTags>Asp.NET Core REST RESTful API MVC Toolkit Framework</PackageTags>
+    <Title>NexusAT Asp.NET Core REST API Fx</Title>
+    <Description>A tiny framework based on ASP.NET Core MVC for fast development of consistent RESTful APIs.</Description>
+    <Owners>Nexus Advanced Technologies</Owners>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
@@ -18,7 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
   </ItemGroup>
 
   <ItemGroup>
