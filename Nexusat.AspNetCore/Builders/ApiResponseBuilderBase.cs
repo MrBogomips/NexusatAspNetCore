@@ -68,6 +68,12 @@ namespace Nexusat.AspNetCore.Builders
             Response.Status.UserDescription = description;
         }
 
+        protected void InternalSetLocation(string location)
+        {
+            SingleInstanceChecker.CheckBuildStateWhileBuilding();
+            Response.Location = location;
+        }
+
         protected void InternalSetException(Exception exception)
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();

@@ -121,6 +121,11 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
 
             response.StatusCode = result.Status.HttpCode;
 
+            if (result.Location != null)
+            {
+                response.Headers[HeaderNames.Location] = result.Location;
+            }
+
             if (result is IApiEnumResponse) // build Navigation Links
             {
                 var _result = result as IApiEnumResponse;

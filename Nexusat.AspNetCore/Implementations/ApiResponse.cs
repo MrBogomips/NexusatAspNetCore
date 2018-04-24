@@ -25,6 +25,7 @@ namespace Nexusat.AspNetCore.Implementations
         /// </summary>
         /// <value><c>true</c> if has body; otherwise, <c>false</c>.</value>
         public bool HasBody { get; set; } = true;
+        public virtual string Location { get; set; }
 
         /// <inheritdoc />
         public override Task ExecuteResultAsync(ActionContext context)

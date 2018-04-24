@@ -349,6 +349,23 @@ references:
   fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetHttpCode
   nameWithType: IApiObjectResponseBuilder<T>.SetHttpCode
   nameWithType.vb: IApiObjectResponseBuilder(Of T).SetHttpCode
+- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation(System.String)
+  name: SetLocation(String)
+  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetLocation_System_String_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation(System.String)
+  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetLocation(System.String)
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetLocation(System.String)
+  nameWithType: IApiObjectResponseBuilder<T>.SetLocation(String)
+  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetLocation(String)
+- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation*
+  name: SetLocation
+  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetLocation_
+  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetLocation
+  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetLocation
+  nameWithType: IApiObjectResponseBuilder<T>.SetLocation
+  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetLocation
 - uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCode(System.String)
   name: SetStatusCode(String)
   href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCode_System_String_
@@ -475,6 +492,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode
   nameWithType: IApiResponseBuilder.SetHttpCode
+- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
+  name: SetLocation(String)
+  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetLocation_System_String_
+  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
+  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
+  nameWithType: IApiResponseBuilder.SetLocation(String)
+- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation*
+  name: SetLocation
+  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetLocation_
+  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation
+  nameWithType: IApiResponseBuilder.SetLocation
 - uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode(System.String)
   name: SetStatusCode(String)
   href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCode_System_String_
@@ -1384,6 +1414,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.IApiResponse.Exception
   nameWithType: IApiResponse.Exception
+- uid: Nexusat.AspNetCore.Models.IApiResponse.Location
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.Location
+  fullName: Nexusat.AspNetCore.Models.IApiResponse.Location
+  nameWithType: IApiResponse.Location
+- uid: Nexusat.AspNetCore.Models.IApiResponse.Location*
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.Location
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiResponse.Location
+  nameWithType: IApiResponse.Location
 - uid: Nexusat.AspNetCore.Models.IApiResponse.Runtime
   name: Runtime
   href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime
@@ -1938,6 +1981,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ControllerContext
   nameWithType: ApiController.ControllerContext
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.String)
+  name: Created(String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String, System.String, System.String)
+  nameWithType: ApiController.Created(String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created*
+  name: Created
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.Created
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created
+  nameWithType: ApiController.Created
 - uid: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
   name: CurrentPage
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CurrentPage

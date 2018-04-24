@@ -21,6 +21,9 @@ namespace Nexusat.AspNetCore.Models
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         RuntimeInfo Runtime { get; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        string Location { get; }
     }
 
     internal interface IApiResponseInternal
@@ -35,6 +38,9 @@ namespace Nexusat.AspNetCore.Models
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         RuntimeInfo Runtime { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        string Location { get; set; }
 
         /// <summary>
         /// For responses for wich the body will not be produced.

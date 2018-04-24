@@ -199,75 +199,26 @@ namespace Nexusat.AspNetCore.Mvc
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiObjectResponse<T> AcceptedObject<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
         => AcceptedObject(data, description, userDescription, uri.ToString());
-
-        /*
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The enum.</returns>
-        /// <param name="itemsCount">The count of items found.</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null, string uri = null)
-        {
-            if (uri != null)
-                HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ResponseEnum<T>(Status202Accepted, itemsCount,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription,
-                    data: data);
-        }
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The enum.</returns>
-        /// <param name="hasNextPage">There's another page.</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null, string uri = null)
-        {
-            if (uri != null)
-                HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ResponseEnum<T>(Status202Accepted, hasNextPage,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription,
-                    data: data);
-        }
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The enum.</returns>
-        /// <param name="itemsCount">The items count found.</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
-        => AcceptedEnum(itemsCount, data, description, userDescription, uri.ToString());
-
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The enum.</returns>
-        /// <param name="hasNextPage">There's another page.</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> AcceptedEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
-        => AcceptedEnum(hasNextPage, data, description, userDescription, uri.ToString());
-        */
         #endregion AcceptedResponse (HTTP 202) Helper Methods
+
+        #region CreatedResponse (HTTP 201) Helper Methods
+        /// <summary>
+        /// Produce an HTTP 202 response
+        /// </summary>
+        /// <returns>The accepted.</returns>
+        /// <param name="description">Description.</param>
+        /// <param name="userDescription">User description.</param>
+        /// <param name="uri">URI.</param>
+        protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
+        {
+            if (uri != null)
+                HttpContext.Response.Headers[HeaderNames.Location] = uri;
+            return Response(Status201Created,
+                    FrameworkOptions.DefaultOkStatusCode,
+                    description: description,
+                    userDescription: userDescription);
+        }
+        #endregion CreatedResponse (HTTP 201) Helper Methods
 
 #if TO_BE_IMPLEMENTED
         // Please refer to Microsoft.AspNetCore.Mvc.BaseController

@@ -75,5 +75,11 @@ namespace Nexusat.AspNetCore.Builders
             InternalSetUserDescription(userDescription);
             return this;
         }
+
+        public IApiObjectResponseBuilder<T> SetLocation(string location)
+        {
+            InternalSetLocation(location);
+            return this;
+        }
     }
 }
