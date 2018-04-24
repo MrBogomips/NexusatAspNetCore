@@ -124,7 +124,8 @@ The <pre><code>null</code></pre> value stands for unknown.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? ItemsCount { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+public int? ItemsCount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,7 +181,8 @@ The <pre><code>null</code></pre> value stands for unknown.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? PagesCount { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+public int? PagesCount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
