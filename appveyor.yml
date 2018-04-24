@@ -4,7 +4,7 @@ configuration: Release
 before_build:
 - ps: dotnet restore
 build:
-  verbosity: normal
+  verbosity: minimal
   publish_nuget: true
   publish_nuget_symbols: true
 artifacts:
