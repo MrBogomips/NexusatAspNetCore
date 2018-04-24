@@ -199,6 +199,9 @@ namespace Nexusat.AspNetCore.Mvc
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiObjectResponse<T> AcceptedObject<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
         => AcceptedObject(data, description, userDescription, uri.ToString());
+        #endregion AcceptedResponse (HTTP 202) Helper Methods
+
+        /*
         /// <summary>
         /// Produce an HTTP 202 response
         /// </summary>
@@ -264,7 +267,8 @@ namespace Nexusat.AspNetCore.Mvc
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiEnumResponse<T> AcceptedEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null, Uri uri = null)
         => AcceptedEnum(hasNextPage, data, description, userDescription, uri.ToString());
-        #endregion AcceptedResponse (HTTP 202) Helper Methods
+
+        */
 
 #if TO_BE_IMPLEMENTED
         // Please refer to Microsoft.AspNetCore.Mvc.BaseController

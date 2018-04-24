@@ -103,9 +103,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         public IApiResponse GetAcceptedResponseWithoutPayload() => Accepted(uri: "some_uri");
         [HttpGet("202OkResponseWithObject")]
         public IApiObjectResponse<string> GetAcceptedResponseWithObject() => AcceptedObject(data: "payload", uri: "some_uri");
-        [HttpGet("202OkResponseWithManyObjects")]
-        [ValidatePagination()]
-        public IApiEnumResponse<string> GetAcceptedResponseWithManyObject() => AcceptedEnum(2, data: new[] { "pay", "load" }, uri: "some_uri");
         #endregion Accpepted (HTTP 202) Helper Methods flavours
+
     }
 }
