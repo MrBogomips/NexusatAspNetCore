@@ -8,88 +8,12 @@ using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Models
 {
-    /// <summary>
-    /// Immutable class to represent a status code.
-    /// You can think of it as a syntax constrained string in fact it's 
-    /// equipped with implicit conversion operators 'to' and 'from' string class.
-    /// Provided also with helper methods for string validation.
-    /// </summary>
-    public class StatusCode: IEquatable<string>, IEquatable<StatusCode>
-    {
-        public string Code { get;} 
-        public StatusCode(string code) {
-            CheckValidCodeOrThrow(code);
-            Code = code;
-        }
-        public StatusCode() : this(CommonStatusCodes.DEFAULT_UNK_STATUS_CODE) {}
-
-        public override string ToString() => Code;
-
-        #region Equality
-        public bool Equals(string other) => other == Code;
-        public bool Equals(StatusCode other) => other?.Code == Code;
-        public override bool Equals(object obj) => Equals(obj as StatusCode);
-        public override int GetHashCode() => Code.GetHashCode();
-        #endregion Equality
-
-        #region String to and from implicit conversions 
-        public static implicit operator string(StatusCode code) => code.Code;
-        public static implicit operator StatusCode(string code) => new StatusCode(code);
-        #endregion String to and from implicit conversions 
-
-		#region static members
-		public static bool CheckOkValidCode(string code) =>
-            code != null && (
-                code == CommonStatusCodes.OK ||
-            code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture)
-            );
-        public static bool CheckKoValidCode(string code) =>
-            code != null && (
-            code == CommonStatusCodes.KO ||
-            code.StartsWith(CommonStatusCodes.KO_, StringComparison.InvariantCulture)
-            );
-        public static bool CheckValidCode(string code) =>
-            code != null && (
-            code == CommonStatusCodes.OK ||
-            code == CommonStatusCodes.KO ||
-            code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture) ||
-            code.StartsWith(CommonStatusCodes.KO_, StringComparison.InvariantCulture)
-            );
-        public static void CheckValidCodeOrThrow(string code)
-	    {
-            if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid), nameof(code));
-        }
-
-        public static void CheckValidOkCodeOrThrow(string code)
-        {
-            if (!CheckOkValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusOkCodeInvalid), nameof(code));
-        }
-
-        public static void CheckValidKoCodeOrThrow(string code) 
-        {
-            if (!CheckKoValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusKoCodeInvalid), nameof(code));
-        }
-
-
-        public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", CommonStatusCodes.OK_, FormatSubCode(subcode));
-        public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", CommonStatusCodes.KO_, FormatSubCode(subcode));
-
-        private static string FormatSubCode(string subcode)
-        {
-            if (string.IsNullOrWhiteSpace(subcode))
-                throw new ArgumentException(FormatSystemMessage(ExceptionMessages.SubCodeInvalidFormat, nameof(subcode)));
-            return subcode.Replace(' ', '_').ToUpperInvariant();
-        }
-
-
-        #endregion static members
-    }
 
     public sealed class Status: IEquatable<Status>
     {
         public int HttpCode { get; set; }
 
-        public string Code { get; private set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
+        public StatusCode Code { get; set; } = StatusCode.Default;
 
         internal Status() { }
 

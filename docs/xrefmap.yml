@@ -1864,12 +1864,6 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.StatusCode
   fullName: Nexusat.AspNetCore.Models.StatusCode
   nameWithType: StatusCode
-- uid: Nexusat.AspNetCore.Models.StatusCode.#ctor
-  name: StatusCode()
-  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode__ctor
-  commentId: M:Nexusat.AspNetCore.Models.StatusCode.#ctor
-  fullName: Nexusat.AspNetCore.Models.StatusCode.StatusCode()
-  nameWithType: StatusCode.StatusCode()
 - uid: Nexusat.AspNetCore.Models.StatusCode.#ctor(System.String)
   name: StatusCode(String)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode__ctor_System_String_
@@ -1974,6 +1968,12 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.Code
   nameWithType: StatusCode.Code
+- uid: Nexusat.AspNetCore.Models.StatusCode.Default
+  name: Default
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Default
+  commentId: F:Nexusat.AspNetCore.Models.StatusCode.Default
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Default
+  nameWithType: StatusCode.Default
 - uid: Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)
   name: Equals(StatusCode)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_Nexusat_AspNetCore_Models_StatusCode_
@@ -2038,6 +2038,18 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeSuccess
   nameWithType: StatusCode.GetStatusCodeSuccess
+- uid: Nexusat.AspNetCore.Models.StatusCode.Ko
+  name: Ko
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Ko
+  commentId: F:Nexusat.AspNetCore.Models.StatusCode.Ko
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Ko
+  nameWithType: StatusCode.Ko
+- uid: Nexusat.AspNetCore.Models.StatusCode.Ok
+  name: Ok
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Ok
+  commentId: F:Nexusat.AspNetCore.Models.StatusCode.Ok
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Ok
+  nameWithType: StatusCode.Ok
 - uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
   name: Implicit(StatusCode to String)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String

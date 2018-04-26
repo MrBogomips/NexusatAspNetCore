@@ -14,6 +14,7 @@ namespace Nexusat.AspNetCore.Tests.Models
         [InlineData("KO")]
         [InlineData("OK_SOMETHING")]
         [InlineData("KO_SOMETHING")]
+        [InlineData("OK_something")]
         public void TestValidCodes(string code)
         {
             Assert.True(StatusCode.CheckValidCode(code));
@@ -21,8 +22,9 @@ namespace Nexusat.AspNetCore.Tests.Models
         }
         [Theory]
         [InlineData(null)]
-        [InlineData("ok")] // lowercase codes are invalid
+        [InlineData("ok")]
         [InlineData("ko")]
+        [InlineData("ok_SOMETHING")]
         [InlineData("OK SOMETHING")]
         [InlineData("KO SOMETHING")]
         [InlineData("SOMETHING")]
@@ -46,12 +48,33 @@ namespace Nexusat.AspNetCore.Tests.Models
             StatusCode c1 = lhs;
             StatusCode c2 = rhs;
 
-            Assert.Equal(lhs, rhs);
+            Assert.Equal(lhs, rhs); // pleonatistc!
             Assert.Equal(c1, rhs);
             Assert.Equal(c2, rhs);
             Assert.Equal(c1, lhs);
             Assert.Equal(c2, lhs);
             Assert.Equal(c1, c2);
+        }
+
+        [Fact]
+        public void TestEqualityMethods() {
+            /*
+             * public bool Equals(string other) => other == Code;
+             * public bool Equals(StatusCode other) => other?.Code == Code;
+             * public override bool Equals(object obj) => Equals(obj as StatusCode);
+             * public override int GetHashCode() => Code.GetHashCode();
+             */
+            StatusCode code = "OK";
+            StatusCode code2 = "OK";
+            string scode = "OK";
+            object ocode = "OK";
+
+
+            Assert.False(code.Equals(null as string));
+            Assert.False(code.Equals(null as StatusCode));
+            Assert.True(code.Equals(scode));
+            Assert.True(code.Equals(ocode));
+            Assert.True(code.Equals(code2));
         }
     }
 }

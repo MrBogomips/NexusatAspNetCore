@@ -39,8 +39,8 @@ namespace Nexusat.AspNetCore.Tests.Models
                 Description = description2,
                 UserDescription = userDescription2
             };
-            s1.SetCode(statusCode1);
-            s2.SetCode(statusCode2);
+            s1.Code = statusCode1;
+            s2.Code = statusCode2;
             Assert.Equal(s1, s2);
             Assert.NotSame(s1, s2);
         }
@@ -73,8 +73,8 @@ namespace Nexusat.AspNetCore.Tests.Models
                 Description = description2,
                 UserDescription = userDescription2
             };
-            s1.SetCode(statusCode1);
-            s2.SetCode(statusCode2);
+            s1.Code = statusCode1;
+            s2.Code = statusCode2;
             Assert.NotEqual(s1, s2);
         }
 

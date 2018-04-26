@@ -77,7 +77,7 @@
   <div class="markdown level0 summary"><p>Immutable class to represent a status code.
 You can think of it as a syntax constrained string in fact it&apos;s 
 equipped with implicit conversion operators &apos;to&apos; and &apos;from&apos; string class.
-Helper class to build valid Status Codes.</p>
+Provided also with helper methods for string validation.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -116,16 +116,6 @@ Helper class to build valid Status Codes.</p>
   
   
   <a id="Nexusat_AspNetCore_Models_StatusCode__ctor_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_StatusCode__ctor" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor">StatusCode()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StatusCode()</code></pre>
-  </div>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_StatusCode__ctor_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode__ctor_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor(System.String)">StatusCode(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -146,6 +136,81 @@ Helper class to build valid Status Codes.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Default" data-uid="Nexusat.AspNetCore.Models.StatusCode.Default">Default</h4>
+  <div class="markdown level1 summary"><p>The Default status code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCode Default</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Ko" data-uid="Nexusat.AspNetCore.Models.StatusCode.Ko">Ko</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCode Ko</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Ok" data-uid="Nexusat.AspNetCore.Models.StatusCode.Ok">Ok</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCode Ok</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -183,7 +248,8 @@ Helper class to build valid Status Codes.</p>
   
   <a id="Nexusat_AspNetCore_Models_StatusCode_CheckKoValidCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckKoValidCode*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_CheckKoValidCode_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckKoValidCode(System.String)">CheckKoValidCode(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks that the code is a valid unsuccessful code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,7 +268,8 @@ Helper class to build valid Status Codes.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
-        <td></td>
+        <td><p>Code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -217,7 +284,8 @@ Helper class to build valid Status Codes.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code>, if ko valid code was checked, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -225,7 +293,8 @@ Helper class to build valid Status Codes.</p>
   
   <a id="Nexusat_AspNetCore_Models_StatusCode_CheckOkValidCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckOkValidCode*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_CheckOkValidCode_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckOkValidCode(System.String)">CheckOkValidCode(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks that the code is a valid successful code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,7 +313,8 @@ Helper class to build valid Status Codes.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
-        <td></td>
+        <td><p>Code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -259,7 +329,8 @@ Helper class to build valid Status Codes.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code>, if ok valid code was checked, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,7 +338,8 @@ Helper class to build valid Status Codes.</p>
   
   <a id="Nexusat_AspNetCore_Models_StatusCode_CheckValidCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckValidCode*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_CheckValidCode_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.CheckValidCode(System.String)">CheckValidCode(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks that the code is sinthactically valid.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -286,7 +358,8 @@ Helper class to build valid Status Codes.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
-        <td></td>
+        <td><p>Code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +374,8 @@ Helper class to build valid Status Codes.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code>, if valid code was checked, <code>false</code> otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -549,7 +623,7 @@ Helper class to build valid Status Codes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetStatusCodeFailed(string subcode)</code></pre>
+    <pre><code class="lang-csharp hljs">public static StatusCode GetStatusCodeFailed(string subcode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -578,7 +652,7 @@ Helper class to build valid Status Codes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -591,7 +665,7 @@ Helper class to build valid Status Codes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetStatusCodeSuccess(string subcode)</code></pre>
+    <pre><code class="lang-csharp hljs">public static StatusCode GetStatusCodeSuccess(string subcode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,7 +694,7 @@ Helper class to build valid Status Codes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
         <td></td>
       </tr>
     </tbody>
