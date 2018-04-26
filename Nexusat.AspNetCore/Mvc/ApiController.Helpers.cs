@@ -108,10 +108,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         protected IApiResponse Accepted(string description = null, string userDescription = null, string uri = null)
-        => ApiResponse(Status202Accepted,
-                       FrameworkOptions.DefaultOkStatusCode,
-                       description: description,
-                       userDescription: userDescription)
+        => ApiResponse(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
             .SetLocation(uri);
 
         /// <summary>
@@ -133,11 +130,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="uri">URI.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiObjectResponse<T> AcceptedObject<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-        => ApiObjectResponse<T>(Status202Accepted,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription,
-                    data: data)
+        => ApiObjectResponse<T>(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
             .SetLocation(uri);
         /// <summary>
         /// Produce an HTTP 202 response
@@ -161,11 +154,15 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
-        => ApiResponse(Status201Created,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription)
+        => ApiResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
             .SetLocation(uri);
+        protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
+        => Created(description, userDescription, uri.ToString());
+        protected IApiObjectResponse<T> CreatedObject<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
+        => ApiObjectResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
+            .SetLocation(uri);
+        protected IApiObjectResponse<T> CreatedObject<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
+        => CreatedObject(data, description, userDescription, uri.ToString());
         #endregion CreatedResponse (HTTP 201) Helper Methods
 
 #if TO_BE_IMPLEMENTED

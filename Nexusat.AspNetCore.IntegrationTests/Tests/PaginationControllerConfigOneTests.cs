@@ -335,6 +335,21 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
         }
         /// <summary>
+        /// Requesting a paginated API that returns no data
+        /// will produce a NoContent response (with no body)
+        /// </summary>
+        [Fact]
+        public async void CheckEmptyResult() {
+            // Act
+            var url = string.Format("/Pagination/GetEmptyResult");
+            var response = await Client.GetAsync(url);
+            var body = await response.Content.ReadAsStringAsync();
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+            Assert.Empty(body); // no body expected
+        }
+        /// <summary>
         /// First page is missing of the prev link
         /// </summary>
         #region Pagination over a Bounded Response (PageSize > 0)

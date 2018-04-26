@@ -2154,6 +2154,12 @@ references:
   commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.String)
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String, System.String, System.String)
   nameWithType: ApiController.Created(String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.Uri)
+  name: Created(String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String, System.String, System.Uri)
+  nameWithType: ApiController.Created(String, String, Uri)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.Created*
   name: Created
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_
@@ -2161,6 +2167,31 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Created
   nameWithType: ApiController.Created
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject*
+  name: CreateddObject
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreateddObject_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.CreateddObject
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject
+  nameWithType: ApiController.CreateddObject
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject``1(``0,System.String,System.String,System.String)
+  name: CreateddObject<T>(T, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreateddObject__1___0_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreateddObject``1(``0,System.String,System.String,System.String)
+  name.vb: CreateddObject(Of T)(T, String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject<T>(T, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject(Of T)(T, System.String, System.String, System.String)
+  nameWithType: ApiController.CreateddObject<T>(T, String, String, String)
+  nameWithType.vb: ApiController.CreateddObject(Of T)(T, String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject``1(``0,System.String,System.String,System.Uri)
+  name: CreateddObject<T>(T, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreateddObject__1___0_System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreateddObject``1(``0,System.String,System.String,System.Uri)
+  name.vb: CreateddObject(Of T)(T, String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject<T>(T, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.CreateddObject(Of T)(T, System.String, System.String, System.Uri)
+  nameWithType: ApiController.CreateddObject<T>(T, String, String, Uri)
+  nameWithType.vb: ApiController.CreateddObject(Of T)(T, String, String, Uri)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
   name: CurrentPage
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CurrentPage
@@ -2226,22 +2257,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Ok
   nameWithType: ApiController.Ok
-- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum*
-  name: OkEmptyEnum
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum
-  nameWithType: ApiController.OkEmptyEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
-  name: OkEmptyEnum<T>()
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEmptyEnum__1
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum``1
-  name.vb: OkEmptyEnum(Of T)()
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum<T>()
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkEmptyEnum(Of T)()
-  nameWithType: ApiController.OkEmptyEnum<T>()
-  nameWithType.vb: ApiController.OkEmptyEnum(Of T)()
 - uid: Nexusat.AspNetCore.Mvc.ApiController.OkEnum*
   name: OkEnum
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_OkEnum_

@@ -251,7 +251,6 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
        
         #region Accpepted (HTTP 202) Helper Methods flavours
-
         [Fact]
         public async void ApiGetAcceptedResponseWithoutPayload()
         {
@@ -307,9 +306,9 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("payload", json.SelectToken("data").Value<string>());
         }
-
-
         #endregion Accpepted (HTTP 202) Helper Methods flavours
+
+
 
         #region Middleware Global Exception Handling
         /// <summary>
