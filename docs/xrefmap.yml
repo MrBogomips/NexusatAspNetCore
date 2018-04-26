@@ -2050,6 +2050,19 @@ references:
   commentId: F:Nexusat.AspNetCore.Models.StatusCode.Ok
   fullName: Nexusat.AspNetCore.Models.StatusCode.Ok
   nameWithType: StatusCode.Ok
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Equality(Nexusat.AspNetCore.Models.StatusCode,Nexusat.AspNetCore.Models.StatusCode)
+  name: Equality(StatusCode, StatusCode)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Equality_Nexusat_AspNetCore_Models_StatusCode_Nexusat_AspNetCore_Models_StatusCode_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.op_Equality(Nexusat.AspNetCore.Models.StatusCode,Nexusat.AspNetCore.Models.StatusCode)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equality(Nexusat.AspNetCore.Models.StatusCode, Nexusat.AspNetCore.Models.StatusCode)
+  nameWithType: StatusCode.Equality(StatusCode, StatusCode)
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Equality*
+  name: Equality
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Equality_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.op_Equality
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equality
+  nameWithType: StatusCode.Equality
 - uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
   name: Implicit(StatusCode to String)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String
@@ -2078,6 +2091,19 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.StatusCode.Widening
   nameWithType: StatusCode.Implicit
   nameWithType.vb: StatusCode.Widening
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Inequality(Nexusat.AspNetCore.Models.StatusCode,Nexusat.AspNetCore.Models.StatusCode)
+  name: Inequality(StatusCode, StatusCode)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Inequality_Nexusat_AspNetCore_Models_StatusCode_Nexusat_AspNetCore_Models_StatusCode_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.op_Inequality(Nexusat.AspNetCore.Models.StatusCode,Nexusat.AspNetCore.Models.StatusCode)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Inequality(Nexusat.AspNetCore.Models.StatusCode, Nexusat.AspNetCore.Models.StatusCode)
+  nameWithType: StatusCode.Inequality(StatusCode, StatusCode)
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Inequality*
+  name: Inequality
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Inequality_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.op_Inequality
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Inequality
+  nameWithType: StatusCode.Inequality
 - uid: Nexusat.AspNetCore.Models.StatusCode.ToString
   name: ToString()
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_ToString
@@ -2091,6 +2117,64 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.ToString
   nameWithType: StatusCode.ToString
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter
+  name: StatusCodeJsonConverter
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html
+  commentId: T:Nexusat.AspNetCore.Models.StatusCodeJsonConverter
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter
+  nameWithType: StatusCodeJsonConverter
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanConvert_System_Type_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
+  nameWithType: StatusCodeJsonConverter.CanConvert(Type)
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert*
+  name: CanConvert
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanConvert_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert
+  nameWithType: StatusCodeJsonConverter.CanConvert
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
+  name: CanRead
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanRead
+  commentId: P:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
+  nameWithType: StatusCodeJsonConverter.CanRead
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead*
+  name: CanRead
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanRead_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
+  nameWithType: StatusCodeJsonConverter.CanRead
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: StatusCodeJsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson*
+  name: ReadJson
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_ReadJson_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson
+  nameWithType: StatusCodeJsonConverter.ReadJson
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: StatusCodeJsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson*
+  name: WriteJson
+  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_WriteJson_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson
+  nameWithType: StatusCodeJsonConverter.WriteJson
 - uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo
   name: ValidationErrorsInfo
   href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html

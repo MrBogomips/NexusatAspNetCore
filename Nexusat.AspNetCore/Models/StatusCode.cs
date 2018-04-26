@@ -1,4 +1,5 @@
-﻿using Nexusat.AspNetCore.Properties;
+﻿using Newtonsoft.Json;
+using Nexusat.AspNetCore.Properties;
 using System;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 
@@ -12,6 +13,33 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     public class StatusCode : IEquatable<string>, IEquatable<StatusCode>
     {
+        #region JsonConverter
+        /// <summary>
+        /// Helper class to serialize StatusCode as simple strings
+        /// </summary>
+        public class JsonConverter : Newtonsoft.Json.JsonConverter
+        {
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                writer.WriteValue(value.ToString());
+            }
+
+            public override bool CanRead
+            {
+                get { return false; }
+            }
+
+            public override bool CanConvert(Type objectType)
+            {
+                return objectType == typeof(StatusCode);
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+                throw new NotImplementedException();
+            }
+        }
+        #endregion JsonConverter
         /// <summary>
         /// The Default status code
         /// </summary>
@@ -33,6 +61,18 @@ namespace Nexusat.AspNetCore.Models
         public bool Equals(StatusCode other) => other?.Code == Code;
         public override bool Equals(object obj) => Equals(obj as string);
         public override int GetHashCode() => Code.GetHashCode();
+        public static bool operator == (StatusCode lhs, StatusCode rhs) {
+            if (ReferenceEquals(lhs, rhs))
+            {
+                return true;
+            }
+            if (lhs == null || rhs == null)
+            {
+                return false;
+            }
+            return lhs.Code == rhs.Code;
+        }
+        public static bool operator !=(StatusCode lhs, StatusCode rhs) => !(lhs == rhs);
         #endregion Equality
 
         #region String to and from implicit conversions 
@@ -75,17 +115,17 @@ namespace Nexusat.AspNetCore.Models
             );
         public static void CheckValidCodeOrThrow(string code)
         {
-            if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid), nameof(code));
+            if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code), nameof(code));
         }
 
         public static void CheckValidOkCodeOrThrow(string code)
         {
-            if (!CheckOkValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusOkCodeInvalid), nameof(code));
+            if (!CheckOkValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusOkCodeInvalid, code), nameof(code));
         }
 
         public static void CheckValidKoCodeOrThrow(string code)
         {
-            if (!CheckKoValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusKoCodeInvalid), nameof(code));
+            if (!CheckKoValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusKoCodeInvalid, code), nameof(code));
         }
 
 

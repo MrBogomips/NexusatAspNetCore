@@ -76,5 +76,27 @@ namespace Nexusat.AspNetCore.Tests.Models
             Assert.True(code.Equals(ocode));
             Assert.True(code.Equals(code2));
         }
+
+        [Fact]
+        public void TestEqualityOperators()
+        {
+            /*
+             * public bool Equals(string other) => other == Code;
+             * public bool Equals(StatusCode other) => other?.Code == Code;
+             * public override bool Equals(object obj) => Equals(obj as StatusCode);
+             * public override int GetHashCode() => Code.GetHashCode();
+             */
+            StatusCode code = "OK";
+            StatusCode code2 = "OK";
+            string scode = "OK";
+            object ocode = "OK";
+
+
+            //Assert.False(code == (null as string));
+            //Assert.False(code == (null as StatusCode));
+//Assert.True(code == scode);
+            //Assert.True(code == ocode);
+            Assert.True(code == code2);
+        }
     }
 }

@@ -2,6 +2,7 @@
 using Nexusat.AspNetCore.Properties;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Text;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
@@ -13,6 +14,7 @@ namespace Nexusat.AspNetCore.Models
     {
         public int HttpCode { get; set; }
 
+        [JsonConverter(typeof(StatusCode.JsonConverter))]
         public StatusCode Code { get; set; } = StatusCode.Default;
 
         internal Status() { }
