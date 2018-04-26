@@ -21,7 +21,7 @@ namespace Nexusat.AspNetCore.Tests.Models
         }
         [Theory]
         [InlineData(null)]
-        [InlineData("ok")]
+        [InlineData("ok")] // lowercase codes are invalid
         [InlineData("ko")]
         [InlineData("OK SOMETHING")]
         [InlineData("KO SOMETHING")]
@@ -34,6 +34,24 @@ namespace Nexusat.AspNetCore.Tests.Models
         {
             Assert.False(StatusCode.CheckValidCode(code));
             Assert.ThrowsAny<Exception>(() => new StatusCode(code));
+        }
+
+        [Theory]
+        [InlineData("OK", "OK")]
+        [InlineData("KO", "KO")]
+        [InlineData("OK_SOMETHING", "OK_SOMETHING")]
+        [InlineData("KO_SOME", "KO_SOME")]
+        public void TestEquality(string lhs, string rhs)
+        {
+            StatusCode c1 = lhs;
+            StatusCode c2 = rhs;
+
+            Assert.Equal(lhs, rhs);
+            Assert.Equal(c1, rhs);
+            Assert.Equal(c2, rhs);
+            Assert.Equal(c1, lhs);
+            Assert.Equal(c2, lhs);
+            Assert.Equal(c1, c2);
         }
     }
 }
