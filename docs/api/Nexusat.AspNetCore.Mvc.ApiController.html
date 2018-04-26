@@ -246,31 +246,6 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   </table>
   
   
-  <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseBuilderFactory_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseBuilderFactory" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory">ResponseBuilderFactory</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiResponseBuilderFactory ResponseBuilderFactory { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html">IApiResponseBuilderFactory</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Nexusat_AspNetCore_Mvc_ApiController_RoutedData_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.RoutedData*"></a>
   <h4 id="Nexusat_AspNetCore_Mvc_ApiController_RoutedData" data-uid="Nexusat.AspNetCore.Mvc.ApiController.RoutedData">RoutedData</h4>
   <div class="markdown level1 summary"></div>
@@ -571,12 +546,13 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse__1_System_Action_Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder___0___" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder{``0}})">ApiEnumResponse&lt;T&gt;(Action&lt;IApiEnumResponseBuilder&lt;T&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ApiEnumResponse&lt;T&gt;(Int32, Boolean, String, IEnumerable&lt;T&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ApiEnumResponse&lt;T&gt;(Action&lt;IApiEnumResponseBuilder&lt;T&gt;&gt; setupResponseAction)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ApiEnumResponse&lt;T&gt;(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -589,8 +565,35 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html">IApiEnumResponseBuilder</a>&lt;T&gt;&gt;</td>
-        <td><span class="parametername">setupResponseAction</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">httpCode</span></td>
+        <td><p>Http code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hasNextPage</span></td>
+        <td><p>There&apos;s another page</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -606,7 +609,8 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The response.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -621,19 +625,21 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The payload type expected by the method&apos;s signature</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse__1_System_Action_Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder___0___" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder{``0}})">ApiObjectResponse&lt;T&gt;(Action&lt;IApiObjectResponseBuilder&lt;T&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse__1_System_Int32_System_String___0_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Int32,System.String,``0,System.String,System.String)">ApiObjectResponse&lt;T&gt;(Int32, String, T, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiObjectResponse&lt;T&gt; ApiObjectResponse&lt;T&gt;(Action&lt;IApiObjectResponseBuilder&lt;T&gt;&gt; setupResponseAction)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiObjectResponse&lt;T&gt; ApiObjectResponse&lt;T&gt;(int httpCode, string statusCode = null, T data = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -646,8 +652,29 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html">IApiObjectResponseBuilder</a>&lt;T&gt;&gt;</td>
-        <td><span class="parametername">setupResponseAction</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">httpCode</span></td>
+        <td><p>Http code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -663,7 +690,8 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiObjectResponse-1.html">IApiObjectResponse</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The response.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -678,19 +706,21 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The payload type expected by the method&apos;s signature</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiResponse*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_System_Action_Nexusat_AspNetCore_Builders_IApiResponseBuilder__" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Action{Nexusat.AspNetCore.Builders.IApiResponseBuilder})">ApiResponse(Action&lt;IApiResponseBuilder&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_System_Int32_System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Int32,System.String,System.String,System.String)">ApiResponse(Int32, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Produce a generic API Response without a payload</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiResponse ApiResponse(Action&lt;IApiResponseBuilder&gt; setupResponseAction)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IApiResponse ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -703,8 +733,25 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Builders.IApiResponseBuilder.html">IApiResponseBuilder</a>&gt;</td>
-        <td><span class="parametername">setupResponseAction</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">httpCode</span></td>
+        <td><p>Http code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td><p>Status code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -720,7 +767,8 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html">IApiResponse</a></td>
-        <td></td>
+        <td><p>The response.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1105,154 +1153,6 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
   </table>
   
   
-  <a id="Nexusat_AspNetCore_Mvc_ApiController_Response_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.Response*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_Response_System_Int32_System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.Response(System.Int32,System.String,System.String,System.String)">Response(Int32, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Produce a generic API Response without a payload</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiResponse Response(int httpCode, string statusCode = null, string description = null, string userDescription = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">httpCode</span></td>
-        <td><p>Http code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">statusCode</span></td>
-        <td><p>Status code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">userDescription</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html">IApiResponse</a></td>
-        <td><p>The response.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ResponseEnum&lt;T&gt;(Int32, Boolean, String, IEnumerable&lt;T&gt;, String, String)</h4>
-  <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiEnumResponse&lt;T&gt; ResponseEnum&lt;T&gt;(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable&lt;T&gt; data = null, string description = null, string userDescription = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">httpCode</span></td>
-        <td><p>Http code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">hasNextPage</span></td>
-        <td><p>There&apos;s another page</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">statusCode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">userDescription</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
-        <td><p>The response.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The payload type expected by the method&apos;s signature</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum*"></a>
   <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ResponseEnum&lt;T&gt;(Int32, Int32, String, IEnumerable&lt;T&gt;, String, String)</h4>
   <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
@@ -1317,87 +1217,6 @@ if you missed to decorate your actio method with <a class="xref" href="Nexusat.A
     <tbody>
       <tr>
         <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse-1.html">IApiEnumResponse</a>&lt;T&gt;</td>
-        <td><p>The response.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The payload type expected by the method&apos;s signature</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ApiController_ResponseObject_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseObject*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ApiController_ResponseObject__1_System_Int32_System_String___0_System_String_System_String_" data-uid="Nexusat.AspNetCore.Mvc.ApiController.ResponseObject``1(System.Int32,System.String,``0,System.String,System.String)">ResponseObject&lt;T&gt;(Int32, String, T, String, String)</h4>
-  <div class="markdown level1 summary"><p>Produce a generic API Response with, optionally, a payload</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IApiObjectResponse&lt;T&gt; ResponseObject&lt;T&gt;(int httpCode, string statusCode = null, T data = null, string description = null, string userDescription = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">httpCode</span></td>
-        <td><p>Http code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">statusCode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">userDescription</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiObjectResponse-1.html">IApiObjectResponse</a>&lt;T&gt;</td>
         <td><p>The response.</p>
 </td>
       </tr>

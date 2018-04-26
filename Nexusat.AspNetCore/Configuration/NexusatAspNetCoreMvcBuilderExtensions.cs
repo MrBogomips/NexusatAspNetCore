@@ -1,9 +1,5 @@
-﻿using Nexusat.AspNetCore.Builders;
-using Nexusat.AspNetCore.Configuration;
-using Nexusat.AspNetCore.Mvc.Formatters;
+﻿using Nexusat.AspNetCore.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

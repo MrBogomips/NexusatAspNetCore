@@ -18,8 +18,6 @@ namespace Nexusat.AspNetCore.Tests.Utils
         private const string pageIndexKeyName = "pageIndex";
         private const string pageSizeKeyName = "pageSize";
 
-        private readonly PaginationInfoLinkBuilder LinkBuilder;
-
         private readonly ITestOutputHelper Output;
         public PaginationInfoLinkBuilderTests(ITestOutputHelper outputHelper)
         {
@@ -44,7 +42,6 @@ namespace Nexusat.AspNetCore.Tests.Utils
         [InlineData("/segmnet?pageSize=10&pageIndex=10", 6, 66)]
         [InlineData("/segmnet?ciccio=buffo&pageSize=10&pageIndex=10", 6, 66)]
         [InlineData("/segmnet?pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
-        [InlineData("/segmnet?buffo=ciccio&pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
         [InlineData("/segmnet?buffo=ciccio&pageSize=10&pageIndex=10&ciccio=buffo", 6, 66)]
         public void TestUrlLinks(string originalLink, int pageIndex, int pageSize) {
             // Setup

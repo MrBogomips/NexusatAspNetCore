@@ -1,5 +1,4 @@
-﻿using Nexusat.AspNetCore.Builders;
-using Nexusat.AspNetCore.Models;
+﻿using Nexusat.AspNetCore.Models;
 using System;
 
 namespace Nexusat.AspNetCore.Configuration
@@ -8,7 +7,7 @@ namespace Nexusat.AspNetCore.Configuration
     /// Nexusat ASP net core options builder.
     /// This is the class by which client code configures the system.
     /// </summary>
-    public class NexusatAspNetCoreOptionsBuilder : IBuilder
+    public class NexusatAspNetCoreOptionsBuilder
     {
         private readonly NexusatAspNetCoreOptions Options;
 

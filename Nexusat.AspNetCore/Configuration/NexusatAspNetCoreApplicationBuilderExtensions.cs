@@ -1,13 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Nexusat.AspNetCore.Builders;
-using Nexusat.AspNetCore.Configuration;
-using Nexusat.AspNetCore.Implementations;
+using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Middleware;
-using Nexusat.AspNetCore.Mvc.Formatters;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

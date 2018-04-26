@@ -61,584 +61,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.NexusatAspNetCoreMvcBuilderExtensions.AddNexusatAspNetCore
   nameWithType: NexusatAspNetCoreMvcBuilderExtensions.AddNexusatAspNetCore
-- uid: Nexusat.AspNetCore.Builders
-  name: Nexusat.AspNetCore.Builders
-  href: api/Nexusat.AspNetCore.Builders.html
-  commentId: N:Nexusat.AspNetCore.Builders
-  fullName: Nexusat.AspNetCore.Builders
-  nameWithType: Nexusat.AspNetCore.Builders
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1
-  name: IApiEnumResponseBuilder<T>
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html
-  commentId: T:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1
-  name.vb: IApiEnumResponseBuilder(Of T)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T)
-  nameWithType: IApiEnumResponseBuilder<T>
-  nameWithType.vb: IApiEnumResponseBuilder(Of T)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.GetResponse
-  name: GetResponse()
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_GetResponse
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.GetResponse
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.GetResponse()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).GetResponse()
-  nameWithType: IApiEnumResponseBuilder<T>.GetResponse()
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).GetResponse()
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.GetResponse*
-  name: GetResponse
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_GetResponse_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.GetResponse
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.GetResponse
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).GetResponse
-  nameWithType: IApiEnumResponseBuilder<T>.GetResponse
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).GetResponse
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetData(System.Collections.Generic.IEnumerable{`0})
-  name: SetData(IEnumerable<T>)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetData_System_Collections_Generic_IEnumerable__0__
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetData(System.Collections.Generic.IEnumerable{`0})
-  name.vb: SetData(IEnumerable(Of T))
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetData(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetData(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: IApiEnumResponseBuilder<T>.SetData(IEnumerable<T>)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetData(IEnumerable(Of T))
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetData*
-  name: SetData
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetData_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetData
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetData
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetData
-  nameWithType: IApiEnumResponseBuilder<T>.SetData
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetData
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetDescription(System.String)
-  name: SetDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetDescription(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetDescription(System.String)
-  nameWithType: IApiEnumResponseBuilder<T>.SetDescription(String)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetDescription*
-  name: SetDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetDescription
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetDescription
-  nameWithType: IApiEnumResponseBuilder<T>.SetDescription
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetDescription
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetException(System.Exception)
-  name: SetException(Exception)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetException_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetException(System.Exception)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetException(System.Exception)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetException(System.Exception)
-  nameWithType: IApiEnumResponseBuilder<T>.SetException(Exception)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetException(Exception)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetException*
-  name: SetException
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetException_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetException
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetException
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetException
-  nameWithType: IApiEnumResponseBuilder<T>.SetException
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetException
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetHttpCode(System.Int32)
-  name: SetHttpCode(Int32)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetHttpCode_System_Int32_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetHttpCode(System.Int32)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetHttpCode(System.Int32)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetHttpCode(System.Int32)
-  nameWithType: IApiEnumResponseBuilder<T>.SetHttpCode(Int32)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetHttpCode(Int32)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetHttpCode*
-  name: SetHttpCode
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetHttpCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetHttpCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetHttpCode
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetHttpCode
-  nameWithType: IApiEnumResponseBuilder<T>.SetHttpCode
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetHttpCode
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
-  name: SetPaginationCursor(PaginationCursor, Boolean)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Boolean_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean)
-  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Boolean)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Boolean)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
-  name: SetPaginationCursor(PaginationCursor, Int32)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_Nexusat_AspNetCore_Models_PaginationCursor_System_Int32_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor,System.Int32)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor(Nexusat.AspNetCore.Models.PaginationCursor, System.Int32)
-  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor(PaginationCursor, Int32)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor(PaginationCursor, Int32)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor*
-  name: SetPaginationCursor
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetPaginationCursor_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetPaginationCursor
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetPaginationCursor
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetPaginationCursor
-  nameWithType: IApiEnumResponseBuilder<T>.SetPaginationCursor
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetPaginationCursor
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode(System.String)
-  name: SetStatusCode(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCode(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCode(System.String)
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCode(String)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCode(String)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode*
-  name: SetStatusCode
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCode
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCode
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCode
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCode
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeFailed
-  name: SetStatusCodeFailed()
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCodeFailed
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeFailed
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCodeFailed()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCodeFailed()
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCodeFailed()
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCodeFailed()
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeFailed*
-  name: SetStatusCodeFailed
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCodeFailed_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeFailed
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCodeFailed
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCodeFailed
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCodeFailed
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCodeFailed
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeSuccess
-  name: SetStatusCodeSuccess()
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCodeSuccess
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeSuccess
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCodeSuccess()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCodeSuccess()
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCodeSuccess()
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCodeSuccess()
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeSuccess*
-  name: SetStatusCodeSuccess
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetStatusCodeSuccess_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetStatusCodeSuccess
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetStatusCodeSuccess
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetStatusCodeSuccess
-  nameWithType: IApiEnumResponseBuilder<T>.SetStatusCodeSuccess
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetStatusCodeSuccess
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetUserDescription(System.String)
-  name: SetUserDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetUserDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetUserDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetUserDescription(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetUserDescription(System.String)
-  nameWithType: IApiEnumResponseBuilder<T>.SetUserDescription(String)
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetUserDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetUserDescription*
-  name: SetUserDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder_1_SetUserDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder`1.SetUserDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>.SetUserDescription
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T).SetUserDescription
-  nameWithType: IApiEnumResponseBuilder<T>.SetUserDescription
-  nameWithType.vb: IApiEnumResponseBuilder(Of T).SetUserDescription
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1
-  name: IApiObjectResponseBuilder<T>
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html
-  commentId: T:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1
-  name.vb: IApiObjectResponseBuilder(Of T)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T)
-  nameWithType: IApiObjectResponseBuilder<T>
-  nameWithType.vb: IApiObjectResponseBuilder(Of T)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.GetResponse
-  name: GetResponse()
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_GetResponse
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.GetResponse
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.GetResponse()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).GetResponse()
-  nameWithType: IApiObjectResponseBuilder<T>.GetResponse()
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).GetResponse()
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.GetResponse*
-  name: GetResponse
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_GetResponse_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.GetResponse
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.GetResponse
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).GetResponse
-  nameWithType: IApiObjectResponseBuilder<T>.GetResponse
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).GetResponse
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetData(`0)
-  name: SetData(T)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetData__0_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetData(`0)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetData(T)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetData(T)
-  nameWithType: IApiObjectResponseBuilder<T>.SetData(T)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetData(T)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetData*
-  name: SetData
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetData_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetData
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetData
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetData
-  nameWithType: IApiObjectResponseBuilder<T>.SetData
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetData
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetDescription(System.String)
-  name: SetDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetDescription(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetDescription(System.String)
-  nameWithType: IApiObjectResponseBuilder<T>.SetDescription(String)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetDescription*
-  name: SetDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetDescription
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetDescription
-  nameWithType: IApiObjectResponseBuilder<T>.SetDescription
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetDescription
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetException(System.Exception)
-  name: SetException(Exception)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetException_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetException(System.Exception)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetException(System.Exception)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetException(System.Exception)
-  nameWithType: IApiObjectResponseBuilder<T>.SetException(Exception)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetException(Exception)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetException*
-  name: SetException
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetException_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetException
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetException
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetException
-  nameWithType: IApiObjectResponseBuilder<T>.SetException
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetException
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetHttpCode(System.Int32)
-  name: SetHttpCode(Int32)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetHttpCode_System_Int32_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetHttpCode(System.Int32)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetHttpCode(System.Int32)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetHttpCode(System.Int32)
-  nameWithType: IApiObjectResponseBuilder<T>.SetHttpCode(Int32)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetHttpCode(Int32)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetHttpCode*
-  name: SetHttpCode
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetHttpCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetHttpCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetHttpCode
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetHttpCode
-  nameWithType: IApiObjectResponseBuilder<T>.SetHttpCode
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetHttpCode
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation(System.String)
-  name: SetLocation(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetLocation_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetLocation(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetLocation(System.String)
-  nameWithType: IApiObjectResponseBuilder<T>.SetLocation(String)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetLocation(String)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation*
-  name: SetLocation
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetLocation_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetLocation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetLocation
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetLocation
-  nameWithType: IApiObjectResponseBuilder<T>.SetLocation
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetLocation
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCode(System.String)
-  name: SetStatusCode(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCode(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCode(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCode(System.String)
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCode(String)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCode(String)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCode*
-  name: SetStatusCode
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCode
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCode
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCode
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCode
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeFailed
-  name: SetStatusCodeFailed()
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCodeFailed
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeFailed
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCodeFailed()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCodeFailed()
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCodeFailed()
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCodeFailed()
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeFailed*
-  name: SetStatusCodeFailed
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCodeFailed_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeFailed
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCodeFailed
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCodeFailed
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCodeFailed
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCodeFailed
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeSuccess
-  name: SetStatusCodeSuccess()
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCodeSuccess
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeSuccess
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCodeSuccess()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCodeSuccess()
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCodeSuccess()
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCodeSuccess()
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeSuccess*
-  name: SetStatusCodeSuccess
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetStatusCodeSuccess_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetStatusCodeSuccess
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetStatusCodeSuccess
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetStatusCodeSuccess
-  nameWithType: IApiObjectResponseBuilder<T>.SetStatusCodeSuccess
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetStatusCodeSuccess
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetUserDescription(System.String)
-  name: SetUserDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetUserDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetUserDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetUserDescription(System.String)
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetUserDescription(System.String)
-  nameWithType: IApiObjectResponseBuilder<T>.SetUserDescription(String)
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetUserDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetUserDescription*
-  name: SetUserDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder-1.html#Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder_1_SetUserDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder`1.SetUserDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>.SetUserDescription
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T).SetUserDescription
-  nameWithType: IApiObjectResponseBuilder<T>.SetUserDescription
-  nameWithType.vb: IApiObjectResponseBuilder(Of T).SetUserDescription
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder
-  name: IApiResponseBuilder
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html
-  commentId: T:Nexusat.AspNetCore.Builders.IApiResponseBuilder
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder
-  nameWithType: IApiResponseBuilder
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse
-  name: GetResponse()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_GetResponse
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse()
-  nameWithType: IApiResponseBuilder.GetResponse()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse*
-  name: GetResponse
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_GetResponse_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.GetResponse
-  nameWithType: IApiResponseBuilder.GetResponse
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription(System.String)
-  name: SetDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription(System.String)
-  nameWithType: IApiResponseBuilder.SetDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription*
-  name: SetDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetDescription
-  nameWithType: IApiResponseBuilder.SetDescription
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException(System.Exception)
-  name: SetException(Exception)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetException_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException(System.Exception)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException(System.Exception)
-  nameWithType: IApiResponseBuilder.SetException(Exception)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException*
-  name: SetException
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetException_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetException
-  nameWithType: IApiResponseBuilder.SetException
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode(System.Int32)
-  name: SetHttpCode(Int32)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetHttpCode_System_Int32_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode(System.Int32)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode(System.Int32)
-  nameWithType: IApiResponseBuilder.SetHttpCode(Int32)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode*
-  name: SetHttpCode
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetHttpCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetHttpCode
-  nameWithType: IApiResponseBuilder.SetHttpCode
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
-  name: SetLocation(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetLocation_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation(System.String)
-  nameWithType: IApiResponseBuilder.SetLocation(String)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation*
-  name: SetLocation
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetLocation_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetLocation
-  nameWithType: IApiResponseBuilder.SetLocation
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode(System.String)
-  name: SetStatusCode(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode(System.String)
-  nameWithType: IApiResponseBuilder.SetStatusCode(String)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode*
-  name: SetStatusCode
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCode
-  nameWithType: IApiResponseBuilder.SetStatusCode
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed
-  name: SetStatusCodeFailed()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCodeFailed
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed()
-  nameWithType: IApiResponseBuilder.SetStatusCodeFailed()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed*
-  name: SetStatusCodeFailed
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCodeFailed_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeFailed
-  nameWithType: IApiResponseBuilder.SetStatusCodeFailed
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess
-  name: SetStatusCodeSuccess()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCodeSuccess
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess()
-  nameWithType: IApiResponseBuilder.SetStatusCodeSuccess()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess*
-  name: SetStatusCodeSuccess
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetStatusCodeSuccess_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetStatusCodeSuccess
-  nameWithType: IApiResponseBuilder.SetStatusCodeSuccess
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription(System.String)
-  name: SetUserDescription(String)
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetUserDescription_System_String_
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription(System.String)
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription(System.String)
-  nameWithType: IApiResponseBuilder.SetUserDescription(String)
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription*
-  name: SetUserDescription
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilder.html#Nexusat_AspNetCore_Builders_IApiResponseBuilder_SetUserDescription_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilder.SetUserDescription
-  nameWithType: IApiResponseBuilder.SetUserDescription
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderBase
-  name: IApiResponseBuilderBase
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderBase.html
-  commentId: T:Nexusat.AspNetCore.Builders.IApiResponseBuilderBase
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderBase
-  nameWithType: IApiResponseBuilderBase
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory
-  name: IApiResponseBuilderFactory
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html
-  commentId: T:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory
-  nameWithType: IApiResponseBuilderFactory
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder*
-  name: GetApiEnumResponseBuilder
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiEnumResponseBuilder_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder
-  nameWithType: IApiResponseBuilderFactory.GetApiEnumResponseBuilder
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder``1
-  name: GetApiEnumResponseBuilder<T>()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiEnumResponseBuilder__1
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder``1
-  name.vb: GetApiEnumResponseBuilder(Of T)()
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder<T>()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiEnumResponseBuilder(Of T)()
-  nameWithType: IApiResponseBuilderFactory.GetApiEnumResponseBuilder<T>()
-  nameWithType.vb: IApiResponseBuilderFactory.GetApiEnumResponseBuilder(Of T)()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder*
-  name: GetApiObjectResponseBuilder
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiObjectResponseBuilder_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder
-  nameWithType: IApiResponseBuilderFactory.GetApiObjectResponseBuilder
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder``1
-  name: GetApiObjectResponseBuilder<T>()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiObjectResponseBuilder__1
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder``1
-  name.vb: GetApiObjectResponseBuilder(Of T)()
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder<T>()
-  fullName.vb: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiObjectResponseBuilder(Of T)()
-  nameWithType: IApiResponseBuilderFactory.GetApiObjectResponseBuilder<T>()
-  nameWithType.vb: IApiResponseBuilderFactory.GetApiObjectResponseBuilder(Of T)()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder
-  name: GetApiResponseBuilder()
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiResponseBuilder
-  commentId: M:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder()
-  nameWithType: IApiResponseBuilderFactory.GetApiResponseBuilder()
-- uid: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder*
-  name: GetApiResponseBuilder
-  href: api/Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.html#Nexusat_AspNetCore_Builders_IApiResponseBuilderFactory_GetApiResponseBuilder_
-  commentId: Overload:Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.IApiResponseBuilderFactory.GetApiResponseBuilder
-  nameWithType: IApiResponseBuilderFactory.GetApiResponseBuilder
-- uid: Nexusat.AspNetCore.Builders.IBuilder
-  name: IBuilder
-  href: api/Nexusat.AspNetCore.Builders.IBuilder.html
-  commentId: T:Nexusat.AspNetCore.Builders.IBuilder
-  fullName: Nexusat.AspNetCore.Builders.IBuilder
-  nameWithType: IBuilder
-- uid: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder
-  name: ISingleInstanceBuilder
-  href: api/Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.html
-  commentId: T:Nexusat.AspNetCore.Builders.ISingleInstanceBuilder
-  fullName: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder
-  nameWithType: ISingleInstanceBuilder
-- uid: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid
-  name: IsBuilderValid
-  href: api/Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.html#Nexusat_AspNetCore_Builders_ISingleInstanceBuilder_IsBuilderValid
-  commentId: P:Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid
-  fullName: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid
-  nameWithType: ISingleInstanceBuilder.IsBuilderValid
-- uid: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid*
-  name: IsBuilderValid
-  href: api/Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.html#Nexusat_AspNetCore_Builders_ISingleInstanceBuilder_IsBuilderValid_
-  commentId: Overload:Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Builders.ISingleInstanceBuilder.IsBuilderValid
-  nameWithType: ISingleInstanceBuilder.IsBuilderValid
 - uid: Nexusat.AspNetCore.Configuration
   name: Nexusat.AspNetCore.Configuration
   href: api/Nexusat.AspNetCore.Configuration.html
@@ -1212,6 +634,316 @@ references:
   commentId: N:Nexusat.AspNetCore.Models
   fullName: Nexusat.AspNetCore.Models
   nameWithType: Nexusat.AspNetCore.Models
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1
+  name: ApiEnumResponse<T>
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiEnumResponse`1
+  name.vb: ApiEnumResponse(Of T)
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T)
+  nameWithType: ApiEnumResponse<T>
+  nameWithType.vb: ApiEnumResponse(Of T)
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean,System.Collections.Generic.IEnumerable{`0})
+  name: ApiEnumResponse(Status, PaginationCursor, Boolean, IEnumerable<T>)
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_PaginationCursor_System_Boolean_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean,System.Collections.Generic.IEnumerable{`0})
+  name.vb: ApiEnumResponse(Status, PaginationCursor, Boolean, IEnumerable(Of T))
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.ApiEnumResponse(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).ApiEnumResponse(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean, System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ApiEnumResponse<T>.ApiEnumResponse(Status, PaginationCursor, Boolean, IEnumerable<T>)
+  nameWithType.vb: ApiEnumResponse(Of T).ApiEnumResponse(Status, PaginationCursor, Boolean, IEnumerable(Of T))
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.PaginationCursor,System.Int32,System.Collections.Generic.IEnumerable{`0})
+  name: ApiEnumResponse(Status, PaginationCursor, Int32, IEnumerable<T>)
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_PaginationCursor_System_Int32_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.PaginationCursor,System.Int32,System.Collections.Generic.IEnumerable{`0})
+  name.vb: ApiEnumResponse(Status, PaginationCursor, Int32, IEnumerable(Of T))
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.ApiEnumResponse(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.PaginationCursor, System.Int32, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).ApiEnumResponse(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.PaginationCursor, System.Int32, System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ApiEnumResponse<T>.ApiEnumResponse(Status, PaginationCursor, Int32, IEnumerable<T>)
+  nameWithType.vb: ApiEnumResponse(Of T).ApiEnumResponse(Status, PaginationCursor, Int32, IEnumerable(Of T))
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)
+  name: ApiEnumResponse(Int32, PaginationCursor, Boolean, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1__ctor_System_Int32_Nexusat_AspNetCore_Models_PaginationCursor_System_Boolean_System_Collections_Generic_IEnumerable__0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)
+  name.vb: ApiEnumResponse(Int32, PaginationCursor, Boolean, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.ApiEnumResponse(System.Int32, Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).ApiEnumResponse(System.Int32, Nexusat.AspNetCore.Models.PaginationCursor, System.Boolean, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiEnumResponse<T>.ApiEnumResponse(Int32, PaginationCursor, Boolean, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiEnumResponse(Of T).ApiEnumResponse(Int32, PaginationCursor, Boolean, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Int32,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)
+  name: ApiEnumResponse(Int32, PaginationCursor, Int32, IEnumerable<T>, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1__ctor_System_Int32_Nexusat_AspNetCore_Models_PaginationCursor_System_Int32_System_Collections_Generic_IEnumerable__0__System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Int32,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)
+  name.vb: ApiEnumResponse(Int32, PaginationCursor, Int32, IEnumerable(Of T), String, String, String)
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.ApiEnumResponse(System.Int32, Nexusat.AspNetCore.Models.PaginationCursor, System.Int32, System.Collections.Generic.IEnumerable<T>, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).ApiEnumResponse(System.Int32, Nexusat.AspNetCore.Models.PaginationCursor, System.Int32, System.Collections.Generic.IEnumerable(Of T), System.String, System.String, System.String)
+  nameWithType: ApiEnumResponse<T>.ApiEnumResponse(Int32, PaginationCursor, Int32, IEnumerable<T>, String, String, String)
+  nameWithType.vb: ApiEnumResponse(Of T).ApiEnumResponse(Int32, PaginationCursor, Int32, IEnumerable(Of T), String, String, String)
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor*
+  name: ApiEnumResponse
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.ApiEnumResponse
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).ApiEnumResponse
+  nameWithType: ApiEnumResponse<T>.ApiEnumResponse
+  nameWithType.vb: ApiEnumResponse(Of T).ApiEnumResponse
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Data
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Data
+  commentId: P:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Data
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Data
+  nameWithType: ApiEnumResponse<T>.Data
+  nameWithType.vb: ApiEnumResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Data*
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Data_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Data
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Data
+  nameWithType: ApiEnumResponse<T>.Data
+  nameWithType.vb: ApiEnumResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location
+  commentId: P:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
+  nameWithType: ApiEnumResponse<T>.Location
+  nameWithType.vb: ApiEnumResponse(Of T).Location
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location*
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
+  nameWithType: ApiEnumResponse<T>.Location
+  nameWithType.vb: ApiEnumResponse(Of T).Location
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Navigation
+  commentId: P:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Navigation
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Navigation
+  nameWithType: ApiEnumResponse<T>.Navigation
+  nameWithType.vb: ApiEnumResponse(Of T).Navigation
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation*
+  name: Navigation
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Navigation_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Navigation
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Navigation
+  nameWithType: ApiEnumResponse<T>.Navigation
+  nameWithType.vb: ApiEnumResponse(Of T).Navigation
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1
+  name: ApiObjectResponse<T>
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiObjectResponse`1
+  name.vb: ApiObjectResponse(Of T)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T)
+  nameWithType: ApiObjectResponse<T>
+  nameWithType.vb: ApiObjectResponse(Of T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,`0)
+  name: ApiObjectResponse(Status, T)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html#Nexusat_AspNetCore_Models_ApiObjectResponse_1__ctor_Nexusat_AspNetCore_Models_Status__0_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,`0)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>.ApiObjectResponse(Nexusat.AspNetCore.Models.Status, T)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).ApiObjectResponse(Nexusat.AspNetCore.Models.Status, T)
+  nameWithType: ApiObjectResponse<T>.ApiObjectResponse(Status, T)
+  nameWithType.vb: ApiObjectResponse(Of T).ApiObjectResponse(Status, T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor(System.Int32,System.String,`0,System.String,System.String)
+  name: ApiObjectResponse(Int32, String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html#Nexusat_AspNetCore_Models_ApiObjectResponse_1__ctor_System_Int32_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor(System.Int32,System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>.ApiObjectResponse(System.Int32, System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).ApiObjectResponse(System.Int32, System.String, T, System.String, System.String)
+  nameWithType: ApiObjectResponse<T>.ApiObjectResponse(Int32, String, T, String, String)
+  nameWithType.vb: ApiObjectResponse(Of T).ApiObjectResponse(Int32, String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor*
+  name: ApiObjectResponse
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html#Nexusat_AspNetCore_Models_ApiObjectResponse_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>.ApiObjectResponse
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).ApiObjectResponse
+  nameWithType: ApiObjectResponse<T>.ApiObjectResponse
+  nameWithType.vb: ApiObjectResponse(Of T).ApiObjectResponse
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1.Data
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html#Nexusat_AspNetCore_Models_ApiObjectResponse_1_Data
+  commentId: P:Nexusat.AspNetCore.Models.ApiObjectResponse`1.Data
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).Data
+  nameWithType: ApiObjectResponse<T>.Data
+  nameWithType.vb: ApiObjectResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1.Data*
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html#Nexusat_AspNetCore_Models_ApiObjectResponse_1_Data_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiObjectResponse`1.Data
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).Data
+  nameWithType: ApiObjectResponse<T>.Data
+  nameWithType.vb: ApiObjectResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiResponse
+  name: ApiResponse
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiResponse
+  fullName: Nexusat.AspNetCore.Models.ApiResponse
+  nameWithType: ApiResponse
+- uid: Nexusat.AspNetCore.Models.ApiResponse.#ctor(Nexusat.AspNetCore.Models.Status)
+  name: ApiResponse(Status)
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse__ctor_Nexusat_AspNetCore_Models_Status_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponse.#ctor(Nexusat.AspNetCore.Models.Status)
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ApiResponse(Nexusat.AspNetCore.Models.Status)
+  nameWithType: ApiResponse.ApiResponse(Status)
+- uid: Nexusat.AspNetCore.Models.ApiResponse.#ctor(System.Int32,System.String,System.String,System.String)
+  name: ApiResponse(Int32, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse__ctor_System_Int32_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponse.#ctor(System.Int32,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ApiResponse(System.Int32, System.String, System.String, System.String)
+  nameWithType: ApiResponse.ApiResponse(Int32, String, String, String)
+- uid: Nexusat.AspNetCore.Models.ApiResponse.#ctor*
+  name: ApiResponse
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ApiResponse
+  nameWithType: ApiResponse.ApiResponse
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Exception
+  name: Exception
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Exception
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.Exception
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Exception
+  nameWithType: ApiResponse.Exception
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Exception*
+  name: Exception
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Exception_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.Exception
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Exception
+  nameWithType: ApiResponse.Exception
+- uid: Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: ExecuteResultAsync(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_ExecuteResultAsync_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiResponse.ExecuteResultAsync(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync*
+  name: ExecuteResultAsync
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_ExecuteResultAsync_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync
+  nameWithType: ApiResponse.ExecuteResultAsync
+- uid: Nexusat.AspNetCore.Models.ApiResponse.HasBody
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_HasBody
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.HasBody
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.HasBody
+  nameWithType: ApiResponse.HasBody
+- uid: Nexusat.AspNetCore.Models.ApiResponse.HasBody*
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_HasBody_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.HasBody
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.HasBody
+  nameWithType: ApiResponse.HasBody
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Location
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Location
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.Location
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Location
+  nameWithType: ApiResponse.Location
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Location*
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Location_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.Location
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Location
+  nameWithType: ApiResponse.Location
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Runtime
+  name: Runtime
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Runtime
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.Runtime
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Runtime
+  nameWithType: ApiResponse.Runtime
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Runtime*
+  name: Runtime
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Runtime_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.Runtime
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Runtime
+  nameWithType: ApiResponse.Runtime
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Status
+  name: Status
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Status
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.Status
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Status
+  nameWithType: ApiResponse.Status
+- uid: Nexusat.AspNetCore.Models.ApiResponse.Status*
+  name: Status
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Status_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.Status
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.Status
+  nameWithType: ApiResponse.Status
+- uid: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
+  name: ValidationErrors
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_ValidationErrors
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
+  nameWithType: ApiResponse.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors*
+  name: ValidationErrors
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_ValidationErrors_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
+  nameWithType: ApiResponse.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse
+  name: BadRequestResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.BadRequestResponse
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse
+  nameWithType: BadRequestResponse
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String)
+  name: BadRequestResponse(String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse(System.String, System.String)
+  nameWithType: BadRequestResponse.BadRequestResponse(String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String,System.String)
+  name: BadRequestResponse(String, String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse(System.String, System.String, System.String)
+  nameWithType: BadRequestResponse.BadRequestResponse(String, String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor*
+  name: BadRequestResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse
+  nameWithType: BadRequestResponse.BadRequestResponse
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  name: GetFromException(BadRequestResponseException)
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_GetFromException_Nexusat_AspNetCore_Exceptions_BadRequestResponseException_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  nameWithType: BadRequestResponse.GetFromException(BadRequestResponseException)
+- uid: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException*
+  name: GetFromException
+  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_GetFromException_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException
+  nameWithType: BadRequestResponse.GetFromException
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes
   name: CommonStatusCodes
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html
@@ -1369,6 +1101,28 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponse(Of T).Data
   nameWithType: IApiEnumResponse<T>.Data
   nameWithType.vb: IApiEnumResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions
+  name: IApiEnumResponseExtensions
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiEnumResponseExtensions
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions
+  nameWithType: IApiEnumResponseExtensions
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException*
+  name: SetException
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.html#Nexusat_AspNetCore_Models_IApiEnumResponseExtensions_SetException_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException
+  nameWithType: IApiEnumResponseExtensions.SetException
+- uid: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiEnumResponse{``0},System.Exception)
+  name: SetException<T>(IApiEnumResponse<T>, Exception)
+  href: api/Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.html#Nexusat_AspNetCore_Models_IApiEnumResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiEnumResponse___0__System_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiEnumResponse{``0},System.Exception)
+  name.vb: SetException(Of T)(IApiEnumResponse(Of T), Exception)
+  fullName: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException<T>(Nexusat.AspNetCore.Models.IApiEnumResponse<T>, System.Exception)
+  fullName.vb: Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.SetException(Of T)(Nexusat.AspNetCore.Models.IApiEnumResponse(Of T), System.Exception)
+  nameWithType: IApiEnumResponseExtensions.SetException<T>(IApiEnumResponse<T>, Exception)
+  nameWithType.vb: IApiEnumResponseExtensions.SetException(Of T)(IApiEnumResponse(Of T), Exception)
 - uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1
   name: IApiObjectResponse<T>
   href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html
@@ -1395,25 +1149,67 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Data
   nameWithType: IApiObjectResponse<T>.Data
   nameWithType.vb: IApiObjectResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html#Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location
+  commentId: P:Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponse<T>.Location
+  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Location
+  nameWithType: IApiObjectResponse<T>.Location
+  nameWithType.vb: IApiObjectResponse(Of T).Location
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location*
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html#Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponse<T>.Location
+  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Location
+  nameWithType: IApiObjectResponse<T>.Location
+  nameWithType.vb: IApiObjectResponse(Of T).Location
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions
+  name: IApiObjectResponseExtensions
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions
+  nameWithType: IApiObjectResponseExtensions
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException*
+  name: SetException
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetException_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException
+  nameWithType: IApiObjectResponseExtensions.SetException
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.Exception)
+  name: SetException<T>(IApiObjectResponse<T>, Exception)
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.Exception)
+  name.vb: SetException(Of T)(IApiObjectResponse(Of T), Exception)
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException<T>(Nexusat.AspNetCore.Models.IApiObjectResponse<T>, System.Exception)
+  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException(Of T)(Nexusat.AspNetCore.Models.IApiObjectResponse(Of T), System.Exception)
+  nameWithType: IApiObjectResponseExtensions.SetException<T>(IApiObjectResponse<T>, Exception)
+  nameWithType.vb: IApiObjectResponseExtensions.SetException(Of T)(IApiObjectResponse(Of T), Exception)
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation*
+  name: SetLocation
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetLocation_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation
+  nameWithType: IApiObjectResponseExtensions.SetLocation
+- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.String)
+  name: SetLocation<T>(IApiObjectResponse<T>, String)
+  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetLocation__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_String_
+  commentId: M:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.String)
+  name.vb: SetLocation(Of T)(IApiObjectResponse(Of T), String)
+  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation<T>(Nexusat.AspNetCore.Models.IApiObjectResponse<T>, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation(Of T)(Nexusat.AspNetCore.Models.IApiObjectResponse(Of T), System.String)
+  nameWithType: IApiObjectResponseExtensions.SetLocation<T>(IApiObjectResponse<T>, String)
+  nameWithType.vb: IApiObjectResponseExtensions.SetLocation(Of T)(IApiObjectResponse(Of T), String)
 - uid: Nexusat.AspNetCore.Models.IApiResponse
   name: IApiResponse
   href: api/Nexusat.AspNetCore.Models.IApiResponse.html
   commentId: T:Nexusat.AspNetCore.Models.IApiResponse
   fullName: Nexusat.AspNetCore.Models.IApiResponse
   nameWithType: IApiResponse
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Exception
-  name: Exception
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Exception
-  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.Exception
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Exception
-  nameWithType: IApiResponse.Exception
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Exception*
-  name: Exception
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Exception_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.Exception
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Exception
-  nameWithType: IApiResponse.Exception
 - uid: Nexusat.AspNetCore.Models.IApiResponse.Location
   name: Location
   href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location
@@ -1427,45 +1223,147 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.IApiResponse.Location
   nameWithType: IApiResponse.Location
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Runtime
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase
+  name: IApiResponseBase
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiResponseBase
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase
+  nameWithType: IApiResponseBase
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Exception
+  name: Exception
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Exception
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponseBase.Exception
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Exception
+  nameWithType: IApiResponseBase.Exception
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Exception*
+  name: Exception
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Exception_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseBase.Exception
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Exception
+  nameWithType: IApiResponseBase.Exception
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.HasBody
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_HasBody
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponseBase.HasBody
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.HasBody
+  nameWithType: IApiResponseBase.HasBody
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.HasBody*
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_HasBody_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseBase.HasBody
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.HasBody
+  nameWithType: IApiResponseBase.HasBody
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Runtime
   name: Runtime
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime
-  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.Runtime
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Runtime
-  nameWithType: IApiResponse.Runtime
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Runtime*
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Runtime
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponseBase.Runtime
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Runtime
+  nameWithType: IApiResponseBase.Runtime
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Runtime*
   name: Runtime
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.Runtime
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Runtime_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseBase.Runtime
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Runtime
-  nameWithType: IApiResponse.Runtime
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Status
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Runtime
+  nameWithType: IApiResponseBase.Runtime
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Status
   name: Status
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Status
-  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.Status
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Status
-  nameWithType: IApiResponse.Status
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Status*
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Status
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponseBase.Status
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Status
+  nameWithType: IApiResponseBase.Status
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.Status*
   name: Status
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Status_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.Status
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Status_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseBase.Status
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Status
-  nameWithType: IApiResponse.Status
-- uid: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.Status
+  nameWithType: IApiResponseBase.Status
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors
   name: ValidationErrors
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_ValidationErrors
-  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
-  nameWithType: IApiResponse.ValidationErrors
-- uid: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors*
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_ValidationErrors
+  commentId: P:Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors
+  nameWithType: IApiResponseBase.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors*
   name: ValidationErrors
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_ValidationErrors_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
+  href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_ValidationErrors_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.ValidationErrors
-  nameWithType: IApiResponse.ValidationErrors
+  fullName: Nexusat.AspNetCore.Models.IApiResponseBase.ValidationErrors
+  nameWithType: IApiResponseBase.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions
+  name: IApiResponseExtensions
+  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html
+  commentId: T:Nexusat.AspNetCore.Models.IApiResponseExtensions
+  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions
+  nameWithType: IApiResponseExtensions
+- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse,System.Exception)
+  name: SetException(IApiResponse, Exception)
+  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetException_Nexusat_AspNetCore_Models_IApiResponse_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse,System.Exception)
+  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse, System.Exception)
+  nameWithType: IApiResponseExtensions.SetException(IApiResponse, Exception)
+- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException*
+  name: SetException
+  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetException_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException
+  nameWithType: IApiResponseExtensions.SetException
+- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse,System.String)
+  name: SetLocation(IApiResponse, String)
+  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetLocation_Nexusat_AspNetCore_Models_IApiResponse_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse,System.String)
+  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse, System.String)
+  nameWithType: IApiResponseExtensions.SetLocation(IApiResponse, String)
+- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation*
+  name: SetLocation
+  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetLocation_
+  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation
+  nameWithType: IApiResponseExtensions.SetLocation
+- uid: Nexusat.AspNetCore.Models.NoContentResponse
+  name: NoContentResponse
+  href: api/Nexusat.AspNetCore.Models.NoContentResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.NoContentResponse
+  fullName: Nexusat.AspNetCore.Models.NoContentResponse
+  nameWithType: NoContentResponse
+- uid: Nexusat.AspNetCore.Models.NoContentResponse.#ctor
+  name: NoContentResponse()
+  href: api/Nexusat.AspNetCore.Models.NoContentResponse.html#Nexusat_AspNetCore_Models_NoContentResponse__ctor
+  commentId: M:Nexusat.AspNetCore.Models.NoContentResponse.#ctor
+  fullName: Nexusat.AspNetCore.Models.NoContentResponse.NoContentResponse()
+  nameWithType: NoContentResponse.NoContentResponse()
+- uid: Nexusat.AspNetCore.Models.NoContentResponse.#ctor*
+  name: NoContentResponse
+  href: api/Nexusat.AspNetCore.Models.NoContentResponse.html#Nexusat_AspNetCore_Models_NoContentResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.NoContentResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.NoContentResponse.NoContentResponse
+  nameWithType: NoContentResponse.NoContentResponse
+- uid: Nexusat.AspNetCore.Models.NotFoundResponse
+  name: NotFoundResponse
+  href: api/Nexusat.AspNetCore.Models.NotFoundResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.NotFoundResponse
+  fullName: Nexusat.AspNetCore.Models.NotFoundResponse
+  nameWithType: NotFoundResponse
+- uid: Nexusat.AspNetCore.Models.NotFoundResponse.#ctor
+  name: NotFoundResponse()
+  href: api/Nexusat.AspNetCore.Models.NotFoundResponse.html#Nexusat_AspNetCore_Models_NotFoundResponse__ctor
+  commentId: M:Nexusat.AspNetCore.Models.NotFoundResponse.#ctor
+  fullName: Nexusat.AspNetCore.Models.NotFoundResponse.NotFoundResponse()
+  nameWithType: NotFoundResponse.NotFoundResponse()
+- uid: Nexusat.AspNetCore.Models.NotFoundResponse.#ctor*
+  name: NotFoundResponse
+  href: api/Nexusat.AspNetCore.Models.NotFoundResponse.html#Nexusat_AspNetCore_Models_NotFoundResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.NotFoundResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.NotFoundResponse.NotFoundResponse
+  nameWithType: NotFoundResponse.NotFoundResponse
 - uid: Nexusat.AspNetCore.Models.PaginationCursor
   name: PaginationCursor
   href: api/Nexusat.AspNetCore.Models.PaginationCursor.html
@@ -1723,6 +1621,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.Status
   fullName: Nexusat.AspNetCore.Models.Status
   nameWithType: Status
+- uid: Nexusat.AspNetCore.Models.Status.#ctor(System.Int32,System.String,System.String,System.String)
+  name: Status(Int32, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status__ctor_System_Int32_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Status.#ctor(System.Int32,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Status.Status(System.Int32, System.String, System.String, System.String)
+  nameWithType: Status.Status(Int32, String, String, String)
+- uid: Nexusat.AspNetCore.Models.Status.#ctor*
+  name: Status
+  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Status.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Status.Status
+  nameWithType: Status.Status
 - uid: Nexusat.AspNetCore.Models.Status.Code
   name: Code
   href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_Code
@@ -2115,6 +2026,25 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.ToString
   nameWithType: StatusCode.ToString
+- uid: Nexusat.AspNetCore.Models.UnhandledExceptionResponse
+  name: UnhandledExceptionResponse
+  href: api/Nexusat.AspNetCore.Models.UnhandledExceptionResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.UnhandledExceptionResponse
+  fullName: Nexusat.AspNetCore.Models.UnhandledExceptionResponse
+  nameWithType: UnhandledExceptionResponse
+- uid: Nexusat.AspNetCore.Models.UnhandledExceptionResponse.#ctor(System.Exception)
+  name: UnhandledExceptionResponse(Exception)
+  href: api/Nexusat.AspNetCore.Models.UnhandledExceptionResponse.html#Nexusat_AspNetCore_Models_UnhandledExceptionResponse__ctor_System_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.UnhandledExceptionResponse.#ctor(System.Exception)
+  fullName: Nexusat.AspNetCore.Models.UnhandledExceptionResponse.UnhandledExceptionResponse(System.Exception)
+  nameWithType: UnhandledExceptionResponse.UnhandledExceptionResponse(Exception)
+- uid: Nexusat.AspNetCore.Models.UnhandledExceptionResponse.#ctor*
+  name: UnhandledExceptionResponse
+  href: api/Nexusat.AspNetCore.Models.UnhandledExceptionResponse.html#Nexusat_AspNetCore_Models_UnhandledExceptionResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.UnhandledExceptionResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.UnhandledExceptionResponse.UnhandledExceptionResponse
+  nameWithType: UnhandledExceptionResponse.UnhandledExceptionResponse
 - uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo
   name: ValidationErrorsInfo
   href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html
@@ -2184,15 +2114,15 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse
   nameWithType: ApiController.ApiEnumResponse
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder{``0}})
-  name: ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>>)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse__1_System_Action_Nexusat_AspNetCore_Builders_IApiEnumResponseBuilder___0___
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder{``0}})
-  name.vb: ApiEnumResponse(Of T)(Action(Of IApiEnumResponseBuilder(Of T)))
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse<T>(System.Action<Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder<T>>)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse(Of T)(System.Action(Of Nexusat.AspNetCore.Builders.IApiEnumResponseBuilder(Of T)))
-  nameWithType: ApiController.ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>>)
-  nameWithType.vb: ApiController.ApiEnumResponse(Of T)(Action(Of IApiEnumResponseBuilder(Of T)))
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name: ApiEnumResponse<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
+  name.vb: ApiEnumResponse(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse<T>(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse(Of T)(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
+  nameWithType: ApiController.ApiEnumResponse<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
+  nameWithType.vb: ApiController.ApiEnumResponse(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse*
   name: ApiObjectResponse
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse_
@@ -2200,24 +2130,21 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse
   nameWithType: ApiController.ApiObjectResponse
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder{``0}})
-  name: ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>>)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse__1_System_Action_Nexusat_AspNetCore_Builders_IApiObjectResponseBuilder___0___
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Action{Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder{``0}})
-  name.vb: ApiObjectResponse(Of T)(Action(Of IApiObjectResponseBuilder(Of T)))
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse<T>(System.Action<Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder<T>>)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse(Of T)(System.Action(Of Nexusat.AspNetCore.Builders.IApiObjectResponseBuilder(Of T)))
-  nameWithType: ApiController.ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>>)
-  nameWithType.vb: ApiController.ApiObjectResponse(Of T)(Action(Of IApiObjectResponseBuilder(Of T)))
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Action{Nexusat.AspNetCore.Builders.IApiResponseBuilder})
-  name: ApiResponse(Action<IApiResponseBuilder>)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_System_Action_Nexusat_AspNetCore_Builders_IApiResponseBuilder__
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Action{Nexusat.AspNetCore.Builders.IApiResponseBuilder})
-  name.vb: ApiResponse(Action(Of IApiResponseBuilder))
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Action<Nexusat.AspNetCore.Builders.IApiResponseBuilder>)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Action(Of Nexusat.AspNetCore.Builders.IApiResponseBuilder))
-  nameWithType: ApiController.ApiResponse(Action<IApiResponseBuilder>)
-  nameWithType.vb: ApiController.ApiResponse(Action(Of IApiResponseBuilder))
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Int32,System.String,``0,System.String,System.String)
+  name: ApiObjectResponse<T>(Int32, String, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiObjectResponse__1_System_Int32_System_String___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse``1(System.Int32,System.String,``0,System.String,System.String)
+  name.vb: ApiObjectResponse(Of T)(Int32, String, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse<T>(System.Int32, System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ApiObjectResponse(Of T)(System.Int32, System.String, T, System.String, System.String)
+  nameWithType: ApiController.ApiObjectResponse<T>(Int32, String, T, String, String)
+  nameWithType.vb: ApiController.ApiObjectResponse(Of T)(Int32, String, T, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Int32,System.String,System.String,System.String)
+  name: ApiResponse(Int32, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_System_Int32_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Int32,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse(System.Int32, System.String, System.String, System.String)
+  nameWithType: ApiController.ApiResponse(Int32, String, String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse*
   name: ApiResponse
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiResponse_
@@ -2373,32 +2300,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.OkObject(Of T)(T, System.String, System.String)
   nameWithType: ApiController.OkObject<T>(T, String, String)
   nameWithType.vb: ApiController.OkObject(Of T)(T, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.Response(System.Int32,System.String,System.String,System.String)
-  name: Response(Int32, String, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Response_System_Int32_System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Response(System.Int32,System.String,System.String,System.String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.Response(System.Int32, System.String, System.String, System.String)
-  nameWithType: ApiController.Response(Int32, String, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.Response*
-  name: Response
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Response_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.Response
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.Response
-  nameWithType: ApiController.Response
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory
-  name: ResponseBuilderFactory
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseBuilderFactory
-  commentId: P:Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory
-  nameWithType: ApiController.ResponseBuilderFactory
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory*
-  name: ResponseBuilderFactory
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseBuilderFactory_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseBuilderFactory
-  nameWithType: ApiController.ResponseBuilderFactory
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum*
   name: ResponseEnum
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum_
@@ -2406,15 +2307,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum
   nameWithType: ApiController.ResponseEnum
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name: ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Boolean_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
-  name.vb: ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum<T>(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable<T>, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Boolean, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
-  nameWithType: ApiController.ResponseEnum<T>(Int32, Boolean, String, IEnumerable<T>, String, String)
-  nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Boolean, String, IEnumerable(Of T), String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum``1(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0},System.String,System.String)
   name: ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseEnum__1_System_Int32_System_Int32_System_String_System_Collections_Generic_IEnumerable___0__System_String_System_String_
@@ -2424,22 +2316,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseEnum(Of T)(System.Int32, System.Int32, System.String, System.Collections.Generic.IEnumerable(Of T), System.String, System.String)
   nameWithType: ApiController.ResponseEnum<T>(Int32, Int32, String, IEnumerable<T>, String, String)
   nameWithType.vb: ApiController.ResponseEnum(Of T)(Int32, Int32, String, IEnumerable(Of T), String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject*
-  name: ResponseObject
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseObject_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.ResponseObject
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject
-  nameWithType: ApiController.ResponseObject
-- uid: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject``1(System.Int32,System.String,``0,System.String,System.String)
-  name: ResponseObject<T>(Int32, String, T, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ResponseObject__1_System_Int32_System_String___0_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.ResponseObject``1(System.Int32,System.String,``0,System.String,System.String)
-  name.vb: ResponseObject(Of T)(Int32, String, T, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject<T>(System.Int32, System.String, T, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.ResponseObject(Of T)(System.Int32, System.String, T, System.String, System.String)
-  nameWithType: ApiController.ResponseObject<T>(Int32, String, T, String, String)
-  nameWithType.vb: ApiController.ResponseObject(Of T)(Int32, String, T, String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.RoutedData
   name: RoutedData
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_RoutedData
@@ -2453,43 +2329,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.RoutedData
   nameWithType: ApiController.RoutedData
-- uid: Nexusat.AspNetCore.Mvc.ApiResponseExtensions
-  name: ApiResponseExtensions
-  href: api/Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html
-  commentId: T:Nexusat.AspNetCore.Mvc.ApiResponseExtensions
-  fullName: Nexusat.AspNetCore.Mvc.ApiResponseExtensions
-  nameWithType: ApiResponseExtensions
-- uid: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse,System.Exception)
-  name: SetException(IApiResponse, Exception)
-  href: api/Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException_Nexusat_AspNetCore_Models_IApiResponse_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse,System.Exception)
-  fullName: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException(Nexusat.AspNetCore.Models.IApiResponse, System.Exception)
-  nameWithType: ApiResponseExtensions.SetException(IApiResponse, Exception)
-- uid: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException*
-  name: SetException
-  href: api/Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException
-  nameWithType: ApiResponseExtensions.SetException
-- uid: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiEnumResponse{``0},System.Exception)
-  name: SetException<T>(IApiEnumResponse<T>, Exception)
-  href: api/Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiEnumResponse___0__System_Exception_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiEnumResponse{``0},System.Exception)
-  name.vb: SetException(Of T)(IApiEnumResponse(Of T), Exception)
-  fullName: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException<T>(Nexusat.AspNetCore.Models.IApiEnumResponse<T>, System.Exception)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException(Of T)(Nexusat.AspNetCore.Models.IApiEnumResponse(Of T), System.Exception)
-  nameWithType: ApiResponseExtensions.SetException<T>(IApiEnumResponse<T>, Exception)
-  nameWithType.vb: ApiResponseExtensions.SetException(Of T)(IApiEnumResponse(Of T), Exception)
-- uid: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.Exception)
-  name: SetException<T>(IApiObjectResponse<T>, Exception)
-  href: api/Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_Exception_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.Exception)
-  name.vb: SetException(Of T)(IApiObjectResponse(Of T), Exception)
-  fullName: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException<T>(Nexusat.AspNetCore.Models.IApiObjectResponse<T>, System.Exception)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiResponseExtensions.SetException(Of T)(Nexusat.AspNetCore.Models.IApiObjectResponse(Of T), System.Exception)
-  nameWithType: ApiResponseExtensions.SetException<T>(IApiObjectResponse<T>, Exception)
-  nameWithType.vb: ApiResponseExtensions.SetException(Of T)(IApiObjectResponse(Of T), Exception)
 - uid: Nexusat.AspNetCore.Mvc.Formatters
   name: Nexusat.AspNetCore.Mvc.Formatters
   href: api/Nexusat.AspNetCore.Mvc.Formatters.html

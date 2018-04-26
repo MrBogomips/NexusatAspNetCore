@@ -74,7 +74,8 @@
   
   <h1 id="Nexusat_AspNetCore_Models_Status" data-uid="Nexusat.AspNetCore.Models.Status" class="text-break">Class Status
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Immutable class that represents the status of the response</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -109,6 +110,50 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class Status : IEquatable&lt;Status&gt;</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_Status__ctor_" data-uid="Nexusat.AspNetCore.Models.Status.#ctor*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_Status__ctor_System_Int32_System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Models.Status.#ctor(System.Int32,System.String,System.String,System.String)">Status(Int32, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Status(int httpCode, string statusCode = null, string description = null, string userDescription = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">httpCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -119,7 +164,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StatusCode Code { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public StatusCode Code { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,7 +215,7 @@ public string Description { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int HttpCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int HttpCode { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

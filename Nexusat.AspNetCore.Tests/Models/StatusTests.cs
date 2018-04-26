@@ -25,22 +25,9 @@ namespace Nexusat.AspNetCore.Tests.Models
             int httpCode2, string statusCode2, string description2, string userDescription2
             )
         {
-            var s1 = new Status
-            {
-                HttpCode = httpCode1,
-                //Code = statusCode1,
-                Description = description1,
-                UserDescription = userDescription1
-            };
-            var s2 = new Status
-            {
-                HttpCode = httpCode2,
-                //Code = statusCode2,
-                Description = description2,
-                UserDescription = userDescription2
-            };
-            s1.Code = statusCode1;
-            s2.Code = statusCode2;
+            var s1 = new Status(httpCode1, statusCode1, description: description1, userDescription: userDescription1);
+            var s2 = new Status(httpCode2, statusCode2, description: description2, userDescription: userDescription2);
+
             Assert.Equal(s1, s2);
             Assert.NotSame(s1, s2);
         }
@@ -60,21 +47,9 @@ namespace Nexusat.AspNetCore.Tests.Models
             int httpCode2, string statusCode2, string description2, string userDescription2
             )
         {
-            var s1 = new Status
-            {
-                HttpCode = httpCode1,
-                Description = description1,
-                UserDescription = userDescription1
-            };
-            var s2 = new Status
-            {
-                HttpCode = httpCode2,
-                //Code = statusCode2,
-                Description = description2,
-                UserDescription = userDescription2
-            };
-            s1.Code = statusCode1;
-            s2.Code = statusCode2;
+            var s1 = new Status(httpCode1, statusCode1, description: description1, userDescription: userDescription1);
+            var s2 = new Status(httpCode2, statusCode2, description: description2, userDescription: userDescription2);
+
             Assert.NotEqual(s1, s2);
         }
 

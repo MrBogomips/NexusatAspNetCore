@@ -3,23 +3,19 @@ using System.Net;
 using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
 
-namespace Nexusat.AspNetCore.Implementations
+namespace Nexusat.AspNetCore.Models
 {
     /// <summary>
     /// Bad request response. For internal purposes.
     /// </summary>
-    internal class BadRequestResponse: ApiResponse
+    public class BadRequestResponse: ApiResponse
     {
         public BadRequestResponse(string description = null, string userDescription = null)
             :this(CommonStatusCodes.BAD_REQUEST_STATUS_CODE, description, userDescription) {}
 
         public BadRequestResponse(string statusCode, string description = null, string userDescription = null)
-        {
-            Status.HttpCode = (int)HttpStatusCode.BadRequest;
-            Status.Code = statusCode;
-            Status.Description = description;
-            Status.UserDescription = userDescription;
-        }
+            :base((int)HttpStatusCode.BadRequest, statusCode, description, userDescription)
+        { }
 
         /// <summary>
         /// Gets a <see cref="BadRequestResponse"/> from an exception.

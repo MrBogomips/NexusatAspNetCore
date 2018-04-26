@@ -1,37 +1,20 @@
-﻿using Nexusat.AspNetCore.Implementations;
-using Nexusat.AspNetCore.Models;
-using Nexusat.AspNetCore.Mvc;
+﻿using Nexusat.AspNetCore.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace Nexusat.AspNetCore.Tests.Models
 {
     public class ApiResponseTests
     {
-        /// <summary>
-        /// Internal interfaces are supposed to be implemented by all the kinds of
-        /// Responses
-        /// </summary>
-        [Fact]
-        public void ApiResponsesImplementsInternalInterfaces()
-        {
-            var apiResponse = new ApiResponse();
-            var apiObjectResponse = new ApiObjectResponse<object>();
-            var apiEnumResponse = new ApiEnumResponse<object>();
-
-            Assert.IsAssignableFrom<IApiResponseInternal>(apiResponse);
-            Assert.IsAssignableFrom<IApiResponseInternal>(apiObjectResponse);
-            Assert.IsAssignableFrom<IApiResponseInternal>(apiEnumResponse);
-        }
 
         [Fact]
         public void ApiResponseWithExceptionExtension() {
             // Setup
-            IApiResponse apiResponse = new ApiResponse();
-            IApiObjectResponse<string> objectResponse = new ApiObjectResponse<string>("Beatrice");
-            IApiEnumResponse<string> enumResponse = new ApiEnumResponse<string>(new List<string> {"Nausicaa", "Beatrice"});
+            IApiResponse apiResponse = new ApiResponse(new Status(200));
+            IApiObjectResponse<string> objectResponse = new ApiObjectResponse<string>(200, data: "Beatrice");
+            PaginationCursor cursor = new PaginationCursor(1, 10);
+            IApiEnumResponse<string> enumResponse = new ApiEnumResponse<string>(200, cursor, true, new List<string> {"Nausicaa", "Beatrice"});
 
             var ex1 = new InvalidCastException("ExceptionMessage");
 

@@ -83,26 +83,26 @@
       <a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponse.html#Nexusat_AspNetCore_Models_IApiEnumResponse_Navigation">IApiEnumResponse.Navigation</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Status">IApiResponse.Status</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Status">IApiResponseBase.Status</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Exception">IApiResponse.Exception</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Exception">IApiResponseBase.Exception</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_ValidationErrors">IApiResponse.ValidationErrors</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_ValidationErrors">IApiResponseBase.ValidationErrors</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime">IApiResponse.Runtime</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Runtime">IApiResponseBase.Runtime</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location">IApiResponse.Location</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_HasBody">IApiResponseBase.HasBody</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Models.html">Nexusat.AspNetCore.Models</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
   <h5 id="Nexusat_AspNetCore_Models_IApiEnumResponse_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IApiEnumResponse&lt;T&gt; : IApiEnumResponse, IApiResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IApiEnumResponse&lt;T&gt; : IApiEnumResponse, IApiResponseBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -130,7 +130,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-IEnumerable&lt;T&gt; Data { get; set; }</code></pre>
+IEnumerable&lt;T&gt; Data { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,10 +149,7 @@ IEnumerable&lt;T&gt; Data { get; set; }</code></pre>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException_Nexusat_AspNetCore_Models_IApiResponse_System_Exception_">ApiResponseExtensions.SetException(IApiResponse, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiEnumResponse___0__System_Exception_">ApiResponseExtensions.SetException&lt;T&gt;(IApiEnumResponse&lt;T&gt;, Exception)</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiEnumResponseExtensions.html#Nexusat_AspNetCore_Models_IApiEnumResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiEnumResponse___0__System_Exception_">IApiEnumResponseExtensions.SetException&lt;T&gt;(IApiEnumResponse&lt;T&gt;, Exception)</a>
   </div>
 <div id="disqus_thread"></div>
                 <script>

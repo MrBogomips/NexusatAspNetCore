@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Nexusat.AspNetCore.Models
 {
-
-    public interface IApiEnumResponse: IApiResponse {
+    public interface IApiEnumResponse : IApiResponseBase
+    {
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        PaginationInfo Navigation { get; set; }
+        PaginationInfo Navigation { get; }
     }
 
     /// <summary>
@@ -18,6 +18,6 @@ namespace Nexusat.AspNetCore.Models
     public interface IApiEnumResponse<T>: IApiEnumResponse
     {
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        IEnumerable<T> Data { get; set; }
+        IEnumerable<T> Data { get; }
     }
 }

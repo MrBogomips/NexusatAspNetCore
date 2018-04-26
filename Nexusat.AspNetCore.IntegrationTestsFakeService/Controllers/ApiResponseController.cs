@@ -21,27 +21,17 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// </summary>
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomRespone")]
-        public IApiResponse Get299CustomResponse() => ApiResponse(r =>
-        {
-            r.SetHttpCode(299);
-            r.SetStatusCode("OK_299_CUSTOM");
-            r.SetDescription("Description");
-            r.SetUserDescription("UserDescription");
-        });
+        public IApiResponse Get299CustomResponse() 
+        => ApiResponse(299, "OK_299_CUSTOM", "Description", "UserDescription");
+
 
         /// <summary>
         /// A custom response with a data payload
         /// </summary>
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomStringRespone")]
-        public IApiObjectResponse<string> Get299CustomStringResponse() => ApiObjectResponse<string>(r =>
-        {
-            r.SetHttpCode(299);
-            r.SetStatusCode("OK_299_CUSTOM");
-            r.SetDescription("Description");
-            r.SetUserDescription("UserDescription");
-            r.SetData("Hello World!");
-        });
+        public IApiObjectResponse<string> Get299CustomStringResponse() 
+        => ApiObjectResponse<string>(299, "OK_299_CUSTOM", "Hello World!", "Description", "UserDescription");
 
         /// <summary>
         /// A custom response with a data payload
@@ -49,14 +39,8 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomEnumStringRespone")]
         [ValidatePagination]
-        public IApiEnumResponse<string> Get299CustomEnumStringResponse() => ApiEnumResponse<string>(r =>
-        {
-            r.SetHttpCode(299);
-            r.SetStatusCode("OK_299_CUSTOM");
-            r.SetDescription("Description");
-            r.SetUserDescription("UserDescription");
-            r.SetData(new[] { "Hello", "World" });
-        });
+        public IApiEnumResponse<string> Get299CustomEnumStringResponse() 
+        => ApiEnumResponse<string>(299, true, "OK_299_CUSTOM", new[] { "Hello", "World" }, "Description", "UserDescription");
 
         [HttpGet("200OkResponseWithException")]
         public IApiResponse Get200OkResponseWithException()

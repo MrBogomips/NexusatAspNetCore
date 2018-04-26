@@ -19,14 +19,9 @@ namespace Nexusat.AspNetCore.Mvc
         /// <returns>The response.</returns>
         /// <param name="httpCode">Http code.</param>
         /// <param name="statusCode">Status code.</param>
-        protected IApiResponse Response(int httpCode, string statusCode = null, string description = null, string userDescription = null)
-        => ApiResponse(r =>
-        {
-            r.SetHttpCode(httpCode)
-             .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
-             .SetDescription(description)
-             .SetUserDescription(userDescription);
-        });
+        protected IApiResponse ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)
+        => new ApiResponse(httpCode, statusCode, description, userDescription);
+
 
 
         /// <summary>
@@ -35,15 +30,9 @@ namespace Nexusat.AspNetCore.Mvc
         /// <returns>The response.</returns>
         /// <param name="httpCode">Http code.</param>
         /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiObjectResponse<T> ResponseObject<T>(int httpCode, string statusCode = null, T data = default(T), string description = null, string userDescription = null)
-        => ApiObjectResponse<T>(r =>
-        {
-            r.SetHttpCode(httpCode)
-             .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
-             .SetDescription(description)
-             .SetUserDescription(userDescription)
-             .SetData(data);
-        });
+        protected IApiObjectResponse<T> ApiObjectResponse<T>(int httpCode, string statusCode = null, T data = default(T), string description = null, string userDescription = null)
+        => new ApiObjectResponse<T>(httpCode, statusCode, data, description, userDescription);
+
         /// <summary>
         /// Produce a generic API Response with, optionally, a payload
         /// </summary>
@@ -52,15 +41,8 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="itemsCount">Number of items found</param>
         /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
         protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, int itemsCount, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => ApiEnumResponse<T>(r =>
-        {
-            r.SetHttpCode(httpCode)
-             .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
-             .SetDescription(description)
-             .SetUserDescription(userDescription)
-             .SetData(data)
-             .SetPaginationCursor(CurrentPage, itemsCount);
-        });
+        => new ApiEnumResponse<T>(httpCode, CurrentPage, itemsCount, data, statusCode, description, userDescription );
+
         /// <summary>
         /// Produce a generic API Response with, optionally, a payload
         /// </summary>
@@ -68,16 +50,8 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="httpCode">Http code.</param>
         /// <param name="hasNextPage">There's another page</param>
         /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => ApiEnumResponse<T>(r =>
-        {
-            r.SetHttpCode(httpCode)
-             .SetStatusCode(statusCode ?? FrameworkOptions.DefaultUnsetStatusCode)
-             .SetDescription(description)
-             .SetUserDescription(userDescription)
-             .SetData(data)
-             .SetPaginationCursor(CurrentPage, hasNextPage);
-        });
+        protected IApiEnumResponse<T> ApiEnumResponse<T>(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
+        => new ApiEnumResponse<T>(httpCode, CurrentPage, hasNextPage, data, statusCode, description, userDescription);
         #endregion Generic Response Helper Methods
 
         #region OkResponse (HTTP 200) Helper Methods
@@ -88,10 +62,8 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="description">Description.</param>
         /// <param name="userDescription">User description.</param>
         protected IApiResponse Ok(string description = null, string userDescription = null)
-        => Response(Status200OK,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription);
+        => new ApiResponse(Status200OK, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+
         /// <summary>
         /// Produce an HTTP 200 response 
         /// </summary>
@@ -101,12 +73,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiObjectResponse<T> OkObject<T>(T data = default(T), string description = null, string userDescription = null)
-        => ResponseObject(Status200OK,
-                             FrameworkOptions.DefaultOkStatusCode,
-                             data: data,
-                             description: description,
-                             userDescription: userDescription
-                            );
+        => new ApiObjectResponse<T>(Status200OK, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription);
         /// <summary>
         /// Produce an HTTP 200 response
         /// </summary>
@@ -117,13 +84,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiEnumResponse<T> OkEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => ResponseEnum(Status200OK,
-                        itemsCount,
-                        FrameworkOptions.DefaultOkStatusCode,
-                           data: data,
-                             description: description,
-                             userDescription: userDescription
-                            );
+        => new ApiEnumResponse<T>(Status200OK, CurrentPage, itemsCount, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
         /// <summary>
         /// Produce an HTTP 200 response
         /// </summary>
@@ -134,13 +95,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => ResponseEnum(Status200OK,
-                        hasNextPage,
-                           FrameworkOptions.DefaultOkStatusCode,
-                           data: data,
-                             description: description,
-                             userDescription: userDescription
-                            );
+        => new ApiEnumResponse<T>(Status200OK, CurrentPage, hasNextPage, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
         protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
         #endregion OkResponse (HTTP 200) Helper Methods
 
@@ -156,7 +111,7 @@ namespace Nexusat.AspNetCore.Mvc
         {
             if (uri != null)
                 HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return Response(Status202Accepted,
+            return ApiResponse(Status202Accepted,
                     FrameworkOptions.DefaultOkStatusCode,
                     description: description,
                     userDescription: userDescription);
@@ -182,7 +137,7 @@ namespace Nexusat.AspNetCore.Mvc
         {
             if (uri != null)
                 HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ResponseObject<T>(Status202Accepted,
+            return ApiObjectResponse<T>(Status202Accepted,
                     FrameworkOptions.DefaultOkStatusCode,
                     description: description,
                     userDescription: userDescription,
@@ -213,7 +168,7 @@ namespace Nexusat.AspNetCore.Mvc
         {
             if (uri != null)
                 HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return Response(Status201Created,
+            return ApiResponse(Status201Created,
                     FrameworkOptions.DefaultOkStatusCode,
                     description: description,
                     userDescription: userDescription);

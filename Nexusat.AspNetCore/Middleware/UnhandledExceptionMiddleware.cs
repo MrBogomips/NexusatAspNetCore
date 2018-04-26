@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Nexusat.AspNetCore.Exceptions;
-using Nexusat.AspNetCore.Implementations;
+using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 

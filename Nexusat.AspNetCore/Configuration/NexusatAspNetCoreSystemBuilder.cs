@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
-using Nexusat.AspNetCore.Builders;
 using Nexusat.AspNetCore.Mvc.Formatters;
 
 namespace Nexusat.AspNetCore.Configuration
@@ -34,7 +33,6 @@ namespace Nexusat.AspNetCore.Configuration
 
         public NexusatAspNetCoreSystemBuilder AddFrameworkServices()
         {
-            Services.AddSingleton<IApiResponseBuilderFactory>(_ => new ApiResponseBuilderFactory());
             Services.AddSingleton<ApiResponseExecutor>();
             return this;
         }

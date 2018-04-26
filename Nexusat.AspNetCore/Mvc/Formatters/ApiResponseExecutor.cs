@@ -109,7 +109,6 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
 
         public void RenderResponse(HttpContext httpContext, IApiResponse result) {
             var response = httpContext.Response;
-            IApiResponseInternal internalResult = result as IApiResponseInternal;
 
             Internals.ResponseContentTypeHelper.ResolveContentTypeAndEncoding(
                 response.ContentType,
@@ -138,7 +137,7 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
             var serializerSettings = Options.SerializerSettings;
 
             //Logger.JsonResultExecuting(result.Value);
-            if (internalResult.HasBody)
+            if (result.HasBody)
             {
                 using (var writer = WriterFactory.CreateWriter(response.Body, resolvedContentTypeEncoding))
                 {

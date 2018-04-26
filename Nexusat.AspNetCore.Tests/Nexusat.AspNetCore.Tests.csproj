@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Compile Remove="Mvc\ApiControllerTests.cs" />
+    <Compile Remove="Builders\ApiResponseBuilderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Builders\" />

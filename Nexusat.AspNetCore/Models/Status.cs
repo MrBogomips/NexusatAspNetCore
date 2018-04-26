@@ -9,19 +9,26 @@ using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Models
 {
-
+    /// <summary>
+    /// Immutable class that represents the status of the response
+    /// </summary>
     public sealed class Status: IEquatable<Status>
     {
-        public int HttpCode { get; set; }
+        public int HttpCode { get; }
 
-        public StatusCode Code { get; set; } = StatusCode.Default;
+        public StatusCode Code { get; }
 
-        internal Status() { }
+        public Status(int httpCode, string statusCode = null, string description = null, string userDescription = null) {
+            HttpCode = httpCode;
+            Code = statusCode ?? StatusCode.Default;
+            Description = description;
+            UserDescription = userDescription;
+        }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; internal set; }
+        public string Description { get; }
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public string UserDescription { get; internal set; }
+        public string UserDescription { get; }
 
 #region Equals
         public override bool Equals(object obj) => Equals(obj as Status);

@@ -11,7 +11,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <ItemGroup>
     <Folder Include="Infrastructure\Middleware\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Mvc\Formatters\" />
     <Folder Include="Mvc\Formatters\Internals\" />
     <Folder Include="Middleware\" />
@@ -30,6 +29,7 @@
   <ItemGroup>
     <Compile Remove="Configuration\NexusatAspNetCoreMvcBuilderExtensions %28copy%29.cs" />
     <Compile Remove="Extensions\QueryCollectionExtensions.cs" />
+    <Compile Remove="Builders\ISingleInstanceBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\ExceptionMessages.Designer.cs">

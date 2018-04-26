@@ -1,17 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Options;
-using Nexusat.AspNetCore.Builders;
+
 using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
-using static Nexusat.AspNetCore.Utils.StringFormatter;
-
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Nexusat.AspNetCore.Properties;
+using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Mvc
 {
@@ -39,11 +37,6 @@ namespace Nexusat.AspNetCore.Mvc
                        ?? throw new InvalidOperationException(FormatSystemMessage(ExceptionMessages.InvalidStatePaginationCursor));
         }
 
-        protected IApiResponseBuilderFactory ResponseBuilderFactory
-        {
-            get => HttpContext.RequestServices.GetService(typeof(IApiResponseBuilderFactory)) as IApiResponseBuilderFactory;
-        }
-
         protected NexusatAspNetCoreOptions FrameworkOptions
         {
             get
@@ -55,34 +48,5 @@ namespace Nexusat.AspNetCore.Mvc
                 return options.Value;
             }
         }
-
-        #region General purpose Response builder methods
-        protected IApiResponse ApiResponse(Action<IApiResponseBuilder> setupResponseAction) {
-            IApiResponseBuilder builder = ResponseBuilderFactory.GetApiResponseBuilder();
-            setupResponseAction(builder);
-            IApiResponse response = builder.GetResponse();
-            return response;
-        }
-
-        protected IApiObjectResponse<T> ApiObjectResponse<T>(Action<IApiObjectResponseBuilder<T>> setupResponseAction)
-        {
-            IApiObjectResponseBuilder<T> builder = ResponseBuilderFactory.GetApiObjectResponseBuilder<T>();
-            setupResponseAction(builder);
-            IApiObjectResponse<T> response = builder.GetResponse();
-            return response;
-        }
-
-        protected IApiEnumResponse<T> ApiEnumResponse<T>(Action<IApiEnumResponseBuilder<T>> setupResponseAction)
-        {
-            IApiEnumResponseBuilder<T> builder = ResponseBuilderFactory.GetApiEnumResponseBuilder<T>();
-            setupResponseAction(builder);
-            IApiEnumResponse<T> response = builder.GetResponse();
-            return response;
-        }
-        #endregion General purpose Response builder methods
-
-
-
-
     }
 }

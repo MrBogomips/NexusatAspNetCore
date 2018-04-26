@@ -80,26 +80,26 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Status">IApiResponse.Status</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Status">IApiResponseBase.Status</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Exception">IApiResponse.Exception</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Exception">IApiResponseBase.Exception</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_ValidationErrors">IApiResponse.ValidationErrors</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_ValidationErrors">IApiResponseBase.ValidationErrors</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Runtime">IApiResponse.Runtime</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_Runtime">IApiResponseBase.Runtime</a>
     </div>
     <div>
-      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location">IApiResponse.Location</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiResponseBase.html#Nexusat_AspNetCore_Models_IApiResponseBase_HasBody">IApiResponseBase.HasBody</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Models.html">Nexusat.AspNetCore.Models</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
   <h5 id="Nexusat_AspNetCore_Models_IApiObjectResponse_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IApiObjectResponse&lt;T&gt; : IApiResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IApiObjectResponse&lt;T&gt; : IApiResponseBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,7 +127,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-T Data { get; set; }</code></pre>
+T Data { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,12 +144,38 @@ T Data { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location_" data-uid="Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location" data-uid="Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location">Location</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+string Location { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException_Nexusat_AspNetCore_Models_IApiResponse_System_Exception_">ApiResponseExtensions.SetException(IApiResponse, Exception)</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_Exception_">IApiObjectResponseExtensions.SetException&lt;T&gt;(IApiObjectResponse&lt;T&gt;, Exception)</a>
   </div>
   <div>
-      <a class="xref" href="Nexusat.AspNetCore.Mvc.ApiResponseExtensions.html#Nexusat_AspNetCore_Mvc_ApiResponseExtensions_SetException__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_Exception_">ApiResponseExtensions.SetException&lt;T&gt;(IApiObjectResponse&lt;T&gt;, Exception)</a>
+      <a class="xref" href="Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetLocation__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_String_">IApiObjectResponseExtensions.SetLocation&lt;T&gt;(IApiObjectResponse&lt;T&gt;, String)</a>
   </div>
 <div id="disqus_thread"></div>
                 <script>
