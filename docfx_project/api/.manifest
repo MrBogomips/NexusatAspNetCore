@@ -71,7 +71,6 @@
   "Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Boolean,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)": "Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
   "Nexusat.AspNetCore.Models.ApiEnumResponse`1.#ctor(System.Int32,Nexusat.AspNetCore.Models.PaginationCursor,System.Int32,System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.String)": "Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
   "Nexusat.AspNetCore.Models.ApiEnumResponse`1.Data": "Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
-  "Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location": "Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
   "Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation": "Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
   "Nexusat.AspNetCore.Models.ApiObjectResponse`1": "Nexusat.AspNetCore.Models.ApiObjectResponse-1.yml",
   "Nexusat.AspNetCore.Models.ApiObjectResponse`1.#ctor(Nexusat.AspNetCore.Models.Status,`0)": "Nexusat.AspNetCore.Models.ApiObjectResponse-1.yml",

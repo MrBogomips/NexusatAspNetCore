@@ -705,23 +705,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Data
   nameWithType: ApiEnumResponse<T>.Data
   nameWithType.vb: ApiEnumResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location
-  commentId: P:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
-  nameWithType: ApiEnumResponse<T>.Location
-  nameWithType.vb: ApiEnumResponse(Of T).Location
-- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location*
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location_
-  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
-  nameWithType: ApiEnumResponse<T>.Location
-  nameWithType.vb: ApiEnumResponse(Of T).Location
 - uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation
   name: Navigation
   href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Navigation
