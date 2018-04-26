@@ -17,6 +17,7 @@ namespace Nexusat.AspNetCore.Tests.Models
         public void TestValidCodes(string code)
         {
             Assert.True(StatusCode.CheckValidCode(code));
+            Assert.NotNull(new StatusCode(code));
         }
         [Theory]
         [InlineData(null)]
@@ -32,6 +33,7 @@ namespace Nexusat.AspNetCore.Tests.Models
         public void TestInvalidCodes(string code)
         {
             Assert.False(StatusCode.CheckValidCode(code));
+            Assert.ThrowsAny<Exception>(() => new StatusCode(code));
         }
     }
 }
