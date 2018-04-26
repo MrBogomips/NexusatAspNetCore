@@ -41,19 +41,19 @@ namespace Nexusat.AspNetCore.Builders
         protected void InternalSetStatusCode(string code)
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
-            Response.Status.SetCode(code);
+            Response.Status.Code = code;
         }
 
         protected void InternalSetStatusCodeSuccess()
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
-            Response.Status.SetSuccessCode();
+            Response.Status.Code = StatusCode.Ok;
         }
 
         protected void InternalSetStatusCodeFailed()
         {
             SingleInstanceChecker.CheckBuildStateWhileBuilding();
-            Response.Status.SetFailedCode();
+            Response.Status.Code = StatusCode.Ko;
         }
 
         protected void InternalSetDescription(string description)

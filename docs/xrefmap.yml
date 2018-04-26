@@ -1794,57 +1794,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.Status.HttpCode
   nameWithType: Status.HttpCode
-- uid: Nexusat.AspNetCore.Models.Status.SetCode(System.String)
-  name: SetCode(String)
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.Status.SetCode(System.String)
-  fullName: Nexusat.AspNetCore.Models.Status.SetCode(System.String)
-  nameWithType: Status.SetCode(String)
-- uid: Nexusat.AspNetCore.Models.Status.SetCode*
-  name: SetCode
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetCode_
-  commentId: Overload:Nexusat.AspNetCore.Models.Status.SetCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.Status.SetCode
-  nameWithType: Status.SetCode
-- uid: Nexusat.AspNetCore.Models.Status.SetFailedCode
-  name: SetFailedCode()
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetFailedCode
-  commentId: M:Nexusat.AspNetCore.Models.Status.SetFailedCode
-  fullName: Nexusat.AspNetCore.Models.Status.SetFailedCode()
-  nameWithType: Status.SetFailedCode()
-- uid: Nexusat.AspNetCore.Models.Status.SetFailedCode(System.String)
-  name: SetFailedCode(String)
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetFailedCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.Status.SetFailedCode(System.String)
-  fullName: Nexusat.AspNetCore.Models.Status.SetFailedCode(System.String)
-  nameWithType: Status.SetFailedCode(String)
-- uid: Nexusat.AspNetCore.Models.Status.SetFailedCode*
-  name: SetFailedCode
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetFailedCode_
-  commentId: Overload:Nexusat.AspNetCore.Models.Status.SetFailedCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.Status.SetFailedCode
-  nameWithType: Status.SetFailedCode
-- uid: Nexusat.AspNetCore.Models.Status.SetSuccessCode
-  name: SetSuccessCode()
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetSuccessCode
-  commentId: M:Nexusat.AspNetCore.Models.Status.SetSuccessCode
-  fullName: Nexusat.AspNetCore.Models.Status.SetSuccessCode()
-  nameWithType: Status.SetSuccessCode()
-- uid: Nexusat.AspNetCore.Models.Status.SetSuccessCode(System.String)
-  name: SetSuccessCode(String)
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetSuccessCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.Status.SetSuccessCode(System.String)
-  fullName: Nexusat.AspNetCore.Models.Status.SetSuccessCode(System.String)
-  nameWithType: Status.SetSuccessCode(String)
-- uid: Nexusat.AspNetCore.Models.Status.SetSuccessCode*
-  name: SetSuccessCode
-  href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_SetSuccessCode_
-  commentId: Overload:Nexusat.AspNetCore.Models.Status.SetSuccessCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.Status.SetSuccessCode
-  nameWithType: Status.SetSuccessCode
 - uid: Nexusat.AspNetCore.Models.Status.UserDescription
   name: UserDescription
   href: api/Nexusat.AspNetCore.Models.Status.html#Nexusat_AspNetCore_Models_Status_UserDescription

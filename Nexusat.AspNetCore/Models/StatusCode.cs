@@ -16,7 +16,7 @@ namespace Nexusat.AspNetCore.Models
     {
         #region JsonConverter
         /// <summary>
-        /// Helper class to serialize StatusCode as simple strings
+        /// Helper class to serialize StatusCode as simple string
         /// </summary>
         public class JsonConverter : Newtonsoft.Json.JsonConverter
         {
@@ -41,6 +41,7 @@ namespace Nexusat.AspNetCore.Models
             }
         }
         #endregion JsonConverter
+
         /// <summary>
         /// The Default status code
         /// </summary>

@@ -18,30 +18,6 @@ namespace Nexusat.AspNetCore.Models
 
         internal Status() { }
 
-        /// <summary>
-        /// Avoid this method in favor of
-        /// <list type="bullet">
-        ///     <item><see cref="SetSuccessCode"/> for success codes</item>
-        ///     <item><see cref="SetFailedCode"/> for success codes</item>
-        /// </list>
-        /// whenever possibile.
-        /// This method incur in performance overhead dued to validation logic.
-        /// </summary>
-        /// <param name="code"></param>
-        public void SetCode(string code)
-        {
-            if (StatusCode.CheckValidCode(code))
-            {
-               Code = code;
-            }
-            else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
-        }
-
-        public void SetSuccessCode() => Code = CommonStatusCodes.OK;
-        public void SetFailedCode() => Code = CommonStatusCodes.KO;
-        public void SetSuccessCode(string subcode) => Code = StatusCode.GetStatusCodeSuccess(subcode);
-        public void SetFailedCode(string subcode) => Code = StatusCode.GetStatusCodeFailed(subcode);
-
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; internal set; }
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
