@@ -11,7 +11,7 @@ namespace Nexusat.AspNetCore.Models
     /// <summary>
     /// Helper class to build valid Status Codes.
     /// </summary>
-    internal static class StatusCode
+    public static class StatusCode
     {
 
         public static bool CheckOkValidCode(string code) =>
