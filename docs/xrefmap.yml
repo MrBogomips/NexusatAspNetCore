@@ -1986,6 +1986,12 @@ references:
   commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
   fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
   nameWithType: StatusCode.Equals(Object)
+- uid: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  name: Equals(String)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  nameWithType: StatusCode.Equals(String)
 - uid: Nexusat.AspNetCore.Models.StatusCode.Equals*
   name: Equals
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_

@@ -94,8 +94,7 @@ namespace Nexusat.AspNetCore.Tests.Models
 
             //Assert.False(code == (null as string));
             //Assert.False(code == (null as StatusCode));
-//Assert.True(code == scode);
-            //Assert.True(code == ocode);
+            Assert.True(code == scode);
             Assert.True(code == code2);
         }
     }

@@ -180,6 +180,7 @@
   "Nexusat.AspNetCore.Models.StatusCode.Default": "Nexusat.AspNetCore.Models.StatusCode.yml",
   "Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)": "Nexusat.AspNetCore.Models.StatusCode.yml",
   "Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)": "Nexusat.AspNetCore.Models.StatusCode.yml",
+  "Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)": "Nexusat.AspNetCore.Models.StatusCode.yml",
   "Nexusat.AspNetCore.Models.StatusCode.GetHashCode": "Nexusat.AspNetCore.Models.StatusCode.yml",
   "Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeFailed(System.String)": "Nexusat.AspNetCore.Models.StatusCode.yml",
   "Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeSuccess(System.String)": "Nexusat.AspNetCore.Models.StatusCode.yml",

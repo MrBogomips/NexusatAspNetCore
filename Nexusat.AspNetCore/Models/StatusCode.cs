@@ -12,7 +12,7 @@ namespace Nexusat.AspNetCore.Models
     /// Provided also with helper methods for string validation.
     /// </summary>
     [JsonConverter(typeof(StatusCode.JsonConverter))]
-    public class StatusCode : IEquatable<StatusCode>
+    public class StatusCode : IEquatable<StatusCode>, IEquatable<string>
     {
         #region JsonConverter
         /// <summary>
@@ -58,7 +58,7 @@ namespace Nexusat.AspNetCore.Models
         public override string ToString() => Code;
 
         #region Equality
-        //public bool Equals(string other) => other.Equals(Code);
+        public bool Equals(string other) => other.Equals(Code);
         public bool Equals(StatusCode other) => !ReferenceEquals(other, null) && other.Code.Equals(Code);
         public override bool Equals(object obj) => Equals(obj as string);
         public override int GetHashCode() => Code.GetHashCode();
