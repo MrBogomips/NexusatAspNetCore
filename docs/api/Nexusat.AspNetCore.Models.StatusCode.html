@@ -74,7 +74,10 @@
   
   <h1 id="Nexusat_AspNetCore_Models_StatusCode" data-uid="Nexusat.AspNetCore.Models.StatusCode" class="text-break">Class StatusCode
   </h1>
-  <div class="markdown level0 summary"><p>Helper class to build valid Status Codes.</p>
+  <div class="markdown level0 summary"><p>Immutable class to represent a status code.
+You can think of it as a syntax constrained string in fact it&apos;s 
+equipped with implicit conversion operators &apos;to&apos; and &apos;from&apos; string class.
+Helper class to build valid Status Codes.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -82,16 +85,15 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">StatusCode</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
       <span class="xref">System.Object.GetType()</span>
@@ -102,16 +104,79 @@
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Models.html">Nexusat.AspNetCore.Models</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
   <h5 id="Nexusat_AspNetCore_Models_StatusCode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class StatusCode</code></pre>
+    <pre><code class="lang-csharp hljs">public class StatusCode : IEquatable&lt;string&gt;, IEquatable&lt;StatusCode&gt;</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode__ctor_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode__ctor" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor">StatusCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusCode()</code></pre>
+  </div>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode__ctor_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode__ctor_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.#ctor(System.String)">StatusCode(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusCode(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_Code_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Code*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Code" data-uid="Nexusat.AspNetCore.Models.StatusCode.Code">Code</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Code { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -323,6 +388,161 @@
   </table>
   
   
+  <a id="Nexusat_AspNetCore_Models_StatusCode_Equals_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Equals_Nexusat_AspNetCore_Models_StatusCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)">Equals(StatusCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(StatusCode other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_Equals_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Equals_System_Object_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_Equals_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Equals_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)">Equals(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(string other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_GetHashCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetHashCode*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_GetHashCode" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
   <a id="Nexusat_AspNetCore_Models_StatusCode_GetStatusCodeFailed_" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeFailed*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_GetStatusCodeFailed_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeFailed(System.String)">GetStatusCodeFailed(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -405,6 +625,126 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_ToString_" data-uid="Nexusat.AspNetCore.Models.StatusCode.ToString*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_ToString" data-uid="Nexusat.AspNetCore.Models.StatusCode.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String">Implicit(StatusCode to String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (StatusCode code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit*"></a>
+  <h4 id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_System_String__Nexusat_AspNetCore_Models_StatusCode" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit(System.String)~Nexusat.AspNetCore.Models.StatusCode">Implicit(String to StatusCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator StatusCode(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 <div id="disqus_thread"></div>
                 <script>
                 (function() { // DON'T EDIT BELOW THIS LINE

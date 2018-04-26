@@ -9,12 +9,36 @@ using static Nexusat.AspNetCore.Utils.StringFormatter;
 namespace Nexusat.AspNetCore.Models
 {
     /// <summary>
-    /// Helper class to build valid Status Codes.
+    /// Immutable class to represent a status code.
+    /// You can think of it as a syntax constrained string in fact it's 
+    /// equipped with implicit conversion operators 'to' and 'from' string class.
+    /// Provided also with helper methods for string validation.
     /// </summary>
-    public static class StatusCode
+    public class StatusCode: IEquatable<string>, IEquatable<StatusCode>
     {
+        public string Code { get;} 
+        public StatusCode(string code) {
+            CheckValidCodeOrThrow(code);
+            Code = code;
+        }
+        public StatusCode() : this(CommonStatusCodes.DEFAULT_UNK_STATUS_CODE) {}
 
-        public static bool CheckOkValidCode(string code) =>
+        public override string ToString() => Code;
+
+        #region Equality
+        public bool Equals(string other) => other == Code;
+        public bool Equals(StatusCode other) => other?.Code == Code;
+        public override bool Equals(object obj) => Equals(obj as StatusCode);
+        public override int GetHashCode() => Code.GetHashCode();
+        #endregion Equality
+
+        #region String to and from implicit conversions 
+        public static implicit operator string(StatusCode code) => code.Code;
+        public static implicit operator StatusCode(string code) => new StatusCode(code);
+        #endregion String to and from implicit conversions 
+
+		#region static members
+		public static bool CheckOkValidCode(string code) =>
             code != null && (
                 code == CommonStatusCodes.OK ||
             code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture)
@@ -56,6 +80,9 @@ namespace Nexusat.AspNetCore.Models
                 throw new ArgumentException(FormatSystemMessage(ExceptionMessages.SubCodeInvalidFormat, nameof(subcode)));
             return subcode.Replace(' ', '_').ToUpperInvariant();
         }
+
+
+        #endregion static members
     }
 
     public sealed class Status: IEquatable<Status>

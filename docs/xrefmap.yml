@@ -1864,6 +1864,25 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.StatusCode
   fullName: Nexusat.AspNetCore.Models.StatusCode
   nameWithType: StatusCode
+- uid: Nexusat.AspNetCore.Models.StatusCode.#ctor
+  name: StatusCode()
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode__ctor
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.#ctor
+  fullName: Nexusat.AspNetCore.Models.StatusCode.StatusCode()
+  nameWithType: StatusCode.StatusCode()
+- uid: Nexusat.AspNetCore.Models.StatusCode.#ctor(System.String)
+  name: StatusCode(String)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode__ctor_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.#ctor(System.String)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.StatusCode(System.String)
+  nameWithType: StatusCode.StatusCode(String)
+- uid: Nexusat.AspNetCore.Models.StatusCode.#ctor*
+  name: StatusCode
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.StatusCode
+  nameWithType: StatusCode.StatusCode
 - uid: Nexusat.AspNetCore.Models.StatusCode.CheckKoValidCode(System.String)
   name: CheckKoValidCode(String)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_CheckKoValidCode_System_String_
@@ -1942,6 +1961,57 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.CheckValidOkCodeOrThrow
   nameWithType: StatusCode.CheckValidOkCodeOrThrow
+- uid: Nexusat.AspNetCore.Models.StatusCode.Code
+  name: Code
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Code
+  commentId: P:Nexusat.AspNetCore.Models.StatusCode.Code
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Code
+  nameWithType: StatusCode.Code
+- uid: Nexusat.AspNetCore.Models.StatusCode.Code*
+  name: Code
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Code_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.Code
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Code
+  nameWithType: StatusCode.Code
+- uid: Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)
+  name: Equals(StatusCode)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_Nexusat_AspNetCore_Models_StatusCode_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(Nexusat.AspNetCore.Models.StatusCode)
+  nameWithType: StatusCode.Equals(StatusCode)
+- uid: Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_System_Object_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
+  nameWithType: StatusCode.Equals(Object)
+- uid: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  name: Equals(String)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
+  nameWithType: StatusCode.Equals(String)
+- uid: Nexusat.AspNetCore.Models.StatusCode.Equals*
+  name: Equals
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.Equals
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals
+  nameWithType: StatusCode.Equals
+- uid: Nexusat.AspNetCore.Models.StatusCode.GetHashCode
+  name: GetHashCode()
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_GetHashCode
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.GetHashCode
+  fullName: Nexusat.AspNetCore.Models.StatusCode.GetHashCode()
+  nameWithType: StatusCode.GetHashCode()
+- uid: Nexusat.AspNetCore.Models.StatusCode.GetHashCode*
+  name: GetHashCode
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_GetHashCode_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.GetHashCode
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.GetHashCode
+  nameWithType: StatusCode.GetHashCode
 - uid: Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeFailed(System.String)
   name: GetStatusCodeFailed(String)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_GetStatusCodeFailed_System_String_
@@ -1968,6 +2038,47 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeSuccess
   nameWithType: StatusCode.GetStatusCodeSuccess
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
+  name: Implicit(StatusCode to String)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
+  name.vb: Widening(StatusCode to String)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Implicit(Nexusat.AspNetCore.Models.StatusCode to System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.StatusCode.Widening(Nexusat.AspNetCore.Models.StatusCode to System.String)
+  nameWithType: StatusCode.Implicit(StatusCode to String)
+  nameWithType.vb: StatusCode.Widening(StatusCode to String)
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(System.String)~Nexusat.AspNetCore.Models.StatusCode
+  name: Implicit(String to StatusCode)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_System_String__Nexusat_AspNetCore_Models_StatusCode
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.op_Implicit(System.String)~Nexusat.AspNetCore.Models.StatusCode
+  name.vb: Widening(String to StatusCode)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Implicit(System.String to Nexusat.AspNetCore.Models.StatusCode)
+  fullName.vb: Nexusat.AspNetCore.Models.StatusCode.Widening(System.String to Nexusat.AspNetCore.Models.StatusCode)
+  nameWithType: StatusCode.Implicit(String to StatusCode)
+  nameWithType.vb: StatusCode.Widening(String to StatusCode)
+- uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit*
+  name: Implicit
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Nexusat.AspNetCore.Models.StatusCode.Implicit
+  fullName.vb: Nexusat.AspNetCore.Models.StatusCode.Widening
+  nameWithType: StatusCode.Implicit
+  nameWithType.vb: StatusCode.Widening
+- uid: Nexusat.AspNetCore.Models.StatusCode.ToString
+  name: ToString()
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_ToString
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.ToString
+  fullName: Nexusat.AspNetCore.Models.StatusCode.ToString()
+  nameWithType: StatusCode.ToString()
+- uid: Nexusat.AspNetCore.Models.StatusCode.ToString*
+  name: ToString
+  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_ToString_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.ToString
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.ToString
+  nameWithType: StatusCode.ToString
 - uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo
   name: ValidationErrorsInfo
   href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html
