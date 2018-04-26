@@ -60,9 +60,9 @@ namespace Nexusat.AspNetCore.Models
 
     public sealed class Status: IEquatable<Status>
     {
-        public int HttpCode { get; internal set; }
+        public int HttpCode { get; set; }
 
-        public string Code { get; internal set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
+        public string Code { get; private set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
 
         internal Status() { }
 

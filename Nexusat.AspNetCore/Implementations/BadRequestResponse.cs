@@ -11,20 +11,23 @@ namespace Nexusat.AspNetCore.Implementations
     internal class BadRequestResponse: ApiResponse
     {
         public BadRequestResponse(string description = null, string userDescription = null)
+            :this(CommonStatusCodes.BAD_REQUEST_STATUS_CODE, description, userDescription) {}
+
+        public BadRequestResponse(string statusCode, string description = null, string userDescription = null)
         {
             Status.HttpCode = (int)HttpStatusCode.BadRequest;
-            Status.Code = CommonStatusCodes.BAD_REQUEST_STATUS_CODE;
+            Status.SetCode(statusCode);
             Status.Description = description;
             Status.UserDescription = userDescription;
         }
+
         /// <summary>
         /// Gets a <see cref="BadRequestResponse"/> from an exception.
         /// </summary>
         /// <returns>The from exception.</returns>
         /// <param name="exception">The exception that will be encapsulated</param>
         public static BadRequestResponse GetFromException(BadRequestResponseException exception) {
-            var response = new BadRequestResponse(exception.Description, exception.UserDescription);
-            response.Status.Code = exception.StatusCode;
+            var response = new BadRequestResponse(exception.StatusCode, exception.Description, exception.UserDescription);
             if (exception.InnerException != null)
             {
                 response.Exception = ExceptionInfo.GetFromException(exception.InnerException);

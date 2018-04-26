@@ -27,7 +27,7 @@ namespace Nexusat.AspNetCore.Implementations
                 } else {
                     response = new ApiResponse();
                     response.Status.HttpCode = httpStatusCode;
-                    response.Status.Code = string.Format("{0}_{1}_UNMANAGED", CommonStatusCodes.KO, httpStatusCode);
+                    response.Status.SetCode(string.Format("{0}_{1}_UNMANAGED", CommonStatusCodes.KO, httpStatusCode));
                 }
 
                 executor.RenderResponse(ctx.HttpContext, response);

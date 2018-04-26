@@ -324,7 +324,7 @@
           "hash": "6pvGcHM4x6IQ4WwzIGjsiw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -336,7 +336,7 @@
           "hash": "E5lVOPnf+p0UvzASZXbTrQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -348,7 +348,7 @@
           "hash": "R5q0Py5AK3dAay1noWz7Ag=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -360,7 +360,7 @@
           "hash": "nlj00J6eqv/XN7RBsK8MBQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +417,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.Status.html",
-          "hash": "0+ykxaIVuB10teK6rg5BmA=="
+          "hash": "+q8ZpiGqLUxbKkDdI+WZ/A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.StatusCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.StatusCode.html",
+          "hash": "dtmDdIbvlUPbbIYCv039qA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -441,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "1ooreIv60UoeYX1pBvj8cg=="
+          "hash": "SVlERpRJHUsQl658LTC1FA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "u/pzHw/4vezA560HCR8Y7w=="
+          "hash": "TNsq0+iBDWHQ032KRupC5Q=="
         }
       },
       "is_incremental": false,
