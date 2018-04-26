@@ -58,20 +58,9 @@ namespace Nexusat.AspNetCore.Models
         }
     }
 
-    public sealed class Status
+    public sealed class Status: IEquatable<Status>
     {
         public int HttpCode { get; internal set; }
-
-        /*
-        private string _Code = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
-
-        public string CodeX {
-            get => _Code;
-            internal set {
-                _Code = value;
-            }
-        }
-        */
 
         public string Code { get; internal set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
 
@@ -91,10 +80,11 @@ namespace Nexusat.AspNetCore.Models
         {
             if (StatusCode.CheckValidCode(code))
             {
-               Code = code; //code.Trim().ToUpperInvariant() ;
+               Code = code;
             }
             else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
         }
+
         public void SetSuccessCode() => Code = CommonStatusCodes.OK;
         public void SetFailedCode() => Code = CommonStatusCodes.KO;
         public void SetSuccessCode(string subcode) => Code = StatusCode.GetStatusCodeSuccess(subcode);
