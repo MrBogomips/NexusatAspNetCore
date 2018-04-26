@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using Nexusat.AspNetCore.Models;
-
+using Newtonsoft.Json;
+using Xunit.Abstractions;
 
 namespace Nexusat.AspNetCore.Tests.Models
 {
     public class StatusCodeTests
     {
+        public ITestOutputHelper Output { get; }
+        public StatusCodeTests(ITestOutputHelper output)
+        {
+            Output = output;
+        }
+
         [Theory]
         [InlineData("OK")]
         [InlineData("KO")]
@@ -57,7 +64,8 @@ namespace Nexusat.AspNetCore.Tests.Models
         }
 
         [Fact]
-        public void TestEqualityMethods() {
+        public void TestEqualityMethods()
+        {
             /*
              * public bool Equals(string other) => other == Code;
              * public bool Equals(StatusCode other) => other?.Code == Code;
@@ -96,6 +104,36 @@ namespace Nexusat.AspNetCore.Tests.Models
             //Assert.False(code == (null as StatusCode));
             Assert.True(code == scode);
             Assert.True(code == code2);
+        }
+
+        /// <summary>
+        /// StatusCode is serialized as a simple string
+        /// </summary>
+        [Fact]
+        public void TestJsonSerialization()
+        {
+            const string expected = "OK_TEST_CONVERSION";
+            StatusCode code = expected;
+            string actual = JsonConvert.SerializeObject(code);
+
+            Assert.Equal($"\"{expected}\"", actual);
+        }
+
+        /// <summary>
+        /// StatusCode is serialized as a simple string
+        /// </summary>
+        [Fact]
+        public void TestJsonDeserialization()
+        {
+            const string jsonInput = "OK_TEST_CONVERSION";
+            StatusCode expected = jsonInput;
+            string input = $"\"{jsonInput}\"";
+
+            StatusCode actual = JsonConvert.DeserializeObject<StatusCode>(input);
+
+            Assert.Equal(expected, actual);
+
+            Output.WriteLine("Expected: {0}\nActual: {1}", expected, actual);
         }
     }
 }
