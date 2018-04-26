@@ -62,14 +62,18 @@ namespace Nexusat.AspNetCore.Models
     {
         public int HttpCode { get; internal set; }
 
+        /*
         private string _Code = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
 
-        public string Code {
+        public string CodeX {
             get => _Code;
             internal set {
                 _Code = value;
             }
         }
+        */
+
+        public string Code { get; internal set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
 
         internal Status() { }
 
@@ -87,14 +91,14 @@ namespace Nexusat.AspNetCore.Models
         {
             if (StatusCode.CheckValidCode(code))
             {
-                _Code = code.Trim().ToUpperInvariant() ;
+               Code = code; //code.Trim().ToUpperInvariant() ;
             }
             else throw new ArgumentException(FormatSystemMessage(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code)), nameof(code));
         }
-        public void SetSuccessCode() => _Code = CommonStatusCodes.OK;
-        public void SetFailedCode() => _Code = CommonStatusCodes.KO;
-        public void SetSuccessCode(string subcode) => _Code = StatusCode.GetStatusCodeSuccess(subcode);
-        public void SetFailedCode(string subcode) => _Code = StatusCode.GetStatusCodeFailed(subcode);
+        public void SetSuccessCode() => Code = CommonStatusCodes.OK;
+        public void SetFailedCode() => Code = CommonStatusCodes.KO;
+        public void SetSuccessCode(string subcode) => Code = StatusCode.GetStatusCodeSuccess(subcode);
+        public void SetFailedCode(string subcode) => Code = StatusCode.GetStatusCodeFailed(subcode);
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; internal set; }
