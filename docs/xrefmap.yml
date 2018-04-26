@@ -1986,12 +1986,6 @@ references:
   commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
   fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.Object)
   nameWithType: StatusCode.Equals(Object)
-- uid: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
-  name: Equals(String)
-  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
-  fullName: Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)
-  nameWithType: StatusCode.Equals(String)
 - uid: Nexusat.AspNetCore.Models.StatusCode.Equals*
   name: Equals
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Equals_
@@ -2038,6 +2032,64 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.GetStatusCodeSuccess
   nameWithType: StatusCode.GetStatusCodeSuccess
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter
+  name: StatusCode.JsonConverter
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html
+  commentId: T:Nexusat.AspNetCore.Models.StatusCode.JsonConverter
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter
+  nameWithType: StatusCode.JsonConverter
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_CanConvert_System_Type_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert(System.Type)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert(System.Type)
+  nameWithType: StatusCode.JsonConverter.CanConvert(Type)
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert*
+  name: CanConvert
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_CanConvert_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanConvert
+  nameWithType: StatusCode.JsonConverter.CanConvert
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead
+  name: CanRead
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_CanRead
+  commentId: P:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead
+  nameWithType: StatusCode.JsonConverter.CanRead
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead*
+  name: CanRead
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_CanRead_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.CanRead
+  nameWithType: StatusCode.JsonConverter.CanRead
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: StatusCode.JsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson*
+  name: ReadJson
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_ReadJson_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.ReadJson
+  nameWithType: StatusCode.JsonConverter.ReadJson
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
+  commentId: M:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType: StatusCode.JsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson*
+  name: WriteJson
+  href: api/Nexusat.AspNetCore.Models.StatusCode.JsonConverter.html#Nexusat_AspNetCore_Models_StatusCode_JsonConverter_WriteJson_
+  commentId: Overload:Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.StatusCode.JsonConverter.WriteJson
+  nameWithType: StatusCode.JsonConverter.WriteJson
 - uid: Nexusat.AspNetCore.Models.StatusCode.Ko
   name: Ko
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_Ko
@@ -2063,15 +2115,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.Equality
   nameWithType: StatusCode.Equality
-- uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
-  name: Implicit(StatusCode to String)
-  href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String
-  commentId: M:Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String
-  name.vb: Widening(StatusCode to String)
-  fullName: Nexusat.AspNetCore.Models.StatusCode.Implicit(Nexusat.AspNetCore.Models.StatusCode to System.String)
-  fullName.vb: Nexusat.AspNetCore.Models.StatusCode.Widening(Nexusat.AspNetCore.Models.StatusCode to System.String)
-  nameWithType: StatusCode.Implicit(StatusCode to String)
-  nameWithType.vb: StatusCode.Widening(StatusCode to String)
 - uid: Nexusat.AspNetCore.Models.StatusCode.op_Implicit(System.String)~Nexusat.AspNetCore.Models.StatusCode
   name: Implicit(String to StatusCode)
   href: api/Nexusat.AspNetCore.Models.StatusCode.html#Nexusat_AspNetCore_Models_StatusCode_op_Implicit_System_String__Nexusat_AspNetCore_Models_StatusCode
@@ -2117,64 +2160,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.StatusCode.ToString
   nameWithType: StatusCode.ToString
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter
-  name: StatusCodeJsonConverter
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html
-  commentId: T:Nexusat.AspNetCore.Models.StatusCodeJsonConverter
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter
-  nameWithType: StatusCodeJsonConverter
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
-  name: CanConvert(Type)
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanConvert_System_Type_
-  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert(System.Type)
-  nameWithType: StatusCodeJsonConverter.CanConvert(Type)
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert*
-  name: CanConvert
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanConvert_
-  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanConvert
-  nameWithType: StatusCodeJsonConverter.CanConvert
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
-  name: CanRead
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanRead
-  commentId: P:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
-  nameWithType: StatusCodeJsonConverter.CanRead
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead*
-  name: CanRead
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_CanRead_
-  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.CanRead
-  nameWithType: StatusCodeJsonConverter.CanRead
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
-  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_
-  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
-  nameWithType: StatusCodeJsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson*
-  name: ReadJson
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_ReadJson_
-  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.ReadJson
-  nameWithType: StatusCodeJsonConverter.ReadJson
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
-  name: WriteJson(JsonWriter, Object, JsonSerializer)
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_
-  commentId: M:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
-  nameWithType: StatusCodeJsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
-- uid: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson*
-  name: WriteJson
-  href: api/Nexusat.AspNetCore.Models.StatusCodeJsonConverter.html#Nexusat_AspNetCore_Models_StatusCodeJsonConverter_WriteJson_
-  commentId: Overload:Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.StatusCodeJsonConverter.WriteJson
-  nameWithType: StatusCodeJsonConverter.WriteJson
 - uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo
   name: ValidationErrorsInfo
   href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html

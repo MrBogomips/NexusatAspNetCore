@@ -11,7 +11,8 @@ namespace Nexusat.AspNetCore.Models
     /// equipped with implicit conversion operators 'to' and 'from' string class.
     /// Provided also with helper methods for string validation.
     /// </summary>
-    public class StatusCode : IEquatable<string>, IEquatable<StatusCode>
+    [JsonConverter(typeof(StatusCode.JsonConverter))]
+    public class StatusCode : IEquatable<StatusCode>
     {
         #region JsonConverter
         /// <summary>
@@ -57,26 +58,31 @@ namespace Nexusat.AspNetCore.Models
         public override string ToString() => Code;
 
         #region Equality
-        public bool Equals(string other) => other == Code;
-        public bool Equals(StatusCode other) => other?.Code == Code;
+        //public bool Equals(string other) => other.Equals(Code);
+        public bool Equals(StatusCode other) => !ReferenceEquals(other, null) && other.Code.Equals(Code);
         public override bool Equals(object obj) => Equals(obj as string);
         public override int GetHashCode() => Code.GetHashCode();
+
         public static bool operator == (StatusCode lhs, StatusCode rhs) {
             if (ReferenceEquals(lhs, rhs))
             {
                 return true;
             }
-            if (lhs == null || rhs == null)
+            if (ReferenceEquals(lhs,null) || ReferenceEquals(rhs,null))
             {
                 return false;
             }
-            return lhs.Code == rhs.Code;
+            string slhs = lhs.Code;
+            string srhs = rhs.Code;
+            return slhs.Equals(srhs);
         }
+
         public static bool operator !=(StatusCode lhs, StatusCode rhs) => !(lhs == rhs);
+
         #endregion Equality
 
         #region String to and from implicit conversions 
-        public static implicit operator string(StatusCode code) => code.Code;
+        //public static implicit operator string(StatusCode code) => code.Code;
         public static implicit operator StatusCode(string code) => new StatusCode(code);
         #endregion String to and from implicit conversions 
 

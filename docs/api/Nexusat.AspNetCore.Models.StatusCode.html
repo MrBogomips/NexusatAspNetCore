@@ -87,7 +87,6 @@ Provided also with helper methods for string validation.</p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">System.String</span>&gt;</div>
     <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
@@ -109,7 +108,8 @@ Provided also with helper methods for string validation.</p>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
   <h5 id="Nexusat_AspNetCore_Models_StatusCode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StatusCode : IEquatable&lt;string&gt;, IEquatable&lt;StatusCode&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(StatusCode.JsonConverter))]
+public class StatusCode : IEquatable&lt;StatusCode&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -548,48 +548,6 @@ Provided also with helper methods for string validation.</p>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   
   
-  <a id="Nexusat_AspNetCore_Models_StatusCode_Equals_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_StatusCode_Equals_System_String_" data-uid="Nexusat.AspNetCore.Models.StatusCode.Equals(System.String)">Equals(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(string other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Nexusat_AspNetCore_Models_StatusCode_GetHashCode_" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetHashCode*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_GetHashCode" data-uid="Nexusat.AspNetCore.Models.StatusCode.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -778,48 +736,6 @@ Provided also with helper methods for string validation.</p>
   
   
   <a id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_Nexusat_AspNetCore_Models_StatusCode__System_String" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit(Nexusat.AspNetCore.Models.StatusCode)~System.String">Implicit(StatusCode to String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator string (StatusCode code)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.StatusCode.html">StatusCode</a></td>
-        <td><span class="parametername">code</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit*"></a>
   <h4 id="Nexusat_AspNetCore_Models_StatusCode_op_Implicit_System_String__Nexusat_AspNetCore_Models_StatusCode" data-uid="Nexusat.AspNetCore.Models.StatusCode.op_Implicit(System.String)~Nexusat.AspNetCore.Models.StatusCode">Implicit(String to StatusCode)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -907,9 +823,6 @@ Provided also with helper methods for string validation.</p>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IEquatable&lt;T&gt;</span>
-  </div>
   <div>
       <span class="xref">System.IEquatable&lt;T&gt;</span>
   </div>
