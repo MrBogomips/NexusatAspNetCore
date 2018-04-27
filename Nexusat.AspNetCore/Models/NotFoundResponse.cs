@@ -7,12 +7,10 @@ namespace Nexusat.AspNetCore.Models
     /// <summary>
     /// A generic response for a not found route
     /// </summary>
-    public class NoContentResponse: ApiResponse
+    public class NotFoundResponse: ApiResponse
     {
-        public NoContentResponse()
-            : base((int)HttpStatusCode.NoContent)
-        {
-            HasBody = false;
-        }
+        public NotFoundResponse()
+            :base((int)HttpStatusCode.NotFound, CommonStatusCodes.NOT_FOUND_STATUS_CODE)
+        { }
     }
 }
