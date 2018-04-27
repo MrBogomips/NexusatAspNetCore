@@ -226,17 +226,6 @@ namespace Nexusat.AspNetCore.Mvc
         //
         // Methods
         //
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName, object routeValues);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (object routeValues, object value);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName, object routeValues, object value);
 
         [NonAction]
         public virtual AcceptedAtRouteResult AcceptedAtRoute (object routeValues);
@@ -261,24 +250,6 @@ namespace Nexusat.AspNetCore.Mvc
 
         [NonAction]
         public virtual ChallengeResult Challenge (AuthenticationProperties properties, params string[] authenticationSchemes);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, string controllerName, object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (string routeName, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (string routeName, object routeValues, object value);
 
         [NonAction]
         public virtual FileContentResult File (byte[] fileContents, string contentType, DateTimeOffset? lastModified, EntityTagHeaderValue entityTag);
@@ -348,12 +319,6 @@ namespace Nexusat.AspNetCore.Mvc
 
         [NonAction]
         public virtual NotFoundResult NotFound ();
-
-        [NonAction]
-        public virtual OkResult Ok ();
-
-        [NonAction]
-        public virtual OkObjectResult Ok (object value);
 
         [NonAction]
         public virtual PhysicalFileResult PhysicalFile (string physicalPath, string contentType, DateTimeOffset? lastModified, EntityTagHeaderValue entityTag);
