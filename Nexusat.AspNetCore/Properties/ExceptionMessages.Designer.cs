@@ -118,5 +118,11 @@ namespace Nexusat.AspNetCore.Properties {
                 return ResourceManager.GetString("InvalidUriTooManyQuestionMarks", resourceCulture);
             }
         }
+        
+        internal static string NoRoutesMatched {
+            get {
+                return ResourceManager.GetString("NoRoutesMatched", resourceCulture);
+            }
+        }
     }
 }

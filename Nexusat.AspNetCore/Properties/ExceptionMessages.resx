@@ -162,6 +162,9 @@
   <data name="InvalidUriTooManyQuestionMarks" xml:space="preserve">
     <value>The uri {0} has too many '?'.</value>
     <comment>PaginationInfoLinkBuilder</comment>
-  </data>    
+  </data>
+    <data name="NoRoutesMatched" xml:space="preserve">
+        <value>No route match</value>
+    </data>
     
 </root>

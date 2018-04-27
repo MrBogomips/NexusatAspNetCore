@@ -11,16 +11,16 @@ using Xunit.Abstractions;
 namespace Nexusat.AspNetCore.IntegrationTests.Tests
 {
 
-    public class CreatedControllerTests : BaseTests<StartupConfigurationOne>
+    public class AcceptedControllerTests : BaseTests<StartupConfigurationOne>
     {
-        public CreatedControllerTests(ITestOutputHelper output
+        public AcceptedControllerTests(ITestOutputHelper output
             ) : base(output) { }
 
         [Fact]
-        public async void CreatedApiResponseUri()
+        public async void AcceptedApiResponseUri()
         {
             // Act
-            var response = await Client.PostAsync("/Created/666", null);
+            var response = await Client.PostAsync("/Accepted/666", null);
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
             var httpCode = response.StatusCode;
@@ -39,16 +39,16 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             //Assert
             Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Created/666", location);
+            Assert.Equal("/Accepted/666", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Null(json.SelectToken("data"));
         }
 
         [Fact]
-        public async void CreatedApiResponseObjectUri()
+        public async void AcceptedApiResponseObjectUri()
         {
             // Act
-            var response = await Client.PostAsync("/Created/object/666", null);
+            var response = await Client.PostAsync("/Accepted/object/666", null);
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
             var httpCode = response.StatusCode;
@@ -67,16 +67,16 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             //Assert
             Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Created/666", location);
+            Assert.Equal("/Accepted/666", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("data: 666", json.SelectToken("data"));
         }
 
         [Fact]
-        public async void CreatedAtActionFake()
+        public async void AcceptedAtActionFake()
         {
             // Act
-            var response = await Client.PostAsync("/Created/action/666", null);
+            var response = await Client.PostAsync("/Accepted/action/666", null);
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
             var httpCode = response.StatusCode;
@@ -95,16 +95,16 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             //Assert
             Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Created/index/666", location);
+            Assert.Equal("/Accepted/index/666", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Null(json.SelectToken("data"));
         }
 
         [Fact]
-        public async void CreatedAtRouteFake()
+        public async void AcceptedAtRouteFake()
         {
             // Act
-            var response = await Client.PostAsync("/Created/route/666", null);
+            var response = await Client.PostAsync("/Accepted/route/666", null);
             response.EnsureSuccessStatusCode();
             var json = await ReadAsJObjectAsync(response.Content);
             var httpCode = response.StatusCode;
@@ -123,7 +123,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             //Assert
             Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Created/index/666", location);
+            Assert.Equal("/Accepted/index/666", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Null(json.SelectToken("data"));
         }

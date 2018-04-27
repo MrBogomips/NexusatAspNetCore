@@ -19,8 +19,15 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         public IApiObjectResponse<string> CreatedObject(int id) {
             Uri uri;
             Uri.TryCreate("/Created/" + id.ToString(), UriKind.Relative, out uri);
-            return CreatedObject(data: "data: " + id.ToString(), uri: uri);
+            return Created(data: "data: " + id.ToString(), uri: uri);
         }
 
+        [HttpPost("action/{id:int}")]
+        public IApiResponse CreatedAtActionFake(int id)
+        => CreatedAtAction("Get", routeValues: new { id = id });
+
+        [HttpPost("route/{id:int}")]
+        public IApiResponse CreatedRouteFake(int id)
+        => CreatedAtRoute("created_controller_index", routeValues: new { id = id });
     }
 }
