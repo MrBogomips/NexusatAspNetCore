@@ -25,8 +25,6 @@ namespace Nexusat.AspNetCore.Mvc
         protected IApiResponse ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)
         => new ApiResponse(httpCode, statusCode, description, userDescription);
 
-
-
         /// <summary>
         /// Produce a generic API Response with, optionally, a payload
         /// </summary>
