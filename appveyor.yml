@@ -22,4 +22,10 @@ notifications:
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
+deploy:
+  provider: NuGet
+  api_key:
+    secure: TzwhtxjJxCK1mURdm7456q5M/OE7lfbx3HTPFFQRXGHlEUyd6tck6ie0P+fuB792
+  skip_symbols: false
+  artifact: /.*\.nupkg/
 

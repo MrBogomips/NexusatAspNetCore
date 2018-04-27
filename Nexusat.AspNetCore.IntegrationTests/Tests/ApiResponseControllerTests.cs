@@ -1,4 +1,4 @@
-﻿using Microsoft.Net.Http.Headers;
+using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using Nexusat.AspNetCore.IntegrationTests.Models;
 using Nexusat.AspNetCore.IntegrationTestsFakeService;
@@ -306,6 +306,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("payload", json.SelectToken("data").Value<string>());
         }
+
         #endregion Accpepted (HTTP 202) Helper Methods flavours
 
 
