@@ -705,23 +705,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Data
   nameWithType: ApiEnumResponse<T>.Data
   nameWithType.vb: ApiEnumResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location
-  commentId: P:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
-  nameWithType: ApiEnumResponse<T>.Location
-  nameWithType.vb: ApiEnumResponse(Of T).Location
-- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location*
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Location_
-  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.Location
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Location
-  nameWithType: ApiEnumResponse<T>.Location
-  nameWithType.vb: ApiEnumResponse(Of T).Location
 - uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.Navigation
   name: Navigation
   href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_Navigation
@@ -2082,31 +2065,76 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Accepted
   nameWithType: ApiController.Accepted
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject*
-  name: AcceptedObject
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedObject_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Accepted``1(``0,System.String,System.String,System.String)
+  name: Accepted<T>(T, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Accepted__1___0_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Accepted``1(``0,System.String,System.String,System.String)
+  name.vb: Accepted(Of T)(T, String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Accepted<T>(T, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.Accepted(Of T)(T, System.String, System.String, System.String)
+  nameWithType: ApiController.Accepted<T>(T, String, String, String)
+  nameWithType.vb: ApiController.Accepted(Of T)(T, String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Accepted``1(``0,System.String,System.String,System.Uri)
+  name: Accepted<T>(T, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Accepted__1___0_System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Accepted``1(``0,System.String,System.String,System.Uri)
+  name.vb: Accepted(Of T)(T, String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Accepted<T>(T, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.Accepted(Of T)(T, System.String, System.String, System.Uri)
+  nameWithType: ApiController.Accepted<T>(T, String, String, Uri)
+  nameWithType.vb: ApiController.Accepted(Of T)(T, String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.Object,System.String,System.String)
+  name: AcceptedAtAction(String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String, System.Object, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction(String, Object, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.String,System.Object,System.String,System.String)
+  name: AcceptedAtAction(String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction(String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.String,System.String)
+  name: AcceptedAtAction(String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(System.String, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction(String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction*
+  name: AcceptedAtAction
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject
-  nameWithType: ApiController.AcceptedObject
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject``1(``0,System.String,System.String,System.String)
-  name: AcceptedObject<T>(T, String, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedObject__1___0_System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject``1(``0,System.String,System.String,System.String)
-  name.vb: AcceptedObject(Of T)(T, String, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject<T>(T, System.String, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject(Of T)(T, System.String, System.String, System.String)
-  nameWithType: ApiController.AcceptedObject<T>(T, String, String, String)
-  nameWithType.vb: ApiController.AcceptedObject(Of T)(T, String, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject``1(``0,System.String,System.String,System.Uri)
-  name: AcceptedObject<T>(T, String, String, Uri)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedObject__1___0_System_String_System_String_System_Uri_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject``1(``0,System.String,System.String,System.Uri)
-  name.vb: AcceptedObject(Of T)(T, String, String, Uri)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject<T>(T, System.String, System.String, System.Uri)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedObject(Of T)(T, System.String, System.String, System.Uri)
-  nameWithType: ApiController.AcceptedObject<T>(T, String, String, Uri)
-  nameWithType.vb: ApiController.AcceptedObject(Of T)(T, String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction
+  nameWithType: ApiController.AcceptedAtAction
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,``0,System.String,System.String)
+  name: AcceptedAtAction<T>(String, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction__1_System_String___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,``0,System.String,System.String)
+  name.vb: AcceptedAtAction(Of T)(String, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction<T>(System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(Of T)(System.String, T, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction<T>(String, T, String, String)
+  nameWithType.vb: ApiController.AcceptedAtAction(Of T)(String, T, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,System.Object,``0,System.String,System.String)
+  name: AcceptedAtAction<T>(String, Object, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction__1_System_String_System_Object___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,System.Object,``0,System.String,System.String)
+  name.vb: AcceptedAtAction(Of T)(String, Object, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction<T>(System.String, System.Object, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(Of T)(System.String, System.Object, T, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction<T>(String, Object, T, String, String)
+  nameWithType.vb: ApiController.AcceptedAtAction(Of T)(String, Object, T, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,System.String,System.Object,``0,System.String,System.String)
+  name: AcceptedAtAction<T>(String, String, Object, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_AcceptedAtAction__1_System_String_System_String_System_Object___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction``1(System.String,System.String,System.Object,``0,System.String,System.String)
+  name.vb: AcceptedAtAction(Of T)(String, String, Object, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction<T>(System.String, System.String, System.Object, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.AcceptedAtAction(Of T)(System.String, System.String, System.Object, T, System.String, System.String)
+  nameWithType: ApiController.AcceptedAtAction<T>(String, String, Object, T, String, String)
+  nameWithType.vb: ApiController.AcceptedAtAction(Of T)(String, String, Object, T, String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ApiEnumResponse*
   name: ApiEnumResponse
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ApiEnumResponse_
@@ -2171,6 +2199,12 @@ references:
   commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.String)
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String, System.String, System.String)
   nameWithType: ApiController.Created(String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.Uri)
+  name: Created(String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created(System.String,System.String,System.Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created(System.String, System.String, System.Uri)
+  nameWithType: ApiController.Created(String, String, Uri)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.Created*
   name: Created
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created_
@@ -2178,6 +2212,76 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.Created
   nameWithType: ApiController.Created
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created``1(``0,System.String,System.String,System.String)
+  name: Created<T>(T, String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created__1___0_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created``1(``0,System.String,System.String,System.String)
+  name.vb: Created(Of T)(T, String, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created<T>(T, System.String, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.Created(Of T)(T, System.String, System.String, System.String)
+  nameWithType: ApiController.Created<T>(T, String, String, String)
+  nameWithType.vb: ApiController.Created(Of T)(T, String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.Created``1(``0,System.String,System.String,System.Uri)
+  name: Created<T>(T, String, String, Uri)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_Created__1___0_System_String_System_String_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.Created``1(``0,System.String,System.String,System.Uri)
+  name.vb: Created(Of T)(T, String, String, Uri)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.Created<T>(T, System.String, System.String, System.Uri)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.Created(Of T)(T, System.String, System.String, System.Uri)
+  nameWithType: ApiController.Created<T>(T, String, String, Uri)
+  nameWithType.vb: ApiController.Created(Of T)(T, String, String, Uri)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.Object,System.String,System.String)
+  name: CreatedAtAction(String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String, System.Object, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction(String, Object, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.String,System.Object,System.String,System.String)
+  name: CreatedAtAction(String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction(String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.String,System.String)
+  name: CreatedAtAction(String, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(System.String, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction(String, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction*
+  name: CreatedAtAction
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction
+  nameWithType: ApiController.CreatedAtAction
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,``0,System.String,System.String)
+  name: CreatedAtAction<T>(String, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction__1_System_String___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,``0,System.String,System.String)
+  name.vb: CreatedAtAction(Of T)(String, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction<T>(System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(Of T)(System.String, T, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction<T>(String, T, String, String)
+  nameWithType.vb: ApiController.CreatedAtAction(Of T)(String, T, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,System.Object,``0,System.String,System.String)
+  name: CreatedAtAction<T>(String, Object, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction__1_System_String_System_Object___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,System.Object,``0,System.String,System.String)
+  name.vb: CreatedAtAction(Of T)(String, Object, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction<T>(System.String, System.Object, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(Of T)(System.String, System.Object, T, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction<T>(String, Object, T, String, String)
+  nameWithType.vb: ApiController.CreatedAtAction(Of T)(String, Object, T, String, String)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,System.String,System.Object,``0,System.String,System.String)
+  name: CreatedAtAction<T>(String, String, Object, T, String, String)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CreatedAtAction__1_System_String_System_String_System_Object___0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction``1(System.String,System.String,System.Object,``0,System.String,System.String)
+  name.vb: CreatedAtAction(Of T)(String, String, Object, T, String, String)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction<T>(System.String, System.String, System.Object, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.CreatedAtAction(Of T)(System.String, System.String, System.Object, T, System.String, System.String)
+  nameWithType: ApiController.CreatedAtAction<T>(String, String, Object, T, String, String)
+  nameWithType.vb: ApiController.CreatedAtAction(Of T)(String, String, Object, T, String, String)
 - uid: Nexusat.AspNetCore.Mvc.ApiController.CurrentPage
   name: CurrentPage
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_CurrentPage
@@ -2204,6 +2308,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.FrameworkOptions
   nameWithType: ApiController.FrameworkOptions
+- uid: Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl(System.String,System.String,System.Object,System.String,System.Boolean)
+  name: GetActionUrl(String, String, Object, String, Boolean)
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_GetActionUrl_System_String_System_String_System_Object_System_String_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl(System.String,System.String,System.Object,System.String,System.Boolean)
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl(System.String, System.String, System.Object, System.String, System.Boolean)
+  nameWithType: ApiController.GetActionUrl(String, String, Object, String, Boolean)
+- uid: Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl*
+  name: GetActionUrl
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_GetActionUrl_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.GetActionUrl
+  nameWithType: ApiController.GetActionUrl
 - uid: Nexusat.AspNetCore.Mvc.ApiController.HttpContext
   name: HttpContext
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_HttpContext
@@ -2329,6 +2446,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.RoutedData
   nameWithType: ApiController.RoutedData
+- uid: Nexusat.AspNetCore.Mvc.ApiController.UrlHelper
+  name: UrlHelper
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_UrlHelper
+  commentId: P:Nexusat.AspNetCore.Mvc.ApiController.UrlHelper
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.UrlHelper
+  nameWithType: ApiController.UrlHelper
+- uid: Nexusat.AspNetCore.Mvc.ApiController.UrlHelper*
+  name: UrlHelper
+  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_UrlHelper_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.UrlHelper
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ApiController.UrlHelper
+  nameWithType: ApiController.UrlHelper
 - uid: Nexusat.AspNetCore.Mvc.Formatters
   name: Nexusat.AspNetCore.Mvc.Formatters
   href: api/Nexusat.AspNetCore.Mvc.Formatters.html

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Core;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Net.Http.Headers;
 using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
@@ -41,7 +44,7 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="itemsCount">Number of items found</param>
         /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
         protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, int itemsCount, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => new ApiEnumResponse<T>(httpCode, CurrentPage, itemsCount, data, statusCode, description, userDescription );
+        => new ApiEnumResponse<T>(httpCode, CurrentPage, itemsCount, data, statusCode, description, userDescription);
 
         /// <summary>
         /// Produce a generic API Response with, optionally, a payload
@@ -108,14 +111,9 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         protected IApiResponse Accepted(string description = null, string userDescription = null, string uri = null)
-        {
-            if (uri != null)
-                HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ApiResponse(Status202Accepted,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription);
-        }
+        => ApiResponse(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
+            .SetLocation(uri);
+
         /// <summary>
         /// Produce an HTTP 202 response
         /// </summary>
@@ -123,7 +121,8 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="description">Description.</param>
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
-        protected IApiResponse Accepted(string description = null, string userDescription = null, Uri uri = null) => Accepted(description, userDescription, uri.ToString());
+        protected IApiResponse Accepted(string description = null, string userDescription = null, Uri uri = null)
+        => Accepted(description, userDescription, uri.ToString());
         /// <summary>
         /// Produce an HTTP 202 response
         /// </summary>
@@ -133,16 +132,9 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiObjectResponse<T> AcceptedObject<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-        {
-            if (uri != null)
-                HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ApiObjectResponse<T>(Status202Accepted,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription,
-                    data: data);
-        }
+        protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
+        => ApiObjectResponse<T>(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
+            .SetLocation(uri);
         /// <summary>
         /// Produce an HTTP 202 response
         /// </summary>
@@ -152,8 +144,33 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiObjectResponse<T> AcceptedObject<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-        => AcceptedObject(data, description, userDescription, uri.ToString());
+        protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
+        => Accepted(data, description, userDescription, uri.ToString());
+
+        protected IApiResponse AcceptedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
+        => Accepted(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+        protected IApiResponse AcceptedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
+        => Accepted(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+        protected IApiResponse AcceptedAtAction(string actionName, string description = null, string userDescription = null)
+        => Accepted(description, userDescription, GetActionUrl(actionName));
+
+        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Accepted(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Accepted(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
+        => Accepted(data, description, userDescription, GetActionUrl(actionName));
+
+        protected IApiResponse AcceptedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
+        => Accepted(description, userDescription, GetLink(routeName, routeValues));
+        protected IApiResponse AcceptedAtRoute(string routeName, string description = null, string userDescription = null)
+        => Accepted(description, userDescription, GetLink(routeName));
+
+        protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Accepted(data, description, userDescription, GetLink(routeName, routeValues));
+        protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
+        => Accepted(data, description, userDescription, GetLink(routeName));
+
         #endregion AcceptedResponse (HTTP 202) Helper Methods
 
         #region CreatedResponse (HTTP 201) Helper Methods
@@ -165,14 +182,40 @@ namespace Nexusat.AspNetCore.Mvc
         /// <param name="userDescription">User description.</param>
         /// <param name="uri">URI.</param>
         protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
-        {
-            if (uri != null)
-                HttpContext.Response.Headers[HeaderNames.Location] = uri;
-            return ApiResponse(Status201Created,
-                    FrameworkOptions.DefaultOkStatusCode,
-                    description: description,
-                    userDescription: userDescription);
-        }
+        => ApiResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
+            .SetLocation(uri);
+        protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
+        => Created(description, userDescription, uri.ToString());
+        protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
+        => ApiObjectResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
+            .SetLocation(uri);
+        protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
+        => Created(data, description, userDescription, uri.ToString());
+
+        protected IApiResponse CreatedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
+        => Created(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+        protected IApiResponse CreatedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
+        => Created(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+        protected IApiResponse CreatedAtAction(string actionName, string description = null, string userDescription = null)
+        => Created(description, userDescription, GetActionUrl(actionName));
+
+        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Created(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Created(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
+        => Created(data, description, userDescription, GetActionUrl(actionName));
+
+        protected IApiResponse CreatedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
+        => Created(description, userDescription, GetLink(routeName, routeValues));
+        protected IApiResponse CreatedAtRoute(string routeName, string description = null, string userDescription = null)
+        => Created(description, userDescription, GetLink(routeName));
+
+        protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+        => Created(data, description, userDescription, GetLink(routeName, routeValues));
+        protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
+        => Created(data, description, userDescription, GetLink(routeName));
+
         #endregion CreatedResponse (HTTP 201) Helper Methods
 
 #if TO_BE_IMPLEMENTED
@@ -183,53 +226,6 @@ namespace Nexusat.AspNetCore.Mvc
         //
         // Methods
         //
-        [NonAction]
-        public virtual AcceptedResult Accepted ();
-
-        [NonAction]
-        public virtual AcceptedResult Accepted (object value);
-
-        [NonAction]
-        public virtual AcceptedResult Accepted (Uri uri);
-
-        [NonAction]
-        public virtual AcceptedResult Accepted (Uri uri, object value);
-
-        [NonAction]
-        public virtual AcceptedResult Accepted (string uri, object value);
-
-        [NonAction]
-        public virtual AcceptedResult Accepted (string uri);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName, object value);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName, string controllerName, object routeValues, object value);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName, object routeValues, object value);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName, string controllerName, object routeValues);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName, string controllerName);
-
-        [NonAction]
-        public virtual AcceptedAtActionResult AcceptedAtAction (string actionName);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName, object routeValues);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (object routeValues, object value);
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (string routeName, object routeValues, object value);
 
         [NonAction]
         public virtual AcceptedAtRouteResult AcceptedAtRoute (object routeValues);
@@ -254,42 +250,6 @@ namespace Nexusat.AspNetCore.Mvc
 
         [NonAction]
         public virtual ChallengeResult Challenge (AuthenticationProperties properties, params string[] authenticationSchemes);
-
-        [NonAction]
-        public virtual ContentResult Content (string content);
-
-        [NonAction]
-        public virtual ContentResult Content (string content, string contentType);
-
-        [NonAction]
-        public virtual ContentResult Content (string content, MediaTypeHeaderValue contentType);
-
-        [NonAction]
-        public virtual ContentResult Content (string content, string contentType, Encoding contentEncoding);
-
-        [NonAction]
-        public virtual CreatedResult Created (Uri uri, object value);
-
-        [NonAction]
-        public virtual CreatedResult Created (string uri, object value);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, string controllerName, object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtActionResult CreatedAtAction (string actionName, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (string routeName, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (object routeValues, object value);
-
-        [NonAction]
-        public virtual CreatedAtRouteResult CreatedAtRoute (string routeName, object routeValues, object value);
 
         [NonAction]
         public virtual FileContentResult File (byte[] fileContents, string contentType, DateTimeOffset? lastModified, EntityTagHeaderValue entityTag);
@@ -359,12 +319,6 @@ namespace Nexusat.AspNetCore.Mvc
 
         [NonAction]
         public virtual NotFoundResult NotFound ();
-
-        [NonAction]
-        public virtual OkResult Ok ();
-
-        [NonAction]
-        public virtual OkObjectResult Ok (object value);
 
         [NonAction]
         public virtual PhysicalFileResult PhysicalFile (string physicalPath, string contentType, DateTimeOffset? lastModified, EntityTagHeaderValue entityTag);

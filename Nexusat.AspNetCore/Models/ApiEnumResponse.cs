@@ -13,9 +13,6 @@ namespace Nexusat.AspNetCore.Models
         public IEnumerable<T> Data { get; }
         public PaginationInfo Navigation { get; }
 
-        [JsonIgnoreAttribute] // Location doesn't make sense for Enum Responses
-        public override string Location { get; set; }
-
         public ApiEnumResponse(Status status, PaginationCursor current, int itemsCount, IEnumerable<T> data) : base(status) {
             Data = data;
             if (current == null)
