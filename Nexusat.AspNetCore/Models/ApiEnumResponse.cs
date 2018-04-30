@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Nexusat.AspNetCore.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Nexusat.AspNetCore.Models
 {
@@ -57,11 +58,9 @@ namespace Nexusat.AspNetCore.Models
 		{
             base.OnFormatting(context);
 
-            NexusatAspNetCoreOptions options =
-                (context.HttpContext.RequestServices.GetService(typeof(IOptions<NexusatAspNetCoreOptions>)) as IOptions<NexusatAspNetCoreOptions>).Value;
+            NexusatAspNetCoreOptions options = GetAspNetCoreOptions(context.HttpContext);
 
             Navigation?.SetLinks(options, context.HttpContext);
-
 		}
 	}
 }
