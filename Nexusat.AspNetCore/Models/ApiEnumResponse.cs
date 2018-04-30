@@ -5,6 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Nexusat.AspNetCore.Properties;
+using Microsoft.AspNetCore.Http;
+using Nexusat.AspNetCore.Configuration;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Nexusat.AspNetCore.Models
 {
@@ -48,6 +52,16 @@ namespace Nexusat.AspNetCore.Models
 
         public ApiEnumResponse(int httpCode, PaginationCursor current, bool hasNextPage, IEnumerable<T> data, string statusCode = null, string description = null, string userDescription = null)
             : this(new Status(httpCode, statusCode, description, userDescription), current, hasNextPage, data) { }
-        
-    }
+
+		public override void OnFormatting(ActionContext context)
+		{
+            base.OnFormatting(context);
+
+            NexusatAspNetCoreOptions options =
+                (context.HttpContext.RequestServices.GetService(typeof(IOptions<NexusatAspNetCoreOptions>)) as IOptions<NexusatAspNetCoreOptions>).Value;
+
+            Navigation?.SetLinks(options, context.HttpContext);
+
+		}
+	}
 }

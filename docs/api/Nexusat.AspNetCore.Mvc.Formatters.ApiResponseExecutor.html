@@ -246,13 +246,13 @@
   
   
   <a id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_Microsoft_AspNetCore_Mvc_ActionContext_Nexusat_AspNetCore_Models_IApiResponse_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.IApiResponse)">ExecuteAsync(ActionContext, IApiResponse)</h4>
+  <h4 id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_Microsoft_AspNetCore_Mvc_ActionContext_Nexusat_AspNetCore_Models_ApiResponse_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.ApiResponse)">ExecuteAsync(ActionContext, ApiResponse)</h4>
   <div class="markdown level1 summary"><p>Executes the <span class="xref">Microsoft.AspNetCore.Mvc.JsonResult</span> and writes the response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task ExecuteAsync(ActionContext context, IApiResponse result)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task ExecuteAsync(ActionContext context, ApiResponse result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,7 +271,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html">IApiResponse</a></td>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.ApiResponse.html">ApiResponse</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>The <span class="xref">Microsoft.AspNetCore.Mvc.JsonResult</span>.</p>
 </td>
@@ -297,12 +297,13 @@
   
   
   <a id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_Microsoft_AspNetCore_Http_HttpContext_Nexusat_AspNetCore_Models_IApiResponse_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.IApiResponse)">RenderResponse(HttpContext, IApiResponse)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_Microsoft_AspNetCore_Http_HttpContext_Nexusat_AspNetCore_Models_ApiResponse_Microsoft_AspNetCore_Routing_RouteData_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_" data-uid="Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.ApiResponse,Microsoft.AspNetCore.Routing.RouteData,Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">RenderResponse(HttpContext, ApiResponse, RouteData, ActionDescriptor, ModelStateDictionary)</h4>
+  <div class="markdown level1 summary"><p>Helper method to produce a response with a an HttpContext only</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenderResponse(HttpContext httpContext, IApiResponse result)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RenderResponse(HttpContext httpContext, ApiResponse apiResponse, RouteData routeData = null, ActionDescriptor actionDescriptor = null, ModelStateDictionary modelStateDictionary = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,11 +318,28 @@
       <tr>
         <td><span class="xref">Microsoft.AspNetCore.Http.HttpContext</span></td>
         <td><span class="parametername">httpContext</span></td>
+        <td><p>Http context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Nexusat.AspNetCore.Models.ApiResponse.html">ApiResponse</a></td>
+        <td><span class="parametername">apiResponse</span></td>
+        <td><p>Result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Routing.RouteData</span></td>
+        <td><span class="parametername">routeData</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.IApiResponse.html">IApiResponse</a></td>
-        <td><span class="parametername">result</span></td>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor</span></td>
+        <td><span class="parametername">actionDescriptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary</span></td>
+        <td><span class="parametername">modelStateDictionary</span></td>
         <td></td>
       </tr>
     </tbody>

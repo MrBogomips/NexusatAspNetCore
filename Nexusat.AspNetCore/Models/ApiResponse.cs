@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters;
@@ -44,6 +46,23 @@ namespace Nexusat.AspNetCore.Models
             var services = context.HttpContext.RequestServices;
             var executor = services.GetRequiredService<ApiResponseExecutor>();
             return executor.ExecuteAsync(context, this);
+        }
+
+        /// <summary>
+        /// This method is called before the formatter writes to the output stream.
+        /// </summary>
+        public virtual void OnFormatting(ActionContext context) {
+            if (context == null)
+            {
+                throw new ArgumentNullException(nameof(context));
+            }
+            var response = context.HttpContext.Response;
+            response.StatusCode = Status.HttpCode;
+            if (Location != null)
+            {
+                response.Headers[HeaderNames.Location] = Location;
+            }
+
         }
     }
 }

@@ -2,6 +2,10 @@
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Abstractions;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Nexusat.AspNetCore.Exceptions;
@@ -60,7 +64,6 @@ namespace Nexusat.AspNetCore.Middleware
                 } else {
                     response = new UnhandledExceptionResponse(exception);
                 }
-
 
                 executor.RenderResponse(context, response);
             } else {

@@ -1270,6 +1270,23 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).Navigation
   nameWithType: ApiEnumResponse<T>.Navigation
   nameWithType.vb: ApiEnumResponse(Of T).Navigation
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: OnFormatting(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiEnumResponse`1.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiEnumResponse<T>.OnFormatting(ActionContext)
+  nameWithType.vb: ApiEnumResponse(Of T).OnFormatting(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1.OnFormatting*
+  name: OnFormatting
+  href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html#Nexusat_AspNetCore_Models_ApiEnumResponse_1_OnFormatting_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiEnumResponse`1.OnFormatting
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiEnumResponse<T>.OnFormatting
+  fullName.vb: Nexusat.AspNetCore.Models.ApiEnumResponse(Of T).OnFormatting
+  nameWithType: ApiEnumResponse<T>.OnFormatting
+  nameWithType.vb: ApiEnumResponse(Of T).OnFormatting
 - uid: Nexusat.AspNetCore.Models.ApiObjectResponse`1
   name: ApiObjectResponse<T>
   href: api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html
@@ -1398,6 +1415,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ApiResponse.Location
   nameWithType: ApiResponse.Location
+- uid: Nexusat.AspNetCore.Models.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: OnFormatting(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiResponse.OnFormatting(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponse.OnFormatting*
+  name: OnFormatting
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_OnFormatting_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.OnFormatting
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.OnFormatting
+  nameWithType: ApiResponse.OnFormatting
 - uid: Nexusat.AspNetCore.Models.ApiResponse.Runtime
   name: Runtime
   href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Runtime
@@ -3159,12 +3189,12 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ApiResponseExecutor
   nameWithType: ApiResponseExecutor.ApiResponseExecutor
-- uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.IApiResponse)
-  name: ExecuteAsync(ActionContext, IApiResponse)
-  href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_Microsoft_AspNetCore_Mvc_ActionContext_Nexusat_AspNetCore_Models_IApiResponse_
-  commentId: M:Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.IApiResponse)
-  fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext, Nexusat.AspNetCore.Models.IApiResponse)
-  nameWithType: ApiResponseExecutor.ExecuteAsync(ActionContext, IApiResponse)
+- uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.ApiResponse)
+  name: ExecuteAsync(ActionContext, ApiResponse)
+  href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_Microsoft_AspNetCore_Mvc_ActionContext_Nexusat_AspNetCore_Models_ApiResponse_
+  commentId: M:Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Nexusat.AspNetCore.Models.ApiResponse)
+  fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext, Nexusat.AspNetCore.Models.ApiResponse)
+  nameWithType: ApiResponseExecutor.ExecuteAsync(ActionContext, ApiResponse)
 - uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.ExecuteAsync*
   name: ExecuteAsync
   href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_ExecuteAsync_
@@ -3198,12 +3228,12 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.Options
   nameWithType: ApiResponseExecutor.Options
-- uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.IApiResponse)
-  name: RenderResponse(HttpContext, IApiResponse)
-  href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_Microsoft_AspNetCore_Http_HttpContext_Nexusat_AspNetCore_Models_IApiResponse_
-  commentId: M:Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.IApiResponse)
-  fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext, Nexusat.AspNetCore.Models.IApiResponse)
-  nameWithType: ApiResponseExecutor.RenderResponse(HttpContext, IApiResponse)
+- uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.ApiResponse,Microsoft.AspNetCore.Routing.RouteData,Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  name: RenderResponse(HttpContext, ApiResponse, RouteData, ActionDescriptor, ModelStateDictionary)
+  href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_Microsoft_AspNetCore_Http_HttpContext_Nexusat_AspNetCore_Models_ApiResponse_Microsoft_AspNetCore_Routing_RouteData_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
+  commentId: M:Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext,Nexusat.AspNetCore.Models.ApiResponse,Microsoft.AspNetCore.Routing.RouteData,Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  fullName: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse(Microsoft.AspNetCore.Http.HttpContext, Nexusat.AspNetCore.Models.ApiResponse, Microsoft.AspNetCore.Routing.RouteData, Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  nameWithType: ApiResponseExecutor.RenderResponse(HttpContext, ApiResponse, RouteData, ActionDescriptor, ModelStateDictionary)
 - uid: Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.RenderResponse*
   name: RenderResponse
   href: api/Nexusat.AspNetCore.Mvc.Formatters.ApiResponseExecutor.html#Nexusat_AspNetCore_Mvc_Formatters_ApiResponseExecutor_RenderResponse_
