@@ -1389,6 +1389,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync
   nameWithType: ApiResponse.ExecuteResultAsync
+- uid: Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions(Microsoft.AspNetCore.Http.HttpContext)
+  name: GetAspNetCoreOptions(HttpContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_GetAspNetCoreOptions_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ApiResponse.GetAspNetCoreOptions(HttpContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions*
+  name: GetAspNetCoreOptions
+  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_GetAspNetCoreOptions_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions
+  nameWithType: ApiResponse.GetAspNetCoreOptions
 - uid: Nexusat.AspNetCore.Models.ApiResponse.HasBody
   name: HasBody
   href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_HasBody

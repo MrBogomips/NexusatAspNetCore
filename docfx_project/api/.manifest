@@ -82,6 +82,7 @@
   "Nexusat.AspNetCore.Models.ApiResponse.#ctor(System.Int32,System.String,System.String,System.String)": "Nexusat.AspNetCore.Models.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.ApiResponse.Exception": "Nexusat.AspNetCore.Models.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.ApiResponse.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)": "Nexusat.AspNetCore.Models.ApiResponse.yml",
+  "Nexusat.AspNetCore.Models.ApiResponse.GetAspNetCoreOptions(Microsoft.AspNetCore.Http.HttpContext)": "Nexusat.AspNetCore.Models.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.ApiResponse.HasBody": "Nexusat.AspNetCore.Models.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.ApiResponse.Location": "Nexusat.AspNetCore.Models.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)": "Nexusat.AspNetCore.Models.ApiResponse.yml",

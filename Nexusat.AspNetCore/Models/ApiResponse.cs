@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
+using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters;
 using System;
@@ -34,6 +36,15 @@ namespace Nexusat.AspNetCore.Models
 
         public ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)
             : this(new Status(httpCode, statusCode, description, userDescription)) { }
+
+        protected NexusatAspNetCoreOptions GetAspNetCoreOptions(HttpContext httpContext) {
+            if (httpContext == null)
+            {
+                throw new ArgumentNullException(nameof(httpContext));
+            }
+            return httpContext.RequestServices.GetRequiredService<IOptions<NexusatAspNetCoreOptions>>().Value;
+        }
+
 
         /// <inheritdoc />
         public override Task ExecuteResultAsync(ActionContext context)
