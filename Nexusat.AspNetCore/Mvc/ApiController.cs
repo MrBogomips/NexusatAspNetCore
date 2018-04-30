@@ -21,6 +21,8 @@ namespace Nexusat.AspNetCore.Mvc
     [Controller]
     public abstract partial class ApiController
     {
+        private IUrlHelper _UrlHelper;
+
         [ControllerContext]
         public ControllerContext ControllerContext { get; set; }
 
@@ -29,9 +31,16 @@ namespace Nexusat.AspNetCore.Mvc
         protected RouteData RoutedData { get => ControllerContext.RouteData; }
         protected IUrlHelper UrlHelper { 
             get {
+                if (_UrlHelper != null)
+                {
+                    return _UrlHelper;
+                }
                 var urlFactory =
                     ControllerContext.HttpContext.RequestServices.GetRequiredService<IUrlHelperFactory>();
-                return urlFactory.GetUrlHelper(ControllerContext);
+                _UrlHelper = urlFactory.GetUrlHelper(ControllerContext);
+                return _UrlHelper;
+            } set {
+                _UrlHelper = value;
             }
         }
 
