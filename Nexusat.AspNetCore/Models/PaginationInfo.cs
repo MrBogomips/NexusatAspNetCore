@@ -112,8 +112,6 @@ namespace Nexusat.AspNetCore.Models
             } else { // Unbounded requests have only 1 page of data
                 PagesCount = 1;
             }
-
-            context.Request.GetDisplayUrl();
         }
     }
 }
