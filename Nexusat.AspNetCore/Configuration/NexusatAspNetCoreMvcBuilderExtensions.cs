@@ -5,6 +5,8 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class NexusatAspNetCoreMvcBuilderExtensions
     {
+        private static readonly Action<NexusatAspNetCoreOptionsBuilder> DefaultSetupAction = (builder) => { };
+
         /// <summary>
         /// Adds the nexusat ASP net core to the MVC pipeline.
         /// </summary>
@@ -13,7 +15,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="setupAction">Setup action.</param>
         public static IMvcBuilder AddNexusatAspNetCore(this IMvcBuilder mvcBuilder, Action<NexusatAspNetCoreOptionsBuilder> setupAction = null)
         {
-            var builder = new NexusatAspNetCoreSystemBuilder(mvcBuilder, setupAction);
+            var builder = new NexusatAspNetCoreSystemBuilder(mvcBuilder, setupAction ?? DefaultSetupAction);
 
             builder
                 .AddSystemService()
@@ -21,6 +23,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
             return mvcBuilder;
         }
+
+
     }
    
     

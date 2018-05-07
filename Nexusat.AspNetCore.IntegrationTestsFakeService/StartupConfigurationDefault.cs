@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Nexusat.AspNetCore.IntegrationTestsFakeService
 {
-    public class StartupConfigurationTwo
+    public class StartupConfigurationDefault
     {
-        public StartupConfigurationTwo(IConfiguration configuration)
+        public StartupConfigurationDefault(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -25,15 +25,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
         {
             services
                 .AddMvc()
-                .AddNexusatAspNetCore(c =>
-                {
-                    c.EnableRuntimeProfilation();
-                c.SetPaginationDefaultPageSize(0); // Default Page size is unbounded (the client will get all data)
-                c.SetPaginationDefaultMaxPageSize(0); // Default MaxPage size is unbounded (the client can require any page size)
-                    c.SetPaginationDefaultBadRequestOnPageOutOfRange(false); 
-                });
-
-
+                .AddNexusatAspNetCore();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
