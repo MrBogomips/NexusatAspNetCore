@@ -9,7 +9,7 @@ namespace Nexusat.AspNetCore.Exceptions
     /// <see cref="Builders.ISingleInstanceBuilder"/>.
     /// </summary>
     [Serializable]
-    public class BuilderInvalidStateException : InvalidOperationException, IFrameworkException
+    public class BuilderInvalidStateException : InvalidOperationException
     {
         public BuilderInvalidStateException() { }
         public BuilderInvalidStateException(string message) : base(message) { }

@@ -46,7 +46,7 @@ namespace Nexusat.AspNetCore.Middleware
                 var services = context.RequestServices;
                 var executor = services.GetRequiredService<ApiResponseExecutor>();
                 ApiResponse response = null;
-                if (exception is IFrameworkException)
+                if (exception is IApiResponseException)
                 {
                     switch (exception)
                     {
@@ -57,8 +57,10 @@ namespace Nexusat.AspNetCore.Middleware
                             response = new NoContentResponse();
                             break;
                         default: // just in case of something missed
-                            logger.LogWarning(FormatSystemMessage("An internal exception {0}({1}) wasn't handled", exception.GetType().FullName, exception.Message));
-                            response = new UnhandledExceptionResponse(exception);
+                            logger.LogWarning(FormatSystemMessage("An Api Response Exception {0}({1}) was found", exception.GetType().FullName, exception.Message));
+                            IApiResponseException apiException = exception as IApiResponseException;
+                            response = new ApiResponse(apiException.HttpCode, apiException.StatusCode, apiException.Description, apiException.UserDescription);
+                            response.HasBody = apiException.HasBody;
                             break;
                     }
                 } else {

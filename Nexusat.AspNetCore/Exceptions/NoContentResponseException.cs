@@ -17,12 +17,16 @@ namespace Nexusat.AspNetCore.Exceptions
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>
         public NoContentResponseException()
-            : base(httpCode, statusCode) { }
+            : base(httpCode, statusCode) {
+            HasBody = false;
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>
         /// <param name="inner">Inner Exception</param>
         public NoContentResponseException(Exception inner)
-            : base(httpCode, statusCode, inner){ }
+            : base(httpCode, statusCode, inner){
+            HasBody = false;
+        }
     }
 }

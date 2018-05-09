@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ApiResponseException
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -90,7 +90,7 @@ will be translated to an appropriate <a class="xref" href="Nexusat.AspNetCore.Mo
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
-    <div><a class="xref" href="Nexusat.AspNetCore.Exceptions.IFrameworkException.html">IFrameworkException</a></div>
+    <div><a class="xref" href="Nexusat.AspNetCore.Exceptions.IApiResponseException.html">IApiResponseException</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -154,7 +154,7 @@ will be translated to an appropriate <a class="xref" href="Nexusat.AspNetCore.Mo
   <h5 id="Nexusat_AspNetCore_Exceptions_ApiResponseException_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class ApiResponseException : Exception, ISerializable, IFrameworkException</code></pre>
+public class ApiResponseException : Exception, ISerializable, IApiResponseException</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -305,6 +305,31 @@ public class ApiResponseException : Exception, ISerializable, IFrameworkExceptio
   </table>
   
   
+  <a id="Nexusat_AspNetCore_Exceptions_ApiResponseException_HasBody_" data-uid="Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody*"></a>
+  <h4 id="Nexusat_AspNetCore_Exceptions_ApiResponseException_HasBody" data-uid="Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody">HasBody</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasBody { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Nexusat_AspNetCore_Exceptions_ApiResponseException_HttpCode_" data-uid="Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode*"></a>
   <h4 id="Nexusat_AspNetCore_Exceptions_ApiResponseException_HttpCode" data-uid="Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode">HttpCode</h4>
   <div class="markdown level1 summary"></div>
@@ -383,7 +408,7 @@ public class ApiResponseException : Exception, ISerializable, IFrameworkExceptio
       <span class="xref">System.Runtime.Serialization.ISerializable</span>
   </div>
   <div>
-      <a class="xref" href="Nexusat.AspNetCore.Exceptions.IFrameworkException.html">IFrameworkException</a>
+      <a class="xref" href="Nexusat.AspNetCore.Exceptions.IApiResponseException.html">IApiResponseException</a>
   </div>
 <div id="disqus_thread"></div>
                 <script>

@@ -991,6 +991,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
   nameWithType: ApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HasBody
+  commentId: P:Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
+  nameWithType: ApiResponseException.HasBody
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody*
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HasBody_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
+  nameWithType: ApiResponseException.HasBody
 - uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HttpCode
   name: HttpCode
   href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HttpCode
@@ -1104,12 +1117,77 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException.BuilderInvalidStateException
   nameWithType: BuilderInvalidStateException.BuilderInvalidStateException
-- uid: Nexusat.AspNetCore.Exceptions.IFrameworkException
-  name: IFrameworkException
-  href: api/Nexusat.AspNetCore.Exceptions.IFrameworkException.html
-  commentId: T:Nexusat.AspNetCore.Exceptions.IFrameworkException
-  fullName: Nexusat.AspNetCore.Exceptions.IFrameworkException
-  nameWithType: IFrameworkException
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException
+  name: IApiResponseException
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html
+  commentId: T:Nexusat.AspNetCore.Exceptions.IApiResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException
+  nameWithType: IApiResponseException
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+  name: Description
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_Description
+  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+  nameWithType: IApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description*
+  name: Description
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_Description_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+  nameWithType: IApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HasBody
+  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
+  nameWithType: IApiResponseException.HasBody
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody*
+  name: HasBody
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HasBody_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
+  nameWithType: IApiResponseException.HasBody
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
+  name: HttpCode
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HttpCode
+  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
+  nameWithType: IApiResponseException.HttpCode
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode*
+  name: HttpCode
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HttpCode_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
+  nameWithType: IApiResponseException.HttpCode
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
+  name: StatusCode
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_StatusCode
+  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
+  nameWithType: IApiResponseException.StatusCode
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode*
+  name: StatusCode
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_StatusCode_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
+  nameWithType: IApiResponseException.StatusCode
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
+  name: UserDescription
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_UserDescription
+  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
+  nameWithType: IApiResponseException.UserDescription
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription*
+  name: UserDescription
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_UserDescription_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
+  nameWithType: IApiResponseException.UserDescription
 - uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException
   name: NoContentResponseException
   href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html
@@ -3441,6 +3519,41 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
   nameWithType: ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange
+- uid: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute
+  name: ValidateRequestAttribute
+  href: api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html
+  commentId: T:Nexusat.AspNetCore.Mvc.ValidateRequestAttribute
+  fullName: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute
+  nameWithType: ValidateRequestAttribute
+- uid: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor(Microsoft.Extensions.Logging.ILogger{Nexusat.AspNetCore.Mvc.ValidateRequestAttribute})
+  name: ValidateRequestAttribute(ILogger<ValidateRequestAttribute>)
+  href: api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html#Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__ctor_Microsoft_Extensions_Logging_ILogger_Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__
+  commentId: M:Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor(Microsoft.Extensions.Logging.ILogger{Nexusat.AspNetCore.Mvc.ValidateRequestAttribute})
+  name.vb: ValidateRequestAttribute(ILogger(Of ValidateRequestAttribute))
+  fullName: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.ValidateRequestAttribute(Microsoft.Extensions.Logging.ILogger<Nexusat.AspNetCore.Mvc.ValidateRequestAttribute>)
+  fullName.vb: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.ValidateRequestAttribute(Microsoft.Extensions.Logging.ILogger(Of Nexusat.AspNetCore.Mvc.ValidateRequestAttribute))
+  nameWithType: ValidateRequestAttribute.ValidateRequestAttribute(ILogger<ValidateRequestAttribute>)
+  nameWithType.vb: ValidateRequestAttribute.ValidateRequestAttribute(ILogger(Of ValidateRequestAttribute))
+- uid: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor*
+  name: ValidateRequestAttribute
+  href: api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html#Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.ValidateRequestAttribute
+  nameWithType: ValidateRequestAttribute.ValidateRequestAttribute
+- uid: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  name: OnActionExecuting(ActionExecutingContext)
+  href: api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html#Nexusat_AspNetCore_Mvc_ValidateRequestAttribute_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_
+  commentId: M:Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  fullName: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  nameWithType: ValidateRequestAttribute.OnActionExecuting(ActionExecutingContext)
+- uid: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting*
+  name: OnActionExecuting
+  href: api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html#Nexusat_AspNetCore_Mvc_ValidateRequestAttribute_OnActionExecuting_
+  commentId: Overload:Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting
+  nameWithType: ValidateRequestAttribute.OnActionExecuting
 - uid: Nexusat.AspNetCore.Utils
   name: Nexusat.AspNetCore.Utils
   href: api/Nexusat.AspNetCore.Utils.html

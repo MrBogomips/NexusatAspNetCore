@@ -9,12 +9,13 @@ namespace Nexusat.AspNetCore.Exceptions
     /// will be translated to an appropriate <see cref="Models.IApiResponse"/>.
     /// </summary>
     [Serializable]
-    public class ApiResponseException : Exception, IFrameworkException
+    public class ApiResponseException : Exception, IApiResponseException
     {
         public string StatusCode { get; private set; }
         public string Description { get; set; }
         public string UserDescription { get; set; }
         public int HttpCode { get; private set; }
+        public virtual bool HasBody { get; protected set; } = true;
 
         public ApiResponseException() { }
         /// <summary>

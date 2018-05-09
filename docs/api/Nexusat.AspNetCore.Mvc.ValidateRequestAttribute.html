@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ValidatePaginationAttribute
+    <title>Class ValidateRequestAttribute
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ValidatePaginationAttribute
+    <meta name="title" content="Class ValidateRequestAttribute
    ">
     <meta name="generator" content="docfx 2.35.4.0">
     
@@ -69,10 +69,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute">
+            <article class="content wrap" id="_content" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute">
   
   
-  <h1 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute" class="text-break">Class ValidatePaginationAttribute
+  <h1 id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute" class="text-break">Class ValidateRequestAttribute
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -81,7 +81,7 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Attribute</span></div>
     <div class="level2"><span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute</span></div>
-    <div class="level3"><span class="xref">ValidatePaginationAttribute</span></div>
+    <div class="level3"><span class="xref">ValidateRequestAttribute</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -241,130 +241,36 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nexusat.AspNetCore.Mvc.html">Nexusat.AspNetCore.Mvc</a></h6>
   <h6><strong>Assembly</strong>: Nexusat.AspNetCore.dll</h6>
-  <h5 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_syntax">Syntax</h5>
+  <h5 id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ValidatePaginationAttribute : ActionFilterAttribute, IActionFilter, IAsyncActionFilter, IResultFilter, IAsyncResultFilter, IOrderedFilter, IFilterMetadata</code></pre>
+    <pre><code class="lang-csharp hljs">public class ValidateRequestAttribute : ActionFilterAttribute, IActionFilter, IAsyncActionFilter, IResultFilter, IAsyncResultFilter, IOrderedFilter, IFilterMetadata</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute__ctor_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute__ctor" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.#ctor">ValidatePaginationAttribute()</h4>
+  <a id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__ctor_" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__ctor_Microsoft_Extensions_Logging_ILogger_Nexusat_AspNetCore_Mvc_ValidateRequestAttribute__" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.#ctor(Microsoft.Extensions.Logging.ILogger{Nexusat.AspNetCore.Mvc.ValidateRequestAttribute})">ValidateRequestAttribute(ILogger&lt;ValidateRequestAttribute&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValidatePaginationAttribute()</code></pre>
+    <pre><code class="lang-csharp hljs">public ValidateRequestAttribute(ILogger&lt;ValidateRequestAttribute&gt; logger)</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_DefaultPageSize_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.DefaultPageSize*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_DefaultPageSize" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.DefaultPageSize">DefaultPageSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the default size of the page.
-If missing the application wide setting will be used.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DefaultPageSize { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The default size of the page.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_IsReusable_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_IsReusable" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.IsReusable">IsReusable</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsReusable { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html">ValidateRequestAttribute</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_MaxPageSize_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_MaxPageSize" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.MaxPageSize">MaxPageSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the max size allowed for a page.
-Set to 0 to allow any value.
-If missing the application wide setting will be used.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxPageSize { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The size of the max page. Use <pre><code>0 (zero)</code></pre> to mean any value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_ReturnBadRequestOnOutOfRange_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_ReturnBadRequestOnOutOfRange" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.ReturnBadRequestOnOutOfRange">ReturnBadRequestOnOutOfRange</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the return bad request on out of range.
-If missing the application wide setting will be used.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool? ReturnBadRequestOnOutOfRange { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><pre><code>true</code></pre> will produce a BadRequest response in case of violation of the limits</td>
       </tr>
     </tbody>
   </table>
@@ -372,8 +278,8 @@ If missing the application wide setting will be used.</p>
   </h3>
   
   
-  <a id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_OnActionExecuting_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting*"></a>
-  <h4 id="Nexusat_AspNetCore_Mvc_ValidatePaginationAttribute_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_" data-uid="Nexusat.AspNetCore.Mvc.ValidatePaginationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">OnActionExecuting(ActionExecutingContext)</h4>
+  <a id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute_OnActionExecuting_" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting*"></a>
+  <h4 id="Nexusat_AspNetCore_Mvc_ValidateRequestAttribute_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_" data-uid="Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">OnActionExecuting(ActionExecutingContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
