@@ -7,214 +7,236 @@ using Microsoft.Net.Http.Headers;
 using Nexusat.AspNetCore.Exceptions;
 using Nexusat.AspNetCore.Models;
 using static Microsoft.AspNetCore.Http.StatusCodes;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Nexusat.AspNetCore.Mvc
 {
-    /// <summary>
-    /// API controller base extensions.
-    /// </summary>
-    public partial class ApiController
-    {
-        #region Generic Response Helper Methods
-        /// <summary>
-        /// Produce a generic API Response without a payload
-        /// </summary>
-        /// <returns>The response.</returns>
-        /// <param name="httpCode">Http code.</param>
-        /// <param name="statusCode">Status code.</param>
-        protected IApiResponse ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)
-        => new ApiResponse(httpCode, statusCode, description, userDescription);
+	/// <summary>
+	/// API controller base extensions.
+	/// </summary>
+	public partial class ApiController
+	{
+		#region Generic Response Helper Methods
+		/// <summary>
+		/// Produce a generic API Response without a payload
+		/// </summary>
+		/// <returns>The response.</returns>
+		/// <param name="httpCode">Http code.</param>
+		/// <param name="statusCode">Status code.</param>
+		protected IApiResponse ApiResponse(int httpCode, string statusCode = null, string description = null, string userDescription = null)
+		=> new ApiResponse(httpCode, statusCode, description, userDescription);
 
-        /// <summary>
-        /// Produce a generic API Response with, optionally, a payload
-        /// </summary>
-        /// <returns>The response.</returns>
-        /// <param name="httpCode">Http code.</param>
-        /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiObjectResponse<T> ApiObjectResponse<T>(int httpCode, string statusCode = null, T data = default(T), string description = null, string userDescription = null)
-        => new ApiObjectResponse<T>(httpCode, statusCode, data, description, userDescription);
+		/// <summary>
+		/// Produce a generic API Response with, optionally, a payload
+		/// </summary>
+		/// <returns>The response.</returns>
+		/// <param name="httpCode">Http code.</param>
+		/// <typeparam name="T">The payload type expected by the method's signature</typeparam>
+		protected IApiObjectResponse<T> ApiObjectResponse<T>(int httpCode, string statusCode = null, T data = default(T), string description = null, string userDescription = null)
+		=> new ApiObjectResponse<T>(httpCode, statusCode, data, description, userDescription);
 
-        /// <summary>
-        /// Produce a generic API Response with, optionally, a payload
-        /// </summary>
-        /// <returns>The response.</returns>
-        /// <param name="httpCode">Http code.</param>
-        /// <param name="itemsCount">Number of items found</param>
-        /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, int itemsCount, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => new ApiEnumResponse<T>(httpCode, CurrentPage, itemsCount, data, statusCode, description, userDescription);
+		/// <summary>
+		/// Produce a generic API Response with, optionally, a payload
+		/// </summary>
+		/// <returns>The response.</returns>
+		/// <param name="httpCode">Http code.</param>
+		/// <param name="itemsCount">Number of items found</param>
+		/// <typeparam name="T">The payload type expected by the method's signature</typeparam>
+		protected IApiEnumResponse<T> ResponseEnum<T>(int httpCode, int itemsCount, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
+		=> new ApiEnumResponse<T>(httpCode, CurrentPage, itemsCount, data, statusCode, description, userDescription);
 
-        /// <summary>
-        /// Produce a generic API Response with, optionally, a payload
-        /// </summary>
-        /// <returns>The response.</returns>
-        /// <param name="httpCode">Http code.</param>
-        /// <param name="hasNextPage">There's another page</param>
-        /// <typeparam name="T">The payload type expected by the method's signature</typeparam>
-        protected IApiEnumResponse<T> ApiEnumResponse<T>(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => new ApiEnumResponse<T>(httpCode, CurrentPage, hasNextPage, data, statusCode, description, userDescription);
-        #endregion Generic Response Helper Methods
+		/// <summary>
+		/// Produce a generic API Response with, optionally, a payload
+		/// </summary>
+		/// <returns>The response.</returns>
+		/// <param name="httpCode">Http code.</param>
+		/// <param name="hasNextPage">There's another page</param>
+		/// <typeparam name="T">The payload type expected by the method's signature</typeparam>
+		protected IApiEnumResponse<T> ApiEnumResponse<T>(int httpCode, bool hasNextPage, string statusCode = null, IEnumerable<T> data = null, string description = null, string userDescription = null)
+		=> new ApiEnumResponse<T>(httpCode, CurrentPage, hasNextPage, data, statusCode, description, userDescription);
+		#endregion Generic Response Helper Methods
 
-        #region OkResponse (HTTP 200) Helper Methods
-        /// <summary>
-        /// Produce an HTTP 200 response
-        /// </summary>
-        /// <returns>The response.</returns>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        protected IApiResponse Ok(string description = null, string userDescription = null)
-        => new ApiResponse(Status200OK, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+		#region OkResponse (HTTP 200) Helper Methods
+		/// <summary>
+		/// Produce an HTTP 200 response
+		/// </summary>
+		/// <returns>The response.</returns>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		protected IApiResponse Ok(string description = null, string userDescription = null)
+		=> new ApiResponse(Status200OK, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
 
+		/// <summary>
+		/// Produce an HTTP 200 response 
+		/// </summary>
+		/// <returns>The object response.</returns>
+		/// <param name="data">Data.</param>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		protected IApiObjectResponse<T> OkObject<T>(T data = default(T), string description = null, string userDescription = null)
+		=> new ApiObjectResponse<T>(Status200OK, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription);
+		/// <summary>
+		/// Produce an HTTP 200 response
+		/// </summary>
+		/// <returns>The enum response.</returns>
+		/// <param name="itemsCount">The count of items found.</param>
+		/// <param name="data">Data.</param>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		protected IApiEnumResponse<T> OkEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null)
+		=> new ApiEnumResponse<T>(Status200OK, CurrentPage, itemsCount, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+		/// <summary>
+		/// Produce an HTTP 200 response
+		/// </summary>
+		/// <returns>The enum response.</returns>
+		/// <param name="hasNextPage">There's another page</param>
+		/// <param name="data">Data.</param>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
+		=> new ApiEnumResponse<T>(Status200OK, CurrentPage, hasNextPage, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
         /// <summary>
-        /// Produce an HTTP 200 response 
+        /// Produce an empty response.
+		/// Suitable in case of no data available.
         /// </summary>
-        /// <returns>The object response.</returns>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
+        /// <returns>The empty enum.</returns>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiObjectResponse<T> OkObject<T>(T data = default(T), string description = null, string userDescription = null)
-        => new ApiObjectResponse<T>(Status200OK, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription);
-        /// <summary>
-        /// Produce an HTTP 200 response
-        /// </summary>
-        /// <returns>The enum response.</returns>
-        /// <param name="itemsCount">The count of items found.</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> OkEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => new ApiEnumResponse<T>(Status200OK, CurrentPage, itemsCount, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
-        /// <summary>
-        /// Produce an HTTP 200 response
-        /// </summary>
-        /// <returns>The enum response.</returns>
-        /// <param name="hasNextPage">There's another page</param>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
-        => new ApiEnumResponse<T>(Status200OK, CurrentPage, hasNextPage, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
-        protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
-        #endregion OkResponse (HTTP 200) Helper Methods
+		protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
+		#endregion OkResponse (HTTP 200) Helper Methods
 
-        #region AcceptedResponse (HTTP 202) Helper Methods
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The accepted.</returns>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        protected IApiResponse Accepted(string description = null, string userDescription = null, string uri = null)
-        => ApiResponse(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
-            .SetLocation(uri);
+		#region AcceptedResponse (HTTP 202) Helper Methods
+		/// <summary>
+		/// Produce an HTTP 202 response
+		/// </summary>
+		/// <returns>The accepted.</returns>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <param name="uri">URI.</param>
+		protected IApiResponse Accepted(string description = null, string userDescription = null, string uri = null)
+		=> ApiResponse(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
+			.SetLocation(uri);
 
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The accepted.</returns>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        protected IApiResponse Accepted(string description = null, string userDescription = null, Uri uri = null)
-        => Accepted(description, userDescription, uri.ToString());
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The object.</returns>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-        => ApiObjectResponse<T>(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
-            .SetLocation(uri);
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The object.</returns>
-        /// <param name="data">Data.</param>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-        => Accepted(data, description, userDescription, uri.ToString());
+		/// <summary>
+		/// Produce an HTTP 202 response
+		/// </summary>
+		/// <returns>The accepted.</returns>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <param name="uri">URI.</param>
+		protected IApiResponse Accepted(string description = null, string userDescription = null, Uri uri = null)
+		=> Accepted(description, userDescription, uri.ToString());
+		/// <summary>
+		/// Produce an HTTP 202 response
+		/// </summary>
+		/// <returns>The object.</returns>
+		/// <param name="data">Data.</param>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <param name="uri">URI.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
+		=> ApiObjectResponse<T>(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
+			.SetLocation(uri);
+		/// <summary>
+		/// Produce an HTTP 202 response
+		/// </summary>
+		/// <returns>The object.</returns>
+		/// <param name="data">Data.</param>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <param name="uri">URI.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
+		=> Accepted(data, description, userDescription, uri.ToString());
 
-        protected IApiResponse AcceptedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
-        => Accepted(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
-        protected IApiResponse AcceptedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
-        => Accepted(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
-        protected IApiResponse AcceptedAtAction(string actionName, string description = null, string userDescription = null)
-        => Accepted(description, userDescription, GetActionUrl(actionName));
+		protected IApiResponse AcceptedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
+		=> Accepted(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		protected IApiResponse AcceptedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
+		=> Accepted(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		protected IApiResponse AcceptedAtAction(string actionName, string description = null, string userDescription = null)
+		=> Accepted(description, userDescription, GetActionUrl(actionName));
 
-        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Accepted(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
-        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Accepted(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
-        protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
-        => Accepted(data, description, userDescription, GetActionUrl(actionName));
+		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Accepted(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Accepted(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
+		=> Accepted(data, description, userDescription, GetActionUrl(actionName));
 
-        protected IApiResponse AcceptedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
-        => Accepted(description, userDescription, GetLink(routeName, routeValues));
-        protected IApiResponse AcceptedAtRoute(string routeName, string description = null, string userDescription = null)
-        => Accepted(description, userDescription, GetLink(routeName));
+		protected IApiResponse AcceptedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
+		=> Accepted(description, userDescription, GetLink(routeName, routeValues));
+		protected IApiResponse AcceptedAtRoute(string routeName, string description = null, string userDescription = null)
+		=> Accepted(description, userDescription, GetLink(routeName));
 
-        protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Accepted(data, description, userDescription, GetLink(routeName, routeValues));
-        protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
-        => Accepted(data, description, userDescription, GetLink(routeName));
+		protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Accepted(data, description, userDescription, GetLink(routeName, routeValues));
+		protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
+		=> Accepted(data, description, userDescription, GetLink(routeName));
 
-        #endregion AcceptedResponse (HTTP 202) Helper Methods
+		#endregion AcceptedResponse (HTTP 202) Helper Methods
 
-        #region CreatedResponse (HTTP 201) Helper Methods
-        /// <summary>
-        /// Produce an HTTP 202 response
-        /// </summary>
-        /// <returns>The accepted.</returns>
-        /// <param name="description">Description.</param>
-        /// <param name="userDescription">User description.</param>
-        /// <param name="uri">URI.</param>
-        protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
-        => ApiResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
-            .SetLocation(uri);
-        protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
-        => Created(description, userDescription, uri.ToString());
-        protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-        => ApiObjectResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
-            .SetLocation(uri);
-        protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-        => Created(data, description, userDescription, uri.ToString());
+		#region CreatedResponse (HTTP 201) Helper Methods
+		/// <summary>
+		/// Produce an HTTP 202 response
+		/// </summary>
+		/// <returns>The accepted.</returns>
+		/// <param name="description">Description.</param>
+		/// <param name="userDescription">User description.</param>
+		/// <param name="uri">URI.</param>
+		protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
+		=> ApiResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
+			.SetLocation(uri);
+		protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
+		=> Created(description, userDescription, uri.ToString());
+		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
+		=> ApiObjectResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
+			.SetLocation(uri);
+		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
+		=> Created(data, description, userDescription, uri.ToString());
 
-        protected IApiResponse CreatedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
-        => Created(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
-        protected IApiResponse CreatedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
-        => Created(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
-        protected IApiResponse CreatedAtAction(string actionName, string description = null, string userDescription = null)
-        => Created(description, userDescription, GetActionUrl(actionName));
+		protected IApiResponse CreatedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
+		=> Created(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		protected IApiResponse CreatedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
+		=> Created(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		protected IApiResponse CreatedAtAction(string actionName, string description = null, string userDescription = null)
+		=> Created(description, userDescription, GetActionUrl(actionName));
 
-        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Created(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
-        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Created(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
-        protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
-        => Created(data, description, userDescription, GetActionUrl(actionName));
+		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Created(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Created(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
+		=> Created(data, description, userDescription, GetActionUrl(actionName));
 
-        protected IApiResponse CreatedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
-        => Created(description, userDescription, GetLink(routeName, routeValues));
-        protected IApiResponse CreatedAtRoute(string routeName, string description = null, string userDescription = null)
-        => Created(description, userDescription, GetLink(routeName));
+		protected IApiResponse CreatedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
+		=> Created(description, userDescription, GetLink(routeName, routeValues));
+		protected IApiResponse CreatedAtRoute(string routeName, string description = null, string userDescription = null)
+		=> Created(description, userDescription, GetLink(routeName));
 
-        protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-        => Created(data, description, userDescription, GetLink(routeName, routeValues));
-        protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
-        => Created(data, description, userDescription, GetLink(routeName));
+		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
+		=> Created(data, description, userDescription, GetLink(routeName, routeValues));
+		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
+		=> Created(data, description, userDescription, GetLink(routeName));
+		#endregion CreatedResponse (HTTP 201) Helper Methods
 
-        #endregion CreatedResponse (HTTP 201) Helper Methods
+		#region BadRequest (HTTP 400) Helper Methods
+		protected IApiResponse BadRequest(string statusCode, string description = null, string userDescription = null)
+		=> new BadRequestResponse(statusCode, description, userDescription);
+		protected IApiResponse BadRequest(string description = null, string userDescription = null)
+        => new BadRequestResponse(description, userDescription);
+		protected IApiResponse BadRequest(ModelStateDictionary modelState)
+		=> new BadRequestResponse(ModelState);
+
+		protected IApiObjectResponse<T> BadObjectRequest<T>(string statusCode, T data = default(T), string description = null, string userDescription = null)
+		=> new BadObjectRequestResponse<T>(statusCode, data, description, userDescription);
+		protected IApiObjectResponse<T> BadObjectRequest<T>(T data = default(T), string description = null, string userDescription = null)
+		=> new BadObjectRequestResponse<T>(description, data, userDescription);
+		protected IApiObjectResponse<T> BadObjectRequest<T>(ModelStateDictionary modelState, T data = default(T))
+		=> new BadObjectRequestResponse<T>(modelState, data);      
+		#endregion BadRequest (HTTP 400) Helper Methods
 
 #if TO_BE_IMPLEMENTED
         // Please refer to Microsoft.AspNetCore.Mvc.BaseController
@@ -224,10 +246,7 @@ namespace Nexusat.AspNetCore.Mvc
         //
         // Methods
         //
-
-        [NonAction]
-        public virtual AcceptedAtRouteResult AcceptedAtRoute (object routeValues);
-
+        
         [NonAction]
         public virtual BadRequestObjectResult BadRequest (ModelStateDictionary modelState);
 
@@ -513,5 +532,5 @@ namespace Nexusat.AspNetCore.Mvc
         [NonAction]
         public virtual UnauthorizedResult Unauthorized ();
 #endif // TO_BE_IMPLEMENTD
-    }
+	}
 }

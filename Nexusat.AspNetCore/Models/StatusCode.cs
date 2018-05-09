@@ -120,24 +120,43 @@ namespace Nexusat.AspNetCore.Models
             code.StartsWith(CommonStatusCodes.OK_, StringComparison.InvariantCulture) ||
             code.StartsWith(CommonStatusCodes.KO_, StringComparison.InvariantCulture)
             );
+        /// <summary>
+        /// Checks that the code is valid or throws an Exception
+        /// </summary>
+        /// <param name="code">Code.</param>
         public static void CheckValidCodeOrThrow(string code)
         {
             if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid, code), nameof(code));
         }
-
+        /// <summary>
+		/// Checks that the code is a valid "OK" code or throws an Exception
+        /// </summary>
+        /// <param name="code">Code.</param>
         public static void CheckValidOkCodeOrThrow(string code)
         {
             if (!CheckOkValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusOkCodeInvalid, code), nameof(code));
         }
-
+        /// <summary>
+		/// Checks that the code is a valid "KO" code or throws an Exception
+        /// </summary>
+        /// <param name="code">Code.</param>
         public static void CheckValidKoCodeOrThrow(string code)
         {
             if (!CheckKoValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusKoCodeInvalid, code), nameof(code));
         }
 
-
+        /// <summary>
+		/// Returns a valid success (OK_*) code
+        /// </summary>
+        /// <returns>The status code.</returns>
+        /// <param name="subcode">Subcode.</param>
         public static StatusCode GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", CommonStatusCodes.OK_, FormatSubCode(subcode));
-        public static StatusCode GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", CommonStatusCodes.KO_, FormatSubCode(subcode));
+		/// <summary>
+		/// Returns a valid failure (KO_*) code
+        /// </summary>
+        /// <returns>The status code.</returns>
+        /// <param name="subcode">Subcode.</param>
+		public static StatusCode GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", CommonStatusCodes.KO_, FormatSubCode(subcode));
 
         private static string FormatSubCode(string subcode)
         {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Nexusat.AspNetCore.IntegrationTests.Models;
 using Nexusat.AspNetCore.IntegrationTestsFakeService;
@@ -59,5 +60,10 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
         protected async static Task<JObject> ReadAsJObjectAsync(HttpContent content)
             => JObject.Parse(await ReadAsStringAsync(content));
+
+		protected static StringContent GetJsonContent<T>(T data) {
+			var json = JsonConvert.SerializeObject(data);
+			return new StringContent(json, Encoding.UTF8, "application/json");
+		} 
     }
 }

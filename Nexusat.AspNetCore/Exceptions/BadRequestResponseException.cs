@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Nexusat.AspNetCore.Models;
 
 namespace Nexusat.AspNetCore.Exceptions
@@ -10,6 +11,13 @@ namespace Nexusat.AspNetCore.Exceptions
     [Serializable]
     public class BadRequestResponseException: ApiResponseException
     {
+		public ModelStateDictionary ModelState { get; }
+
+        public BadRequestResponseException(ModelStateDictionary modelState)
+			:this()
+		{
+			ModelState = modelState ?? throw new ArgumentNullException(nameof(modelState));
+		}
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>

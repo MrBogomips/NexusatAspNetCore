@@ -1,27 +1,17 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
+using Nexusat.AspNetCore.Exceptions;
+using Nexusat.AspNetCore.Models;
 
 namespace Nexusat.AspNetCore.Mvc
 {
     public class ValidateRequestAttribute : ActionFilterAttribute
     {
-        private readonly ILogger logger;
-        public ValidateRequestAttribute(ILogger<ValidateRequestAttribute> logger)
-        {
-            this.logger = logger;
-        }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            throw new NotImplementedException();
-            /*
-            if (!context.ModelState.IsValid)
-            {
-                logger.LogDebug("Request was not valid");
-                context.Result = new BadRequestObjectResult(
-                    new ModelBadRequestResponse(context.HttpContext, context.ModelState));
-            }
-            */
+			if (!context.ModelState.IsValid)
+				context.Result = new BadRequestResponse(context.ModelState);
         }
     }
 }

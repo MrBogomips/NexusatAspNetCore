@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html",
-          "hash": "offp9jXlWKmUIrgiFDOgJQ=="
+          "hash": "zPNC8DtVp5X0KvGHDKFZjw=="
         }
       },
       "is_incremental": true,
@@ -329,11 +329,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html",
+          "hash": "cFmKlN0rqYdbNoZ+PT5i7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Models.BadRequestResponse.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.BadRequestResponse.html",
-          "hash": "6FDruwyCf2QBFZSwnKSQtw=="
+          "hash": "4OJIrroCHb0adkEHhARXmw=="
         }
       },
       "is_incremental": true,
@@ -561,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.StatusCode.html",
-          "hash": "EM7dOOJ2cssQdMi7rFG0ew=="
+          "hash": "yhXUx/u34KPBVtOWEDI+9Q=="
         }
       },
       "is_incremental": true,
@@ -585,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html",
-          "hash": "Oe/rKelOTvO9oLb0IZwOwA=="
+          "hash": "YV3i7C4vNr5wIPzbANxvfg=="
         }
       },
       "is_incremental": true,
@@ -597,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "v1cU+uupHiHs/HHkwHBgEg=="
+          "hash": "hJclvvZ56pDWLF7dr91/pw=="
         }
       },
       "is_incremental": true,
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.ApiController.html",
-          "hash": "QMTPWGsh8O2HmWWh5J2+8w=="
+          "hash": "dMUVZSnvi48FPzjcCAiR8Q=="
         }
       },
       "is_incremental": true,
@@ -705,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.ValidateRequestAttribute.html",
-          "hash": "nqJZnXrR7Qpdt0tCCZGRLw=="
+          "hash": "ZK2xq/mVFjHcwC0iInAAyA=="
         }
       },
       "is_incremental": true,
@@ -777,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zt8QppSAEXH28gyPnAhQqA=="
+          "hash": "Gyr1PrWw82yWJuv662m5hg=="
         }
       },
       "is_incremental": false,
