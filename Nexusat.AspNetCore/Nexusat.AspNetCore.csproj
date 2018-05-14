@@ -22,7 +22,6 @@ Added support to Accepted and Created</PackageReleaseNotes>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <ItemGroup>
-    <Folder Include="Infrastructure\Middleware\" />
     <Folder Include="Mvc\Formatters\" />
     <Folder Include="Mvc\Formatters\Internals\" />
     <Folder Include="Middleware\" />

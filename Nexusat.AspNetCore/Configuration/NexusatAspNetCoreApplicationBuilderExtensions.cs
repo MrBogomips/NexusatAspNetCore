@@ -29,7 +29,11 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             if (app == null)
                 throw new ArgumentNullException(nameof(app));
-            return app.UseMiddleware<UnhandledExceptionMiddleware>();
+			
+			app.UseMiddleware<CustomStatusCodesMiddleware>();
+			app.UseMiddleware<UnhandledExceptionMiddleware>();
+
+            return app;
         }
     }
    

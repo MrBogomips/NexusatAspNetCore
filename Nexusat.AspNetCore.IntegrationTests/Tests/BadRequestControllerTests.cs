@@ -26,14 +26,11 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             Output.WriteLine(json.ToString());
 
             var httpCode = response.StatusCode;
-            var actualStatus = ExtractStatus(json);
-            var actualErrors = ExtractValidationErrorsInfo(json);
-
+			var actualStatus = ExtractStatus(json);
+                     
             // Assert         
-            Assert.Equal(HttpStatusCode.BadRequest, httpCode);
-            Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
-            Assert.NotNull(actualErrors);
-            Assert.True(actualErrors.Count > 0);
+            Assert.Equal(HttpStatusCode.UnsupportedMediaType, httpCode);
+			Assert.Equal("KO_UNSUPPORTED_MEDIA_TYPE", actualStatus.Code);
 		}
 
         [Fact]
