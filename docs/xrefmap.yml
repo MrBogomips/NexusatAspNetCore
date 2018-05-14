@@ -2063,6 +2063,18 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting
   nameWithType: BadRequest.ApiResponse.OnFormatting
+- uid: Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
+  name: DefaultStatusCode
+  href: api/Nexusat.AspNetCore.Models.BadRequest.html#Nexusat_AspNetCore_Models_BadRequest_DefaultStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
+  fullName: Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
+  nameWithType: BadRequest.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.BadRequest.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Nexusat.AspNetCore.Models.BadRequest.html#Nexusat_AspNetCore_Models_BadRequest_HttpStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.BadRequest.HttpStatusCode
+  fullName: Nexusat.AspNetCore.Models.BadRequest.HttpStatusCode
+  nameWithType: BadRequest.HttpStatusCode
 - uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1
   name: BadRequest.ObjectResponse<T>
   href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html

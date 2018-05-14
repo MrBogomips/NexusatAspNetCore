@@ -148,6 +148,8 @@
   "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(System.String,System.String,System.String)": "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)": "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.yml",
   "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)": "Nexusat.AspNetCore.Models.BadRequest.ApiResponse.yml",
+  "Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode": "Nexusat.AspNetCore.Models.BadRequest.yml",
+  "Nexusat.AspNetCore.Models.BadRequest.HttpStatusCode": "Nexusat.AspNetCore.Models.BadRequest.yml",
   "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1": "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.yml",
   "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(`0,System.String,System.String)": "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.yml",
   "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,`0)": "Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.yml",

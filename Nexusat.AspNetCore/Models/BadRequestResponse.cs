@@ -3,12 +3,15 @@ using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Nexusat.AspNetCore.Exceptions;
-using Nexusat.AspNetCore.Models;
+using StatusCodes = Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace Nexusat.AspNetCore.Models
 {
 
 	public static class BadRequest {
+		public const string DefaultStatusCode = CommonStatusCodes.BAD_REQUEST;
+		public const int HttpStatusCode = StatusCodes.Status400BadRequest;
+
 		/// <summary>
         /// Bad request response.
         /// </summary>
@@ -16,10 +19,10 @@ namespace Nexusat.AspNetCore.Models
         {
             private ModelStateDictionary ModelState { get; set; }
             public ApiResponse(string description = null, string userDescription = null)
-                : this(CommonStatusCodes.BAD_REQUEST, description, userDescription) { }
+				: this(DefaultStatusCode, description, userDescription) { }
 
             public ApiResponse(string statusCode, string description = null, string userDescription = null)
-                : base((int)HttpStatusCode.BadRequest, statusCode, description, userDescription)
+                : base(HttpStatusCode, statusCode, description, userDescription)
             {
                 StatusCode.CheckValidKoCodeOrThrow(statusCode);
             }
