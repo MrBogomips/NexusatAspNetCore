@@ -933,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.ApiController.html",
-          "hash": "HScLuNHw+aQyLbkwvSTVOw=="
+          "hash": "o9Z5dVWyq/bRllM8e7RmdA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1044,7 +1044,7 @@
           "hash": "hjV7UAatgn8ii98VBcoOgw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {

@@ -14,7 +14,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// </summary>
         /// <returns>The get200.</returns>
         [HttpGet("200")]
-        public IApiResponse Get200() => Ok();
+        public IApiResponse Get200() => new Ok.Response();
 
         /// <summary>
         /// A custom response without a data payload
@@ -22,7 +22,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomRespone")]
         public IApiResponse Get299CustomResponse() 
-        => ApiResponse(299, "OK_299_CUSTOM", "Description", "UserDescription");
+        => new ApiResponse(299, "OK_299_CUSTOM", "Description", "UserDescription");
 
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// <returns>The custom response.</returns>
         [HttpGet("299CustomStringRespone")]
         public IApiObjectResponse<string> Get299CustomStringResponse() 
-        => ApiObjectResponse<string>(299, "OK_299_CUSTOM", "Hello World!", "Description", "UserDescription");
+        => new ApiObjectResponse<string>(299, "OK_299_CUSTOM", "Hello World!", "Description", "UserDescription");
 
         /// <summary>
         /// A custom response with a data payload
@@ -40,12 +40,12 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("299CustomEnumStringRespone")]
         [ValidatePagination]
         public IApiEnumResponse<string> Get299CustomEnumStringResponse() 
-        => ApiEnumResponse<string>(299, true, "OK_299_CUSTOM", new[] { "Hello", "World" }, "Description", "UserDescription");
+		=> new ApiEnumResponse<string>(299, CurrentPage, true, statusCode: "OK_299_CUSTOM", data: new[] { "Hello", "World" }, description: "Description", userDescription: "UserDescription");
 
         [HttpGet("200OkResponseWithException")]
         public IApiResponse Get200OkResponseWithException()
         {
-            var response = Ok();
+            var response = new Ok.Response();
 
             try
             {
@@ -62,7 +62,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("500KoUnhandledException")]
         public IApiResponse Get500KoUnhandledException()
         {
-            var response = Ok();
+            var response = new Ok.Response();
 
             var num = 1;
             var den = 0;
@@ -74,15 +74,16 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
         #region Ok (HTTP 200) Helper Methods flavours
         [HttpGet("200OkResponseWithoutPayload")]
-        public IApiResponse GetOkResponseWithourPayload() => Ok();
+        public IApiResponse GetOkResponseWithourPayload() => new Ok.Response();
 
         [HttpGet("200OkResponseWithObject")]
         public IApiObjectResponse<string> GetOkResponseWithObject() 
-		=> OkObject(data: "Ciccio");
+		=> new Ok.Object<string>(data: "Ciccio");
 
         [HttpGet("200OkResponseWithManyObjects")]
         [ValidatePagination]
-        public IApiEnumResponse<string> GetOkResponseWithManyObjects() => OkEnum(2, data: new[] { "Ciccio", "buffo" });
+        public IApiEnumResponse<string> GetOkResponseWithManyObjects() 
+		=> new Ok.Enum<string>(new[] { "Ciccio", "buffo" }, CurrentPage, 2);
         #endregion Ok Helper Methods falvours
 
         #region Accpepted (HTTP 202) Helper Methods flavours

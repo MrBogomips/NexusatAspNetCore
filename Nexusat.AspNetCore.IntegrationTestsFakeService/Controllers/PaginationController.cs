@@ -18,7 +18,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("CheckSimpleValidation")]
         public IApiEnumResponse<string> GetPaginationCheckLimits()
         {
-            return OkEnum(Data.Count, Data);
+			return new Ok.Enum<string>(Data, CurrentPage, Data.Count);
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [ValidatePagination]
         [HttpGet("CheckPaginationCursor")]
         public IApiObjectResponse<PaginationCursor> GetPaginationCursor()
-            => OkObject(CurrentPage);
+            => new Ok.Object<PaginationCursor>(CurrentPage);
 
         /// <summary>
         /// Overrides Application defaults
@@ -39,7 +39,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [ValidatePagination(DefaultPageSize = 7, MaxPageSize = 77)]
         [HttpGet("CheckPaginationCursorOverrides")]
         public IApiObjectResponse<PaginationCursor> GetPaginationCursorOverrides()
-            => OkObject(CurrentPage);
+            => new Ok.Object<PaginationCursor>(CurrentPage);
 
         /// <summary>
         /// Missing the validation attribute on the action method will
@@ -48,7 +48,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         /// <returns>The pagination cursor missing validation.</returns>
         [HttpGet("GetPaginationCursorMissingValidation")]
         public IApiObjectResponse<PaginationCursor> GetPaginationCursorMissingValidation()
-            => OkObject(CurrentPage);
+            => new Ok.Object<PaginationCursor>(CurrentPage);
 
         [ValidatePagination]
         [HttpGet("GetNumbersPaginated")]
@@ -62,7 +62,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
             var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
 
-            return OkEnum(itemsCount, items);
+            return new Ok.Enum<int>(items, CurrentPage, itemsCount);
         }
 
         [ValidatePagination(DefaultPageSize = 100)]
@@ -78,7 +78,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
             var items = Enumerable.Range(0, itemsCount).ToList();
 
-            return OkEnum(itemsCount, items);
+			return new Ok.Enum<int>(items, CurrentPage, itemsCount);
         }
 
         [ValidatePagination]
@@ -87,7 +87,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         {
             var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
 
-            return OkEnum(true, items);
+            return new Ok.Enum<int>(items, CurrentPage, true);
         }
 
         [ValidatePagination]

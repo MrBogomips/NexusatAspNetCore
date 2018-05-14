@@ -36,7 +36,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_UNK", statusCode);
+            Assert.Equal("OK", statusCode);
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_UNK", statusCode);
+            Assert.Equal("OK", statusCode);
         }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_UNK", statusCode);
+            Assert.Equal("OK", statusCode);
         }
 
         [Theory]

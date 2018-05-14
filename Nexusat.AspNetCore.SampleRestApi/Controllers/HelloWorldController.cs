@@ -18,7 +18,7 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
-            return OkObject<Response>();
+            return new Ok.Object<Response>();
 
            
             /*

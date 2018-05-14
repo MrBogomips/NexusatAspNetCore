@@ -18,14 +18,14 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 				throw new BadRequestResponseException(ModelState);
 			}
 
-			return OkObject($"Hello {request.Name} {request.Surname}");
+			return new Ok.Object<string>(data: $"Hello {request.Name} {request.Surname}");
 		}
 
 		[HttpPost("ModelStateAutoValidation")]
 		[ValidateRequest]
 		public IApiObjectResponse<string> ModelStateAutoValidation([FromBody] HelloWorldRequest request)
         {         
-            return OkObject($"Hello {request.Name} {request.Surname}");
+			return new Ok.Object<string>(data: $"Hello {request.Name} {request.Surname}");
         }
     }
 }

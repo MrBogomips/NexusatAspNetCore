@@ -237,7 +237,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 200,
-                Code = "OK_UNK",
+                Code = "OK",
                 Description = null,
                 UserDescription = null
             };

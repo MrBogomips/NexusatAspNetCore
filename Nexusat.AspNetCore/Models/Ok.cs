@@ -11,7 +11,7 @@ namespace Nexusat.AspNetCore.Models
 
         public class Response : ApiResponse
         {
-            public Response() : base(HttpStatusCode) { }
+            public Response() : base(HttpStatusCode, DefaultStatusCode) { }
             public Response(string statusCode, string description = null, string userDescription = null)
                 : base(HttpStatusCode, statusCode, description, userDescription)
             {
@@ -41,7 +41,7 @@ namespace Nexusat.AspNetCore.Models
         public class Enum<T> : ApiEnumResponse<T>
         {
             public Enum(IEnumerable<T> data, PaginationCursor current, bool hasNextPage, string description = null, string userDescription = null)
-                : base(HttpStatusCode, current, hasNextPage, data, description: description, userDescription: userDescription) { }
+				: base(HttpStatusCode, current, hasNextPage, data, statusCode: DefaultStatusCode, description: description, userDescription: userDescription) { }
             public Enum(string statusCode, IEnumerable<T> data, PaginationCursor current, bool hasNextPage, string description = null, string userDescription = null)
                 : base(HttpStatusCode, current, hasNextPage, data, statusCode: statusCode, description: description, userDescription: userDescription)
             {
@@ -52,7 +52,7 @@ namespace Nexusat.AspNetCore.Models
                 StatusCode.CheckValidOkCodeOrThrow(statusCode);
             }
             public Enum(IEnumerable<T> data, PaginationCursor current, int itemsCount, string description = null, string userDescription = null)
-                : base(HttpStatusCode, current, itemsCount, data, description: description, userDescription: userDescription) { }
+				: base(HttpStatusCode, current, itemsCount, data, statusCode: DefaultStatusCode, description: description, userDescription: userDescription) { }
             public Enum(string statusCode, IEnumerable<T> data, PaginationCursor current, int itemsCount, string description = null, string userDescription = null)
                 : base(HttpStatusCode, current, itemsCount, data, statusCode: statusCode, description: description, userDescription: userDescription)
             {

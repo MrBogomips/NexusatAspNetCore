@@ -16,6 +16,6 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         public string Get() => "Hello World!";
 
         [HttpGet("api_response")]
-        public IApiObjectResponse<string> GetObject() => OkObject("Hello World!");
+		public IApiObjectResponse<string> GetObject() => new Ok.Object<string>(data: "Hello World!");
     }
 }
