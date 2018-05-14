@@ -21,15 +21,19 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 		{         
 			// Act
 			var response = await Client.PostAsync("/BadRequest/ModelStateManualValidation", null);
-			//response.EnsureSuccessStatusCode();
-			Output.WriteLine(await response.Content.ReadAsStringAsync());
-			return;
-
 			var json = await ReadAsJObjectAsync(response.Content);
-			var httpCode = response.StatusCode;
-			//var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
 
-			Output.WriteLine(json.ToString());
+            Output.WriteLine(json.ToString());
+
+            var httpCode = response.StatusCode;
+            var actualStatus = ExtractStatus(json);
+            var actualErrors = ExtractValidationErrorsInfo(json);
+
+            // Assert         
+            Assert.Equal(HttpStatusCode.BadRequest, httpCode);
+            Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
+            Assert.NotNull(actualErrors);
+            Assert.True(actualErrors.Count > 0);
 		}
 
         [Fact]
@@ -51,10 +55,38 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 			var actualStatus = ExtractStatus(json);
 			var actualErrors = ExtractValidationErrorsInfo(json);
 
+			// Assert         
 			Assert.Equal(HttpStatusCode.BadRequest, httpCode);
 			Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
 			Assert.NotNull(actualErrors);
 			Assert.True(actualErrors.Count > 0);
+        }
+
+		[Fact]
+		public async void ModelStateAutoValidation()
+        {
+            // Setup
+            var request = GetJsonContent(new
+            {
+                Name = "G",
+                Surname = "Costagliola"
+            });
+
+            // Act
+			var response = await Client.PostAsync("/BadRequest/ModelStateAutoValidation", request);
+            var json = await ReadAsJObjectAsync(response.Content);
+
+            Output.WriteLine(json.ToString());
+
+            var httpCode = response.StatusCode;
+            var actualStatus = ExtractStatus(json);
+            var actualErrors = ExtractValidationErrorsInfo(json);
+
+            // Assert         
+            Assert.Equal(HttpStatusCode.BadRequest, httpCode);
+            Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
+            Assert.NotNull(actualErrors);
+            Assert.True(actualErrors.Count > 0);
         }
     }
 }
