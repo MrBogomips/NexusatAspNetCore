@@ -17,7 +17,7 @@ namespace Nexusat.AspNetCore.Configuration
         /// safely assumed to be «OK»
         /// </summary>
         /// <value>The default ok status code.</value>
-        public string DefaultOkStatusCode { get; internal set; } = CommonStatusCodes.DEFAULT_OK_STATUS_CODE;
+        public string DefaultOkStatusCode { get; internal set; } = CommonStatusCodes.OK_DEFAULT;
         /// <summary>
         /// Gets or sets the default ko status code.
         /// This status code is set whenever using a response method without
@@ -25,7 +25,7 @@ namespace Nexusat.AspNetCore.Configuration
         /// safely assumed to be «KO»
         /// </summary>
         /// <value>The default ko status code.</value>
-        public string DefaultKoStatusCode { get; internal set; } = CommonStatusCodes.DEFAULT_KO_STATUS_CODE;
+        public string DefaultKoStatusCode { get; internal set; } = CommonStatusCodes.KO_DEFAULT;
         /// <summary>
         /// Gets or sets the default unset status code.
         /// This status code is set whenever using a response method without
@@ -34,7 +34,7 @@ namespace Nexusat.AspNetCore.Configuration
         /// We suggest, for defensive approach, to use a «KO» code for this case.
         /// </summary>
         /// <value>The default unset status code.</value>
-        public string DefaultUnsetStatusCode { get; internal set; } = CommonStatusCodes.DEFAULT_UNK_STATUS_CODE;
+        public string DefaultUnsetStatusCode { get; internal set; } = CommonStatusCodes.UNK_DEFAULT;
 
         /// <summary>
         /// Gets or sets a value indicating whether this

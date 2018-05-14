@@ -19,36 +19,36 @@ namespace Nexusat.AspNetCore.Models
         /// <summary>
         /// The default status code used in case of successful operations
         /// </summary>
-        public const string DEFAULT_OK_STATUS_CODE = OK + "_DEFAULT";
+		public const string OK_DEFAULT = OK_ + "DEFAULT";
         /// <summary>
         /// The default status code used in case of failed operations
         /// </summary>
-        public const string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
+		public const string KO_DEFAULT = KO_ + "DEFAULT";
         /// <summary>
         /// The NotFound status code.
         /// </summary>
-        public const string NOT_FOUND_STATUS_CODE = KO + "_NOT_FOUND";
+		public const string NOT_FOUND = KO_ + "NOT_FOUND";
         /// <summary>
         /// The BadRequest status code.
         /// </summary>
-        public const string BAD_REQUEST_STATUS_CODE = KO + "_BAD_REQUEST";
+		public const string BAD_REQUEST = KO_ + "BAD_REQUEST";
         /// <summary>
         /// The unhandled exception status code.
         /// </summary>
-        public const string UNHANDLED_EXCEPTION_STATUS_CODE = KO + "_UNHANDLED_EXCEPTION";
+		public const string UNHANDLED_EXCEPTION = KO_ + "UNHANDLED_EXCEPTION";
         /// <summary>
         /// The unsupported media status code.
         /// </summary>
-		public const string UNSUPPORTED_MEDIA_TYPE = KO + "_UNSUPPORTED_MEDIA_TYPE";
+		public const string UNSUPPORTED_MEDIA_TYPE = KO_ + "UNSUPPORTED_MEDIA_TYPE";
 
         /// <summary>
         /// The default status code used in case of ambigous operations not specifically configured by the user
         /// </summary>
-        public const string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
+        public const string UNK_DEFAULT = KO_DEFAULT + "_UNK";
         /// <summary>
         /// This status code should never be served to the client
         /// </summary>
-        internal const string OK_INTERNAL_PIZZA = OK + "_INTERNAL_PIZZA";
+		internal const string OK_INTERNAL_PIZZA = OK_ + "INTERNAL_PIZZA";
 
 
     }

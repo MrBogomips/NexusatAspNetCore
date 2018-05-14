@@ -224,18 +224,18 @@ namespace Nexusat.AspNetCore.Mvc
 
 		#region BadRequest (HTTP 400) Helper Methods
 		protected IApiResponse BadRequest(string statusCode, string description = null, string userDescription = null)
-		=> new BadRequestResponse(statusCode, description, userDescription);
+		=> new BadRequest.ApiResponse(statusCode, description, userDescription);
 		protected IApiResponse BadRequest(string description = null, string userDescription = null)
-        => new BadRequestResponse(description, userDescription);
+		=> new BadRequest.ApiResponse(description, userDescription);
 		protected IApiResponse BadRequest(ModelStateDictionary modelState)
-		=> new BadRequestResponse(ModelState);
+		=> new BadRequest.ApiResponse(ModelState);
 
 		protected IApiObjectResponse<T> BadObjectRequest<T>(string statusCode, T data = default(T), string description = null, string userDescription = null)
-		=> new BadObjectRequestResponse<T>(statusCode, data, description, userDescription);
+		=> new BadRequest.ObjectResponse<T>(statusCode, data, description, userDescription);
 		protected IApiObjectResponse<T> BadObjectRequest<T>(T data = default(T), string description = null, string userDescription = null)
-		=> new BadObjectRequestResponse<T>(description, data, userDescription);
+		=> new BadRequest.ObjectResponse<T>(description, data, userDescription);
 		protected IApiObjectResponse<T> BadObjectRequest<T>(ModelStateDictionary modelState, T data = default(T))
-		=> new BadObjectRequestResponse<T>(modelState, data);      
+		=> new BadRequest.ObjectResponse<T>(modelState, data);      
 		#endregion BadRequest (HTTP 400) Helper Methods
 
 #if TO_BE_IMPLEMENTED

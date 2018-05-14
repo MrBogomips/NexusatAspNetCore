@@ -10,7 +10,7 @@ namespace Nexusat.AspNetCore.Models
 	public class NotFoundResponse: ApiResponse
     {
         public NotFoundResponse()
-            :base((int)HttpStatusCode.NotFound, CommonStatusCodes.NOT_FOUND_STATUS_CODE)
+            :base((int)HttpStatusCode.NotFound, CommonStatusCodes.NOT_FOUND)
         { }
     }
 }

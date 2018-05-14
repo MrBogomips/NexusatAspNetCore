@@ -51,7 +51,7 @@ namespace Nexusat.AspNetCore.Middleware
                     switch (exception)
                     {
                         case BadRequestResponseException br:
-                            response = BadRequestResponse.GetFromException(br);
+                            response = BadRequest.ApiResponse.GetFromException(br);
                             break;
                         case NoContentResponseException nr:
                             response = new NoContentResponse();

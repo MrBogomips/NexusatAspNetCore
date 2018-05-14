@@ -11,7 +11,7 @@ namespace Nexusat.AspNetCore.Mvc
         public override void OnActionExecuting(ActionExecutingContext context)
         {
 			if (!context.ModelState.IsValid)
-				context.Result = new BadRequestResponse(context.ModelState);
+				context.Result = new BadRequest.ApiResponse(context.ModelState);
         }
     }
 }

@@ -1577,176 +1577,182 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
   nameWithType: ApiResponse.ValidationErrors
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1
-  name: BadObjectRequestResponse<T>
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html
-  commentId: T:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1
-  name.vb: BadObjectRequestResponse(Of T)
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T)
-  nameWithType: BadObjectRequestResponse<T>
-  nameWithType.vb: BadObjectRequestResponse(Of T)
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(`0,System.String,System.String)
-  name: BadObjectRequestResponse(T, String, String)
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1__ctor__0_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(`0,System.String,System.String)
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.BadObjectRequestResponse(T, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).BadObjectRequestResponse(T, System.String, System.String)
-  nameWithType: BadObjectRequestResponse<T>.BadObjectRequestResponse(T, String, String)
-  nameWithType.vb: BadObjectRequestResponse(Of T).BadObjectRequestResponse(T, String, String)
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,`0)
-  name: BadObjectRequestResponse(ModelStateDictionary, T)
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary__0_
-  commentId: M:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,`0)
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.BadObjectRequestResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).BadObjectRequestResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
-  nameWithType: BadObjectRequestResponse<T>.BadObjectRequestResponse(ModelStateDictionary, T)
-  nameWithType.vb: BadObjectRequestResponse(Of T).BadObjectRequestResponse(ModelStateDictionary, T)
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(System.String,`0,System.String,System.String)
-  name: BadObjectRequestResponse(String, T, String, String)
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1__ctor_System_String__0_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor(System.String,`0,System.String,System.String)
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.BadObjectRequestResponse(System.String, T, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).BadObjectRequestResponse(System.String, T, System.String, System.String)
-  nameWithType: BadObjectRequestResponse<T>.BadObjectRequestResponse(String, T, String, String)
-  nameWithType.vb: BadObjectRequestResponse(Of T).BadObjectRequestResponse(String, T, String, String)
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor*
-  name: BadObjectRequestResponse
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1__ctor_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.#ctor
+- uid: Nexusat.AspNetCore.Models.BadRequest
+  name: BadRequest
+  href: api/Nexusat.AspNetCore.Models.BadRequest.html
+  commentId: T:Nexusat.AspNetCore.Models.BadRequest
+  fullName: Nexusat.AspNetCore.Models.BadRequest
+  nameWithType: BadRequest
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse
+  name: BadRequest.ApiResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.BadRequest.ApiResponse
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse
+  nameWithType: BadRequest.ApiResponse
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  name: ApiResponse(ModelStateDictionary)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.ApiResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  nameWithType: BadRequest.ApiResponse.ApiResponse(ModelStateDictionary)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(System.String,System.String)
+  name: ApiResponse(String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse__ctor_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.ApiResponse(System.String, System.String)
+  nameWithType: BadRequest.ApiResponse.ApiResponse(String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(System.String,System.String,System.String)
+  name: ApiResponse(String, String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse__ctor_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.ApiResponse(System.String, System.String, System.String)
+  nameWithType: BadRequest.ApiResponse.ApiResponse(String, String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor*
+  name: ApiResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.#ctor
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.BadObjectRequestResponse
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).BadObjectRequestResponse
-  nameWithType: BadObjectRequestResponse<T>.BadObjectRequestResponse
-  nameWithType.vb: BadObjectRequestResponse(Of T).BadObjectRequestResponse
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.Data
-  name: Data
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1_Data
-  commentId: P:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.Data
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.Data
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).Data
-  nameWithType: BadObjectRequestResponse<T>.Data
-  nameWithType.vb: BadObjectRequestResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.Data*
-  name: Data
-  href: api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html#Nexusat_AspNetCore_Models_BadObjectRequestResponse_1_Data_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadObjectRequestResponse`1.Data
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadObjectRequestResponse<T>.Data
-  fullName.vb: Nexusat.AspNetCore.Models.BadObjectRequestResponse(Of T).Data
-  nameWithType: BadObjectRequestResponse<T>.Data
-  nameWithType.vb: BadObjectRequestResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse
-  name: BadRequestResponse
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html
-  commentId: T:Nexusat.AspNetCore.Models.BadRequestResponse
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse
-  nameWithType: BadRequestResponse
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  name: BadRequestResponse(ModelStateDictionary)
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  nameWithType: BadRequestResponse.BadRequestResponse(ModelStateDictionary)
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String)
-  name: BadRequestResponse(String, String)
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String)
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse(System.String, System.String)
-  nameWithType: BadRequestResponse.BadRequestResponse(String, String)
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String,System.String)
-  name: BadRequestResponse(String, String, String)
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor(System.String,System.String,System.String)
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse(System.String, System.String, System.String)
-  nameWithType: BadRequestResponse.BadRequestResponse(String, String, String)
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.#ctor*
-  name: BadRequestResponse
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse__ctor_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadRequestResponse.#ctor
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.BadRequestResponse
-  nameWithType: BadRequestResponse.BadRequestResponse
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.ApiResponse
+  nameWithType: BadRequest.ApiResponse.ApiResponse
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
   name: GetFromException(BadRequestResponseException)
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_GetFromException_Nexusat_AspNetCore_Exceptions_BadRequestResponseException_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
-  nameWithType: BadRequestResponse.GetFromException(BadRequestResponseException)
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException*
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse_GetFromException_Nexusat_AspNetCore_Exceptions_BadRequestResponseException_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
+  nameWithType: BadRequest.ApiResponse.GetFromException(BadRequestResponseException)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException*
   name: GetFromException
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_GetFromException_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse_GetFromException_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.GetFromException
-  nameWithType: BadRequestResponse.GetFromException
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.GetFromException
+  nameWithType: BadRequest.ApiResponse.GetFromException
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
   name: OnFormatting(ActionContext)
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
-  nameWithType: BadRequestResponse.OnFormatting(ActionContext)
-- uid: Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting*
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: BadRequest.ApiResponse.OnFormatting(ActionContext)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting*
   name: OnFormatting
-  href: api/Nexusat.AspNetCore.Models.BadRequestResponse.html#Nexusat_AspNetCore_Models_BadRequestResponse_OnFormatting_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html#Nexusat_AspNetCore_Models_BadRequest_ApiResponse_OnFormatting_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadRequestResponse.OnFormatting
-  nameWithType: BadRequestResponse.OnFormatting
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiResponse.OnFormatting
+  nameWithType: BadRequest.ApiResponse.OnFormatting
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1
+  name: BadRequest.ObjectResponse<T>
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html
+  commentId: T:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1
+  name.vb: BadRequest.ObjectResponse(Of T)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T)
+  nameWithType: BadRequest.ObjectResponse<T>
+  nameWithType.vb: BadRequest.ObjectResponse(Of T)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(`0,System.String,System.String)
+  name: ObjectResponse(T, String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1__ctor__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.ObjectResponse(T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).ObjectResponse(T, System.String, System.String)
+  nameWithType: BadRequest.ObjectResponse<T>.ObjectResponse(T, String, String)
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).ObjectResponse(T, String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,`0)
+  name: ObjectResponse(ModelStateDictionary, T)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary__0_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,`0)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.ObjectResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).ObjectResponse(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
+  nameWithType: BadRequest.ObjectResponse<T>.ObjectResponse(ModelStateDictionary, T)
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).ObjectResponse(ModelStateDictionary, T)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(System.String,`0,System.String,System.String)
+  name: ObjectResponse(String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1__ctor_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor(System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.ObjectResponse(System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).ObjectResponse(System.String, T, System.String, System.String)
+  nameWithType: BadRequest.ObjectResponse<T>.ObjectResponse(String, T, String, String)
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).ObjectResponse(String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor*
+  name: ObjectResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.ObjectResponse
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).ObjectResponse
+  nameWithType: BadRequest.ObjectResponse<T>.ObjectResponse
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).ObjectResponse
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.Data
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1_Data
+  commentId: P:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.Data
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).Data
+  nameWithType: BadRequest.ObjectResponse<T>.Data
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.Data*
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html#Nexusat_AspNetCore_Models_BadRequest_ObjectResponse_1_Data_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.ObjectResponse`1.Data
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.BadRequest.ObjectResponse(Of T).Data
+  nameWithType: BadRequest.ObjectResponse<T>.Data
+  nameWithType.vb: BadRequest.ObjectResponse(Of T).Data
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes
   name: CommonStatusCodes
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html
   commentId: T:Nexusat.AspNetCore.Models.CommonStatusCodes
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes
   nameWithType: CommonStatusCodes
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
-  name: BAD_REQUEST_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_BAD_REQUEST_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST_STATUS_CODE
-  nameWithType: CommonStatusCodes.BAD_REQUEST_STATUS_CODE
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
-  name: DEFAULT_KO_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_KO_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_KO_STATUS_CODE
-  nameWithType: CommonStatusCodes.DEFAULT_KO_STATUS_CODE
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
-  name: DEFAULT_OK_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_OK_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_OK_STATUS_CODE
-  nameWithType: CommonStatusCodes.DEFAULT_OK_STATUS_CODE
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
-  name: DEFAULT_UNK_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_DEFAULT_UNK_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
-  nameWithType: CommonStatusCodes.DEFAULT_UNK_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST
+  name: BAD_REQUEST
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_BAD_REQUEST
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.BAD_REQUEST
+  nameWithType: CommonStatusCodes.BAD_REQUEST
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
   name: KO
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_KO
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
   nameWithType: CommonStatusCodes.KO
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
-  name: NOT_FOUND_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_NOT_FOUND_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND_STATUS_CODE
-  nameWithType: CommonStatusCodes.NOT_FOUND_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
+  name: KO_DEFAULT
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_KO_DEFAULT
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
+  nameWithType: CommonStatusCodes.KO_DEFAULT
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND
+  name: NOT_FOUND
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_NOT_FOUND
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND
+  nameWithType: CommonStatusCodes.NOT_FOUND
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
   name: OK
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_OK
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
   nameWithType: CommonStatusCodes.OK
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
-  name: UNHANDLED_EXCEPTION_STATUS_CODE
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNHANDLED_EXCEPTION_STATUS_CODE
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
-  nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
+  name: OK_DEFAULT
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_OK_DEFAULT
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
+  nameWithType: CommonStatusCodes.OK_DEFAULT
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
+  name: UNHANDLED_EXCEPTION
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNHANDLED_EXCEPTION
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
+  nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
+  name: UNK_DEFAULT
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNK_DEFAULT
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
+  nameWithType: CommonStatusCodes.UNK_DEFAULT
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
   name: UNSUPPORTED_MEDIA_TYPE
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNSUPPORTED_MEDIA_TYPE

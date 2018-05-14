@@ -22,7 +22,7 @@ namespace Nexusat.AspNetCore.Exceptions
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>
         public BadRequestResponseException()
-            : base((int)HttpStatusCode.BadRequest, CommonStatusCodes.BAD_REQUEST_STATUS_CODE) { }
+            : base((int)HttpStatusCode.BadRequest, CommonStatusCodes.BAD_REQUEST) { }
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>
@@ -34,7 +34,7 @@ namespace Nexusat.AspNetCore.Exceptions
         /// </summary>
         /// <param name="inner">Inner Exception</param>
         public BadRequestResponseException(Exception inner)
-            : base((int)HttpStatusCode.BadRequest, CommonStatusCodes.BAD_REQUEST_STATUS_CODE, inner){ }
+            : base((int)HttpStatusCode.BadRequest, CommonStatusCodes.BAD_REQUEST, inner){ }
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
         /// </summary>

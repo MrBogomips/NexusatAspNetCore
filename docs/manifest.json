@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponse.html",
-          "hash": "GGFYe4RPMfSmbcmk5mEofg=="
+          "hash": "0aUJzqCiH/19aIh4nDmU6A=="
         }
       },
       "is_incremental": true,
@@ -329,11 +329,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.yml",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nexusat.AspNetCore.Models.BadObjectRequestResponse-1.html",
-          "hash": "cFmKlN0rqYdbNoZ+PT5i7Q=="
+          "relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html",
+          "hash": "vDFE29SHLWN5C4IPbLFhzg=="
         }
       },
       "is_incremental": true,
@@ -341,11 +341,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadRequestResponse.yml",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nexusat.AspNetCore.Models.BadRequestResponse.html",
-          "hash": "4OJIrroCHb0adkEHhARXmw=="
+          "relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html",
+          "hash": "+TigIxbd2uPh5rbp7N4b1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.html",
+          "hash": "upS+OuBmWmFCHTsmkR7r4A=="
         }
       },
       "is_incremental": true,
@@ -357,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.CommonStatusCodes.html",
-          "hash": "Frf/3d1y9GJ/f6p3T3Y3Aw=="
+          "hash": "plUwHchJdYU3CH9KUtNN4g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "tnSiWHV0os7i8E7Glxz3CQ=="
+          "hash": "slr9jao7uwTOhdDGE7nt/Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "hqUnCCkpigsh4hFXK8IkNg=="
+          "hash": "1otzIpzEcTIrgM+NJecaZQ=="
         }
       },
       "is_incremental": false,
@@ -863,17 +875,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
