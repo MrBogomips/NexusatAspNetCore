@@ -75,8 +75,11 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         #region Ok (HTTP 200) Helper Methods flavours
         [HttpGet("200OkResponseWithoutPayload")]
         public IApiResponse GetOkResponseWithourPayload() => Ok();
+
         [HttpGet("200OkResponseWithObject")]
-        public IApiObjectResponse<string> GetOkResponseWithObject() => OkObject(data: "Ciccio");
+        public IApiObjectResponse<string> GetOkResponseWithObject() 
+		=> OkObject(data: "Ciccio");
+
         [HttpGet("200OkResponseWithManyObjects")]
         [ValidatePagination]
         public IApiEnumResponse<string> GetOkResponseWithManyObjects() => OkEnum(2, data: new[] { "Ciccio", "buffo" });
@@ -86,7 +89,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
         [HttpGet("202OkResponseWithoutPayload")]
         public IApiResponse GetAcceptedResponseWithoutPayload() => Accepted(uri: "some_uri");
         [HttpGet("202OkResponseWithObject")]
-        public IApiObjectResponse<string> GetAcceptedResponseWithObject() => Accepted(data: "payload", uri: "some_uri");
+		public IApiObjectResponse<string> GetAcceptedResponseWithObject() => Accepted(data: "payload", uri: "http://www.google.com");
         #endregion Accpepted (HTTP 202) Helper Methods flavours
 
     }

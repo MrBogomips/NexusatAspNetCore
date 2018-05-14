@@ -12,7 +12,6 @@ namespace Nexusat.AspNetCore.Models
     /// </summary>
     public interface IApiResponse: IApiResponseBase
     {
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        string Location { get; set; }
+        
     }
 }

@@ -56,7 +56,6 @@ namespace Nexusat.AspNetCore.Models
             }
         }
 	
-	
 		/// <summary>
         /// Bad request response with optional <see cref="Data"/> payload.
         /// </summary>

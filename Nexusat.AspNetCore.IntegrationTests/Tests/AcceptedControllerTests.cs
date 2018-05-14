@@ -31,16 +31,17 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var actualStatus = ExtractStatus(json);
             var expectedStatus = new Status
             {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+                HttpCode = 202, // Accepted
+				Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
 
             //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
+			Assert.Equal(HttpStatusCode.Accepted, httpCode);
             Assert.Equal("/Accepted/666", location);
             Assert.Equal(expectedStatus, actualStatus);
+			Assert.NotNull(location);
             Assert.Null(json.SelectToken("data"));
         }
 
@@ -59,17 +60,18 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var actualStatus = ExtractStatus(json);
             var expectedStatus = new Status
             {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				HttpCode = 202, // Accepted
+                Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
 
             //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
+            Assert.Equal(HttpStatusCode.Accepted, httpCode);
             Assert.Equal("/Accepted/666", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("data: 666", json.SelectToken("data"));
+			Assert.NotNull(location);
         }
 
         [Fact]
@@ -87,16 +89,17 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var actualStatus = ExtractStatus(json);
             var expectedStatus = new Status
             {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				HttpCode = 202, // Accepted
+				Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
 
             //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
+			Assert.Equal(HttpStatusCode.Accepted, httpCode);
             Assert.Equal("/Accepted/index/666", location);
             Assert.Equal(expectedStatus, actualStatus);
+			Assert.NotNull(location);
             Assert.Null(json.SelectToken("data"));
         }
 
@@ -115,16 +118,17 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var actualStatus = ExtractStatus(json);
             var expectedStatus = new Status
             {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				HttpCode = 202, // Accepted
+				Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
 
             //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
+			Assert.Equal(HttpStatusCode.Accepted, httpCode);
             Assert.Equal("/Accepted/index/666", location);
             Assert.Equal(expectedStatus, actualStatus);
+			Assert.NotNull(location);
             Assert.Null(json.SelectToken("data"));
         }
     }

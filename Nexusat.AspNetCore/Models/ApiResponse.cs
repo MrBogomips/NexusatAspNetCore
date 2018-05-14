@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Microsoft.Net.Http.Headers;
-using Newtonsoft.Json;
 using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters;
@@ -14,10 +12,11 @@ using System.Threading.Tasks;
 
 namespace Nexusat.AspNetCore.Models
 {
-    /// <summary>
-    /// Basic API response without any payload
-    /// </summary>
-    public class ApiResponse : ActionResult, IApiResponse
+
+	/// <summary>
+	/// Basic API response without any payload
+	/// </summary>
+	public class ApiResponse : ActionResult, IApiResponse
     {
         public Status Status { get;}
         public ExceptionInfo Exception { get; set; }
@@ -29,7 +28,6 @@ namespace Nexusat.AspNetCore.Models
         /// </summary>
         /// <value><c>true</c> if has body; otherwise, <c>false</c>.</value>
         public bool HasBody { get; set; } = true;
-        public virtual string Location { get; set; }
 
         public ApiResponse(Status status)
            => Status = status ?? throw new ArgumentNullException(nameof(status));
@@ -69,11 +67,6 @@ namespace Nexusat.AspNetCore.Models
             }
             var response = context.HttpContext.Response;
             response.StatusCode = Status.HttpCode;
-            if (Location != null)
-            {
-                response.Headers[HeaderNames.Location] = Location;
-            }
-
         }
     }
 }

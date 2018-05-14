@@ -11,10 +11,12 @@ namespace Nexusat.AspNetCore.Models
             return response;
         }
 
+        /* DELETE
         public static IApiObjectResponse<T> SetLocation<T>(this IApiObjectResponse<T> response, string location)
         {
             response.Location = location ?? throw new ArgumentNullException(nameof(location));
             return response;
         }
+        */
     }
 }

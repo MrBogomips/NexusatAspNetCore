@@ -14,7 +14,9 @@ namespace Nexusat.AspNetCore.Models
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         T Data { get; }
 
+        /*
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         string Location { get; set; }
+        */
     }
 }

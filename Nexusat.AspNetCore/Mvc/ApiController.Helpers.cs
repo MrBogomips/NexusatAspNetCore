@@ -116,8 +116,7 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <param name="uri">URI.</param>
 		protected IApiResponse Accepted(string description = null, string userDescription = null, string uri = null)
-		=> ApiResponse(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
-			.SetLocation(uri);
+		=> new Accepted.ResponseAtUri(uri, description, userDescription);
 
 		/// <summary>
 		/// Produce an HTTP 202 response
@@ -127,7 +126,7 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <param name="uri">URI.</param>
 		protected IApiResponse Accepted(string description = null, string userDescription = null, Uri uri = null)
-		=> Accepted(description, userDescription, uri.ToString());
+		=> new Accepted.ResponseAtUri(uri, description, userDescription);
 		/// <summary>
 		/// Produce an HTTP 202 response
 		/// </summary>
@@ -138,8 +137,8 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="uri">URI.</param>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-		=> ApiObjectResponse<T>(Status202Accepted, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
-			.SetLocation(uri);
+		=> new Accepted.ObjectAtUri<T>(uri, data, description, userDescription);
+              
 		/// <summary>
 		/// Produce an HTTP 202 response
 		/// </summary>
@@ -150,31 +149,37 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="uri">URI.</param>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiObjectResponse<T> Accepted<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-		=> Accepted(data, description, userDescription, uri.ToString());
+		=> new Accepted.ObjectAtUri<T>(uri, data, description, userDescription);
 
 		protected IApiResponse AcceptedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
-		=> Accepted(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		=> new Accepted.ResponseAtAction(actionName, controllerName: controllerName, routeValues: routeValues, description: description, userDescription: userDescription);
+
 		protected IApiResponse AcceptedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
-		=> Accepted(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		=> new Accepted.ResponseAtAction(actionName, routeValues: routeValues, description: description, userDescription: userDescription);
 		protected IApiResponse AcceptedAtAction(string actionName, string description = null, string userDescription = null)
-		=> Accepted(description, userDescription, GetActionUrl(actionName));
+		=> new Accepted.ResponseAtAction(actionName, description: description, userDescription: userDescription);
+
 
 		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Accepted(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		=> new Accepted.ObjectAtAction<T>(actionName, data, description, userDescription, controllerName, routeValues);
+
 		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Accepted(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		=> new Accepted.ObjectAtAction<T>(actionName, data, description, userDescription, routeValues: routeValues);
+
 		protected IApiObjectResponse<T> AcceptedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
-		=> Accepted(data, description, userDescription, GetActionUrl(actionName));
+		=> new Accepted.ObjectAtAction<T>(actionName, data, description, userDescription);
 
 		protected IApiResponse AcceptedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
-		=> Accepted(description, userDescription, GetLink(routeName, routeValues));
+		=> new Accepted.ResponseAtRoute(routeName, description, userDescription, routeValues);
+
 		protected IApiResponse AcceptedAtRoute(string routeName, string description = null, string userDescription = null)
-		=> Accepted(description, userDescription, GetLink(routeName));
+		=> new Accepted.ResponseAtRoute(routeName, description: description, userDescription: userDescription);
 
 		protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Accepted(data, description, userDescription, GetLink(routeName, routeValues));
+		=> new Accepted.ObjectAtRoute<T>(routeName, data: data, description: description, userDescription: userDescription, routeValues: routeValues);
+
 		protected IApiObjectResponse<T> AcceptedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
-		=> Accepted(data, description, userDescription, GetLink(routeName));
+		=> new Accepted.ObjectAtRoute<T>(routeName, data, description, userDescription);
 
 		#endregion AcceptedResponse (HTTP 202) Helper Methods
 
@@ -187,56 +192,48 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <param name="uri">URI.</param>
 		protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
-		=> ApiResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, description, userDescription)
-			.SetLocation(uri);
+		=> new Created.ResponseAtUri(uri, description, userDescription);
+
 		protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
-		=> Created(description, userDescription, uri.ToString());
+		=> new Created.ResponseAtUri(uri, description, userDescription);
+
 		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-		=> ApiObjectResponse(Status201Created, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription)
-			.SetLocation(uri);
+		=> new Created.ObjectAtUri<T>(uri, data, description, userDescription);
+
 		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-		=> Created(data, description, userDescription, uri.ToString());
+		=> new Created.ObjectAtUri<T>(uri, data, description, userDescription);
 
 		protected IApiResponse CreatedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
-		=> Created(description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		=> new Created.ResponseAtAction(actionName, description, userDescription, controllerName, routeValues);
+
 		protected IApiResponse CreatedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
-		=> Created(description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		=> new Created.ResponseAtAction(actionName, description: description, userDescription: userDescription, routeValues: routeValues);
+
 		protected IApiResponse CreatedAtAction(string actionName, string description = null, string userDescription = null)
-		=> Created(description, userDescription, GetActionUrl(actionName));
+		=> new Created.ResponseAtAction(actionName, description: description, userDescription: userDescription);
 
 		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Created(data, description, userDescription, GetActionUrl(actionName, controllerName, routeValues));
+		=> new Created.ObjectAtAction<T>(actionName, controllerName: controllerName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
+
 		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Created(data, description, userDescription, GetActionUrl(actionName, routeValues: routeValues));
+		=> new Created.ObjectAtAction<T>(actionName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
+
 		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
-		=> Created(data, description, userDescription, GetActionUrl(actionName));
+		=> new Created.ObjectAtAction<T>(actionName, data: data, description: description, userDescription: userDescription);
 
 		protected IApiResponse CreatedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
-		=> Created(description, userDescription, GetLink(routeName, routeValues));
+		=> new Created.ResponseAtRoute(routeName, routeValues: routeValues, description: description, userDescription: userDescription);
 		protected IApiResponse CreatedAtRoute(string routeName, string description = null, string userDescription = null)
-		=> Created(description, userDescription, GetLink(routeName));
+		=> new Created.ResponseAtRoute(routeName, description: description, userDescription: userDescription);
 
 		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> Created(data, description, userDescription, GetLink(routeName, routeValues));
+		=> new Created.ObjectAtRoute<T>(routeName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
+
 		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
-		=> Created(data, description, userDescription, GetLink(routeName));
+		=> new Created.ObjectAtRoute<T>(routeName, data: data, description: description, userDescription: userDescription);
 		#endregion CreatedResponse (HTTP 201) Helper Methods
 
-		#region BadRequest (HTTP 400) Helper Methods
-		protected IApiResponse BadRequest(string statusCode, string description = null, string userDescription = null)
-		=> new BadRequest.ApiResponse(statusCode, description, userDescription);
-		protected IApiResponse BadRequest(string description = null, string userDescription = null)
-		=> new BadRequest.ApiResponse(description, userDescription);
-		protected IApiResponse BadRequest(ModelStateDictionary modelState)
-		=> new BadRequest.ApiResponse(ModelState);
-
-		protected IApiObjectResponse<T> BadObjectRequest<T>(string statusCode, T data = default(T), string description = null, string userDescription = null)
-		=> new BadRequest.ObjectResponse<T>(statusCode, data, description, userDescription);
-		protected IApiObjectResponse<T> BadObjectRequest<T>(T data = default(T), string description = null, string userDescription = null)
-		=> new BadRequest.ObjectResponse<T>(description, data, userDescription);
-		protected IApiObjectResponse<T> BadObjectRequest<T>(ModelStateDictionary modelState, T data = default(T))
-		=> new BadRequest.ObjectResponse<T>(modelState, data);      
-		#endregion BadRequest (HTTP 400) Helper Methods
+        
 
 #if TO_BE_IMPLEMENTED
         // Please refer to Microsoft.AspNetCore.Mvc.BaseController
@@ -246,16 +243,7 @@ namespace Nexusat.AspNetCore.Mvc
         //
         // Methods
         //
-        
-        [NonAction]
-        public virtual BadRequestObjectResult BadRequest (ModelStateDictionary modelState);
-
-        [NonAction]
-        public virtual BadRequestObjectResult BadRequest (object error);
-
-        [NonAction]
-        public virtual BadRequestResult BadRequest ();
-
+              
         [NonAction]
         public virtual ChallengeResult Challenge ();
 

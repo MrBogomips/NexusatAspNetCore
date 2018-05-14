@@ -32,7 +32,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				Code = "OK_CREATED",
                 Description = null,
                 UserDescription = null
             };
@@ -60,7 +60,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK_CREATED",
                 Description = null,
                 UserDescription = null
             };
@@ -88,7 +88,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				Code = "OK_CREATED",
                 Description = null,
                 UserDescription = null
             };
@@ -116,7 +116,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
+				Code = "OK_CREATED",
                 Description = null,
                 UserDescription = null
             };

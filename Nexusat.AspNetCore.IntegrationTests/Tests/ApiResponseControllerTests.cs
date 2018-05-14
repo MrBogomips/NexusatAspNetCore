@@ -267,7 +267,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 202,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
@@ -295,14 +295,14 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 202,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK_ACCEPTED",
                 Description = null,
                 UserDescription = null
             };
 
             //Assert
             Assert.Equal(HttpStatusCode.Accepted, httpCode);
-            Assert.Equal("some_uri", location);
+			Assert.Equal("http://www.google.com/", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Equal("payload", json.SelectToken("data").Value<string>());
         }

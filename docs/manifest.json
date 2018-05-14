@@ -293,11 +293,95 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.html",
+          "hash": "ob5FGFef0+dX0Pde3a6lXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.html",
+          "hash": "xM9FaZv0bVVEMq6IeBqvAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html",
+          "hash": "d4DRpdalj2aPzSeQgvPobw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.html",
+          "hash": "C0NYNoZp2CW7RuVarR0ZdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.html",
+          "hash": "Bg1j686zdRBZa8ULpNNl/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html",
+          "hash": "AsvHXtYn5Fy9Y8v/F0gglQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Accepted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Accepted.html",
+          "hash": "nvSWdQHl4trA1/4iJ0GfcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html",
-          "hash": "PPr3KqGf6XjKPctP2lBCSg=="
+          "hash": "RjPjnFNE3epg6pJJGvBCrg=="
         }
       },
       "is_incremental": true,
@@ -309,7 +393,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ApiObjectResponse-1.html",
-          "hash": "GQsRGiP43GQGjAGF1wA2LA=="
+          "hash": "u/N9MKAgT5RVTq2Sb51sFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html",
+          "hash": "FJy/PcVLsamjvdvTuXC4ew=="
         }
       },
       "is_incremental": true,
@@ -321,7 +417,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponse.html",
-          "hash": "0aUJzqCiH/19aIh4nDmU6A=="
+          "hash": "Wce1Jn2Kb1mULqe/EhsP5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html",
+          "hash": "+dpwALZ/vfvkN+tcV/9ekQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html",
+          "hash": "jTPLFQiACfp1o7DAhUrKQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html",
+          "hash": "+GYoSazTxBjFkpB+1rSI3g=="
         }
       },
       "is_incremental": true,
@@ -333,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ApiResponse.html",
-          "hash": "vDFE29SHLWN5C4IPbLFhzg=="
+          "hash": "c1RI5lJLK8ibhAV3av+QZg=="
         }
       },
       "is_incremental": true,
@@ -345,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.BadRequest.ObjectResponse-1.html",
-          "hash": "+TigIxbd2uPh5rbp7N4b1Q=="
+          "hash": "C5Lv84chON2qxfEHEknN8w=="
         }
       },
       "is_incremental": true,
@@ -372,7 +504,91 @@
           "hash": "plUwHchJdYU3CH9KUtNN4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.html",
+          "hash": "d/K9CTwU5S4ex7J/6GxRXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.html",
+          "hash": "tFysuODBoYYabeynl8Lzpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html",
+          "hash": "if1ZKh3ZCcYSePeKGdcR8Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.html",
+          "hash": "WEZabRJy6OMZ2USHKhslFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.html",
+          "hash": "SH2P7rSxOJmEtHx1Xo74Rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html",
+          "hash": "Edl1IGqrmc9kSYj/aD5zRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.Created.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.Created.html",
+          "hash": "kRyjkDLQM997f9fzZly2Pw=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html",
-          "hash": "/fdD2qHQS33iKOw6Qqh07g=="
+          "hash": "3W2btRmthx0XhvfzIxmwaQ=="
         }
       },
       "is_incremental": true,
@@ -441,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html",
-          "hash": "ayOTkVFxcVPYRC3CyRW+Hw=="
+          "hash": "8Ip6c/TNo3PsebD4lDMryg=="
         }
       },
       "is_incremental": true,
@@ -453,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.IApiResponse.html",
-          "hash": "JtNYlnxDUNXnw4lgQ7+ISg=="
+          "hash": "U3194bRxn2ckvh4ON5uBXg=="
         }
       },
       "is_incremental": true,
@@ -477,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html",
-          "hash": "RB6oMojZYPsEZIVxLG2U0w=="
+          "hash": "Q98KnUGj61nazRnhH2pFnw=="
         }
       },
       "is_incremental": true,
@@ -489,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.NoContentResponse.html",
-          "hash": "iD0MPW1v2Utg3L4HOp5uGg=="
+          "hash": "EvNuEaOsvqO3ssqdNGTotg=="
         }
       },
       "is_incremental": true,
@@ -501,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.NotFoundResponse.html",
-          "hash": "VI8rHxfeyTDCcvS0pIduyg=="
+          "hash": "bq2VdPYrhQowbB0LFGF/AQ=="
         }
       },
       "is_incremental": true,
@@ -597,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.UnhandledExceptionResponse.html",
-          "hash": "767aDv7O24fbrPh4AcYG3Q=="
+          "hash": "CF53c1b348NOUfbAQfRArQ=="
         }
       },
       "is_incremental": true,
@@ -609,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.html",
-          "hash": "5RZKGTbMo75bkBE8atNk9w=="
+          "hash": "yTMHN0lF+h1ay90odbP6NQ=="
         }
       },
       "is_incremental": true,
@@ -633,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "slr9jao7uwTOhdDGE7nt/Q=="
+          "hash": "BMCIsGJNlnSIWrfSXHllZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -645,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Mvc.ApiController.html",
-          "hash": "dMUVZSnvi48FPzjcCAiR8Q=="
+          "hash": "y/c2h3JZ++CF6PZ7iHQm8Q=="
         }
       },
       "is_incremental": true,
@@ -813,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1otzIpzEcTIrgM+NJecaZQ=="
+          "hash": "0W2+2Clpc1x9HoFBnr0Dbg=="
         }
       },
       "is_incremental": false,
@@ -875,17 +1091,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

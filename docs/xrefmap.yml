@@ -1279,6 +1279,229 @@ references:
   commentId: N:Nexusat.AspNetCore.Models
   fullName: Nexusat.AspNetCore.Models
   nameWithType: Nexusat.AspNetCore.Models
+- uid: Nexusat.AspNetCore.Models.Accepted
+  name: Accepted
+  href: api/Nexusat.AspNetCore.Models.Accepted.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted
+  fullName: Nexusat.AspNetCore.Models.Accepted
+  nameWithType: Accepted
+- uid: Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
+  name: DefaultStatusCode
+  href: api/Nexusat.AspNetCore.Models.Accepted.html#Nexusat_AspNetCore_Models_Accepted_DefaultStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
+  fullName: Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
+  nameWithType: Accepted.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.Accepted.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Nexusat.AspNetCore.Models.Accepted.html#Nexusat_AspNetCore_Models_Accepted_HttpStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Accepted.HttpStatusCode
+  fullName: Nexusat.AspNetCore.Models.Accepted.HttpStatusCode
+  nameWithType: Accepted.HttpStatusCode
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1
+  name: Accepted.ObjectAtAction<T>
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1
+  name.vb: Accepted.ObjectAtAction(Of T)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction(Of T)
+  nameWithType: Accepted.ObjectAtAction<T>
+  nameWithType.vb: Accepted.ObjectAtAction(Of T)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor(System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ObjectAtAction(String, T, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtAction_1__ctor_System_String__0_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor(System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction<T>.ObjectAtAction(System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction(Of T).ObjectAtAction(System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Accepted.ObjectAtAction<T>.ObjectAtAction(String, T, String, String, String, Object, Boolean)
+  nameWithType.vb: Accepted.ObjectAtAction(Of T).ObjectAtAction(String, T, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor(System.String,System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtAction_1__ctor_System_String_System_String__0_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor(System.String,System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction<T>.ObjectAtAction(System.String, System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction(Of T).ObjectAtAction(System.String, System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Accepted.ObjectAtAction<T>.ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+  nameWithType.vb: Accepted.ObjectAtAction(Of T).ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor*
+  name: ObjectAtAction
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtAction_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ObjectAtAction`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction<T>.ObjectAtAction
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtAction(Of T).ObjectAtAction
+  nameWithType: Accepted.ObjectAtAction<T>.ObjectAtAction
+  nameWithType.vb: Accepted.ObjectAtAction(Of T).ObjectAtAction
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1
+  name: Accepted.ObjectAtRoute<T>
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1
+  name.vb: Accepted.ObjectAtRoute(Of T)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute(Of T)
+  nameWithType: Accepted.ObjectAtRoute<T>
+  nameWithType.vb: Accepted.ObjectAtRoute(Of T)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor(System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  name: ObjectAtRoute(String, T, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtRoute_1__ctor_System_String__0_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor(System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute<T>.ObjectAtRoute(System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute(Of T).ObjectAtRoute(System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Accepted.ObjectAtRoute<T>.ObjectAtRoute(String, T, String, String, Object, String, String)
+  nameWithType.vb: Accepted.ObjectAtRoute(Of T).ObjectAtRoute(String, T, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor(System.String,System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  name: ObjectAtRoute(String, String, T, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtRoute_1__ctor_System_String_System_String__0_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor(System.String,System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute<T>.ObjectAtRoute(System.String, System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute(Of T).ObjectAtRoute(System.String, System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Accepted.ObjectAtRoute<T>.ObjectAtRoute(String, String, T, String, String, Object, String, String)
+  nameWithType.vb: Accepted.ObjectAtRoute(Of T).ObjectAtRoute(String, String, T, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor*
+  name: ObjectAtRoute
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtRoute_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute<T>.ObjectAtRoute
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtRoute(Of T).ObjectAtRoute
+  nameWithType: Accepted.ObjectAtRoute<T>.ObjectAtRoute
+  nameWithType.vb: Accepted.ObjectAtRoute(Of T).ObjectAtRoute
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1
+  name: Accepted.ObjectAtUri<T>
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1
+  name.vb: Accepted.ObjectAtUri(Of T)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T)
+  nameWithType: Accepted.ObjectAtUri<T>
+  nameWithType.vb: Accepted.ObjectAtUri(Of T)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,`0,System.String,System.String)
+  name: ObjectAtUri(String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtUri_1__ctor_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>.ObjectAtUri(System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T).ObjectAtUri(System.String, T, System.String, System.String)
+  nameWithType: Accepted.ObjectAtUri<T>.ObjectAtUri(String, T, String, String)
+  nameWithType.vb: Accepted.ObjectAtUri(Of T).ObjectAtUri(String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,System.String,`0,System.String,System.String)
+  name: ObjectAtUri(String, String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtUri_1__ctor_System_String_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>.ObjectAtUri(System.String, System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T).ObjectAtUri(System.String, System.String, T, System.String, System.String)
+  nameWithType: Accepted.ObjectAtUri<T>.ObjectAtUri(String, String, T, String, String)
+  nameWithType.vb: Accepted.ObjectAtUri(Of T).ObjectAtUri(String, String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,System.Uri,`0,System.String,System.String)
+  name: ObjectAtUri(String, Uri, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtUri_1__ctor_System_String_System_Uri__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.String,System.Uri,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>.ObjectAtUri(System.String, System.Uri, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T).ObjectAtUri(System.String, System.Uri, T, System.String, System.String)
+  nameWithType: Accepted.ObjectAtUri<T>.ObjectAtUri(String, Uri, T, String, String)
+  nameWithType.vb: Accepted.ObjectAtUri(Of T).ObjectAtUri(String, Uri, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.Uri,`0,System.String,System.String)
+  name: ObjectAtUri(Uri, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtUri_1__ctor_System_Uri__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor(System.Uri,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>.ObjectAtUri(System.Uri, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T).ObjectAtUri(System.Uri, T, System.String, System.String)
+  nameWithType: Accepted.ObjectAtUri<T>.ObjectAtUri(Uri, T, String, String)
+  nameWithType.vb: Accepted.ObjectAtUri(Of T).ObjectAtUri(Uri, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor*
+  name: ObjectAtUri
+  href: api/Nexusat.AspNetCore.Models.Accepted.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Accepted_ObjectAtUri_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ObjectAtUri`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri<T>.ObjectAtUri
+  fullName.vb: Nexusat.AspNetCore.Models.Accepted.ObjectAtUri(Of T).ObjectAtUri
+  nameWithType: Accepted.ObjectAtUri<T>.ObjectAtUri
+  nameWithType.vb: Accepted.ObjectAtUri(Of T).ObjectAtUri
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction
+  name: Accepted.ResponseAtAction
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ResponseAtAction
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction
+  nameWithType: Accepted.ResponseAtAction
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ResponseAtAction(String, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtAction__ctor_System_String_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.ResponseAtAction(System.String, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Accepted.ResponseAtAction.ResponseAtAction(String, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ResponseAtAction(String, String, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtAction__ctor_System_String_System_String_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.ResponseAtAction(System.String, System.String, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Accepted.ResponseAtAction.ResponseAtAction(String, String, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor*
+  name: ResponseAtAction
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtAction__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtAction.ResponseAtAction
+  nameWithType: Accepted.ResponseAtAction.ResponseAtAction
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute
+  name: Accepted.ResponseAtRoute
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute
+  nameWithType: Accepted.ResponseAtRoute
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)
+  name: ResponseAtRoute(String, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtRoute__ctor_System_String_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.ResponseAtRoute(System.String, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Accepted.ResponseAtRoute.ResponseAtRoute(String, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.String,System.Object,System.String,System.String)
+  name: ResponseAtRoute(String, String, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtRoute__ctor_System_String_System_String_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.ResponseAtRoute(System.String, System.String, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Accepted.ResponseAtRoute.ResponseAtRoute(String, String, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor*
+  name: ResponseAtRoute
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtRoute__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtRoute.ResponseAtRoute
+  nameWithType: Accepted.ResponseAtRoute.ResponseAtRoute
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri
+  name: Accepted.ResponseAtUri
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html
+  commentId: T:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri
+  nameWithType: Accepted.ResponseAtUri
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.String,System.String)
+  name: ResponseAtUri(String, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtUri__ctor_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.ResponseAtUri(System.String, System.String, System.String)
+  nameWithType: Accepted.ResponseAtUri.ResponseAtUri(String, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.String,System.String,System.String)
+  name: ResponseAtUri(String, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtUri__ctor_System_String_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.ResponseAtUri(System.String, System.String, System.String, System.String)
+  nameWithType: Accepted.ResponseAtUri.ResponseAtUri(String, String, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.Uri,System.String,System.String)
+  name: ResponseAtUri(String, Uri, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtUri__ctor_System_String_System_Uri_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.String,System.Uri,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.ResponseAtUri(System.String, System.Uri, System.String, System.String)
+  nameWithType: Accepted.ResponseAtUri.ResponseAtUri(String, Uri, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.Uri,System.String,System.String)
+  name: ResponseAtUri(Uri, String, String)
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtUri__ctor_System_Uri_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor(System.Uri,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.ResponseAtUri(System.Uri, System.String, System.String)
+  nameWithType: Accepted.ResponseAtUri.ResponseAtUri(Uri, String, String)
+- uid: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor*
+  name: ResponseAtUri
+  href: api/Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.html#Nexusat_AspNetCore_Models_Accepted_ResponseAtUri__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Accepted.ResponseAtUri.ResponseAtUri
+  nameWithType: Accepted.ResponseAtUri.ResponseAtUri
 - uid: Nexusat.AspNetCore.Models.ApiEnumResponse`1
   name: ApiEnumResponse<T>
   href: api/Nexusat.AspNetCore.Models.ApiEnumResponse-1.html
@@ -1435,6 +1658,73 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponse(Of T).Data
   nameWithType: ApiObjectResponse<T>.Data
   nameWithType.vb: ApiObjectResponse(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1
+  name: ApiObjectResponseWithLocation<T>
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1
+  name.vb: ApiObjectResponseWithLocation(Of T)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T)
+  nameWithType: ApiObjectResponseWithLocation<T>
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor,`0)
+  name: ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.ActionDescriptor, T)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor__0_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor,`0)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor, T)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor, T)
+  nameWithType: ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.ActionDescriptor, T)
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.ActionDescriptor, T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor,`0)
+  name: ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.RouteDescriptor, T)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor__0_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor,`0)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor, T)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor, T)
+  nameWithType: ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.RouteDescriptor, T)
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Status, ApiResponseWithLocation.RouteDescriptor, T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,System.String,`0)
+  name: ApiObjectResponseWithLocation(Status, String, T)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1__ctor_Nexusat_AspNetCore_Models_Status_System_String__0_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,System.String,`0)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.String, T)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.String, T)
+  nameWithType: ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Status, String, T)
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Status, String, T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,System.Uri,`0)
+  name: ApiObjectResponseWithLocation(Status, Uri, T)
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1__ctor_Nexusat_AspNetCore_Models_Status_System_Uri__0_
+  commentId: M:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor(Nexusat.AspNetCore.Models.Status,System.Uri,`0)
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.Uri, T)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.Uri, T)
+  nameWithType: ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation(Status, Uri, T)
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation(Status, Uri, T)
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor*
+  name: ApiObjectResponseWithLocation
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation
+  nameWithType: ApiObjectResponseWithLocation<T>.ApiObjectResponseWithLocation
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).ApiObjectResponseWithLocation
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.Data
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1_Data
+  commentId: P:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.Data
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).Data
+  nameWithType: ApiObjectResponseWithLocation<T>.Data
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).Data
+- uid: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.Data*
+  name: Data
+  href: api/Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation-1.html#Nexusat_AspNetCore_Models_ApiObjectResponseWithLocation_1_Data_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation`1.Data
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation<T>.Data
+  fullName.vb: Nexusat.AspNetCore.Models.ApiObjectResponseWithLocation(Of T).Data
+  nameWithType: ApiObjectResponseWithLocation<T>.Data
+  nameWithType.vb: ApiObjectResponseWithLocation(Of T).Data
 - uid: Nexusat.AspNetCore.Models.ApiResponse
   name: ApiResponse
   href: api/Nexusat.AspNetCore.Models.ApiResponse.html
@@ -1512,19 +1802,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ApiResponse.HasBody
   nameWithType: ApiResponse.HasBody
-- uid: Nexusat.AspNetCore.Models.ApiResponse.Location
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Location
-  commentId: P:Nexusat.AspNetCore.Models.ApiResponse.Location
-  fullName: Nexusat.AspNetCore.Models.ApiResponse.Location
-  nameWithType: ApiResponse.Location
-- uid: Nexusat.AspNetCore.Models.ApiResponse.Location*
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_Location_
-  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponse.Location
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.ApiResponse.Location
-  nameWithType: ApiResponse.Location
 - uid: Nexusat.AspNetCore.Models.ApiResponse.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
   name: OnFormatting(ActionContext)
   href: api/Nexusat.AspNetCore.Models.ApiResponse.html#Nexusat_AspNetCore_Models_ApiResponse_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
@@ -1577,6 +1854,152 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ApiResponse.ValidationErrors
   nameWithType: ApiResponse.ValidationErrors
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation
+  name: ApiResponseWithLocation
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiResponseWithLocation
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation
+  nameWithType: ApiResponseWithLocation
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor)
+  name: ApiResponseWithLocation(Status, ApiResponseWithLocation.ActionDescriptor)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ApiResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor)
+  nameWithType: ApiResponseWithLocation.ApiResponseWithLocation(Status, ApiResponseWithLocation.ActionDescriptor)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor)
+  name: ApiResponseWithLocation(Status, ApiResponseWithLocation.RouteDescriptor)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation__ctor_Nexusat_AspNetCore_Models_Status_Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ApiResponseWithLocation(Nexusat.AspNetCore.Models.Status, Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor)
+  nameWithType: ApiResponseWithLocation.ApiResponseWithLocation(Status, ApiResponseWithLocation.RouteDescriptor)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,System.String)
+  name: ApiResponseWithLocation(Status, String)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation__ctor_Nexusat_AspNetCore_Models_Status_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,System.String)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ApiResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.String)
+  nameWithType: ApiResponseWithLocation.ApiResponseWithLocation(Status, String)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,System.Uri)
+  name: ApiResponseWithLocation(Status, Uri)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation__ctor_Nexusat_AspNetCore_Models_Status_System_Uri_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor(Nexusat.AspNetCore.Models.Status,System.Uri)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ApiResponseWithLocation(Nexusat.AspNetCore.Models.Status, System.Uri)
+  nameWithType: ApiResponseWithLocation.ApiResponseWithLocation(Status, Uri)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor*
+  name: ApiResponseWithLocation
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ApiResponseWithLocation
+  nameWithType: ApiResponseWithLocation.ApiResponseWithLocation
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor
+  name: ApiResponseWithLocation.ActionDescriptor
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor
+  nameWithType: ApiResponseWithLocation.ActionDescriptor
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.#ctor(System.String,System.String,System.Object,System.Boolean)
+  name: ActionDescriptor(String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor__ctor_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.#ctor(System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.ActionDescriptor(System.String, System.String, System.Object, System.Boolean)
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.ActionDescriptor(String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.#ctor*
+  name: ActionDescriptor
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.ActionDescriptor
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.ActionDescriptor
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: GetUrl(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor_GetUrl_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.GetUrl(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl*
+  name: GetUrl
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor_GetUrl_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.GetUrl
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.GetUrl
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.op_Implicit(Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor)~Microsoft.AspNetCore.Mvc.Routing.UrlActionContext
+  name: Implicit(ApiResponseWithLocation.ActionDescriptor to UrlActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor_op_Implicit_Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor__Microsoft_AspNetCore_Mvc_Routing_UrlActionContext
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.op_Implicit(Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor)~Microsoft.AspNetCore.Mvc.Routing.UrlActionContext
+  name.vb: Widening(ApiResponseWithLocation.ActionDescriptor to UrlActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.Implicit(Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor to Microsoft.AspNetCore.Mvc.Routing.UrlActionContext)
+  fullName.vb: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.Widening(Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor to Microsoft.AspNetCore.Mvc.Routing.UrlActionContext)
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.Implicit(ApiResponseWithLocation.ActionDescriptor to UrlActionContext)
+  nameWithType.vb: ApiResponseWithLocation.ActionDescriptor.Widening(ApiResponseWithLocation.ActionDescriptor to UrlActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.op_Implicit*
+  name: Implicit
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_ActionDescriptor_op_Implicit_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.Implicit
+  fullName.vb: Nexusat.AspNetCore.Models.ApiResponseWithLocation.ActionDescriptor.Widening
+  nameWithType: ApiResponseWithLocation.ActionDescriptor.Implicit
+  nameWithType.vb: ApiResponseWithLocation.ActionDescriptor.Widening
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_Location
+  commentId: P:Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location
+  nameWithType: ApiResponseWithLocation.Location
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location*
+  name: Location
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_Location_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.Location
+  nameWithType: ApiResponseWithLocation.Location
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: OnFormatting(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiResponseWithLocation.OnFormatting(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting*
+  name: OnFormatting
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_OnFormatting_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.OnFormatting
+  nameWithType: ApiResponseWithLocation.OnFormatting
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor
+  name: ApiResponseWithLocation.RouteDescriptor
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html
+  commentId: T:Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor
+  nameWithType: ApiResponseWithLocation.RouteDescriptor
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.#ctor(System.String,System.Object,System.String,System.String)
+  name: RouteDescriptor(String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor__ctor_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.#ctor(System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.RouteDescriptor(System.String, System.Object, System.String, System.String)
+  nameWithType: ApiResponseWithLocation.RouteDescriptor.RouteDescriptor(String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.#ctor*
+  name: RouteDescriptor
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.RouteDescriptor
+  nameWithType: ApiResponseWithLocation.RouteDescriptor.RouteDescriptor
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  name: GetUrl(ActionContext)
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor_GetUrl_Microsoft_AspNetCore_Mvc_ActionContext_
+  commentId: M:Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)
+  nameWithType: ApiResponseWithLocation.RouteDescriptor.GetUrl(ActionContext)
+- uid: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl*
+  name: GetUrl
+  href: api/Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.html#Nexusat_AspNetCore_Models_ApiResponseWithLocation_RouteDescriptor_GetUrl_
+  commentId: Overload:Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ApiResponseWithLocation.RouteDescriptor.GetUrl
+  nameWithType: ApiResponseWithLocation.RouteDescriptor.GetUrl
 - uid: Nexusat.AspNetCore.Models.BadRequest
   name: BadRequest
   href: api/Nexusat.AspNetCore.Models.BadRequest.html
@@ -1759,6 +2182,229 @@ references:
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
   nameWithType: CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
+- uid: Nexusat.AspNetCore.Models.Created
+  name: Created
+  href: api/Nexusat.AspNetCore.Models.Created.html
+  commentId: T:Nexusat.AspNetCore.Models.Created
+  fullName: Nexusat.AspNetCore.Models.Created
+  nameWithType: Created
+- uid: Nexusat.AspNetCore.Models.Created.DefaultStatusCode
+  name: DefaultStatusCode
+  href: api/Nexusat.AspNetCore.Models.Created.html#Nexusat_AspNetCore_Models_Created_DefaultStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Created.DefaultStatusCode
+  fullName: Nexusat.AspNetCore.Models.Created.DefaultStatusCode
+  nameWithType: Created.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.Created.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Nexusat.AspNetCore.Models.Created.html#Nexusat_AspNetCore_Models_Created_HttpStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Created.HttpStatusCode
+  fullName: Nexusat.AspNetCore.Models.Created.HttpStatusCode
+  nameWithType: Created.HttpStatusCode
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtAction`1
+  name: Created.ObjectAtAction<T>
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ObjectAtAction`1
+  name.vb: Created.ObjectAtAction(Of T)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtAction<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtAction(Of T)
+  nameWithType: Created.ObjectAtAction<T>
+  nameWithType.vb: Created.ObjectAtAction(Of T)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor(System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ObjectAtAction(String, T, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtAction_1__ctor_System_String__0_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor(System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtAction<T>.ObjectAtAction(System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtAction(Of T).ObjectAtAction(System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Created.ObjectAtAction<T>.ObjectAtAction(String, T, String, String, String, Object, Boolean)
+  nameWithType.vb: Created.ObjectAtAction(Of T).ObjectAtAction(String, T, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor(System.String,System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtAction_1__ctor_System_String_System_String__0_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor(System.String,System.String,`0,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtAction<T>.ObjectAtAction(System.String, System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtAction(Of T).ObjectAtAction(System.String, System.String, T, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Created.ObjectAtAction<T>.ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+  nameWithType.vb: Created.ObjectAtAction(Of T).ObjectAtAction(String, String, T, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor*
+  name: ObjectAtAction
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtAction-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtAction_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ObjectAtAction`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtAction<T>.ObjectAtAction
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtAction(Of T).ObjectAtAction
+  nameWithType: Created.ObjectAtAction<T>.ObjectAtAction
+  nameWithType.vb: Created.ObjectAtAction(Of T).ObjectAtAction
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1
+  name: Created.ObjectAtRoute<T>
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1
+  name.vb: Created.ObjectAtRoute(Of T)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtRoute<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtRoute(Of T)
+  nameWithType: Created.ObjectAtRoute<T>
+  nameWithType.vb: Created.ObjectAtRoute(Of T)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor(System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  name: ObjectAtRoute(String, T, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtRoute_1__ctor_System_String__0_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor(System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtRoute<T>.ObjectAtRoute(System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtRoute(Of T).ObjectAtRoute(System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Created.ObjectAtRoute<T>.ObjectAtRoute(String, T, String, String, Object, String, String)
+  nameWithType.vb: Created.ObjectAtRoute(Of T).ObjectAtRoute(String, T, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor(System.String,System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  name: ObjectAtRoute(String, String, T, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtRoute_1__ctor_System_String_System_String__0_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor(System.String,System.String,`0,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtRoute<T>.ObjectAtRoute(System.String, System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtRoute(Of T).ObjectAtRoute(System.String, System.String, T, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Created.ObjectAtRoute<T>.ObjectAtRoute(String, String, T, String, String, Object, String, String)
+  nameWithType.vb: Created.ObjectAtRoute(Of T).ObjectAtRoute(String, String, T, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor*
+  name: ObjectAtRoute
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtRoute-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtRoute_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ObjectAtRoute`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtRoute<T>.ObjectAtRoute
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtRoute(Of T).ObjectAtRoute
+  nameWithType: Created.ObjectAtRoute<T>.ObjectAtRoute
+  nameWithType.vb: Created.ObjectAtRoute(Of T).ObjectAtRoute
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1
+  name: Created.ObjectAtUri<T>
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1
+  name.vb: Created.ObjectAtUri(Of T)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T)
+  nameWithType: Created.ObjectAtUri<T>
+  nameWithType.vb: Created.ObjectAtUri(Of T)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,`0,System.String,System.String)
+  name: ObjectAtUri(String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtUri_1__ctor_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>.ObjectAtUri(System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T).ObjectAtUri(System.String, T, System.String, System.String)
+  nameWithType: Created.ObjectAtUri<T>.ObjectAtUri(String, T, String, String)
+  nameWithType.vb: Created.ObjectAtUri(Of T).ObjectAtUri(String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,System.String,`0,System.String,System.String)
+  name: ObjectAtUri(String, String, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtUri_1__ctor_System_String_System_String__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,System.String,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>.ObjectAtUri(System.String, System.String, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T).ObjectAtUri(System.String, System.String, T, System.String, System.String)
+  nameWithType: Created.ObjectAtUri<T>.ObjectAtUri(String, String, T, String, String)
+  nameWithType.vb: Created.ObjectAtUri(Of T).ObjectAtUri(String, String, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,System.Uri,`0,System.String,System.String)
+  name: ObjectAtUri(String, Uri, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtUri_1__ctor_System_String_System_Uri__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.String,System.Uri,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>.ObjectAtUri(System.String, System.Uri, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T).ObjectAtUri(System.String, System.Uri, T, System.String, System.String)
+  nameWithType: Created.ObjectAtUri<T>.ObjectAtUri(String, Uri, T, String, String)
+  nameWithType.vb: Created.ObjectAtUri(Of T).ObjectAtUri(String, Uri, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.Uri,`0,System.String,System.String)
+  name: ObjectAtUri(Uri, T, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtUri_1__ctor_System_Uri__0_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor(System.Uri,`0,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>.ObjectAtUri(System.Uri, T, System.String, System.String)
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T).ObjectAtUri(System.Uri, T, System.String, System.String)
+  nameWithType: Created.ObjectAtUri<T>.ObjectAtUri(Uri, T, String, String)
+  nameWithType.vb: Created.ObjectAtUri(Of T).ObjectAtUri(Uri, T, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor*
+  name: ObjectAtUri
+  href: api/Nexusat.AspNetCore.Models.Created.ObjectAtUri-1.html#Nexusat_AspNetCore_Models_Created_ObjectAtUri_1__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ObjectAtUri`1.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ObjectAtUri<T>.ObjectAtUri
+  fullName.vb: Nexusat.AspNetCore.Models.Created.ObjectAtUri(Of T).ObjectAtUri
+  nameWithType: Created.ObjectAtUri<T>.ObjectAtUri
+  nameWithType.vb: Created.ObjectAtUri(Of T).ObjectAtUri
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtAction
+  name: Created.ResponseAtAction
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ResponseAtAction
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtAction
+  nameWithType: Created.ResponseAtAction
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ResponseAtAction(String, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.html#Nexusat_AspNetCore_Models_Created_ResponseAtAction__ctor_System_String_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtAction.ResponseAtAction(System.String, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Created.ResponseAtAction.ResponseAtAction(String, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  name: ResponseAtAction(String, String, String, String, String, Object, Boolean)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.html#Nexusat_AspNetCore_Models_Created_ResponseAtAction__ctor_System_String_System_String_System_String_System_String_System_String_System_Object_System_Boolean_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor(System.String,System.String,System.String,System.String,System.String,System.Object,System.Boolean)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtAction.ResponseAtAction(System.String, System.String, System.String, System.String, System.String, System.Object, System.Boolean)
+  nameWithType: Created.ResponseAtAction.ResponseAtAction(String, String, String, String, String, Object, Boolean)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor*
+  name: ResponseAtAction
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtAction.html#Nexusat_AspNetCore_Models_Created_ResponseAtAction__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ResponseAtAction.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtAction.ResponseAtAction
+  nameWithType: Created.ResponseAtAction.ResponseAtAction
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtRoute
+  name: Created.ResponseAtRoute
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ResponseAtRoute
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtRoute
+  nameWithType: Created.ResponseAtRoute
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)
+  name: ResponseAtRoute(String, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Created_ResponseAtRoute__ctor_System_String_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.ResponseAtRoute(System.String, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Created.ResponseAtRoute.ResponseAtRoute(String, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.String,System.Object,System.String,System.String)
+  name: ResponseAtRoute(String, String, String, String, Object, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Created_ResponseAtRoute__ctor_System_String_System_String_System_String_System_String_System_Object_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor(System.String,System.String,System.String,System.String,System.Object,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.ResponseAtRoute(System.String, System.String, System.String, System.String, System.Object, System.String, System.String)
+  nameWithType: Created.ResponseAtRoute.ResponseAtRoute(String, String, String, String, Object, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor*
+  name: ResponseAtRoute
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtRoute.html#Nexusat_AspNetCore_Models_Created_ResponseAtRoute__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ResponseAtRoute.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtRoute.ResponseAtRoute
+  nameWithType: Created.ResponseAtRoute.ResponseAtRoute
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri
+  name: Created.ResponseAtUri
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html
+  commentId: T:Nexusat.AspNetCore.Models.Created.ResponseAtUri
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri
+  nameWithType: Created.ResponseAtUri
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.String,System.String)
+  name: ResponseAtUri(String, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html#Nexusat_AspNetCore_Models_Created_ResponseAtUri__ctor_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri.ResponseAtUri(System.String, System.String, System.String)
+  nameWithType: Created.ResponseAtUri.ResponseAtUri(String, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.String,System.String,System.String)
+  name: ResponseAtUri(String, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html#Nexusat_AspNetCore_Models_Created_ResponseAtUri__ctor_System_String_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri.ResponseAtUri(System.String, System.String, System.String, System.String)
+  nameWithType: Created.ResponseAtUri.ResponseAtUri(String, String, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.Uri,System.String,System.String)
+  name: ResponseAtUri(String, Uri, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html#Nexusat_AspNetCore_Models_Created_ResponseAtUri__ctor_System_String_System_Uri_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.String,System.Uri,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri.ResponseAtUri(System.String, System.Uri, System.String, System.String)
+  nameWithType: Created.ResponseAtUri.ResponseAtUri(String, Uri, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.Uri,System.String,System.String)
+  name: ResponseAtUri(Uri, String, String)
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html#Nexusat_AspNetCore_Models_Created_ResponseAtUri__ctor_System_Uri_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.Uri,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri.ResponseAtUri(System.Uri, System.String, System.String)
+  nameWithType: Created.ResponseAtUri.ResponseAtUri(Uri, String, String)
+- uid: Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor*
+  name: ResponseAtUri
+  href: api/Nexusat.AspNetCore.Models.Created.ResponseAtUri.html#Nexusat_AspNetCore_Models_Created_ResponseAtUri__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.Created.ResponseAtUri.ResponseAtUri
+  nameWithType: Created.ResponseAtUri.ResponseAtUri
 - uid: Nexusat.AspNetCore.Models.ExceptionInfo
   name: ExceptionInfo
   href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html
@@ -1910,23 +2556,6 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Data
   nameWithType: IApiObjectResponse<T>.Data
   nameWithType.vb: IApiObjectResponse(Of T).Data
-- uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html#Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location
-  commentId: P:Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
-  fullName: Nexusat.AspNetCore.Models.IApiObjectResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Location
-  nameWithType: IApiObjectResponse<T>.Location
-  nameWithType.vb: IApiObjectResponse(Of T).Location
-- uid: Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location*
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.IApiObjectResponse-1.html#Nexusat_AspNetCore_Models_IApiObjectResponse_1_Location_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiObjectResponse`1.Location
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiObjectResponse<T>.Location
-  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponse(Of T).Location
-  nameWithType: IApiObjectResponse<T>.Location
-  nameWithType.vb: IApiObjectResponse(Of T).Location
 - uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions
   name: IApiObjectResponseExtensions
   href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html
@@ -1949,41 +2578,12 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetException(Of T)(Nexusat.AspNetCore.Models.IApiObjectResponse(Of T), System.Exception)
   nameWithType: IApiObjectResponseExtensions.SetException<T>(IApiObjectResponse<T>, Exception)
   nameWithType.vb: IApiObjectResponseExtensions.SetException(Of T)(IApiObjectResponse(Of T), Exception)
-- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation*
-  name: SetLocation
-  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetLocation_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation
-  nameWithType: IApiObjectResponseExtensions.SetLocation
-- uid: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.String)
-  name: SetLocation<T>(IApiObjectResponse<T>, String)
-  href: api/Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.html#Nexusat_AspNetCore_Models_IApiObjectResponseExtensions_SetLocation__1_Nexusat_AspNetCore_Models_IApiObjectResponse___0__System_String_
-  commentId: M:Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation``1(Nexusat.AspNetCore.Models.IApiObjectResponse{``0},System.String)
-  name.vb: SetLocation(Of T)(IApiObjectResponse(Of T), String)
-  fullName: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation<T>(Nexusat.AspNetCore.Models.IApiObjectResponse<T>, System.String)
-  fullName.vb: Nexusat.AspNetCore.Models.IApiObjectResponseExtensions.SetLocation(Of T)(Nexusat.AspNetCore.Models.IApiObjectResponse(Of T), System.String)
-  nameWithType: IApiObjectResponseExtensions.SetLocation<T>(IApiObjectResponse<T>, String)
-  nameWithType.vb: IApiObjectResponseExtensions.SetLocation(Of T)(IApiObjectResponse(Of T), String)
 - uid: Nexusat.AspNetCore.Models.IApiResponse
   name: IApiResponse
   href: api/Nexusat.AspNetCore.Models.IApiResponse.html
   commentId: T:Nexusat.AspNetCore.Models.IApiResponse
   fullName: Nexusat.AspNetCore.Models.IApiResponse
   nameWithType: IApiResponse
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Location
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location
-  commentId: P:Nexusat.AspNetCore.Models.IApiResponse.Location
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Location
-  nameWithType: IApiResponse.Location
-- uid: Nexusat.AspNetCore.Models.IApiResponse.Location*
-  name: Location
-  href: api/Nexusat.AspNetCore.Models.IApiResponse.html#Nexusat_AspNetCore_Models_IApiResponse_Location_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponse.Location
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponse.Location
-  nameWithType: IApiResponse.Location
 - uid: Nexusat.AspNetCore.Models.IApiResponseBase
   name: IApiResponseBase
   href: api/Nexusat.AspNetCore.Models.IApiResponseBase.html
@@ -2074,19 +2674,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetException
   nameWithType: IApiResponseExtensions.SetException
-- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse,System.String)
-  name: SetLocation(IApiResponse, String)
-  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetLocation_Nexusat_AspNetCore_Models_IApiResponse_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse,System.String)
-  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation(Nexusat.AspNetCore.Models.IApiResponse, System.String)
-  nameWithType: IApiResponseExtensions.SetLocation(IApiResponse, String)
-- uid: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation*
-  name: SetLocation
-  href: api/Nexusat.AspNetCore.Models.IApiResponseExtensions.html#Nexusat_AspNetCore_Models_IApiResponseExtensions_SetLocation_
-  commentId: Overload:Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.IApiResponseExtensions.SetLocation
-  nameWithType: IApiResponseExtensions.SetLocation
 - uid: Nexusat.AspNetCore.Models.NoContentResponse
   name: NoContentResponse
   href: api/Nexusat.AspNetCore.Models.NoContentResponse.html
@@ -3039,65 +3626,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Mvc.ApiController.ApiResponse
   nameWithType: ApiController.ApiResponse
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest*
-  name: BadObjectRequest
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadObjectRequest_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest
-  nameWithType: ApiController.BadObjectRequest
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(``0,System.String,System.String)
-  name: BadObjectRequest<T>(T, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadObjectRequest__1___0_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(``0,System.String,System.String)
-  name.vb: BadObjectRequest(Of T)(T, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest<T>(T, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest(Of T)(T, System.String, System.String)
-  nameWithType: ApiController.BadObjectRequest<T>(T, String, String)
-  nameWithType.vb: ApiController.BadObjectRequest(Of T)(T, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,``0)
-  name: BadObjectRequest<T>(ModelStateDictionary, T)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadObjectRequest__1_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary___0_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,``0)
-  name.vb: BadObjectRequest(Of T)(ModelStateDictionary, T)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest<T>(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest(Of T)(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, T)
-  nameWithType: ApiController.BadObjectRequest<T>(ModelStateDictionary, T)
-  nameWithType.vb: ApiController.BadObjectRequest(Of T)(ModelStateDictionary, T)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(System.String,``0,System.String,System.String)
-  name: BadObjectRequest<T>(String, T, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadObjectRequest__1_System_String___0_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest``1(System.String,``0,System.String,System.String)
-  name.vb: BadObjectRequest(Of T)(String, T, String, String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest<T>(System.String, T, System.String, System.String)
-  fullName.vb: Nexusat.AspNetCore.Mvc.ApiController.BadObjectRequest(Of T)(System.String, T, System.String, System.String)
-  nameWithType: ApiController.BadObjectRequest<T>(String, T, String, String)
-  nameWithType.vb: ApiController.BadObjectRequest(Of T)(String, T, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  name: BadRequest(ModelStateDictionary)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadRequest_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  nameWithType: ApiController.BadRequest(ModelStateDictionary)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String,System.String)
-  name: BadRequest(String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadRequest_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String,System.String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String, System.String)
-  nameWithType: ApiController.BadRequest(String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String,System.String,System.String)
-  name: BadRequest(String, String, String)
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadRequest_System_String_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String,System.String,System.String)
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadRequest(System.String, System.String, System.String)
-  nameWithType: ApiController.BadRequest(String, String, String)
-- uid: Nexusat.AspNetCore.Mvc.ApiController.BadRequest*
-  name: BadRequest
-  href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_BadRequest_
-  commentId: Overload:Nexusat.AspNetCore.Mvc.ApiController.BadRequest
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Mvc.ApiController.BadRequest
-  nameWithType: ApiController.BadRequest
 - uid: Nexusat.AspNetCore.Mvc.ApiController.ControllerContext
   name: ControllerContext
   href: api/Nexusat.AspNetCore.Mvc.ApiController.html#Nexusat_AspNetCore_Mvc_ApiController_ControllerContext

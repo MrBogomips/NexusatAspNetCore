@@ -9,7 +9,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
     public class CreatedController : ApiController
     {
         [HttpGet("index/{id:int}", Name = "created_controller_index")]
-        public IApiObjectResponse<string> Get(int id) => OkObject(id.ToString());
+        public IApiObjectResponse<string> Get(int id) => CreatedObject(id);
 
         [HttpPost("{id:int}")]
         public IApiResponse CreatedResponse(int id) 
