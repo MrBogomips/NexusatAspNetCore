@@ -92,6 +92,6 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
         [ValidatePagination]
         [HttpGet("GetEmptyResult")]
-        public IApiEnumResponse<int> GetEmptyResult() => OkEmptyEnum<int>();
+        public IApiEnumResponse<int> GetEmptyResult() => new NoContent.Enum<int>();
     }
 }

@@ -98,13 +98,8 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
 		=> new ApiEnumResponse<T>(Status200OK, CurrentPage, hasNextPage, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
-        /// <summary>
-        /// Produce an empty response.
-		/// Suitable in case of no data available.
-        /// </summary>
-        /// <returns>The empty enum.</returns>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-		protected IApiEnumResponse<T> OkEmptyEnum<T>() => throw new NoContentResponseException();
+      
+		//throw new NoContentResponseException();
 		#endregion OkResponse (HTTP 200) Helper Methods
   
 

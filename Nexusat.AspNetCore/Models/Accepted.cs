@@ -2,8 +2,8 @@
 using StatusCodes = Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace Nexusat.AspNetCore.Models
-{
-    public static class Accepted
+{   
+	public static class Accepted
     {
         public const string DefaultStatusCode = CommonStatusCodes.OK_ + "ACCEPTED";
         public const int HttpStatusCode = StatusCodes.Status202Accepted;

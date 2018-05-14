@@ -15,32 +15,32 @@ namespace Nexusat.AspNetCore.Models
 		/// <summary>
         /// Bad request response.
         /// </summary>
-        public class ApiResponse : Models.ApiResponse
+        public class Response : Models.ApiResponse
         {
             private ModelStateDictionary ModelState { get; set; }
-            public ApiResponse(string description = null, string userDescription = null)
+            public Response(string description = null, string userDescription = null)
 				: this(DefaultStatusCode, description, userDescription) { }
 
-            public ApiResponse(string statusCode, string description = null, string userDescription = null)
+            public Response(string statusCode, string description = null, string userDescription = null)
                 : base(HttpStatusCode, statusCode, description, userDescription)
             {
                 StatusCode.CheckValidKoCodeOrThrow(statusCode);
             }
 
-            public ApiResponse(ModelStateDictionary modelStateDictionary)
+            public Response(ModelStateDictionary modelStateDictionary)
                 : this()
             {
                 ModelState = modelStateDictionary ?? throw new ArgumentNullException(nameof(modelStateDictionary));
             }
 
             /// <summary>
-            /// Gets a <see cref="ApiResponse"/> from an exception.
+            /// Gets a <see cref="Response"/> from an exception.
             /// </summary>
             /// <returns>The from exception.</returns>
             /// <param name="exception">The exception that will be encapsulated</param>
-            public static ApiResponse GetFromException(BadRequestResponseException exception)
+            public static Response GetFromException(BadRequestResponseException exception)
             {
-                var response = new ApiResponse(exception.StatusCode, exception.Description, exception.UserDescription);
+                var response = new Response(exception.StatusCode, exception.Description, exception.UserDescription);
                 response.ModelState = exception.ModelState;
 
                 if (exception.InnerException != null)
@@ -62,23 +62,23 @@ namespace Nexusat.AspNetCore.Models
 		/// <summary>
         /// Bad request response with optional <see cref="Data"/> payload.
         /// </summary>
-		public class ObjectResponse<T> : ApiResponse, IApiObjectResponse<T>
+		public class Object<T> : Response, IApiObjectResponse<T>
         {
             public T Data { get; }
 
-            public ObjectResponse(string statusCode, T data = default(T), string description = null, string userDescription = null)
+            public Object(string statusCode, T data = default(T), string description = null, string userDescription = null)
                 : base(statusCode, description, userDescription)
             {
                 Data = data;
             }
 
-            public ObjectResponse(T data = default(T), string description = null, string userDescription = null)
+            public Object(T data = default(T), string description = null, string userDescription = null)
                 : base(description, userDescription)
             {
                 Data = data;
             }
 
-            public ObjectResponse(ModelStateDictionary modelState, T data = default(T))
+            public Object(ModelStateDictionary modelState, T data = default(T))
                 : base(modelState)
             {
                 Data = data;

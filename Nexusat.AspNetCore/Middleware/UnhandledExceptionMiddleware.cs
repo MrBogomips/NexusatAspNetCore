@@ -51,10 +51,10 @@ namespace Nexusat.AspNetCore.Middleware
                     switch (exception)
                     {
                         case BadRequestResponseException br:
-                            response = BadRequest.ApiResponse.GetFromException(br);
+                            response = BadRequest.Response.GetFromException(br);
                             break;
                         case NoContentResponseException nr:
-                            response = new NoContentResponse();
+							response = NoContent.Response;
                             break;
                         default: // just in case of something missed
                             logger.LogWarning(FormatSystemMessage("An Api Response Exception {0}({1}) was found", exception.GetType().FullName, exception.Message));
