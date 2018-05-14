@@ -274,7 +274,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             //Assert
             Assert.Equal(HttpStatusCode.Accepted, httpCode);
-            Assert.Equal("some_uri", location);
+			Assert.Equal("http://www.google.com/", location);
             Assert.Equal(expectedStatus, actualStatus);
             Assert.Null(json.SelectToken("data"));
         }

@@ -5,7 +5,6 @@ using Nexusat.AspNetCore.Mvc;
 
 namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 {
-
     [Route("Accepted")]
     public class AcceptedController : ApiController
     {
@@ -14,22 +13,22 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
         [HttpPost("{id:int}")]
         public IApiResponse AcceptedResponse(int id)
-        => Accepted(uri: "/Accepted/" + id.ToString());
+		=> new Accepted.ResponseAtUri(uri: "/Accepted/" + id.ToString());
 
         [HttpPost("object/{id:int}")]
         public IApiObjectResponse<string> AcceptedObject(int id)
         {
             Uri uri;
             Uri.TryCreate("/Accepted/" + id.ToString(), UriKind.Relative, out uri);
-			return Accepted(data: "data: " + id.ToString(), uri: uri);
+			return new Accepted.ObjectAtUri<string>(data: "data: " + id.ToString(), uri: uri);
         }
 
         [HttpPost("action/{id:int}")]
         public IApiResponse AcceptedAtActionFake(int id)
-        => AcceptedAtAction("Get", routeValues: new { id = id });
+        => new Accepted.ResponseAtAction("Get", routeValues: new { id = id });
 
         [HttpPost("route/{id:int}")]
         public IApiResponse AcceptedRouteFake(int id)
-        => AcceptedAtRoute("accepted_controller_index", routeValues: new { id = id });
+        => new Accepted.ResponseAtRoute("accepted_controller_index", routeValues: new { id = id });
     }
 }
