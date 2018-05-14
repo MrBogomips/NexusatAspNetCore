@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.ApiResponse.html",
-          "hash": "y8LTtmBORNOiqJA0Ec7+4A=="
+          "hash": "GGFYe4RPMfSmbcmk5mEofg=="
         }
       },
       "is_incremental": true,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.CommonStatusCodes.html",
-          "hash": "Rlq4A7UClgIHTltdnmZqxQ=="
+          "hash": "Frf/3d1y9GJ/f6p3T3Y3Aw=="
         }
       },
       "is_incremental": true,
@@ -593,6 +593,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.html",
+          "hash": "5RZKGTbMo75bkBE8atNk9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.yml",
       "output": {
         ".html": {
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nexusat.AspNetCore.Models.html",
-          "hash": "hJclvvZ56pDWLF7dr91/pw=="
+          "hash": "tnSiWHV0os7i8E7Glxz3CQ=="
         }
       },
       "is_incremental": true,
@@ -789,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Gyr1PrWw82yWJuv662m5hg=="
+          "hash": "hqUnCCkpigsh4hFXK8IkNg=="
         }
       },
       "is_incremental": false,
@@ -856,11 +868,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }

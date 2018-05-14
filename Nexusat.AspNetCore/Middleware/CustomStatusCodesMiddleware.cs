@@ -32,16 +32,22 @@ namespace Nexusat.AspNetCore.Middleware
 
         public async Task Invoke(HttpContext context /* other dependencies */)
         {
-            await next(context);
-            if (context.Response.StatusCode == 415) // unsupported media type
-			{
-				ApiResponse response = null;
-				var services = context.RequestServices;
+			void RenderResponse(ApiResponse response)
+            {
+                var services = context.RequestServices;
                 var executor = services.GetRequiredService<ApiResponseExecutor>();
+                executor.RenderResponse(context, response);
+            }
 
-				response = new UnsupportedMediaTypeResponse();
+            await next(context);
 
-				executor.RenderResponse(context, response);
+			switch(context.Response.StatusCode) {
+				case 404:
+					RenderResponse(new NotFoundResponse());
+					break;
+				case 415:
+                    RenderResponse(new UnsupportedMediaTypeResponse());
+                    break;  
 			}         
         }
     }

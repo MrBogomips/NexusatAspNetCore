@@ -14,9 +14,6 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="app">App.</param>
         public static IApplicationBuilder UseNexusatAspNetCore(this IApplicationBuilder app)
         {
-            // Manage HTTP 404 and other MVC status codes not managed
-            app.UseStatusCodePages(new InternalStatusCodePagesOptions());
-
             return app;
         }
         /// <summary>
