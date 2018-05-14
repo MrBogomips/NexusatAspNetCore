@@ -212,6 +212,7 @@
   "Nexusat.AspNetCore.Models.ValidationErrorsInfo": "Nexusat.AspNetCore.Models.ValidationErrorsInfo.yml",
   "Nexusat.AspNetCore.Models.ValidationErrorsInfo.#ctor(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)": "Nexusat.AspNetCore.Models.ValidationErrorsInfo.yml",
   "Nexusat.AspNetCore.Models.ValidationErrorsInfo.#ctor(Newtonsoft.Json.Serialization.NamingStrategy,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)": "Nexusat.AspNetCore.Models.ValidationErrorsInfo.yml",
+  "Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName": "Nexusat.AspNetCore.Models.ValidationErrorsInfo.yml",
   "Nexusat.AspNetCore.Mvc": "Nexusat.AspNetCore.Mvc.yml",
   "Nexusat.AspNetCore.Mvc.ApiController": "Nexusat.AspNetCore.Mvc.ApiController.yml",
   "Nexusat.AspNetCore.Mvc.ApiController.Accepted(System.String,System.String,System.String)": "Nexusat.AspNetCore.Mvc.ApiController.yml",

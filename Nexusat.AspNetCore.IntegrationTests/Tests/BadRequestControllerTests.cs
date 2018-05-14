@@ -30,8 +30,8 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 			//var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
 
 			Output.WriteLine(json.ToString());
-
 		}
+
         [Fact]
 		public async void ModelStateManualValidation()
         {
@@ -43,33 +43,18 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Act
 			var response = await Client.PostAsync("/BadRequest/ModelStateManualValidation", request);
-            //response.EnsureSuccessStatusCode();
-			Output.WriteLine(await response.Content.ReadAsStringAsync());
-			return;
+			var json = await ReadAsJObjectAsync(response.Content);
 
-            var json = await ReadAsJObjectAsync(response.Content);
-            var httpCode = response.StatusCode;
-            //var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
+			Output.WriteLine(json.ToString());
 
-            Output.WriteLine(json.ToString());
+			var httpCode = response.StatusCode;
+			var actualStatus = ExtractStatus(json);
+			var actualErrors = ExtractValidationErrorsInfo(json);
 
-			return;
-            /*
-            var actualStatus = ExtractStatus(json);
-            var expectedStatus = new Status
-            {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
-                Description = null,
-                UserDescription = null
-            };
-
-            //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Accepted/666", location);
-            Assert.Equal(expectedStatus, actualStatus);
-            Assert.Null(json.SelectToken("data"));
-            */
+			Assert.Equal(HttpStatusCode.BadRequest, httpCode);
+			Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
+			Assert.NotNull(actualErrors);
+			Assert.True(actualErrors.Count > 0);
         }
     }
 }

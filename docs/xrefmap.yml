@@ -2819,6 +2819,12 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ValidationErrorsInfo.ValidationErrorsInfo
   nameWithType: ValidationErrorsInfo.ValidationErrorsInfo
+- uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  name: DefaultPropertyName
+  href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html#Nexusat_AspNetCore_Models_ValidationErrorsInfo_DefaultPropertyName
+  commentId: F:Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  fullName: Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  nameWithType: ValidationErrorsInfo.DefaultPropertyName
 - uid: Nexusat.AspNetCore.Mvc
   name: Nexusat.AspNetCore.Mvc
   href: api/Nexusat.AspNetCore.Mvc.html

@@ -51,6 +51,27 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
                 };
         }
 
+		protected static ValidationErrorsInfo ExtractValidationErrorsInfo(JObject json) {
+			var vei = new ValidationErrorsInfo();
+			var validationErrors = json.SelectToken("validationErrors").AsJEnumerable();         
+            foreach (var item in validationErrors)
+			{
+				JProperty jp = item as JProperty;
+
+				string key = jp.Name;
+				List<string> values = new List<string>();
+
+                foreach (var i2 in item.Values())
+				{
+					string v = i2.Value<string>();
+					values.Add(v);
+				}
+
+				vei.Add(key, values);
+			}
+			return vei;
+		}
+
         protected static T ExtractObjectData<T>(JObject json) => json.SelectToken("data").Value<T>();
         protected static IEnumerable<T> ExtractEnumData<T>(JObject json) => json.SelectToken("data").Values<T>();
 

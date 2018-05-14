@@ -10,10 +10,10 @@ using System.Text;
 
 namespace Nexusat.AspNetCore.Models
 {
-        public sealed class ValidationErrorsInfo : Dictionary<string, List<string>>
-        {
-		private NamingStrategy JsonNamingStrategy { get; }      
-		private ModelStateDictionary ModelState { get; }
+    public sealed class ValidationErrorsInfo : Dictionary<string, List<string>>
+    {
+		NamingStrategy JsonNamingStrategy { get; }      
+		ModelStateDictionary ModelState { get; }
 
 		public const string DefaultPropertyName = "Error";
 
@@ -36,13 +36,13 @@ namespace Nexusat.AspNetCore.Models
 			ParseModelState();
 		}
 
-		private string SerializeToJsonConformantName(string input)
+		string SerializeToJsonConformantName(string input)
 		{
 			string _input = input;
 			if (string.IsNullOrWhiteSpace(_input)) _input = DefaultPropertyName;
 			return JsonNamingStrategy?.GetPropertyName(_input, false) ?? _input;
 		}
-		private void ParseModelState()
+		void ParseModelState()
         {
             foreach (var item in ModelState)
             {
@@ -55,5 +55,5 @@ namespace Nexusat.AspNetCore.Models
                 this[k].AddRange(errors);
             }
         }
-        }
+    }
 }
