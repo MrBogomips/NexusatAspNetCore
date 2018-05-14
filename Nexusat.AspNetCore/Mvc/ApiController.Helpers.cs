@@ -182,57 +182,7 @@ namespace Nexusat.AspNetCore.Mvc
 		=> new Accepted.ObjectAtRoute<T>(routeName, data, description, userDescription);
 
 		#endregion AcceptedResponse (HTTP 202) Helper Methods
-
-		#region CreatedResponse (HTTP 201) Helper Methods
-		/// <summary>
-		/// Produce an HTTP 202 response
-		/// </summary>
-		/// <returns>The accepted.</returns>
-		/// <param name="description">Description.</param>
-		/// <param name="userDescription">User description.</param>
-		/// <param name="uri">URI.</param>
-		protected IApiResponse Created(string description = null, string userDescription = null, string uri = null)
-		=> new Created.ResponseAtUri(uri, description, userDescription);
-
-		protected IApiResponse Created(string description = null, string userDescription = null, Uri uri = null)
-		=> new Created.ResponseAtUri(uri, description, userDescription);
-
-		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, string uri = null)
-		=> new Created.ObjectAtUri<T>(uri, data, description, userDescription);
-
-		protected IApiObjectResponse<T> Created<T>(T data = default(T), string description = null, string userDescription = null, Uri uri = null)
-		=> new Created.ObjectAtUri<T>(uri, data, description, userDescription);
-
-		protected IApiResponse CreatedAtAction(string actionName, string controllerName, object routeValues, string description = null, string userDescription = null)
-		=> new Created.ResponseAtAction(actionName, description, userDescription, controllerName, routeValues);
-
-		protected IApiResponse CreatedAtAction(string actionName, object routeValues, string description = null, string userDescription = null)
-		=> new Created.ResponseAtAction(actionName, description: description, userDescription: userDescription, routeValues: routeValues);
-
-		protected IApiResponse CreatedAtAction(string actionName, string description = null, string userDescription = null)
-		=> new Created.ResponseAtAction(actionName, description: description, userDescription: userDescription);
-
-		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, string controllerName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> new Created.ObjectAtAction<T>(actionName, controllerName: controllerName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
-
-		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> new Created.ObjectAtAction<T>(actionName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
-
-		protected IApiObjectResponse<T> CreatedAtAction<T>(string actionName, T data = default(T), string description = null, string userDescription = null)
-		=> new Created.ObjectAtAction<T>(actionName, data: data, description: description, userDescription: userDescription);
-
-		protected IApiResponse CreatedAtRoute(string routeName, object routeValues, string description = null, string userDescription = null)
-		=> new Created.ResponseAtRoute(routeName, routeValues: routeValues, description: description, userDescription: userDescription);
-		protected IApiResponse CreatedAtRoute(string routeName, string description = null, string userDescription = null)
-		=> new Created.ResponseAtRoute(routeName, description: description, userDescription: userDescription);
-
-		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, object routeValues, T data = default(T), string description = null, string userDescription = null)
-		=> new Created.ObjectAtRoute<T>(routeName, routeValues: routeValues, data: data, description: description, userDescription: userDescription);
-
-		protected IApiObjectResponse<T> CreatedAtRoute<T>(string routeName, T data = default(T), string description = null, string userDescription = null)
-		=> new Created.ObjectAtRoute<T>(routeName, data: data, description: description, userDescription: userDescription);
-		#endregion CreatedResponse (HTTP 201) Helper Methods
-
+        
         
 
 #if TO_BE_IMPLEMENTED
