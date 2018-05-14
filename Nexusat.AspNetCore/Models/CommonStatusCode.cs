@@ -36,6 +36,10 @@ namespace Nexusat.AspNetCore.Models
         /// The unhandled exception status code.
         /// </summary>
         public const string UNHANDLED_EXCEPTION_STATUS_CODE = KO + "_UNHANDLED_EXCEPTION";
+        /// <summary>
+        /// The unsupported media status code.
+        /// </summary>
+		public const string UNSUPPORTED_MEDIA_TYPE = KO + "_UNSUPPORTED_MEDIA_TYPE";
 
         /// <summary>
         /// The default status code used in case of ambigous operations not specifically configured by the user
@@ -45,5 +49,7 @@ namespace Nexusat.AspNetCore.Models
         /// This status code should never be served to the client
         /// </summary>
         internal const string OK_INTERNAL_PIZZA = OK + "_INTERNAL_PIZZA";
+
+
     }
 }

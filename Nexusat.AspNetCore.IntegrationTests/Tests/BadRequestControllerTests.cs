@@ -21,17 +21,18 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 		{         
 			// Act
 			var response = await Client.PostAsync("/BadRequest/ModelStateManualValidation", null);
-			//response.EnsureSuccessStatusCode();
-			Output.WriteLine(await response.Content.ReadAsStringAsync());
-			return;
-
 			var json = await ReadAsJObjectAsync(response.Content);
-			var httpCode = response.StatusCode;
-			//var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
 
-			Output.WriteLine(json.ToString());
+            Output.WriteLine(json.ToString());
 
+            var httpCode = response.StatusCode;
+			var actualStatus = ExtractStatus(json);
+                     
+            // Assert         
+            Assert.Equal(HttpStatusCode.UnsupportedMediaType, httpCode);
+			Assert.Equal("KO_UNSUPPORTED_MEDIA_TYPE", actualStatus.Code);
 		}
+
         [Fact]
 		public async void ModelStateManualValidation()
         {
@@ -43,33 +44,46 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Act
 			var response = await Client.PostAsync("/BadRequest/ModelStateManualValidation", request);
-            //response.EnsureSuccessStatusCode();
-			Output.WriteLine(await response.Content.ReadAsStringAsync());
-			return;
+			var json = await ReadAsJObjectAsync(response.Content);
 
+			Output.WriteLine(json.ToString());
+
+			var httpCode = response.StatusCode;
+			var actualStatus = ExtractStatus(json);
+			var actualErrors = ExtractValidationErrorsInfo(json);
+
+			// Assert         
+			Assert.Equal(HttpStatusCode.BadRequest, httpCode);
+			Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
+			Assert.NotNull(actualErrors);
+			Assert.True(actualErrors.Count > 0);
+        }
+
+		[Fact]
+		public async void ModelStateAutoValidation()
+        {
+            // Setup
+            var request = GetJsonContent(new
+            {
+                Name = "G",
+                Surname = "Costagliola"
+            });
+
+            // Act
+			var response = await Client.PostAsync("/BadRequest/ModelStateAutoValidation", request);
             var json = await ReadAsJObjectAsync(response.Content);
-            var httpCode = response.StatusCode;
-            //var location = response.Headers.GetValues(HeaderNames.Location).FirstOrDefault();
 
             Output.WriteLine(json.ToString());
 
-			return;
-            /*
+            var httpCode = response.StatusCode;
             var actualStatus = ExtractStatus(json);
-            var expectedStatus = new Status
-            {
-                HttpCode = 201,
-                Code = "OK_TEST_DEFAULT",
-                Description = null,
-                UserDescription = null
-            };
+            var actualErrors = ExtractValidationErrorsInfo(json);
 
-            //Assert
-            Assert.Equal(HttpStatusCode.Created, httpCode);
-            Assert.Equal("/Accepted/666", location);
-            Assert.Equal(expectedStatus, actualStatus);
-            Assert.Null(json.SelectToken("data"));
-            */
+            // Assert         
+            Assert.Equal(HttpStatusCode.BadRequest, httpCode);
+            Assert.Equal("KO_BAD_REQUEST", actualStatus.Code);
+            Assert.NotNull(actualErrors);
+            Assert.True(actualErrors.Count > 0);
         }
     }
 }

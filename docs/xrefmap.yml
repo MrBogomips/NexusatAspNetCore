@@ -1747,6 +1747,12 @@ references:
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
   nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION_STATUS_CODE
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
+  name: UNSUPPORTED_MEDIA_TYPE
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNSUPPORTED_MEDIA_TYPE
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
+  nameWithType: CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
 - uid: Nexusat.AspNetCore.Models.ExceptionInfo
   name: ExceptionInfo
   href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html
@@ -2794,6 +2800,25 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.UnhandledExceptionResponse.UnhandledExceptionResponse
   nameWithType: UnhandledExceptionResponse.UnhandledExceptionResponse
+- uid: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse
+  name: UnsupportedMediaTypeResponse
+  href: api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.html
+  commentId: T:Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse
+  fullName: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse
+  nameWithType: UnsupportedMediaTypeResponse
+- uid: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.#ctor
+  name: UnsupportedMediaTypeResponse()
+  href: api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.html#Nexusat_AspNetCore_Models_UnsupportedMediaTypeResponse__ctor
+  commentId: M:Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.#ctor
+  fullName: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.UnsupportedMediaTypeResponse()
+  nameWithType: UnsupportedMediaTypeResponse.UnsupportedMediaTypeResponse()
+- uid: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.#ctor*
+  name: UnsupportedMediaTypeResponse
+  href: api/Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.html#Nexusat_AspNetCore_Models_UnsupportedMediaTypeResponse__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.UnsupportedMediaTypeResponse.UnsupportedMediaTypeResponse
+  nameWithType: UnsupportedMediaTypeResponse.UnsupportedMediaTypeResponse
 - uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo
   name: ValidationErrorsInfo
   href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html
@@ -2819,6 +2844,12 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ValidationErrorsInfo.ValidationErrorsInfo
   nameWithType: ValidationErrorsInfo.ValidationErrorsInfo
+- uid: Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  name: DefaultPropertyName
+  href: api/Nexusat.AspNetCore.Models.ValidationErrorsInfo.html#Nexusat_AspNetCore_Models_ValidationErrorsInfo_DefaultPropertyName
+  commentId: F:Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  fullName: Nexusat.AspNetCore.Models.ValidationErrorsInfo.DefaultPropertyName
+  nameWithType: ValidationErrorsInfo.DefaultPropertyName
 - uid: Nexusat.AspNetCore.Mvc
   name: Nexusat.AspNetCore.Mvc
   href: api/Nexusat.AspNetCore.Mvc.html
