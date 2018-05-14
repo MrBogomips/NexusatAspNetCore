@@ -64,7 +64,7 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="description">Description.</param>
 		/// <param name="userDescription">User description.</param>
 		protected IApiResponse Ok(string description = null, string userDescription = null)
-		=> new ApiResponse(Status200OK, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+		=> new Ok.Response(CommonStatusCodes.OK, description, userDescription);
 
 		/// <summary>
 		/// Produce an HTTP 200 response 
@@ -75,7 +75,9 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiObjectResponse<T> OkObject<T>(T data = default(T), string description = null, string userDescription = null)
-		=> new ApiObjectResponse<T>(Status200OK, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription);
+		=> new Ok.Object<T>(data, description, userDescription);      
+		//new ApiObjectResponse<T>(Status200OK, FrameworkOptions.DefaultOkStatusCode, data, description, userDescription);
+
 		/// <summary>
 		/// Produce an HTTP 200 response
 		/// </summary>
@@ -86,7 +88,8 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiEnumResponse<T> OkEnum<T>(int itemsCount, IEnumerable<T> data = null, string description = null, string userDescription = null)
-		=> new ApiEnumResponse<T>(Status200OK, CurrentPage, itemsCount, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+		=> new Ok.Enum<T>(data, CurrentPage, itemsCount, description, userDescription);
+              
 		/// <summary>
 		/// Produce an HTTP 200 response
 		/// </summary>
@@ -97,7 +100,7 @@ namespace Nexusat.AspNetCore.Mvc
 		/// <param name="userDescription">User description.</param>
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		protected IApiEnumResponse<T> OkEnum<T>(bool hasNextPage, IEnumerable<T> data = null, string description = null, string userDescription = null)
-		=> new ApiEnumResponse<T>(Status200OK, CurrentPage, hasNextPage, data, FrameworkOptions.DefaultOkStatusCode, description, userDescription);
+		=> new Ok.Enum<T>(data, CurrentPage, hasNextPage, description, userDescription);
       
 		//throw new NoContentResponseException();
 		#endregion OkResponse (HTTP 200) Helper Methods

@@ -36,7 +36,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
         }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
         }
 
         [Theory]
@@ -178,7 +178,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -209,7 +209,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
     }

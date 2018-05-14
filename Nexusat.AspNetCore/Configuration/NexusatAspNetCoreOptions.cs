@@ -10,6 +10,7 @@ namespace Nexusat.AspNetCore.Configuration
     /// </summary>
     public class NexusatAspNetCoreOptions
     {
+		/*
         /// <summary>
         /// Gets or sets the default ok status code.
         /// This status code is set whenever using a response method without
@@ -35,6 +36,8 @@ namespace Nexusat.AspNetCore.Configuration
         /// </summary>
         /// <value>The default unset status code.</value>
         public string DefaultUnsetStatusCode { get; internal set; } = CommonStatusCodes.UNK_DEFAULT;
+        */
+
 
         /// <summary>
         /// Gets or sets a value indicating whether this

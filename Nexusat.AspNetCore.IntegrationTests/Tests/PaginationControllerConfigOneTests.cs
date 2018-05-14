@@ -36,7 +36,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
         }
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -208,7 +208,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP400
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -239,7 +239,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -267,7 +267,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -295,7 +295,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
             Assert.Equal(paginationCursor, ExtractPaginationCursor(json));
         }
 
@@ -368,7 +368,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             // PageSize bounded response
             // 1st page has all links except the prev
@@ -399,7 +399,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             // PageSize bounded response
             // 2nd page has all links (inner page)
@@ -431,7 +431,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             // PageSize bounded response
             // Last page has all links except the last one
@@ -481,7 +481,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             Assert.NotNull(paginationInfo.Links.First);
             Assert.NotNull(paginationInfo.Links.Current);
@@ -515,7 +515,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             Assert.NotNull(paginationInfo.Links.First);
             Assert.NotNull(paginationInfo.Links.Current);
@@ -546,7 +546,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK_UNK", statusCode);
 
             Assert.NotNull(paginationInfo.Links.First);
             Assert.NotNull(paginationInfo.Links.Current);

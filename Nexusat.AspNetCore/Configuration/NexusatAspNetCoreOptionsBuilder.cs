@@ -18,6 +18,8 @@ namespace Nexusat.AspNetCore.Configuration
         {
             Options.IsRuntimeProfilationEnabled = true;
         }
+
+        /* DELETE
         /// <summary>
         /// Sets the default ok status.
         /// <see cref="NexusatAspNetCoreOptions.DefaultOkStatusCode"/> for details
@@ -48,7 +50,7 @@ namespace Nexusat.AspNetCore.Configuration
             StatusCode.CheckValidCodeOrThrow(statusCode);
             Options.DefaultUnsetStatusCode = statusCode;
         }
-
+        */
 
         /// <summary>
         /// Sets the name of the pagination page index parameter used to parse the request's querystring.

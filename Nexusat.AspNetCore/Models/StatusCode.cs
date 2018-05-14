@@ -45,7 +45,7 @@ namespace Nexusat.AspNetCore.Models
         /// <summary>
         /// The Default status code
         /// </summary>
-        public static readonly StatusCode Default = CommonStatusCodes.UNK_DEFAULT;
+        public static readonly StatusCode Default = CommonStatusCodes.UNK;
         public static readonly StatusCode Ok = CommonStatusCodes.OK;
         public static readonly StatusCode Ko = CommonStatusCodes.KO;
 

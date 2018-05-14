@@ -33,7 +33,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode); // HTTP200
-            Assert.Equal("OK_TEST_DEFAULT", statusCode);
+            Assert.Equal("OK", statusCode);
         }
 
 
@@ -132,7 +132,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 200,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK",
                 Description = null,
                 UserDescription = null
             };
@@ -185,7 +185,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 200,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK",
                 Description = null,
                 UserDescription = null
             };
@@ -211,7 +211,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 200,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK",
                 Description = null,
                 UserDescription = null
             };
@@ -237,7 +237,7 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
             var expectedStatus = new Status
             {
                 HttpCode = 200,
-                Code = "OK_TEST_DEFAULT",
+                Code = "OK_UNK",
                 Description = null,
                 UserDescription = null
             };

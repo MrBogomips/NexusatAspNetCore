@@ -663,45 +663,6 @@ references:
   commentId: T:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions
   fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions
   nameWithType: NexusatAspNetCoreOptions
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode
-  name: DefaultKoStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultKoStatusCode
-  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultKoStatusCode
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode*
-  name: DefaultKoStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultKoStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultKoStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultKoStatusCode
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode
-  name: DefaultOkStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultOkStatusCode
-  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultOkStatusCode
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode*
-  name: DefaultOkStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultOkStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultOkStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultOkStatusCode
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-  name: DefaultUnsetStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultUnsetStatusCode
-  commentId: P:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode*
-  name: DefaultUnsetStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_DefaultUnsetStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.DefaultUnsetStatusCode
-  nameWithType: NexusatAspNetCoreOptions.DefaultUnsetStatusCode
 - uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.IsRuntimeProfilationEnabled
   name: IsRuntimeProfilationEnabled
   href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptions.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptions_IsRuntimeProfilationEnabled
@@ -812,45 +773,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.EnableRuntimeProfilation
   nameWithType: NexusatAspNetCoreOptionsBuilder.EnableRuntimeProfilation
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus(System.String)
-  name: SetDefaultKoStatus(String)
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultKoStatus_System_String_
-  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus(System.String)
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus(System.String)
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus(String)
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus*
-  name: SetDefaultKoStatus
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultKoStatus_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultKoStatus
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus(System.String)
-  name: SetDefaultOkStatus(String)
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultOkStatus_System_String_
-  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus(System.String)
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus(System.String)
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus(String)
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus*
-  name: SetDefaultOkStatus
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultOkStatus_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultOkStatus
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode(System.String)
-  name: SetDefaultUnsetStatusCode(String)
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultUnsetStatusCode_System_String_
-  commentId: M:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode(System.String)
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode(System.String)
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode(String)
-- uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode*
-  name: SetDefaultUnsetStatusCode
-  href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetDefaultUnsetStatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode
-  nameWithType: NexusatAspNetCoreOptionsBuilder.SetDefaultUnsetStatusCode
 - uid: Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.SetPaginationDefaultBadRequestOnPageOutOfRange(System.Boolean)
   name: SetPaginationDefaultBadRequestOnPageOutOfRange(Boolean)
   href: api/Nexusat.AspNetCore.Configuration.NexusatAspNetCoreOptionsBuilder.html#Nexusat_AspNetCore_Configuration_NexusatAspNetCoreOptionsBuilder_SetPaginationDefaultBadRequestOnPageOutOfRange_System_Boolean_
@@ -2152,12 +2074,6 @@ references:
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO
   nameWithType: CommonStatusCodes.KO
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
-  name: KO_DEFAULT
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_KO_DEFAULT
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.KO_DEFAULT
-  nameWithType: CommonStatusCodes.KO_DEFAULT
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.NOT_FOUND
   name: NOT_FOUND
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_NOT_FOUND
@@ -2170,24 +2086,18 @@ references:
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK
   nameWithType: CommonStatusCodes.OK
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
-  name: OK_DEFAULT
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_OK_DEFAULT
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.OK_DEFAULT
-  nameWithType: CommonStatusCodes.OK_DEFAULT
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
   name: UNHANDLED_EXCEPTION
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNHANDLED_EXCEPTION
   commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
   fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNHANDLED_EXCEPTION
   nameWithType: CommonStatusCodes.UNHANDLED_EXCEPTION
-- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
-  name: UNK_DEFAULT
-  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNK_DEFAULT
-  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
-  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK_DEFAULT
-  nameWithType: CommonStatusCodes.UNK_DEFAULT
+- uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK
+  name: UNK
+  href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNK
+  commentId: F:Nexusat.AspNetCore.Models.CommonStatusCodes.UNK
+  fullName: Nexusat.AspNetCore.Models.CommonStatusCodes.UNK
+  nameWithType: CommonStatusCodes.UNK
 - uid: Nexusat.AspNetCore.Models.CommonStatusCodes.UNSUPPORTED_MEDIA_TYPE
   name: UNSUPPORTED_MEDIA_TYPE
   href: api/Nexusat.AspNetCore.Models.CommonStatusCodes.html#Nexusat_AspNetCore_Models_CommonStatusCodes_UNSUPPORTED_MEDIA_TYPE
