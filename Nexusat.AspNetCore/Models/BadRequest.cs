@@ -9,7 +9,7 @@ namespace Nexusat.AspNetCore.Models
 {
 
 	public static class BadRequest {
-		public const string DefaultStatusCode = CommonStatusCodes.BAD_REQUEST;
+		public const string ApiStatusCode = CommonStatusCodes.BAD_REQUEST;
 		public const int HttpStatusCode = StatusCodes.Status400BadRequest;
 
 		/// <summary>
@@ -19,7 +19,7 @@ namespace Nexusat.AspNetCore.Models
         {
             private ModelStateDictionary ModelState { get; set; }
             public Response(string description = null, string userDescription = null)
-				: this(DefaultStatusCode, description, userDescription) { }
+				: this(ApiStatusCode, description, userDescription) { }
 
             public Response(string statusCode, string description = null, string userDescription = null)
                 : base(HttpStatusCode, statusCode, description, userDescription)
