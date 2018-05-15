@@ -913,6 +913,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.Description
   nameWithType: ApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse
+  name: GetResponse()
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_GetResponse
+  commentId: M:Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse()
+  nameWithType: ApiResponseException.GetResponse()
+- uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse*
+  name: GetResponse
+  href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_GetResponse_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.GetResponse
+  nameWithType: ApiResponseException.GetResponse
 - uid: Nexusat.AspNetCore.Exceptions.ApiResponseException.HasBody
   name: HasBody
   href: api/Nexusat.AspNetCore.Exceptions.ApiResponseException.html#Nexusat_AspNetCore_Exceptions_ApiResponseException_HasBody
@@ -965,62 +978,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Exceptions.ApiResponseException.UserDescription
   nameWithType: ApiResponseException.UserDescription
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException
-  name: BadRequestResponseException
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html
-  commentId: T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException
-  nameWithType: BadRequestResponseException
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
-  name: BadRequestResponseException()
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor
-  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException()
-  nameWithType: BadRequestResponseException.BadRequestResponseException()
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  name: BadRequestResponseException(ModelStateDictionary)
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
-  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  nameWithType: BadRequestResponseException.BadRequestResponseException(ModelStateDictionary)
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.Exception)
-  name: BadRequestResponseException(Exception)
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.Exception)
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.Exception)
-  nameWithType: BadRequestResponseException.BadRequestResponseException(Exception)
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String)
-  name: BadRequestResponseException(String)
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_String_
-  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String)
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.String)
-  nameWithType: BadRequestResponseException.BadRequestResponseException(String)
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String,System.Exception)
-  name: BadRequestResponseException(String, Exception)
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_System_String_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor(System.String,System.Exception)
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException(System.String, System.Exception)
-  nameWithType: BadRequestResponseException.BadRequestResponseException(String, Exception)
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor*
-  name: BadRequestResponseException
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException__ctor_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.#ctor
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.BadRequestResponseException
-  nameWithType: BadRequestResponseException.BadRequestResponseException
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState
-  name: ModelState
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException_ModelState
-  commentId: P:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState
-  nameWithType: BadRequestResponseException.ModelState
-- uid: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState*
-  name: ModelState
-  href: api/Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html#Nexusat_AspNetCore_Exceptions_BadRequestResponseException_ModelState_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.BadRequestResponseException.ModelState
-  nameWithType: BadRequestResponseException.ModelState
 - uid: Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException
   name: BuilderInvalidStateException
   href: api/Nexusat.AspNetCore.Exceptions.BuilderInvalidStateException.html
@@ -1064,96 +1021,19 @@ references:
   commentId: T:Nexusat.AspNetCore.Exceptions.IApiResponseException
   fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException
   nameWithType: IApiResponseException
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
-  name: Description
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_Description
-  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
-  nameWithType: IApiResponseException.Description
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description*
-  name: Description
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_Description_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse
+  name: GetResponse()
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_GetResponse
+  commentId: M:Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse()
+  nameWithType: IApiResponseException.GetResponse()
+- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse*
+  name: GetResponse
+  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_GetResponse_
+  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse
   isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.Description
-  nameWithType: IApiResponseException.Description
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
-  name: HasBody
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HasBody
-  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
-  nameWithType: IApiResponseException.HasBody
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody*
-  name: HasBody
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HasBody_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HasBody
-  nameWithType: IApiResponseException.HasBody
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
-  name: HttpCode
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HttpCode
-  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
-  nameWithType: IApiResponseException.HttpCode
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode*
-  name: HttpCode
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_HttpCode_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.HttpCode
-  nameWithType: IApiResponseException.HttpCode
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
-  name: StatusCode
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_StatusCode
-  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
-  nameWithType: IApiResponseException.StatusCode
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode*
-  name: StatusCode
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_StatusCode_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.StatusCode
-  nameWithType: IApiResponseException.StatusCode
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
-  name: UserDescription
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_UserDescription
-  commentId: P:Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
-  nameWithType: IApiResponseException.UserDescription
-- uid: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription*
-  name: UserDescription
-  href: api/Nexusat.AspNetCore.Exceptions.IApiResponseException.html#Nexusat_AspNetCore_Exceptions_IApiResponseException_UserDescription_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.UserDescription
-  nameWithType: IApiResponseException.UserDescription
-- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException
-  name: NoContentResponseException
-  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html
-  commentId: T:Nexusat.AspNetCore.Exceptions.NoContentResponseException
-  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException
-  nameWithType: NoContentResponseException
-- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
-  name: NoContentResponseException()
-  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor
-  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
-  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException()
-  nameWithType: NoContentResponseException.NoContentResponseException()
-- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
-  name: NoContentResponseException(Exception)
-  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_System_Exception_
-  commentId: M:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor(System.Exception)
-  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException(System.Exception)
-  nameWithType: NoContentResponseException.NoContentResponseException(Exception)
-- uid: Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor*
-  name: NoContentResponseException
-  href: api/Nexusat.AspNetCore.Exceptions.NoContentResponseException.html#Nexusat_AspNetCore_Exceptions_NoContentResponseException__ctor_
-  commentId: Overload:Nexusat.AspNetCore.Exceptions.NoContentResponseException.#ctor
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Exceptions.NoContentResponseException.NoContentResponseException
-  nameWithType: NoContentResponseException.NoContentResponseException
+  fullName: Nexusat.AspNetCore.Exceptions.IApiResponseException.GetResponse
+  nameWithType: IApiResponseException.GetResponse
 - uid: Nexusat.AspNetCore.Middleware
   name: Nexusat.AspNetCore.Middleware
   href: api/Nexusat.AspNetCore.Middleware.html
@@ -1207,12 +1087,12 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.Accepted
   fullName: Nexusat.AspNetCore.Models.Accepted
   nameWithType: Accepted
-- uid: Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
-  name: DefaultStatusCode
-  href: api/Nexusat.AspNetCore.Models.Accepted.html#Nexusat_AspNetCore_Models_Accepted_DefaultStatusCode
-  commentId: F:Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
-  fullName: Nexusat.AspNetCore.Models.Accepted.DefaultStatusCode
-  nameWithType: Accepted.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.Accepted.ApiStatusCode
+  name: ApiStatusCode
+  href: api/Nexusat.AspNetCore.Models.Accepted.html#Nexusat_AspNetCore_Models_Accepted_ApiStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Accepted.ApiStatusCode
+  fullName: Nexusat.AspNetCore.Models.Accepted.ApiStatusCode
+  nameWithType: Accepted.ApiStatusCode
 - uid: Nexusat.AspNetCore.Models.Accepted.HttpStatusCode
   name: HttpStatusCode
   href: api/Nexusat.AspNetCore.Models.Accepted.html#Nexusat_AspNetCore_Models_Accepted_HttpStatusCode
@@ -1928,12 +1808,81 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.BadRequest
   fullName: Nexusat.AspNetCore.Models.BadRequest
   nameWithType: BadRequest
-- uid: Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
-  name: DefaultStatusCode
-  href: api/Nexusat.AspNetCore.Models.BadRequest.html#Nexusat_AspNetCore_Models_BadRequest_DefaultStatusCode
-  commentId: F:Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
-  fullName: Nexusat.AspNetCore.Models.BadRequest.DefaultStatusCode
-  nameWithType: BadRequest.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.BadRequest.ApiStatusCode
+  name: ApiStatusCode
+  href: api/Nexusat.AspNetCore.Models.BadRequest.html#Nexusat_AspNetCore_Models_BadRequest_ApiStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.BadRequest.ApiStatusCode
+  fullName: Nexusat.AspNetCore.Models.BadRequest.ApiStatusCode
+  nameWithType: BadRequest.ApiStatusCode
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception
+  name: BadRequest.Exception
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html
+  commentId: T:Nexusat.AspNetCore.Models.BadRequest.Exception
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception
+  nameWithType: BadRequest.Exception
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor
+  name: Exception()
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception()
+  nameWithType: BadRequest.Exception.Exception()
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  name: Exception(ModelStateDictionary)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
+  nameWithType: BadRequest.Exception.Exception(ModelStateDictionary)
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(Nexusat.AspNetCore.Models.BadRequest.Exception)
+  name: Exception(BadRequest.Exception)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor_Nexusat_AspNetCore_Models_BadRequest_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(Nexusat.AspNetCore.Models.BadRequest.Exception)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception(Nexusat.AspNetCore.Models.BadRequest.Exception)
+  nameWithType: BadRequest.Exception.Exception(BadRequest.Exception)
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(System.String)
+  name: Exception(String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception(System.String)
+  nameWithType: BadRequest.Exception.Exception(String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(System.String,Nexusat.AspNetCore.Models.BadRequest.Exception)
+  name: Exception(String, BadRequest.Exception)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor_System_String_Nexusat_AspNetCore_Models_BadRequest_Exception_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor(System.String,Nexusat.AspNetCore.Models.BadRequest.Exception)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception(System.String, Nexusat.AspNetCore.Models.BadRequest.Exception)
+  nameWithType: BadRequest.Exception.Exception(String, BadRequest.Exception)
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor*
+  name: Exception
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception__ctor_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.Exception.#ctor
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.Exception
+  nameWithType: BadRequest.Exception.Exception
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse
+  name: GetResponse()
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception_GetResponse
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse()
+  nameWithType: BadRequest.Exception.GetResponse()
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse*
+  name: GetResponse
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception_GetResponse_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.GetResponse
+  nameWithType: BadRequest.Exception.GetResponse
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState
+  name: ModelState
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception_ModelState
+  commentId: P:Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState
+  nameWithType: BadRequest.Exception.ModelState
+- uid: Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState*
+  name: ModelState
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Exception.html#Nexusat_AspNetCore_Models_BadRequest_Exception_ModelState_
+  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Exception.ModelState
+  nameWithType: BadRequest.Exception.ModelState
 - uid: Nexusat.AspNetCore.Models.BadRequest.HttpStatusCode
   name: HttpStatusCode
   href: api/Nexusat.AspNetCore.Models.BadRequest.html#Nexusat_AspNetCore_Models_BadRequest_HttpStatusCode
@@ -2005,18 +1954,12 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.BadRequest.Response
   fullName: Nexusat.AspNetCore.Models.BadRequest.Response
   nameWithType: BadRequest.Response
-- uid: Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  name: Response(ModelStateDictionary)
-  href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  fullName: Nexusat.AspNetCore.Models.BadRequest.Response.Response(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
-  nameWithType: BadRequest.Response.Response(ModelStateDictionary)
-- uid: Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(System.String,System.String)
-  name: Response(String, String)
-  href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response__ctor_System_String_System_String_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(System.String,System.String)
-  fullName: Nexusat.AspNetCore.Models.BadRequest.Response.Response(System.String, System.String)
-  nameWithType: BadRequest.Response.Response(String, String)
+- uid: Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String)
+  name: Response(ModelStateDictionary, String, String, String)
+  href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_
+  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String)
+  fullName: Nexusat.AspNetCore.Models.BadRequest.Response.Response(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, System.String, System.String, System.String)
+  nameWithType: BadRequest.Response.Response(ModelStateDictionary, String, String, String)
 - uid: Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(System.String,System.String,System.String)
   name: Response(String, String, String)
   href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response__ctor_System_String_System_String_System_String_
@@ -2030,19 +1973,6 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.BadRequest.Response.Response
   nameWithType: BadRequest.Response.Response
-- uid: Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
-  name: GetFromException(BadRequestResponseException)
-  href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response_GetFromException_Nexusat_AspNetCore_Exceptions_BadRequestResponseException_
-  commentId: M:Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
-  fullName: Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)
-  nameWithType: BadRequest.Response.GetFromException(BadRequestResponseException)
-- uid: Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException*
-  name: GetFromException
-  href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response_GetFromException_
-  commentId: Overload:Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException
-  isSpec: "True"
-  fullName: Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException
-  nameWithType: BadRequest.Response.GetFromException
 - uid: Nexusat.AspNetCore.Models.BadRequest.Response.OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
   name: OnFormatting(ActionContext)
   href: api/Nexusat.AspNetCore.Models.BadRequest.Response.html#Nexusat_AspNetCore_Models_BadRequest_Response_OnFormatting_Microsoft_AspNetCore_Mvc_ActionContext_
@@ -2110,12 +2040,12 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.Created
   fullName: Nexusat.AspNetCore.Models.Created
   nameWithType: Created
-- uid: Nexusat.AspNetCore.Models.Created.DefaultStatusCode
-  name: DefaultStatusCode
-  href: api/Nexusat.AspNetCore.Models.Created.html#Nexusat_AspNetCore_Models_Created_DefaultStatusCode
-  commentId: F:Nexusat.AspNetCore.Models.Created.DefaultStatusCode
-  fullName: Nexusat.AspNetCore.Models.Created.DefaultStatusCode
-  nameWithType: Created.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.Created.ApiStatusCode
+  name: ApiStatusCode
+  href: api/Nexusat.AspNetCore.Models.Created.html#Nexusat_AspNetCore_Models_Created_ApiStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Created.ApiStatusCode
+  fullName: Nexusat.AspNetCore.Models.Created.ApiStatusCode
+  nameWithType: Created.ApiStatusCode
 - uid: Nexusat.AspNetCore.Models.Created.HttpStatusCode
   name: HttpStatusCode
   href: api/Nexusat.AspNetCore.Models.Created.html#Nexusat_AspNetCore_Models_Created_HttpStatusCode
@@ -2645,6 +2575,25 @@ references:
   fullName.vb: Nexusat.AspNetCore.Models.NoContent.Enum(Of T).Navigation
   nameWithType: NoContent.Enum<T>.Navigation
   nameWithType.vb: NoContent.Enum(Of T).Navigation
+- uid: Nexusat.AspNetCore.Models.NoContent.Exception
+  name: NoContent.Exception
+  href: api/Nexusat.AspNetCore.Models.NoContent.Exception.html
+  commentId: T:Nexusat.AspNetCore.Models.NoContent.Exception
+  fullName: Nexusat.AspNetCore.Models.NoContent.Exception
+  nameWithType: NoContent.Exception
+- uid: Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse
+  name: GetResponse()
+  href: api/Nexusat.AspNetCore.Models.NoContent.Exception.html#Nexusat_AspNetCore_Models_NoContent_Exception_GetResponse
+  commentId: M:Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse
+  fullName: Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse()
+  nameWithType: NoContent.Exception.GetResponse()
+- uid: Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse*
+  name: GetResponse
+  href: api/Nexusat.AspNetCore.Models.NoContent.Exception.html#Nexusat_AspNetCore_Models_NoContent_Exception_GetResponse_
+  commentId: Overload:Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.NoContent.Exception.GetResponse
+  nameWithType: NoContent.Exception.GetResponse
 - uid: Nexusat.AspNetCore.Models.NoContent.HttpStatusCode
   name: HttpStatusCode
   href: api/Nexusat.AspNetCore.Models.NoContent.html#Nexusat_AspNetCore_Models_NoContent_HttpStatusCode
@@ -2725,12 +2674,12 @@ references:
   commentId: T:Nexusat.AspNetCore.Models.Ok
   fullName: Nexusat.AspNetCore.Models.Ok
   nameWithType: Ok
-- uid: Nexusat.AspNetCore.Models.Ok.DefaultStatusCode
-  name: DefaultStatusCode
-  href: api/Nexusat.AspNetCore.Models.Ok.html#Nexusat_AspNetCore_Models_Ok_DefaultStatusCode
-  commentId: F:Nexusat.AspNetCore.Models.Ok.DefaultStatusCode
-  fullName: Nexusat.AspNetCore.Models.Ok.DefaultStatusCode
-  nameWithType: Ok.DefaultStatusCode
+- uid: Nexusat.AspNetCore.Models.Ok.ApiStatusCode
+  name: ApiStatusCode
+  href: api/Nexusat.AspNetCore.Models.Ok.html#Nexusat_AspNetCore_Models_Ok_ApiStatusCode
+  commentId: F:Nexusat.AspNetCore.Models.Ok.ApiStatusCode
+  fullName: Nexusat.AspNetCore.Models.Ok.ApiStatusCode
+  nameWithType: Ok.ApiStatusCode
 - uid: Nexusat.AspNetCore.Models.Ok.Enum`1
   name: Ok.Enum<T>
   href: api/Nexusat.AspNetCore.Models.Ok.Enum-1.html

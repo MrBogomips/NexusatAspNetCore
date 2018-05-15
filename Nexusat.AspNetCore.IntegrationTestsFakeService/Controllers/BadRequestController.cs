@@ -15,7 +15,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 		public IApiObjectResponse<string> PostModelStateManualValidation([FromBody] HelloWorldRequest request) {
 			if (!ModelState.IsValid)
 			{
-				throw new BadRequestResponseException(ModelState);
+				throw new BadRequest.Exception(ModelState);
 			}
 
 			return new Ok.Object<string>(data: $"Hello {request.Name} {request.Surname}");

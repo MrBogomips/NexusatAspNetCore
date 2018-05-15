@@ -49,12 +49,12 @@ namespace Nexusat.AspNetCore.Mvc {
             {
                 if (!int.TryParse(values[0], out _size))
                 {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_SIZE");
+                    var ex = new BadRequest.Exception("KO_BAD_PAGE_SIZE");
                     ex.Description = "Page Size is not a valid integer";
                     throw ex;
                 }
                 if (_size < 0) {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_SIZE");
+                    var ex = new BadRequest.Exception("KO_BAD_PAGE_SIZE");
                     ex.Description = "Page Size must be a non negative integer";
                     throw ex;
                 }
@@ -64,13 +64,13 @@ namespace Nexusat.AspNetCore.Mvc {
             {
                 if (!int.TryParse(values[0], out _index))
                 {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_INDEX");
+                    var ex = new BadRequest.Exception("KO_BAD_PAGE_INDEX");
                     ex.Description = "Page Index is not a valid integer";
                     throw ex;
                 }
                 if (_index < 1) 
                 {
-                    var ex = new BadRequestResponseException("KO_BAD_PAGE_INDEX");
+                    var ex = new BadRequest.Exception("KO_BAD_PAGE_INDEX");
                     ex.Description = "Page Index must be a positive integer";
                     throw ex;
                 }
@@ -97,7 +97,7 @@ namespace Nexusat.AspNetCore.Mvc {
 
                 if (maxPageSize > 0 && p_size.HasValue && p_size.Value > maxPageSize)
                 {
-                    var ex = new BadRequestResponseException("KO_PAGE_SIZE_OUT_OF_RANGE");
+                    var ex = new BadRequest.Exception("KO_PAGE_SIZE_OUT_OF_RANGE");
                     ex.Description = FormatSystemMessage("Page Size {0} is greather than the maximum allowed ({1})", p_size.Value, maxPageSize);
                     throw ex;
                 }
