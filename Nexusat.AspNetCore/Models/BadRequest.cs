@@ -6,8 +6,7 @@ using Nexusat.AspNetCore.Exceptions;
 using StatusCodes = Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace Nexusat.AspNetCore.Models
-{
-
+{   
 	public static class BadRequest {
 		public const string ApiStatusCode = CommonStatusCodes.BAD_REQUEST;
 		public const int HttpStatusCode = StatusCodes.Status400BadRequest;
