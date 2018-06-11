@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BadRequest.Response
    ">
-    <meta name="generator" content="docfx 2.35.4.0">
+    <meta name="generator" content="docfx 2.36.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -150,12 +150,12 @@
   
   
   <a id="Nexusat_AspNetCore_Models_BadRequest_Response__ctor_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.#ctor*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_BadRequest_Response__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">Response(ModelStateDictionary)</h4>
+  <h4 id="Nexusat_AspNetCore_Models_BadRequest_Response__ctor_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String)">Response(ModelStateDictionary, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Response(ModelStateDictionary modelStateDictionary)</code></pre>
+    <pre><code class="lang-csharp hljs">public Response(ModelStateDictionary modelStateDictionary, string statusCode = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,28 +172,11 @@
         <td><span class="parametername">modelStateDictionary</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_BadRequest_Response__ctor_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.#ctor*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_BadRequest_Response__ctor_System_String_System_String_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.#ctor(System.String,System.String)">Response(String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Response(string description = null, string userDescription = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">description</span></td>
@@ -214,7 +197,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Response(string statusCode, string description = null, string userDescription = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Response(string statusCode = null, string description = null, string userDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -245,51 +228,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
-  <a id="Nexusat_AspNetCore_Models_BadRequest_Response_GetFromException_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException*"></a>
-  <h4 id="Nexusat_AspNetCore_Models_BadRequest_Response_GetFromException_Nexusat_AspNetCore_Exceptions_BadRequestResponseException_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.GetFromException(Nexusat.AspNetCore.Exceptions.BadRequestResponseException)">GetFromException(BadRequestResponseException)</h4>
-  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Nexusat.AspNetCore.Models.BadRequest.Response.html">BadRequest.Response</a> from an exception.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BadRequest.Response GetFromException(BadRequestResponseException exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Exceptions.BadRequestResponseException.html">BadRequestResponseException</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception that will be encapsulated</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nexusat.AspNetCore.Models.BadRequest.Response.html">BadRequest.Response</a></td>
-        <td><p>The from exception.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Nexusat_AspNetCore_Models_BadRequest_Response_OnFormatting_" data-uid="Nexusat.AspNetCore.Models.BadRequest.Response.OnFormatting*"></a>

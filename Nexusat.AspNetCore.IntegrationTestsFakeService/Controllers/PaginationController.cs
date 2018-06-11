@@ -57,7 +57,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
             if (CurrentPage.PageSize * (CurrentPage.PageIndex -1) >= itemsCount)
             {
-                throw new NoContentResponseException();
+                throw new NoContent.Exception();
             }
 
             var items = Enumerable.Range((CurrentPage.PageIndex - 1) * CurrentPage.PageSize, CurrentPage.PageSize).ToList();
@@ -73,7 +73,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 
             if (CurrentPage.PageSize * (CurrentPage.PageIndex-1) >= itemsCount)
             {
-                throw new NoContentResponseException();
+                throw new NoContent.Exception();
             }
 
             var items = Enumerable.Range(0, itemsCount).ToList();

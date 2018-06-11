@@ -46,24 +46,12 @@ namespace Nexusat.AspNetCore.Middleware
                 var services = context.RequestServices;
                 var executor = services.GetRequiredService<ApiResponseExecutor>();
                 ApiResponse response = null;
-                if (exception is IApiResponseException)
+                if (exception is IApiResponseException e)
                 {
-                    switch (exception)
-                    {
-                        case BadRequestResponseException br:
-                            response = BadRequest.Response.GetFromException(br);
-                            break;
-                        case NoContentResponseException nr:
-							response = NoContent.Response;
-                            break;
-                        default: // just in case of something missed
-                            logger.LogWarning(FormatSystemMessage("An Api Response Exception {0}({1}) was found", exception.GetType().FullName, exception.Message));
-                            IApiResponseException apiException = exception as IApiResponseException;
-                            response = new ApiResponse(apiException.HttpCode, apiException.StatusCode, apiException.Description, apiException.UserDescription);
-                            response.HasBody = apiException.HasBody;
-                            break;
-                    }
-                } else {
+					response = e.GetResponse();
+                } 
+				else 
+				{
                     response = new UnhandledExceptionResponse(exception);
                 }
 

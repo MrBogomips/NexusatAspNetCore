@@ -62,7 +62,14 @@ namespace Nexusat.AspNetCore.Exceptions
             return string.Format("ResponseException with Http {0} and Status Code KO_'{1}'", httpCode, subcode);
         }
 
-        protected ApiResponseException(
+		public virtual ApiResponse GetResponse()
+		{
+			ApiResponse response = new ApiResponse(HttpCode, StatusCode, Description, UserDescription);
+            response.HasBody = HasBody;
+			return response;
+		}
+
+		protected ApiResponseException(
           System.Runtime.Serialization.SerializationInfo info,
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }    

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Nexusat.AspNetCore.Models;
 
 namespace Nexusat.AspNetCore.Exceptions
 {
@@ -9,11 +10,11 @@ namespace Nexusat.AspNetCore.Exceptions
     /// instead of the default <see cref="Models.UnhandledExceptionResponse"/>.
     /// </summary>
     public interface IApiResponseException
-    {
-        string StatusCode { get; }
-        string Description { get; }
-        string UserDescription { get; }
-        int HttpCode { get; }
-        bool HasBody { get; }
+    {      
+        /// <summary>
+        /// Will return an instance of <see cref="ApiResponse"/> or a subclass.
+        /// </summary>
+        /// <returns>The response.</returns>
+		ApiResponse GetResponse();
     }
 }

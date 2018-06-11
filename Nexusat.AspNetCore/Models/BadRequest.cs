@@ -6,10 +6,9 @@ using Nexusat.AspNetCore.Exceptions;
 using StatusCodes = Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace Nexusat.AspNetCore.Models
-{
-
+{   
 	public static class BadRequest {
-		public const string DefaultStatusCode = CommonStatusCodes.BAD_REQUEST;
+		public const string ApiStatusCode = CommonStatusCodes.BAD_REQUEST;
 		public const int HttpStatusCode = StatusCodes.Status400BadRequest;
 
 		/// <summary>
@@ -17,37 +16,18 @@ namespace Nexusat.AspNetCore.Models
         /// </summary>
         public class Response : Models.ApiResponse
         {
-            private ModelStateDictionary ModelState { get; set; }
-            public Response(string description = null, string userDescription = null)
-				: this(DefaultStatusCode, description, userDescription) { }
-
-            public Response(string statusCode, string description = null, string userDescription = null)
-                : base(HttpStatusCode, statusCode, description, userDescription)
+            ModelStateDictionary ModelState { get; set; }
+            
+            public Response(string statusCode = null, string description = null, string userDescription = null)
+                : base(HttpStatusCode, statusCode ?? ApiStatusCode, description, userDescription)
             {
-                StatusCode.CheckValidKoCodeOrThrow(statusCode);
+				if (statusCode != null) StatusCode.CheckValidKoCodeOrThrow(statusCode);
             }
 
-            public Response(ModelStateDictionary modelStateDictionary)
-                : this()
+			public Response(ModelStateDictionary modelStateDictionary, string statusCode = null, string description = null, string userDescription = null)
+				: this(statusCode, description, userDescription)
             {
-                ModelState = modelStateDictionary ?? throw new ArgumentNullException(nameof(modelStateDictionary));
-            }
-
-            /// <summary>
-            /// Gets a <see cref="Response"/> from an exception.
-            /// </summary>
-            /// <returns>The from exception.</returns>
-            /// <param name="exception">The exception that will be encapsulated</param>
-            public static Response GetFromException(BadRequestResponseException exception)
-            {
-                var response = new Response(exception.StatusCode, exception.Description, exception.UserDescription);
-                response.ModelState = exception.ModelState;
-
-                if (exception.InnerException != null)
-                {
-                    response.Exception = ExceptionInfo.GetFromException(exception.InnerException);
-                }
-                return response;
+                ModelState = modelStateDictionary ?? throw new ArgumentNullException(nameof(modelStateDictionary));            
             }
 
             public override void OnFormatting(ActionContext context)
@@ -85,5 +65,56 @@ namespace Nexusat.AspNetCore.Models
             }
         }
 
+		/// <summary>
+        /// An exception managed by the system as a BadRequest exception
+        /// </summary>
+        [Serializable]
+        public class Exception : ApiResponseException
+        {
+            public ModelStateDictionary ModelState { get; }
+
+			public Exception(ModelStateDictionary modelState)
+                : this()
+            {
+                ModelState = modelState ?? throw new ArgumentNullException(nameof(modelState));
+            }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
+            /// </summary>
+			public Exception()
+                : base(HttpStatusCode, ApiStatusCode) { }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
+            /// </summary>
+            /// <param name="statusCode">An KO Status code.</param>
+			public Exception(string statusCode)
+				: base(HttpStatusCode, statusCode) { }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
+            /// </summary>
+            /// <param name="inner">Inner Exception</param>
+			public Exception(Exception inner)
+				: base(HttpStatusCode, ApiStatusCode, inner) { }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Exceptions.BadRequestResponseException"/> class.
+            /// </summary>
+            /// <param name="statusCode">An KO Status code.</param>
+            /// <param name="inner">Inner Exception.</param>
+			public Exception(string statusCode, Exception inner)
+				: base(HttpStatusCode, statusCode, inner) { }
+
+			public override ApiResponse GetResponse()
+			{
+				var response = ModelState != null ?
+					new Response(ModelState, StatusCode, Description, UserDescription)
+					: new Response(StatusCode, Description, UserDescription);
+				
+				if (InnerException != null)
+                {
+                    response.Exception = ExceptionInfo.GetFromException(InnerException);
+                }
+				return response;
+			}         
+		}
 	}   
 }

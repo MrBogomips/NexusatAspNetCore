@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Nexusat.AspNetCore.Exceptions;
 using StatusCodes = Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace Nexusat.AspNetCore.Models
@@ -32,5 +34,15 @@ namespace Nexusat.AspNetCore.Models
             public IEnumerable<T> Data => null;
             public PaginationInfo Navigation => null;
 		}
+
+		/// <summary>
+        /// An exception managed by the system as a NoContent exception (HTTP 204)
+        /// </summary>
+        [Serializable]
+        public class Exception : System.Exception, IApiResponseException
+        {         
+            public ApiResponse GetResponse() => Response;
+        }
+
 	}
 }
