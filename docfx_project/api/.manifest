@@ -177,6 +177,7 @@
   "Nexusat.AspNetCore.Models.Created.ResponseAtUri.#ctor(System.Uri,System.String,System.String)": "Nexusat.AspNetCore.Models.Created.ResponseAtUri.yml",
   "Nexusat.AspNetCore.Models.ExceptionInfo": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",
   "Nexusat.AspNetCore.Models.ExceptionInfo.GetFromException(System.Exception)": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",
+  "Nexusat.AspNetCore.Models.ExceptionInfo.Inner": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",
   "Nexusat.AspNetCore.Models.ExceptionInfo.Message": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",
   "Nexusat.AspNetCore.Models.ExceptionInfo.StackTrace": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",
   "Nexusat.AspNetCore.Models.ExceptionInfo.Type": "Nexusat.AspNetCore.Models.ExceptionInfo.yml",

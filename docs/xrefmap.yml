@@ -2276,6 +2276,19 @@ references:
   isSpec: "True"
   fullName: Nexusat.AspNetCore.Models.ExceptionInfo.GetFromException
   nameWithType: ExceptionInfo.GetFromException
+- uid: Nexusat.AspNetCore.Models.ExceptionInfo.Inner
+  name: Inner
+  href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html#Nexusat_AspNetCore_Models_ExceptionInfo_Inner
+  commentId: P:Nexusat.AspNetCore.Models.ExceptionInfo.Inner
+  fullName: Nexusat.AspNetCore.Models.ExceptionInfo.Inner
+  nameWithType: ExceptionInfo.Inner
+- uid: Nexusat.AspNetCore.Models.ExceptionInfo.Inner*
+  name: Inner
+  href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html#Nexusat_AspNetCore_Models_ExceptionInfo_Inner_
+  commentId: Overload:Nexusat.AspNetCore.Models.ExceptionInfo.Inner
+  isSpec: "True"
+  fullName: Nexusat.AspNetCore.Models.ExceptionInfo.Inner
+  nameWithType: ExceptionInfo.Inner
 - uid: Nexusat.AspNetCore.Models.ExceptionInfo.Message
   name: Message
   href: api/Nexusat.AspNetCore.Models.ExceptionInfo.html#Nexusat_AspNetCore_Models_ExceptionInfo_Message
