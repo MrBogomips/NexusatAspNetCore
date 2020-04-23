@@ -1,0 +1,31 @@
+version: 0.0.0.{build}-{branch}
+image: Visual Studio 2017
+configuration: Release
+before_build:
+- ps: dotnet restore
+build:
+  verbosity: minimal
+  publish_nuget: true
+  publish_nuget_symbols: true
+artifacts:
+- path: Nexusat.AspNetCore\bin\Release\netcoreapp2.0\Nexusat.AspNetCore.dll
+  name: Nexusat.AspNetCore.dll
+notifications:
+- provider: Webhook
+  url: https://webhooks.gitter.im/e/12c6a617e943ebd87b79
+  method: POST
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
+- provider: Slack
+  incoming_webhook: https://hooks.slack.com/services/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
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
+deploy:
+  provider: NuGet
+  api_key:
+    secure: TzwhtxjJxCK1mURdm7456q5M/OE7lfbx3HTPFFQRXGHlEUyd6tck6ie0P+fuB792
+  skip_symbols: false
+  artifact: /.*\.nupkg/
+

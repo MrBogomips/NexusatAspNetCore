@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Nexusat.AspNetCore.Builders;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc;
 using Nexusat.AspNetCore.SampleRestApi.Models.HelloWorld;
@@ -22,7 +18,7 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         [HttpGet]
         public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
         {
-            return OkObjectResponse<Response>();
+            return new Ok.Object<Response>();
 
            
             /*

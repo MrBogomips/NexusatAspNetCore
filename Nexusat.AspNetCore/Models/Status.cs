@@ -2,112 +2,35 @@
 using Nexusat.AspNetCore.Properties;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.Text;
 using static Nexusat.AspNetCore.Utils.StringFormatter;
 
 namespace Nexusat.AspNetCore.Models
 {
     /// <summary>
-    /// Helper class to build valid Status Codes.
+    /// Immutable class that represents the status of the response
     /// </summary>
-    internal static class StatusCode
+    public sealed class Status: IEquatable<Status>
     {
-        /*
-         * ATTENTION!!!!! 
-         * 
-         * Initialization order for static fields matters!!!
-         * 
-         * Never declare a static field that depends on a field declared later on!
-         * Even with strings order matters!
-         */
-        public static readonly string OK = "OK";
-        public static readonly string KO = "KO";
-        private static readonly string OK_ = OK + "_";
-        private static readonly string KO_ = KO + "_";
+        public int HttpCode { get; }
 
-        /// <summary>
-        /// The default status code used in case of successful operations
-        /// </summary>
-        public static readonly string DEFAULT_OK_STATUS_CODE = OK + "_DEFAULT";
-        /// <summary>
-        /// The default status code used in case of failed operations
-        /// </summary>
-        public static readonly string DEFAULT_KO_STATUS_CODE = KO + "_DEFAULT";
+        public StatusCode Code { get; }
 
-        
-        /// <summary>
-        /// The default status code used in case of ambigous operations not specifically configured by the user
-        /// </summary>
-        public static readonly string DEFAULT_UNK_STATUS_CODE = DEFAULT_KO_STATUS_CODE + "_UNK";
-
-
-
-        public static bool CheckValidCode(string code) =>
-            code != null && (
-                code == OK ||
-                code == KO ||
-                code.StartsWith(OK_) ||
-                code.StartsWith(KO_)
-            );
-        public static void CheckValidCodeOrThrow(string code)
-	    {
-            if (!CheckValidCode(code)) throw new ArgumentException(FormatSystemMessage(ExceptionMessages.StatusCodeInvalid), nameof(code));
+        public Status(int httpCode, string statusCode = null, string description = null, string userDescription = null) {
+            HttpCode = httpCode;
+            Code = statusCode ?? StatusCode.Default;
+            Description = description;
+            UserDescription = userDescription;
         }
-        public static string GetStatusCodeSuccess(string subcode) => string.Format("{0}{1}", OK_, FormatSubCode(subcode));
-        public static string GetStatusCodeFailed(string subcode) => string.Format("{0}{1}", KO_, FormatSubCode(subcode));
-
-        private static string FormatSubCode(string subcode)
-        {
-            if (string.IsNullOrWhiteSpace(subcode))
-                throw new ArgumentException(FormatSystemMessage(ExceptionMessages.SubCodeInvalidFormat, nameof(subcode)));
-            return subcode.Replace(' ', '_').ToUpperInvariant();
-        }
-    }
-
-    public sealed class Status
-    {
-        public int HttpCode { get; internal set; }
-
-        private string _Code = StatusCode.DEFAULT_UNK_STATUS_CODE;
-
-        public string Code {
-            get => _Code;
-            internal set {
-                _Code = value;
-            }
-        }
-
-        internal Status() { }
-
-        /// <summary>
-        /// Avoid this method in favor of
-        /// <list type="bullet">
-        ///     <item><see cref="SetSuccessCode"/> for success codes</item>
-        ///     <item><see cref="SetFailedCode"/> for success codes</item>
-        /// </list>
-        /// whenever possibile.
-        /// This method incur in performance overhead dued to validation logic.
-        /// </summary>
-        /// <param name="code"></param>
-        public void SetCode(string code)
-        {
-            if (StatusCode.CheckValidCode(code))
-            {
-                _Code = code.Trim().ToUpperInvariant() ;
-            }
-            else throw new ArgumentException(FormatSystemMessage(""), nameof(code));
-        }
-        public void SetSuccessCode() => _Code = StatusCode.OK;
-        public void SetFailedCode() => _Code = StatusCode.KO;
-        public void SetSuccessCode(string subcode) => _Code = StatusCode.GetStatusCodeSuccess(subcode);
-        public void SetFailedCode(string subcode) => _Code = StatusCode.GetStatusCodeFailed(subcode);
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; internal set; }
+        public string Description { get; }
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public string UserDescription { get; internal set; }
+        public string UserDescription { get; }
 
-        #region Equals
+#region Equals
         public override bool Equals(object obj) => Equals(obj as Status);
         public bool Equals(Status that) => 
             that != null
@@ -116,8 +39,8 @@ namespace Nexusat.AspNetCore.Models
             && Description == that.Description;
         public override int GetHashCode() => 
             HttpCode 
-            ^ Code.GetHashCode() 
+            ^ Code.GetHashCode() << 16
             ^ Description.GetHashCode();
-        #endregion Equals
+#endregion Equals
     }
 }

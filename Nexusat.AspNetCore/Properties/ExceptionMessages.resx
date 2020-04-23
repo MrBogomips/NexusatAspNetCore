@@ -124,11 +124,47 @@
     <value>RUNTIME FATAL EXCEPTION: IApiResponseInternal was not implementd</value>
   </data>
   <data name="StatusCodeInvalid" xml:space="preserve">
-    <value>Status code syntax is not valid.\n</value>
+    <value>Status code "{0}" syntax is not valid.\n</value>
+    <comment>StatusCode</comment>
+  </data>
+  <data name="StatusOkCodeInvalid" xml:space="preserve">
+    <value>Status code "{0}" syntax is not a valid success code.\n</value>
+    <comment>StatusCode</comment>
+  </data>
+    <data name="StatusKoCodeInvalid" xml:space="preserve">
+    <value>Status code "{0}" syntax is not a valid failure code.\n</value>
     <comment>StatusCode</comment>
   </data>
   <data name="SubCodeInvalidFormat" xml:space="preserve">
     <value>Subcode must be a non blank or null string</value>
     <comment>StatusCode</comment>
   </data>
+  <data name="InvalidStatePaginationCursor" xml:space="preserve">
+    <value>Unable to fetch pagination info from the current request. Recall to decorate your action with "ValidatePaginationAttribute".</value>
+    <comment>Raised by APIController</comment>
+  </data>
+  <data name="InvalidItemsCount" xml:space="preserve">
+    <value>Items count cannot be negative.</value>
+    <comment>Raised by ApiEnumResponseBuilder</comment>
+  </data>
+  <data name="PaginationIndexMustBePositive" xml:space="preserve">
+    <value>Page index must be a positive integer.</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>
+  <data name="PaginationSizeMustBeNonNegative" xml:space="preserve">
+    <value>Page size must be a non-negstive integer.</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>
+  <data name="PaginationIndexMustEqualsOneInCaseOfPageSizeZero" xml:space="preserve">
+    <value>Page index must be 1 in case of Page size 0 (meaning all)</value>
+    <comment>Raised by PaginationCursor</comment>
+  </data>  
+  <data name="InvalidUriTooManyQuestionMarks" xml:space="preserve">
+    <value>The uri {0} has too many '?'.</value>
+    <comment>PaginationInfoLinkBuilder</comment>
+  </data>
+    <data name="NoRoutesMatched" xml:space="preserve">
+        <value>No route match</value>
+    </data>
+    
 </root>
