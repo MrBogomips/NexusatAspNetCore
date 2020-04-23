@@ -5,13 +5,22 @@
 
 # WORK IN PROGRESS…
 
+Todo…
+
 # Documentation
+
 You can find the documentation [here](https://mrbogomips.github.io/NexusatAspNetCore).
 
+## Dotnet CLI Integration
+
+Use the solution `Nexusat.AspNetCode.Code.sln` to build and test via `dotnet` CLI interface.
+
 ## Contribution
+
 The documentation is produced using [DocFX](https://dotnet.github.io/docfx/).
 The project *docfx_project* is the source root.
 In order to build the artificats is required `docfx` installed on your building environment.
 
 ### Mac Setup
+
 Just run `brew install docfx` to setup your machine.
