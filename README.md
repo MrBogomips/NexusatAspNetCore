@@ -11,6 +11,16 @@ Todo…
 
 You can find the documentation [here](https://mrbogomips.github.io/NexusatAspNetCore).
 
+## Response Model
+
+Basically when you implement a RESTful API you can choose among three kind of response:
+
+![Respone Model](./imgs/ResponseModel.png)
+
+* **StatusBase**: basic response
+* **IApiObjectResponse&lt;TData&gt;**: for API that returns a simple object conforming to *TData*
+* **IApiEnumResponse&lt;TData&gt;**: for API that returns a paginated list of objects conforming to *TData*
+
 ## Dotnet CLI Integration
 
 Use the solution `Nexusat.AspNetCode.Code.sln` to build and test via `dotnet` CLI interface.
