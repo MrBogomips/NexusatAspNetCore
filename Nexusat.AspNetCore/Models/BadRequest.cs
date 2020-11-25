@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -65,7 +66,33 @@ namespace Nexusat.AspNetCore.Models
             }
         }
 
-		/// <summary>
+        public class Enum<T> : ApiEnumResponse<T>
+        {
+            public Enum(IEnumerable<T> data, PaginationCursor current, bool hasNextPage, string description = null, string userDescription = null)
+                : base(HttpStatusCode, current, hasNextPage, data, statusCode: ApiStatusCode, description: description, userDescription: userDescription) { }
+            public Enum(string statusCode, IEnumerable<T> data, PaginationCursor current, bool hasNextPage, string description = null, string userDescription = null)
+                : base(HttpStatusCode, current, hasNextPage, data, statusCode: statusCode, description: description, userDescription: userDescription)
+            {
+                if (statusCode == null)
+                {
+                    throw new ArgumentNullException(nameof(statusCode));
+                }
+                StatusCode.CheckValidOkCodeOrThrow(statusCode);
+            }
+            public Enum(IEnumerable<T> data, PaginationCursor current, int itemsCount, string description = null, string userDescription = null)
+                : base(HttpStatusCode, current, itemsCount, data, statusCode: ApiStatusCode, description: description, userDescription: userDescription) { }
+            public Enum(string statusCode, IEnumerable<T> data, PaginationCursor current, int itemsCount, string description = null, string userDescription = null)
+                : base(HttpStatusCode, current, itemsCount, data, statusCode: statusCode, description: description, userDescription: userDescription)
+            {
+                if (statusCode == null)
+                {
+                    throw new ArgumentNullException(nameof(statusCode));
+                }
+                StatusCode.CheckValidOkCodeOrThrow(statusCode);
+            }
+        }
+
+        /// <summary>
         /// An exception managed by the system as a BadRequest exception
         /// </summary>
         [Serializable]

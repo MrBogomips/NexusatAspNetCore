@@ -309,7 +309,82 @@ namespace Nexusat.AspNetCore.IntegrationTests.Tests
 
         #endregion Accpepted (HTTP 202) Helper Methods flavours
 
+        #region Ko (HTTP 400) Helper Methods flavours
+        [Fact]
+        public async void Api400KoResponseWithoutPayload()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/400KoResponseWithoutPayload");
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
 
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 400,
+                Code = "KO_BAD_REQUEST",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest /* 400 */, httpCode);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Null(json.SelectToken("data"));
+        }
+
+        [Fact]
+        public async void Api400KoResponseWithObject()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/400KoResponseWithObject");
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 400,
+                Code = "KO_BAD_REQUEST",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest /* 400 */, httpCode);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal("Ciccio", json.SelectToken("data").Value<string>());
+        }
+
+        [Fact]
+        public async void Api400KoResponseWithManyObjects()
+        {
+            // Act
+            var response = await Client.GetAsync("/ApiResponse/400KoResponseWithManyObjects");
+            var json = await ReadAsJObjectAsync(response.Content);
+            var httpCode = response.StatusCode;
+
+            Output.WriteLine(json.ToString());
+
+            var actualStatus = ExtractStatus(json);
+            var expectedStatus = new Status
+            {
+                HttpCode = 400,
+                Code = "KO_BAD_REQUEST",
+                Description = null,
+                UserDescription = null
+            };
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest /* 400 */, httpCode);
+            Assert.Equal(expectedStatus, actualStatus);
+            Assert.Equal(new[] { "Ciccio", "buffo" }, json.SelectToken("data").Values<string>());
+        }
+        #endregion Ko (HTTP 400) Helper Methods flavours
 
         #region Middleware Global Exception Handling
         /// <summary>
