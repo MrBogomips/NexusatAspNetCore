@@ -15,7 +15,7 @@ You can find the documentation [here](https://mrbogomips.github.io/NexusatAspNet
 
 Basically when you implement a RESTful API you can choose among three kind of response:
 
-![Respone Model](./imgs/ResponseModel.png)
+![Respone Model](../master/imgs/ResponseModel.png)
 
 * **StatusBase**: basic response
 * **IApiObjectResponse&lt;TData&gt;**: for API that returns a simple object conforming to *TData*
