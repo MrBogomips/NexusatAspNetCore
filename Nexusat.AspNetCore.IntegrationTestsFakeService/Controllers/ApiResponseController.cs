@@ -95,5 +95,19 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService.Controllers
 		=> new Accepted.ObjectAtUri<string>(data: "payload", uri: "http://www.google.com");
         #endregion Accpepted (HTTP 202) Helper Methods flavours
 
+        #region BadRequest (HTTP 400) Helper Methods flavours
+        [HttpGet("400KoResponseWithoutPayload")]
+        public IApiResponse GetKoResponseWithourPayload() => new BadRequest.Response();
+
+        [HttpGet("400KoResponseWithObject")]
+        public IApiObjectResponse<string> GetKoResponseWithObject()
+        => new BadRequest.Object<string>(data: "Ciccio");
+
+        [HttpGet("400KoResponseWithManyObjects")]
+        [ValidatePagination]
+        public IApiEnumResponse<string> GetKoResponseWithManyObjects()
+        => new BadRequest.Enum<string>(new[] { "Ciccio", "buffo" }, CurrentPage, 2);
+        #endregion BadRequest (HTTP 400) Helper Methods flavours
+
     }
 }
