@@ -21,7 +21,7 @@ namespace Nexusat.AspNetCore.Models
 			if (actionContext == null) throw new ArgumentNullException(nameof(actionContext));
 			ModelState = modelState ?? throw new ArgumentNullException(nameof(modelState));
 
-			var jsonOptionsAccessor = actionContext.HttpContext.RequestServices.GetRequiredService<IOptions<MvcJsonOptions>>();         
+			var jsonOptionsAccessor = actionContext.HttpContext.RequestServices.GetRequiredService<IOptions<MvcNewtonsoftJsonOptions>>();         
 			         
 			var contractResolver = jsonOptionsAccessor.Value.SerializerSettings.ContractResolver as DefaultContractResolver;
 			if (contractResolver != null) {

@@ -6,20 +6,18 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
-using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.Mvc.Formatters.Internals;
 
 namespace Nexusat.AspNetCore.Mvc.Formatters
 {
-    
+
     /// <summary>
     /// Executes a <see cref="IApiResponse"/> to write to the response.
     /// </summary>
@@ -42,7 +40,7 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
         public ApiResponseExecutor(
             IHttpResponseStreamWriterFactory writerFactory,
             ILogger<ApiResponseExecutor> logger,
-            IOptions<MvcJsonOptions> options,
+            IOptions<MvcNewtonsoftJsonOptions> options,
             ArrayPool<char> charPool)
         {
             if (writerFactory == null)
@@ -79,7 +77,7 @@ namespace Nexusat.AspNetCore.Mvc.Formatters
         /// <summary>
         /// Gets the <see cref="MvcJsonOptions"/>.
         /// </summary>
-        protected MvcJsonOptions Options { get; }
+        protected MvcNewtonsoftJsonOptions Options { get; }
 
         /// <summary>
         /// Gets the <see cref="IHttpResponseStreamWriterFactory"/>.

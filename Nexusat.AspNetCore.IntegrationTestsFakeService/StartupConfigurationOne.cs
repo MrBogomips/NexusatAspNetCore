@@ -24,7 +24,7 @@ namespace Nexusat.AspNetCore.IntegrationTestsFakeService
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddMvc()
+                .AddMvc(o => o.EnableEndpointRouting = false)
                 .AddNexusatAspNetCore(c => 
                 {
                     c.EnableRuntimeProfilation();
