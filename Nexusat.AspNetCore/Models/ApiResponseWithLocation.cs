@@ -7,65 +7,65 @@ using Newtonsoft.Json;
 using Nexusat.AspNetCore.Properties;
 using System;
 
-namespace Nexusat.AspNetCore.Models
+namespace Nexusat.AspNetCore.Models;
+
+public class ApiResponseWithLocation : ApiResponse
 {
-    public class ApiResponseWithLocation : ApiResponse
+    #region Helper Methods
+    static IUrlHelper GetUrlHelper(ActionContext context)
     {
-        #region Helper Methods
-        static IUrlHelper GetUrlHelper(ActionContext context)
+        if (context == null)
         {
-            if (context == null)
-            {
-                throw new ArgumentException(nameof(context));
-            }
-            var urlFactory =
-                context.HttpContext.RequestServices.GetRequiredService<IUrlHelperFactory>();
-            return urlFactory.GetUrlHelper(context);
+            throw new ArgumentException(nameof(context));
+        }
+        var urlFactory =
+            context.HttpContext.RequestServices.GetRequiredService<IUrlHelperFactory>();
+        return urlFactory.GetUrlHelper(context);
+    }
+
+    static RouteValueDictionary GetRouteValueDictionary(object routeValues)
+        => routeValues == null ? null : new RouteValueDictionary(routeValues);
+    #endregion Helper Methods
+
+    public class RouteDescriptor
+    {
+        string RouteName { get; }
+        object RouteValues { get; }
+        string Protocol { get; }
+        string Host { get; }
+
+        public RouteDescriptor(string routeName, object routeValues = null, string protocol = null, string host = null)
+        {
+            RouteName = routeName ?? throw new ArgumentNullException(nameof(routeName));
+            RouteValues = RouteValues;
+            Protocol = protocol;
+            Host = host;
         }
 
-        static RouteValueDictionary GetRouteValueDictionary(object routeValues)
-        => routeValues == null ? null : new RouteValueDictionary(routeValues);
-        #endregion Helper Methods
-
-        public class RouteDescriptor
+        public string GetUrl(ActionContext context)
         {
-            string RouteName { get; }
-            object RouteValues { get; }
-            string Protocol { get; }
-            string Host { get; }
+            string url = GetUrlHelper(context)
+                .RouteUrl(RouteName, GetRouteValueDictionary(RouteValues), Protocol, Host);
+            return url ?? throw new InvalidOperationException(ExceptionMessages.NoRoutesMatched);
+        }
+    };
 
-			public RouteDescriptor(string routeName, object routeValues = null, string protocol = null, string host = null)
-            {
-                RouteName = routeName ?? throw new ArgumentNullException(nameof(routeName));
-                RouteValues = RouteValues;
-                Protocol = protocol;
-                Host = host;
-            }
+    public class ActionDescriptor
+    {
+        string Action { get; }
+        string Controller { get; }
+        object RouteValues { get; }
+        bool AbsoluteUrl { get; }
 
-            public string GetUrl(ActionContext context)
-            {
-                string url = GetUrlHelper(context)
-                    .RouteUrl(RouteName, GetRouteValueDictionary(RouteValues), Protocol, Host);
-                return url ?? throw new InvalidOperationException(ExceptionMessages.NoRoutesMatched);
-            }
-        };
-
-        public class ActionDescriptor
+        public ActionDescriptor(string actionName, string controllerName = null, object routeValues = null, bool absoluteUrl = false)
         {
-            string Action { get; }
-            string Controller { get; }
-            object RouteValues { get; }
-            bool AbsoluteUrl { get; }
+            Action = actionName ?? throw new ArgumentNullException(nameof(actionName));
+            Controller = controllerName;
+            RouteValues = routeValues;
+            AbsoluteUrl = absoluteUrl;
+        }
 
-            public ActionDescriptor(string actionName, string controllerName = null, object routeValues = null, bool absoluteUrl = false)
-            {
-                Action = actionName ?? throw new ArgumentNullException(nameof(actionName));
-                Controller = controllerName;
-                RouteValues = routeValues;
-                AbsoluteUrl = absoluteUrl;
-            }
-
-            public static implicit operator UrlActionContext(ActionDescriptor d)
+        public static implicit operator UrlActionContext(ActionDescriptor d)
             => new UrlActionContext
             {
                 Action = d.Action,
@@ -73,102 +73,101 @@ namespace Nexusat.AspNetCore.Models
                 Values = d.RouteValues
             };
 
-            public string GetUrl(ActionContext context)
-            {
-                UrlActionContext ac = this;
-                if (AbsoluteUrl)
-                {
-                    ac.Protocol = context.HttpContext.Request.Scheme;
-                    ac.Host = context.HttpContext.Request.Host.ToUriComponent();
-                }
-                string url = GetUrlHelper(context).Action(ac);
-                return url ?? throw new InvalidOperationException(ExceptionMessages.NoRoutesMatched);
-            }
-        };
-
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public string Location { get; set; }
-
-        RouteDescriptor Route { get; }
-        ActionDescriptor Action { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Models.ApiResponseWithLocation"/> class.
-        /// </summary>
-        /// <param name="status">Status.</param>
-        /// <param name="uri">String representing an Uri</param>
-        public ApiResponseWithLocation(Status status, string uri) : base(status) { 
-			if (uri == null)
-			{
-				throw new ArgumentNullException(nameof(uri));
-			}         
-			if(!Uri.TryCreate(uri, UriKind.RelativeOrAbsolute, out _))
-			{
-				throw new UriFormatException(uri);
-			}
-			Location = uri;
-		}
-        public ApiResponseWithLocation(Status status, Uri uri) : base(status)
+        public string GetUrl(ActionContext context)
         {
-            if (uri == null)
+            UrlActionContext ac = this;
+            if (AbsoluteUrl)
             {
-                throw new ArgumentNullException(nameof(uri));
+                ac.Protocol = context.HttpContext.Request.Scheme;
+                ac.Host = context.HttpContext.Request.Host.ToUriComponent();
             }
-            Location = uri.ToString();
+            string url = GetUrlHelper(context).Action(ac);
+            return url ?? throw new InvalidOperationException(ExceptionMessages.NoRoutesMatched);
         }
-        public ApiResponseWithLocation(Status status, ActionDescriptor descriptor) : base(status)
+    };
+
+    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    public string Location { get; set; }
+
+    RouteDescriptor Route { get; }
+    ActionDescriptor Action { get; }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="T:Nexusat.AspNetCore.Models.ApiResponseWithLocation"/> class.
+    /// </summary>
+    /// <param name="status">Status.</param>
+    /// <param name="uri">String representing an Uri</param>
+    public ApiResponseWithLocation(Status status, string uri) : base(status) { 
+        if (uri == null)
         {
-            Action = descriptor ?? throw new ArgumentNullException(nameof(descriptor));
-        }
-        public ApiResponseWithLocation(Status status, RouteDescriptor descriptor) : base(status)
+            throw new ArgumentNullException(nameof(uri));
+        }         
+        if(!Uri.TryCreate(uri, UriKind.RelativeOrAbsolute, out _))
         {
-            Route = descriptor ?? throw new ArgumentNullException(nameof(descriptor));
+            throw new UriFormatException(uri);
         }
-
-
-        /// <summary>
-        /// This method is called before the formatter writes to the output stream.
-        /// </summary>
-        public override void OnFormatting(ActionContext context)
+        Location = uri;
+    }
+    public ApiResponseWithLocation(Status status, Uri uri) : base(status)
+    {
+        if (uri == null)
         {
-            base.OnFormatting(context);
-
-            if (Action != null)
-            {
-                Location = Action.GetUrl(context);
-            }
-            else if (Route != null)
-            {
-                Location = Route.GetUrl(context);
-            }
-
-            if (Location != null)
-            {
-                context.HttpContext.Response.Headers[HeaderNames.Location] = Location;
-            }
-
+            throw new ArgumentNullException(nameof(uri));
         }
+        Location = uri.ToString();
+    }
+    public ApiResponseWithLocation(Status status, ActionDescriptor descriptor) : base(status)
+    {
+        Action = descriptor ?? throw new ArgumentNullException(nameof(descriptor));
+    }
+    public ApiResponseWithLocation(Status status, RouteDescriptor descriptor) : base(status)
+    {
+        Route = descriptor ?? throw new ArgumentNullException(nameof(descriptor));
     }
 
-	public class ApiObjectResponseWithLocation<T> : ApiResponseWithLocation, IApiObjectResponse<T>
-	{
-		public T Data { get; }
 
-		public ApiObjectResponseWithLocation(Status status, string uri, T data = default(T)) : base(status, new Uri(uri)) 
-		{
-			Data = data;
-		}
-		public ApiObjectResponseWithLocation(Status status, Uri uri, T data = default(T)) : base(status, uri)
+    /// <summary>
+    /// This method is called before the formatter writes to the output stream.
+    /// </summary>
+    public override void OnFormatting(ActionContext context)
+    {
+        base.OnFormatting(context);
+
+        if (Action != null)
         {
-			Data = data;
+            Location = Action.GetUrl(context);
         }
-		public ApiObjectResponseWithLocation(Status status, ActionDescriptor descriptor, T data = default(T)) : base(status, descriptor)
+        else if (Route != null)
         {
-			Data = data;
+            Location = Route.GetUrl(context);
         }
-		public ApiObjectResponseWithLocation(Status status, RouteDescriptor descriptor, T data = default(T)) : base(status, descriptor)
+
+        if (Location != null)
         {
-			Data = data;
-        }      
-	}
+            context.HttpContext.Response.Headers[HeaderNames.Location] = Location;
+        }
+
+    }
+}
+
+public class ApiObjectResponseWithLocation<T> : ApiResponseWithLocation, IApiObjectResponse<T>
+{
+    public T Data { get; }
+
+    public ApiObjectResponseWithLocation(Status status, string uri, T data = default(T)) : base(status, new Uri(uri)) 
+    {
+        Data = data;
+    }
+    public ApiObjectResponseWithLocation(Status status, Uri uri, T data = default(T)) : base(status, uri)
+    {
+        Data = data;
+    }
+    public ApiObjectResponseWithLocation(Status status, ActionDescriptor descriptor, T data = default(T)) : base(status, descriptor)
+    {
+        Data = data;
+    }
+    public ApiObjectResponseWithLocation(Status status, RouteDescriptor descriptor, T data = default(T)) : base(status, descriptor)
+    {
+        Data = data;
+    }      
 }

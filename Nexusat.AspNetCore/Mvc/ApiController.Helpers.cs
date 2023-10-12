@@ -1,21 +1,10 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Core;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.Net.Http.Headers;
-using Nexusat.AspNetCore.Exceptions;
-using Nexusat.AspNetCore.Models;
-using static Microsoft.AspNetCore.Http.StatusCodes;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+namespace Nexusat.AspNetCore.Mvc;
 
-namespace Nexusat.AspNetCore.Mvc
+/// <summary>
+/// API controller base extensions.
+/// </summary>
+public partial class ApiController
 {
-	/// <summary>
-	/// API controller base extensions.
-	/// </summary>
-	public partial class ApiController
-	{
 
 #if TO_BE_IMPLEMENTED
         // Please refer to Microsoft.AspNetCore.Mvc.BaseController
@@ -302,5 +291,4 @@ namespace Nexusat.AspNetCore.Mvc
         [NonAction]
         public virtual UnauthorizedResult Unauthorized ();
 #endif // TO_BE_IMPLEMENTD
-	}
 }

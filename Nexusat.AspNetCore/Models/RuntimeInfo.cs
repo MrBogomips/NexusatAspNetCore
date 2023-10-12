@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace Nexusat.AspNetCore.Models;
 
-namespace Nexusat.AspNetCore.Models
+public class RuntimeInfo
 {
-    public class RuntimeInfo
-    {
-        public int ProcessingTimeMs { get; set; }
-    }
+    public int ProcessingTimeMs { get; set; }
 }

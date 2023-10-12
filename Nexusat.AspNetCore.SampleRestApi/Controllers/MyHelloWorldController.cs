@@ -3,37 +3,37 @@ using Microsoft.AspNetCore.Mvc;
 using Nexusat.AspNetCore.Models;
 using Nexusat.AspNetCore.SampleRestApi.Models.HelloWorld;
 
-namespace Nexusat.AspNetCore.SampleRestApi.Controllers
+namespace Nexusat.AspNetCore.SampleRestApi.Controllers;
+
+[Route("api/[controller]")]
+public class MyHelloWorldController : Controller
 {
-    [Route("api/[controller]")]
-    public class MyHelloWorldController : Controller
+    [HttpGet]
+    public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
     {
-        [HttpGet]
-        public IApiObjectResponse<Response> Get([FromQuery] string name, [FromQuery] string surname)
-        {
-            throw new NotImplementedException();
+        throw new NotImplementedException();
 
-            /*
-            var responseFactory = new ApiResponseBuilderFactory();
-            var responseBuilder = responseFactory.GetApiObjectResponseBuilder<Response>();
+        /*
+        var responseFactory = new ApiResponseBuilderFactory();
+        var responseBuilder = responseFactory.GetApiObjectResponseBuilder<Response>();
 
-            return responseBuilder
-                .SetData(new Response
-                {
-                    Greetings = string.Format("Hello {0} {1}", name, surname)
-                })
-                .SetHttpCode(200)
-                .SetStatusCodeSuccess("Hello")
-                .Build();
-                */
-        }
+        return responseBuilder
+            .SetData(new Response
+            {
+                Greetings = string.Format("Hello {0} {1}", name, surname)
+            })
+            .SetHttpCode(200)
+            .SetStatusCodeSuccess("Hello")
+            .Build();
+            */
+    }
 
-        [HttpPost]
-        public Response Post([FromBody] Request request)
-        {
-            throw new NotImplementedException();
-            // return Get(request.Name, request.Surname);
-        }
+    [HttpPost]
+    public Response Post([FromBody] Request request)
+    {
+        throw new NotImplementedException();
+        // return Get(request.Name, request.Surname);
+    }
 
 
 
@@ -73,5 +73,4 @@ namespace Nexusat.AspNetCore.SampleRestApi.Controllers
         {
         }
 #endif
-    }
 }
