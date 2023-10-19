@@ -86,7 +86,7 @@ public class ApiResponseExecutor
     /// <param name="context">The <see cref="ActionContext"/>.</param>
     /// <param name="apiResponse">The <see cref="JsonResult"/>.</param>
     /// <returns>A <see cref="Task"/> which will complete when writing has completed.</returns>
-    public virtual Task ExecuteAsync(ActionContext context, ApiResponse apiResponse)
+    public virtual async Task ExecuteAsync(ActionContext context, ApiResponse apiResponse)
     {
         if (context == null)
         {
@@ -112,18 +112,16 @@ public class ApiResponseExecutor
 
         apiResponse.OnFormatting(context);
         
-        if (!apiResponse.HasBody) return Task.CompletedTask;
+        if (!apiResponse.HasBody) return;
 
-        JsonSerializer.SerializeAsync(response.Body, apiResponse, apiResponse.GetType(), JsonSerializerOptions);
-
-        return Task.CompletedTask;
+        await JsonSerializer.SerializeAsync(response.Body, apiResponse, apiResponse.GetType(), JsonSerializerOptions).ConfigureAwait(false);
     }
     /// <summary>
     /// Helper method to produce a response with a an HttpContext only
     /// </summary>
     /// <param name="httpContext">Http context.</param>
     /// <param name="apiResponse">Result.</param>
-    public void RenderResponse(HttpContext httpContext, ApiResponse apiResponse, RouteData routeData = null, ActionDescriptor actionDescriptor = null, ModelStateDictionary modelStateDictionary = null) {
+    public async Task RenderResponseAsync(HttpContext httpContext, ApiResponse apiResponse, RouteData routeData = null, ActionDescriptor actionDescriptor = null, ModelStateDictionary modelStateDictionary = null) {
         if (httpContext == null)
         {
             throw new ArgumentNullException(nameof(HttpContext));
@@ -133,6 +131,6 @@ public class ApiResponseExecutor
             throw new ArgumentNullException(nameof(apiResponse));
         }
         ActionContext actionContext = new ActionContext(httpContext, routeData ?? new RouteData(), actionDescriptor ?? new ActionDescriptor(), modelStateDictionary ?? new ModelStateDictionary());
-        ExecuteAsync(actionContext, apiResponse);
+        await ExecuteAsync(actionContext, apiResponse);
     }
 }

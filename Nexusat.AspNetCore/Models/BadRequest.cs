@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Nexusat.AspNetCore.Exceptions;
@@ -44,6 +45,7 @@ public static class BadRequest {
     /// </summary>
     public class Object<T> : Response, IApiObjectResponse<T>
     {
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public T Data { get; }
 
         public Object(string statusCode, T data = default(T), string description = null, string userDescription = null)

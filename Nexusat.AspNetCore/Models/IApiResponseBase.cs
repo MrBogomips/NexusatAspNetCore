@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Nexusat.AspNetCore.Models;
 
@@ -6,13 +6,13 @@ public interface IApiResponseBase
 {
     Status Status { get; }
 
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     ExceptionInfo Exception { get; set; }
 
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+	[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     ValidationErrorsInfo ValidationErrors { get; set; }
 
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+	[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     RuntimeInfo Runtime { get; set; }
 
     /// <summary>

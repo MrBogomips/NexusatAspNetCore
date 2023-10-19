@@ -33,7 +33,7 @@ public class UnhandledExceptionMiddleware
         }
     }
 
-    private Task HandleExceptionAsync(HttpContext context, Exception exception)
+    private async Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         if (!context.Response.HasStarted)
         {
@@ -49,11 +49,9 @@ public class UnhandledExceptionMiddleware
                 response = new UnhandledExceptionResponse(exception);
             }
 
-            executor.RenderResponse(context, response);
+            await executor.RenderResponseAsync(context, response);
         } else {
             logger.LogCritical("Response already started. Unable to generate a response");
         }
-
-        return Task.FromResult(0);
     }
 }

@@ -24,21 +24,21 @@ class CustomStatusCodesMiddleware
 
 	public async Task Invoke(HttpContext context /* other dependencies */)
 	{
-		void RenderResponse(ApiResponse response)
+		async Task RenderResponseAsync(ApiResponse response)
 		{
 			var services = context.RequestServices;
 			var executor = services.GetRequiredService<ApiResponseExecutor>();
-			executor.RenderResponse(context, response);
+			await executor.RenderResponseAsync(context, response);
 		}
 
 		await next(context);
 
 		switch(context.Response.StatusCode) {
 		case 404:
-			RenderResponse(new NotFoundResponse());
+			await RenderResponseAsync(new NotFoundResponse());
 			break;
 		case 415:
-			RenderResponse(new UnsupportedMediaTypeResponse());
+            await RenderResponseAsync(new UnsupportedMediaTypeResponse());
 			break;  
 		}         
 	}

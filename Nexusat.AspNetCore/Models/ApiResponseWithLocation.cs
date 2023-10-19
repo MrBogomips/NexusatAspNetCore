@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using Newtonsoft.Json;
 using Nexusat.AspNetCore.Properties;
 using System;
+using System.Text.Json.Serialization;
 
 namespace Nexusat.AspNetCore.Models;
 
@@ -86,7 +86,7 @@ public class ApiResponseWithLocation : ApiResponse
         }
     };
 
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string Location { get; set; }
 
     RouteDescriptor Route { get; }
@@ -152,6 +152,7 @@ public class ApiResponseWithLocation : ApiResponse
 
 public class ApiObjectResponseWithLocation<T> : ApiResponseWithLocation, IApiObjectResponse<T>
 {
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public T Data { get; }
 
     public ApiObjectResponseWithLocation(Status status, string uri, T data = default(T)) : base(status, new Uri(uri)) 
