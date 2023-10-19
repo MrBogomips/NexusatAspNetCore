@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using Nexusat.AspNetCore.Configuration;
 using Nexusat.AspNetCore.Mvc.Formatters;
 using System;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Nexusat.AspNetCore.Models;
@@ -15,14 +16,18 @@ namespace Nexusat.AspNetCore.Models;
 public class ApiResponse : ActionResult, IApiResponse
 {
     public Status Status { get;}
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public ExceptionInfo Exception { get; set; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public ValidationErrorsInfo ValidationErrors { get; set; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public RuntimeInfo Runtime { get; set; }
 
     /// <summary>
     /// For responses for wich the body will not be produced.
     /// </summary>
     /// <value><c>true</c> if has body; otherwise, <c>false</c>.</value>
+    [JsonIgnore]
     public bool HasBody { get; set; } = true;
 
     public ApiResponse(Status status)
@@ -41,7 +46,7 @@ public class ApiResponse : ActionResult, IApiResponse
 
 
     /// <inheritdoc />
-    public override Task ExecuteResultAsync(ActionContext context)
+    public override async Task ExecuteResultAsync(ActionContext context)
     {
         if (context == null)
         {
@@ -50,7 +55,7 @@ public class ApiResponse : ActionResult, IApiResponse
 
         var services = context.HttpContext.RequestServices;
         var executor = services.GetRequiredService<ApiResponseExecutor>();
-        return executor.ExecuteAsync(context, this);
+        await executor.ExecuteAsync(context, this).ConfigureAwait(false);
     }
 
     /// <summary>

@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Nexusat.AspNetCore.Models;
 
 public interface IApiEnumResponse : IApiResponseBase
 {
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     PaginationInfo Navigation { get; }
 }
 
@@ -15,6 +15,6 @@ public interface IApiEnumResponse : IApiResponseBase
 /// <typeparam name="T"></typeparam>
 public interface IApiEnumResponse<T>: IApiEnumResponse
 {
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     IEnumerable<T> Data { get; }
 }
