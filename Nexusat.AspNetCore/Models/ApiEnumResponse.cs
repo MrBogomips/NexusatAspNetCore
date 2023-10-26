@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using Nexusat.AspNetCore.Properties;
 using Nexusat.AspNetCore.Configuration;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json.Serialization;
 
 namespace Nexusat.AspNetCore.Models;
 
 public class ApiEnumResponse<T> : ApiResponse, IApiEnumResponse<T>
 {
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public IEnumerable<T> Data { get; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public PaginationInfo Navigation { get; }
 
     public ApiEnumResponse(Status status, PaginationCursor current, int itemsCount, IEnumerable<T> data) : base(status) {

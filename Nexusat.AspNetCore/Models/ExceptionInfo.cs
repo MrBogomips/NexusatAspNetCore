@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace Nexusat.AspNetCore.Models;
 
@@ -10,9 +10,9 @@ public sealed class ExceptionInfo
         
     public string Type { get; set; }
     public string Message { get; set; }
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public ExceptionInfo Inner { get; set; }
-    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public IEnumerable<string> StackTrace { get; set; }
     public static ExceptionInfo GetFromException(Exception exception)
     {

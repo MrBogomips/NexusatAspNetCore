@@ -2,16 +2,16 @@
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 
 namespace Nexusat.AspNetCore.Models;
 
 public sealed class ValidationErrorsInfo : Dictionary<string, List<string>>
 {
-	NamingStrategy JsonNamingStrategy { get; }      
+	JsonNamingPolicy JsonNamingPolicy { get; }      
 	ModelStateDictionary ModelState { get; }
 
 	public const string DefaultPropertyName = "Error";
@@ -20,17 +20,15 @@ public sealed class ValidationErrorsInfo : Dictionary<string, List<string>>
 		if (actionContext == null) throw new ArgumentNullException(nameof(actionContext));
 		ModelState = modelState ?? throw new ArgumentNullException(nameof(modelState));
 
-		var jsonOptionsAccessor = actionContext.HttpContext.RequestServices.GetRequiredService<IOptions<MvcNewtonsoftJsonOptions>>();         
-			         
-		var contractResolver = jsonOptionsAccessor.Value.SerializerSettings.ContractResolver as DefaultContractResolver;
-		if (contractResolver != null) {
-			JsonNamingStrategy = contractResolver.NamingStrategy;
+		var jsonOptionsAccessor = actionContext.HttpContext.RequestServices.GetRequiredService<IOptions<JsonSerializerOptions>>();
+		if (jsonOptionsAccessor != null) {
+            JsonNamingPolicy = jsonOptionsAccessor.Value.PropertyNamingPolicy;
 		}
 		ParseModelState();
 	}
 
-	public ValidationErrorsInfo(NamingStrategy namingStrategy, ModelStateDictionary modelState) {
-		JsonNamingStrategy = namingStrategy ?? throw new ArgumentException(nameof(namingStrategy));
+	public ValidationErrorsInfo(JsonNamingPolicy namingStrategy, ModelStateDictionary modelState) {
+        JsonNamingPolicy = namingStrategy ?? throw new ArgumentException(nameof(namingStrategy));
 		ModelState = modelState ?? throw new ArgumentNullException(nameof(modelState));
 		ParseModelState();
 	}
@@ -39,7 +37,7 @@ public sealed class ValidationErrorsInfo : Dictionary<string, List<string>>
 	{
 		string _input = input;
 		if (string.IsNullOrWhiteSpace(_input)) _input = DefaultPropertyName;
-		return JsonNamingStrategy?.GetPropertyName(_input, false) ?? _input;
+		return JsonNamingPolicy?.ConvertName(_input) ?? _input;
 	}
 	void ParseModelState()
 	{
